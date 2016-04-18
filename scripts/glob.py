@@ -31,11 +31,20 @@ ATLANTSOLIA_LOCATION_RELATION = {
 	u'Stykkish\xc3\xb3lmur':                                          'ao_018'
 }
 
+ORKAN_X_LOCATION_RELATION = {
+	u'Ei\xf0istorg (Orkan X)':                                        'ox_000',
+	u'Miklabraut (vi\xf0 Kringluna)':                                 'ox_001',
+	u'Skemmuvegur (Orkan X)':                                         'ox_002',
+	u'Sp\xf6ngin (Orkan X)':                                          'ox_003',
+	u'Egilssta\xf0ir':                                                'ox_004',
+	u'Akureyri, Kjarnagata':                                          'ox_005',
+	u'Akranes, Smi\xf0juv\xf6llum':                                   'ox_006',
+	u'Hverager\xf0i':                                                 'ox_007',
+}
+
 # Orkan has a 3-step discount system controlled by your spendings on gas from them the month before
 # See more info here: https://www.orkan.is/Afslattarthrep
 ORKAN_MINIMUM_DISCOUNT = 5.0
-
-ORKAN_X_SKEMMUVEGUR_DISCOUNT_AMOUNT = 5.0
 
 BROWSERS_UA = [
 	'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.66 Safari/535.11',

@@ -52,7 +52,7 @@ n1_prices          = scraper.get_global_n1_prices()
 ob_prices          = scraper.get_global_ob_prices()
 olis_prices        = scraper.get_global_olis_prices()
 orkan_prices       = scraper.get_global_orkan_prices()
-orkan_x_prices     = scraper.get_global_orkan_x_prices()
+orkan_x_prices     = scraper.get_individual_orkan_x_prices()
 skeljungur_prices  = scraper.get_global_skeljungur_prices()
 
 list_of_stations = []
@@ -85,17 +85,10 @@ for key, station in sorted(all_stations.items()):
 		station['diesel']            = orkan_prices['diesel']
 		station['diesel_discount']   = orkan_prices['diesel_discount']
 	elif station['company'] == glob.ORKAN_X:
-		if key == 'ox_002': # Orkan X Skemmuvegur exception
-			discount = glob.ORKAN_X_SKEMMUVEGUR_DISCOUNT_AMOUNT
-			station['bensin95']          = orkan_x_prices['bensin95'] - discount
-			station['bensin95_discount'] = orkan_x_prices['bensin95_discount'] # None
-			station['diesel']            = orkan_x_prices['diesel'] - discount
-			station['diesel_discount']   = orkan_x_prices['diesel_discount'] # None
-		else:
-			station['bensin95']          = orkan_x_prices['bensin95']
-			station['bensin95_discount'] = orkan_x_prices['bensin95_discount']
-			station['diesel']            = orkan_x_prices['diesel']
-			station['diesel_discount']   = orkan_x_prices['diesel_discount']
+		station['bensin95']          = orkan_x_prices[key]['bensin95']
+		station['bensin95_discount'] = orkan_x_prices[key]['bensin95_discount']
+		station['diesel']            = orkan_x_prices[key]['diesel']
+		station['diesel_discount']   = orkan_x_prices[key]['diesel_discount']
 	elif station['company'] == glob.SKELJUNGUR:
 		station['bensin95']          = skeljungur_prices['bensin95']
 		station['bensin95_discount'] = skeljungur_prices['bensin95_discount']

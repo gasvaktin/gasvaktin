@@ -167,22 +167,26 @@ def get_global_orkan_prices():
 		'diesel_discount': diesel_discount
 	}
 
-def get_global_orkan_x_prices():
-	# Orkan X Skemmuvegi is an exception to this global price
-	# Today (2016-04-17) it seems to always be 5 ISK cheaper
-	url = 'http://www.skeljungur.is/einstaklingar/eldsneytisverd/'
+def get_individual_orkan_x_prices():
+	import pdb
+	url = 'http://www.orkan.is/Orkan-X/Stodvar'
 	res = requests.get(url, headers=utils.headers())
 	html = etree.fromstring(res.content, etree.HTMLParser())
-	bensin95_text = html.find('.//*[@id="st-container"]/div/div/div/div/div[2]/div/div/div[1]/div[1]/div[1]/section/div/div[2]/div[3]/div[2]/h2').text
-	diesel_text = html.find('.//*[@id="st-container"]/div/div/div/div/div[2]/div/div/div[1]/div[1]/div[1]/section/div/div[2]/div[3]/div[4]/h2').text
-	bensin95 = float(bensin95_text.replace(' kr.','').replace(',','.'))
-	diesel = float(diesel_text.replace(' kr.','').replace(',','.'))
-	return {
-		'bensin95': bensin95,
-		'diesel': diesel,
-		'bensin95_discount': None, # Orkan X has no special discount stuff
-		'diesel_discount': None    # (this is suppodedly one of its trademarks)
-	}
+	table = html.find('.//*[@id="content"]/div/div[2]/div/table')
+	prices = {}
+	for column in table:
+		if column[0].text == 'Orkan X':
+			continue # skip header
+		key = glob.ORKAN_X_LOCATION_RELATION[column[0][0].text]
+		bensin95 = float(column[1].text.replace(',','.'))
+		diesel = float(column[2].text.replace(',','.'))
+		prices[key] = {
+			'bensin95': bensin95,
+			'diesel': diesel,
+			'bensin95_discount': None, # Orkan X has no special discount stuff
+			'diesel_discount': None    # (it's one of its trademarks)
+		}
+	return prices
 
 if __name__ == '__main__':
 	# Some manual testing
@@ -201,4 +205,4 @@ if __name__ == '__main__':
 	print 'Orkan'
 	print get_global_orkan_prices()
 	print 'Orkan X'
-	print get_global_orkan_x_prices()
+	print get_individual_orkan_x_prices()
