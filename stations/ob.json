@@ -1,0 +1,240 @@
+{
+    "ob_000": {
+        "geo": {
+            "lat": 64.324480,
+            "lon": -22.068174
+        },
+        "name": "Akranes"
+    },
+    "ob_001": {
+        "geo": {
+            "lat": 65.687038,
+            "lon": -18.128579
+        },
+        "name": "Akureyri"
+    },
+    "ob_002": {
+        "geo": {
+            "lat": 65.683468,
+            "lon": -18.089544
+        },
+        "name": "BSO Akureyri"
+    },
+    "ob_003": {
+        "geo": {
+            "lat": 64.098399,
+            "lon": -21.896353
+        },
+        "name": "Arnarsmári"
+    },
+    "ob_004": {
+        "geo": {
+            "lat": 64.156265,
+            "lon": -21.751538
+        },
+        "name": "Barðastaðir"
+    },
+    "ob_005": {
+        "geo": {
+            "lat": 64.675027,
+            "lon": -21.664718
+        },
+        "name": "Baulan"
+    },
+    "ob_006": {
+        "geo": {
+            "lat": 64.124787,
+            "lon": -21.832257
+        },
+        "name": "Bíldshöfði"
+    },
+    "ob_007": {
+        "geo": {
+            "lat": 65.656328,
+            "lon": -20.285202
+        },
+        "name": "Blönduós"
+    },
+    "ob_008": {
+        "geo": {
+            "lat": 66.158337,
+            "lon": -23.246431
+        },
+        "name": "Bolungarvík"
+    },
+    "ob_009": {
+        "geo": {
+            "lat": 64.544544,
+            "lon": -21.908073
+        },
+        "name": "Borgarnes"
+    },
+    "ob_010": {
+        "geo": {
+            "lat": 64.099134,
+            "lon": -21.881032
+        },
+        "name": "Bæjarlind"
+    },
+    "ob_011": {
+        "geo": {
+            "lat": 63.862244,
+            "lon": -21.148026
+        },
+        "name": "Eyrarbakki"
+    },
+    "ob_012": {
+        "geo": {
+            "lat": 64.081674,
+            "lon": -21.939331
+        },
+        "name": "Fjarðarkaup"
+    },
+    "ob_013": {
+        "geo": {
+            "lat": 64.126553,
+            "lon": -21.756855
+        },
+        "name": "Grafarholt"
+    },
+    "ob_014": {
+        "geo": {
+            "lat": 63.839785,
+            "lon": -22.433883
+        },
+        "name": "Grindavík"
+    },
+    "ob_015": {
+        "geo": {
+            "lat": 64.358868,
+            "lon": -21.780723
+        },
+        "name": "Grundartangi"
+    },
+    "ob_016": {
+        "geo": {
+            "lat": 65.701320,
+            "lon": -21.692706
+        },
+        "name": "Hólmavík"
+    },
+    "ob_017": {
+        "geo": {
+            "lat": 66.039173,
+            "lon": -17.343145
+        },
+        "name": "Húsavík"
+    },
+    "ob_018": {
+        "geo": {
+            "lat": 66.068678,
+            "lon": -23.121961
+        },
+        "name": "Ísafjörður"
+    },
+    "ob_019": {
+        "geo": {
+            "lat": 63.794656,
+            "lon": -18.038831
+        },
+        "name": "Kirkjubæjarklaustur (vantar mögulega betri staðsetningu)"
+    },
+    "ob_020": {
+        "geo": {
+            "lat": 63.879342,
+            "lon": -20.500932
+        },
+        "name": "Landvegamót"
+    },
+    "ob_021": {
+        "geo": {
+            "lat": 64.059089,
+            "lon": -21.971533
+        },
+        "name": "Melabraut"
+    },
+    "ob_022": {
+        "geo": {
+            "lat": 64.074889,
+            "lon": -20.764193
+        },
+        "name": "Minni Borg"
+    },
+    "ob_023": {
+        "geo": {
+            "lat": 65.147542,
+            "lon": -13.695884
+        },
+        "name": "Neskaupsstaður"
+    },
+    "ob_024": {
+        "geo": {
+            "lat": 63.979938,
+            "lon": -22.546893
+        },
+        "name": "Njarðvík"
+    },
+    "ob_025": {
+        "geo": {
+            "lat": 64.127972,
+            "lon": -21.848568
+        },
+        "name": "Knarravogur"
+    },
+    "ob_026": {
+        "geo": {
+            "lat": 65.034512,
+            "lon": -14.231985
+        },
+        "name": "Reyðarfjörður"
+    },
+    "ob_027": {
+        "geo": {
+            "lat": 63.943678,
+            "lon": -21.008184
+        },
+        "name": "Selfoss"
+    },
+    "ob_028": {
+        "geo": {
+            "lat": 64.139686,
+            "lon": -21.920814
+        },
+        "name": "Snorrabraut"
+    },
+    "ob_029": {
+        "geo": {
+            "lat": 64.151020,
+            "lon": -21.773935
+        },
+        "name": "Starengi"
+    },
+    "ob_030": {
+        "geo": {
+            "lat": 65.071966,
+            "lon": -22.732975
+        },
+        "name": "Stykkishólmur"
+    },
+    "ob_031": {
+        "geo": {
+            "lat": 64.044579,
+            "lon": -21.986533
+        },
+        "name": "Suðurhella"
+    },
+    "ob_032": {
+        "geo": {
+            "lat": 63.442409,
+            "lon": -20.268868
+        },
+        "name": "Vestmannaeyjar"
+    },
+    "ob_033": {
+        "geo": {
+            "lat": 63.856356,
+            "lon": -21.374275
+        },
+        "name": "Þorlákshöfn"
+    }
+}

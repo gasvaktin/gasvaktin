@@ -1,0 +1,135 @@
+{
+	"ao_000": {
+		"geo": {
+			"lat": 65.699130,
+			"lon": -18.135231
+		},
+		"name": "Baldursnes Akureyri"
+	},
+	"ao_001": {
+		"geo": {
+			"lat": 65.687807,
+			"lon": -18.100104
+		},
+		"name": "Glerártorg Akureyri"
+	},
+	"ao_002": {
+		"geo": {
+			"lat": 64.125397,
+			"lon": -21.813054
+		},
+		"name": "Bíldshöfði"
+	},
+	"ao_003": {
+		"geo": {
+			"lat": 64.5675445,
+			"lon": -21.8934511
+		},
+		"name": "Borgarnes"
+	},
+	"ao_004": {
+		"geo": {
+			"lat": 64.087301,
+			"lon": -21.832666
+		},
+		"name": "Búðarkór"
+	},
+	"ao_005": {
+		"geo": {
+			"lat": 65.259896,
+			"lon": -14.397890
+		},
+		"name": "Egilsstaðir"
+	},
+	"ao_006": {
+		"geo": {
+			"lat": 64.064824,
+			"lon": -21.976368
+		},
+		"name": "Hafnarfjarðarhöfn"
+	},
+	"ao_007": {
+		"geo": {
+			"lat": 63.994238,
+			"lon": -21.185975
+		},
+		"name": "Hveragerði"
+	},
+	"ao_008": {
+		"geo": {
+			"lat": 63.994238,
+			"lon": -21.185975
+		},
+		"name": "Kaplakriki"
+	},
+	"ao_009": {
+		"geo": {
+			"lat": 64.111230,
+			"lon": -21.935749
+		},
+		"name": "Kópavogsbraut"
+	},
+	"ao_010": {
+		"geo": {
+			"lat": 64.163880,
+			"lon": -21.690617
+		},
+		"name": "Mosfellsbær"
+	},
+	"ao_011": {
+		"geo": {
+			"lat": 63.987463,
+			"lon": -22.549396
+		},
+		"name": "Njarðvík"
+	},
+	"ao_012": {
+		"geo": {
+			"lat": 64.131921,
+			"lon": -21.923792
+		},
+		"name": "Öskjuhlíð"
+	},
+	"ao_013": {
+		"geo": {
+			"lat": 63.946582,
+			"lon": -21.013048
+		},
+		"name": "Selfoss"
+	},
+	"ao_014": {
+		"geo": {
+			"lat": 64.132171,
+			"lon": -21.870770
+		},
+		"name": "Skeifan"
+	},
+	"ao_015": {
+		"geo": {
+			"lat": 64.110091,
+			"lon": -21.852653
+		},
+		"name": "Skemmuvegur"
+	},
+	"ao_016": {
+		"geo": {
+			"lat": 64.1460022,
+			"lon": -21.9184388
+		},
+		"name": "Skúlagata"
+	},
+	"ao_017": {
+		"geo": {
+			"lat": 64.120944,
+			"lon": -21.847966
+		},
+		"name": "Sprengisandur"
+	},
+	"ao_018": {
+		"geo": {
+			"lat": 65.070710,
+			"lon": -22.733996
+		},
+		"name": "Stykkishólmur"
+	}
+}

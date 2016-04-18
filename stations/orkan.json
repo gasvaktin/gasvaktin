@@ -1,0 +1,338 @@
+{
+    "or_000": {
+        "geo": {
+            "lat": 64.105243,
+            "lon": -21.867311
+        },
+        "name": "Dalvegur"
+    },
+    "or_001": {
+        "geo": {
+            "lat": 64.144646,
+            "lon": -21.804210
+        },
+        "name": "Gylfaflöt"
+    },
+    "or_002": {
+        "geo": {
+            "lat": 64.117737,
+            "lon": -21.797643
+        },
+        "name": "Hraunbær"
+    },
+    "or_003": {
+        "geo": {
+            "lat": 64.153247,
+            "lon": -21.867535
+        },
+        "name": "Klettagarðar"
+    },
+    "or_004": {
+        "geo": {
+            "lat": 64.063567,
+            "lon": -21.965435
+        },
+        "name": "Kænan"
+    },
+    "or_005": {
+        "geo": {
+            "lat": 64.140216,
+            "lon": -21.895335
+        },
+        "name": "Laugavegur"
+    },
+    "or_006": {
+        "geo": {
+            "lat": 64.132660,
+            "lon": -21.893096
+        },
+        "name": "Miklabraut"
+    },
+    "or_007": {
+        "geo": {
+            "lat": 64.077153,
+            "lon": -21.949942
+        },
+        "name": "Reykjavíkurvegur"
+    },
+    "or_008": {
+        "geo": {
+            "lat": 64.131896,
+            "lon": -21.917131
+        },
+        "name": "Skógarhlíð"
+    },
+    "or_009": {
+        "geo": {
+            "lat": 64.151479,
+            "lon": -21.985106
+        },
+        "name": "Suðurströnd"
+    },
+    "or_010": {
+        "geo": {
+            "lat": 65.260787,
+            "lon": -14.397936
+        },
+        "name": "Egilsstaðir"
+    },
+    "or_011": {
+        "geo": {
+            "lat": 65.075508,
+            "lon": -14.022952
+        },
+        "name": "Eskifjörður"
+    },
+    "or_012": {
+        "geo": {
+            "lat": 64.933200,
+            "lon": -14.029200
+        },
+        "name": "Fáskrúðsfjörður"
+    },
+    "or_013": {
+        "geo": {
+            "lat": 65.096709,
+            "lon": -14.742542
+        },
+        "name": "Hallormsstaður"
+    },
+    "or_014": {
+        "geo": {
+            "lat": 65.147380,
+            "lon": -13.707358
+        },
+        "name": "Neskaupsstaður"
+    },
+    "or_015": {
+        "geo": {
+            "lat": 65.035079,
+            "lon": -14.228942
+        },
+        "name": "Reyðarfjörður"
+    },
+    "or_016": {
+        "geo": {
+            "lat": 65.261663,
+            "lon": -13.999621
+        },
+        "name": "Seyðisfjörður"
+    },
+    "or_017": {
+        "geo": {
+            "lat": 65.317017,
+            "lon": -15.119652
+        },
+        "name": "Skjöldólfsstaðir"
+    },
+    "or_018": {
+        "geo": {
+            "lat": 65.944156,
+            "lon": -18.354754
+        },
+        "name": "Árskógssandur"
+    },
+    "or_019": {
+        "geo": {
+            "lat": 65.690517,
+            "lon": -18.088675
+        },
+        "name": "Furuvellir"
+    },
+    "or_020": {
+        "geo": {
+            "lat": 66.048819,
+            "lon": -17.344342
+        },
+        "name": "Húsavík"
+    },
+    "or_021": {
+        "geo": {
+            "lat": 65.392420,
+            "lon": -20.938596
+        },
+        "name": "Hvammstangi"
+    },
+    "or_022": {
+        "geo": {
+            "lat": 65.679649,
+            "lon": -18.108221
+        },
+        "name": "Mýrarvegur"
+    },
+    "or_023": {
+        "geo": {
+            "lat": 65.567388,
+            "lon": -17.036347
+        },
+        "name": "Mývatn"
+    },
+    "or_024": {
+        "geo": {
+            "lat": 65.747084,
+            "lon": -19.645718
+        },
+        "name": "Sauðárkrókur"
+    },
+    "or_025": {
+        "geo": {
+            "lat": 65.685764,
+            "lon": -23.600899
+        },
+        "name": "Bíldudalur"
+    },
+    "or_026": {
+        "geo": {
+            "lat": 66.153076,
+            "lon": -23.248703
+        },
+        "name": "Bolungarvík"
+    },
+    "or_027": {
+        "geo": {
+            "lat": 66.060808,
+            "lon": -23.174836
+        },
+        "name": "Ísafjörður"
+    },
+    "or_028": {
+        "geo": {
+            "lat": 66.025744,
+            "lon": -22.990537
+        },
+        "name": "Súðavík"
+    },
+    "or_029": {
+        "geo": {
+            "lat": 64.320056,
+            "lon": -22.069411
+        },
+        "name": "Skagabraut Akranes"
+    },
+    "or_030": {
+        "geo": {
+            "lat": 64.543622,
+            "lon": -21.908963
+        },
+        "name": "Borgarnes"
+    },
+    "or_031": {
+        "geo": {
+            "lat": 64.921509,
+            "lon": -23.246484
+        },
+        "name": "Grundarfjörður"
+    },
+    "or_032": {
+        "geo": {
+            "lat": 64.768187,
+            "lon": -21.541212
+        },
+        "name": "Hreðavatnsskáli"
+    },
+    "or_033": {
+        "geo": {
+            "lat": 64.699210,
+            "lon": -20.868397
+        },
+        "name": "Húsafell"
+    },
+    "or_034": {
+        "geo": {
+            "lat": 64.894254,
+            "lon": -23.704450
+        },
+        "name": "Ólafsvík"
+    },
+    "or_035": {
+        "geo": {
+            "lat": 65.072872,
+            "lon": -22.732583
+        },
+        "name": "Stykkishólmur"
+    },
+    "or_036": {
+        "geo": {
+            "lat": 63.841234,
+            "lon": -22.424997
+        },
+        "name": "Grindavík"
+    },
+    "or_037": {
+        "geo": {
+            "lat": 63.999133,
+            "lon": -22.632292
+        },
+        "name": "Arnarvellir"
+    },
+    "or_038": {
+        "geo": {
+            "lat": 63.972560,
+            "lon": -22.542876
+        },
+        "name": "Reykjanesbær"
+    },
+    "or_039": {
+        "geo": {
+            "lat": 64.037636,
+            "lon": -22.707148
+        },
+        "name": "Sandgerði"
+    },
+    "or_040": {
+        "geo": {
+            "lat": 63.990415,
+            "lon": -16.896018
+        },
+        "name": "Freysnes"
+    },
+    "or_041": {
+        "geo": {
+            "lat": 63.751890,
+            "lon": -20.235905
+        },
+        "name": "Hvolsvöllur"
+    },
+    "or_042": {
+        "geo": {
+            "lat": 63.944998,
+            "lon": -21.010740
+        },
+        "name": "Selfoss"
+    },
+    "or_043": {
+        "geo": {
+            "lat": 63.836264,
+            "lon": -21.062153
+        },
+        "name": "Stokkseyri"
+    },
+    "or_044": {
+        "geo": {
+            "lat": 64.279476,
+            "lon": -20.443435
+        },
+        "name": "Úthlíð"
+    },
+    "or_045": {
+        "geo": {
+            "lat": 63.440566,
+            "lon": -20.277227
+        },
+        "name": "Vestmannaeyjar"
+    },
+    "or_046": {
+        "geo": {
+            "lat": 63.417474,
+            "lon": -18.993665
+        },
+        "name": "Vík í Mýrdal"
+    },
+    "or_047": {
+        "geo": {
+            "lat": 63.858910,
+            "lon": -21.378168
+        },
+        "name": "Þorlákshöfn"
+    }
+}

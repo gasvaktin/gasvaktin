@@ -1,0 +1,65 @@
+{
+    "sk_000": {
+        "geo": {
+            "lat": 64.142126,
+            "lon": -21.952957
+        },
+        "name": "Birkimelur"
+    },
+    "sk_001": {
+        "geo": {
+            "lat": 64.131308,
+            "lon": -21.918266
+        },
+        "name": "Bústaðavegur"
+    },
+    "sk_002": {
+        "geo": {
+            "lat": 64.090027,
+            "lon": -21.926312
+        },
+        "name": "Garðabær"
+    },
+    "sk_003": {
+        "geo": {
+            "lat": 64.145763,
+            "lon": -21.858610
+        },
+        "name": "Kleppsvegur"
+    },
+    "sk_004": {
+        "geo": {
+            "lat": 64.102104,
+            "lon": -21.884002
+        },
+        "name": "Smárinn"
+    },
+    "sk_005": {
+        "geo": {
+            "lat": 64.101745,
+            "lon": -21.831087
+        },
+        "name": "Suðurfell"
+    },
+    "sk_006": {
+        "geo": {
+            "lat": 64.123847,
+            "lon": -21.804124
+        },
+        "name": "Vesturlandsvegur"
+    },
+    "sk_007": {
+        "geo": {
+            "lat": 65.695775,
+            "lon": -18.122012
+        },
+        "name": "Hörgárbraut"
+    },
+    "sk_008": {
+        "geo": {
+            "lat": 63.995624,
+            "lon": -21.185094
+        },
+        "name": "Hveragerði"
+    }
+}
