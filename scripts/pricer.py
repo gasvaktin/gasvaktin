@@ -45,9 +45,9 @@ for company in COMPANIES:
 		station['company'] = company['name']
 		all_stations[key] = station
 
-# station individual prices
+# station-individual prices
 atlantsolia_prices = scraper.get_individual_atlantsolia_prices()
-# global prices
+# station-global prices
 n1_prices          = scraper.get_global_n1_prices()
 ob_prices          = scraper.get_global_ob_prices()
 olis_prices        = scraper.get_global_olis_prices()

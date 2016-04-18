@@ -186,7 +186,7 @@ def get_global_orkan_x_prices():
 
 if __name__ == '__main__':
 	# Some manual testing
-	# TODO: add automatic tests and stuff?
+	# TODO: add automatic tests?
 	print 'Testing scrapers\n'
 	print 'Atlantsolía'
 	print get_individual_atlantsolia_prices()
