@@ -1,38 +1,51 @@
 
 # GasVaktin
 
-GasVaktin er sjálfvirk verðvakt sem fylgist með verði á eldsneyti (95 octan bensín og díesel) hjá olíufélögum á Íslandi.
+GasVaktin aims to be an open and automated price lookup project for petrol stations in Iceland (95 octan bensin and diesel).
 
-GasVaktin athugar verðupplýsingar hjá eftirfarandi olíufélögum:
+GasVaktin watches the following Icelandic oil companies:
 
 * [Atlantsolía](http://atlantsolia.is/)
 * [N1](https://www.n1.is/)
 * [Olís](http://www.olis.is/)
-  - [ÓB](http://www.ob.is/) (lággjaldafélag í eigu Olís)
+  - [ÓB](http://www.ob.is/) (low-cost company owned by Olís)
 * [Skeljungur](http://www.skeljungur.is/)
-  - [Orkan](http://www.orkan.is/) (lággjaldafélag í eigu Skeljungs)
+  - [Orkan](http://www.orkan.is/) (low-cost company owned by Skeljungur)
 
-## Upplýsingar um uppruna gagna
+## Setup and usage
 
-Gögn yfir stöðvar olíufélaganna eru eins og er harðkóðuð. Verðgögn eru sótt af vefsíðum olíufélaganna daglega.
+You need to have [python 2.7 and pip](http://docs.python-guide.org/en/latest/starting/install/win/) and install the following python modules:
+
+	pip install -r pip_requirements.txt
+
+Open a terminal in this repository and
+
+	cd scripts
+	python pricer.py
+
+This updates the pretty `vaktin/gas.json` and the minified `vaktin/gas.min.json` with newest price data from the oil companies webpages. The script `pricer.py` is run daily and changes if any are automatically commited to the repository.
+
+## Origination of data
+
+Data over petrol stations and locations is currently just static. Price data from the oil companies is fetched on a daily basis.
 
 ### Atlantsolía
 
-#### Stöðvar
+#### Stations
 
-Atlantsolía er með einfaldan og góðan lista yfir stöðvarnar sínar á einföldu google maps korti sem sýnt er [á vef þeirra](http://atlantsolia.is/nav/StodvarStadsetningar.aspx). Þegar source er skoðað má sjá geo staðsetningar fyrir stöðvar Atlantsolíu svona útlítandi:
+Atlantsolía has a list of its stations [here](http://atlantsolia.is/nav/StodvarStadsetningar.aspx). Looking at the source stations data is available in the following format:
 
 	var LocationsMarker = [['Akureyri+Baldursnes', 65.6991300000000, -18.135231, 0,'<div ></div>','/images/stadsetningar_netid.gif'],['Akureyri+Gler%c3%a1rtorg', 65.6878070000000, -18.100104, 1,'<div ></div>','/images/stadsetningar_netid.gif'],['B%c3%adldsh%c3%b6f%c3%b0i', 64.1253970000000, -21.813054, 2,'<div ></div>','/images/stadsetningar_netid.gif'],['Borgarnes', 64.5675445000000, -21.8934511, 3,'<div ></div>','/images/stadsetningar_netid.gif'], ...
 
-#### Eldsneytisverð
+#### Prices
 
-Verð á eldsneyti fyrir allar stöðvar Atlantsolíu má finna á [þessari síðu](http://atlantsolia.is/stodvarverd.aspx) á vef Atlantsolíu, einnig má sjá þar afsláttarverð sem fæst með notkun dælulyklils Atlantsolíu. Að vísu virðist verðið ávallt vera það sama á öllum stöðvum nema einni sem virðist þá ávallt vera ódýrari, daginn sem þetta er skrifað til dæmis (2016-04-10) er Atlantsolía Kópavogi Skemmuvegi 4 ISK ódýrari en aðrar stöðvar Atlantsolíu.
+Gas price for each station can be found [here](http://atlantsolia.is/stodvarverd.aspx), also showing discount prices available if you have Atlantsolía gas key ring.
 
 ### N1
 
-#### Stöðvar
+#### Stations
 
-Hægt er að nálgast lista yfir bensínstöðvar N1 á síðu þeirra á svotilgerðu [gagnvirku stöðva-korti](https://www.n1.is/stodvar/). Með örlítilli eftirgrennslan er hægt að finna einfaldan JSON endapunkt sem gefur ítarlegar upplýsingar um N1 stöðvar um allt landið, auk staðsetningarhnita.
+List of stations can be found [here](https://www.n1.is/stodvar/). With a bit of examination we can see a JSON endpoint which exposes stations list and location info. Example:
 	
 	POST https://www.n1.is/umbraco/api/stations/get
 	Headers = {
@@ -40,40 +53,36 @@ Hægt er að nálgast lista yfir bensínstöðvar N1 á síðu þeirra á svotil
 		User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
 	}
 
-Þetta gefur JSON lista yfir stöðvar, verslanir og verkstæði N1. Auðvelt er að veiða stöðvar sem selja í það minnsta 95 octan bensín, diesel olíu, og eru ekki Bátadælur.
+#### Prices
 
-#### Eldsneytisverð
+List price (price without any discount) can be seen [here](https://www.n1.is/listaverd/), discount price given if you have an N1 business card can be seen [here](https://www.n1.is/eldsneyti). We assume these prices to be global for all N1 stations as we can't find station individual prices anywhere.
 
-Á [N1 Listaverð](https://www.n1.is/listaverd/) má sjá listaverð N1 á bensíni og dísel en verð með afslætti N1 Kortsins er hægt að sjá á [N1 Eldsneyti](https://www.n1.is/eldsneyti). Þetta eru einu verðupplýsingar sem við höfum aðgang að hjá N1 og þurfum við því (ranglega eða réttilega) að gera ráð fyrir að þetta verð gildi fyrir allar N1 stöðvar.
+### Olís (and ÓB)
 
-### Olís (og ÓB)
+#### Stations
 
-#### Stöðvar
+List of stations can be seen [here](http://www.olis.is/solustadir/thjonustustodvar) but unfortunately no geo coordinates seem to be exposed. We might be able to do automatic lookup on for example google maps and use that but manual review would probably always be needed. This is one of the reasons stations data is static.
 
-Á vef Olís má skoða [einfalt íslandskort](http://www.olis.is/solustadir/thjonustustodvar) sem sýnir þjónustustöðvar fyrir bæði Olís og ÓB. Ef rýnt er í html síðunnar má sjá `<div id="stodvakort">` sem inniheldur alla punktana á kortinu, en því miður koma staðsetningar einungis fram á svona formi `top: 197px;left: 86px;`, engin hnit exposuð. Mögulega er hægt að reikna grófa staðsetningu út frá þessum punktum eða fletta einhvernveginn sjálfvirkt upp stöðvunum til dæmis Google Maps fyrir nákvæmari hnit hverrar stöðvar.
+#### Prices
 
-#### Eldsneytisverð
+Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/) and prices for ÓB can be seen [here](http://www.ob.is/eldsneytisverd/), both with and without special gas key ring discount.
 
-Hægt er að nálgast á bæði [vef Olís](http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/) og [vef ÓB](http://www.ob.is/eldsneytisverd/) eldsneytisverð með og án sérstaks korta- eða dælulykilsafsláttar.
+### Skeljungur (and Orkan (and Orkan X))
 
-### Skeljungur (og Orkan (og Orkan X))
+#### Stations
 
-#### Stöðvar
-
-Lista yfir stöðvar Skeljungs og undirfélaganna Orkan og Orkan X má sjá [hér á vef Skeljungs](http://www.skeljungur.is/einstaklingar/stadsetning-stodva/). Líkt og með N1 er enfaldur JSON 'endapunktur' sem gefur lista stöðva um allt land sem og staðsetningarhnit.
+List of stations for Skeljungur, Orkan and Orkan X can be seen [here](http://www.skeljungur.is/einstaklingar/stadsetning-stodva/). With a bit of examination like with N1 we can see a JSON endpoint/file which exposes stations list and location info. Example:
 
 	GET http://www.skeljungur.is/LisaLib/GetSupportFile.aspx?id=d070afa9-d1ff-11e4-80e4-005056a6135c
 
-#### Eldsneytisverð
+#### Prices
 
-Verð fyrir Skeljung/Orkuna/Orkuna X má finna [hér á vef Skeljungs](http://www.skeljungur.is/einstaklingar/eldsneytisverd/). Upplýsingar um afslátt hjá Orkunni er síðan hægt að skoða [hér  á vef Orkunnar](https://www.orkan.is/Afslattarthrep), en hann er þrískiptur þegar þetta er skrifað (5/7/10 kr afsláttur) og stýrist af viðskiptum einstaklings mánuðinn á undan. Til hægðarauka reiknum við einfaldlega með minnsta afslættinum þar sem hann er aðgengilegur öllum með Orku-lykil. Stöðvar Skeljungs og Orkunnar X bjóða engan sérstakan afslátt, Skeljungur leggur í staðinn áherslu á góða þjónustu, en Orkan X hefur það að auðkenni að hafa gott lágt verð fyrir alla í stað þess að leika afsláttaleikinn svokallaða. Eitt merkilegt þó við Orku X stöðvarnar er að ein þeirra, Orkan X Skemmuvegi, er 5 krónum ódýrari en aðrar Orkan X stöðvar þegar þetta er skrifað.
+Prices without discount for Skeljungur, Orkan and Orkan X can be seen [here](http://www.skeljungur.is/einstaklingar/eldsneytisverd/). Info on discount for Orkan can be seen [here](https://www.orkan.is/Afslattarthrep), but it's threefold when this is written (5/7/10 ISK discount) and is controlled by how much gas you bought from Orkan the month before. To make things easier we only provide discount price for the starter discount. Neither Skeljungur nor Orkan X maintain a discount program.
 
-## Maintainers
+## Maintainer
 
 [@Loknar](https://github.com/Loknar/)
 
-Hafi einhver áhuga á að gerast maintainer hafið þá samband við [@Loknar](https://github.com/Loknar/).
-
-## Skilmálar
+## Licence
 
 MIT Licence
