@@ -23,7 +23,7 @@ Open a terminal in this repository and
 	cd scripts
 	python pricer.py
 
-This updates the pretty `vaktin/gas.json` and the minified `vaktin/gas.min.json` with newest price data from the oil companies webpages. The script `pricer.py` is run daily and changes if any are automatically commited to the repository.
+This updates the pretty `vaktin/gas.json` and the minified `vaktin/gas.min.json` with newest price data from the oil companies webpages. The script `pricer.py` is run daily and price changes if any are automatically commited to the repository.
 
 ## Origination of data
 
