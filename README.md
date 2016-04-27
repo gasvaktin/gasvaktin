@@ -1,9 +1,9 @@
 
-# GasVaktin
+# Gasvaktin
 
-GasVaktin aims to be an open and automated price lookup project for petrol stations in Iceland (95 octan bensin and diesel).
+Gasvaktin aims to be an open and automated price lookup project for petrol stations in Iceland (95 octan bensin and diesel).
 
-GasVaktin watches the following Icelandic oil companies:
+Gasvaktin watches the following Icelandic oil companies:
 
 * [Atlantsolía](http://atlantsolia.is/)
 * [N1](https://www.n1.is/)
