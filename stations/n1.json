@@ -677,5 +677,12 @@
             "lon": -22.590831
         },
         "name": "Knútstöð Keflavíkurflugvelli - Utan girðingar"
+    },
+    "n1_097": {
+        "geo": {
+            "lat": 64.100852,
+            "lon": -21.780112
+        },
+        "name": "Norðlingaholt"
     }
 }

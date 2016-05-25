@@ -1509,6 +1509,19 @@
             "name": "Knútstöð Keflavíkurflugvelli - Utan girðingar"
         }, 
         {
+            "bensin95": 207.7, 
+            "bensin95_discount": 201.7, 
+            "company": "N1", 
+            "diesel": 192.3, 
+            "diesel_discount": 186.3, 
+            "geo": {
+                "lat": 64.100852, 
+                "lon": -21.780112
+            }, 
+            "key": "n1_097", 
+            "name": "Norðlingaholt"
+        }, 
+        {
             "bensin95": 201.4, 
             "bensin95_discount": 198.4, 
             "company": "ÓB", 
