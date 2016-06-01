@@ -14,7 +14,7 @@ Gasvaktin watches the following Icelandic oil companies:
 
 ## Setup and usage
 
-You need to have [python 2.7 and pip](http://docs.python-guide.org/en/latest/starting/install/win/) and install the following python modules:
+You need to install [python 2.7 and pip](http://docs.python-guide.org/en/latest/starting/install/win/) and install the following python modules:
 
 	pip install -r pip_requirements.txt
 
@@ -27,7 +27,7 @@ This updates the pretty `vaktin/gas.json` and the minified `vaktin/gas.min.json`
 
 ## Origination of data
 
-Data over petrol stations and locations is currently just static. Price data from the oil companies is fetched on a daily basis.
+Data over petrol stations and locations is currently just static. Price data from the oil companies is fetched regularly. See [here](https://gist.github.com/gasvaktin) for more details on when prices were last checked.
 
 ### Atlantsolía
 
