@@ -168,7 +168,6 @@ def get_global_orkan_prices():
 	}
 
 def get_individual_orkan_x_prices():
-	import pdb
 	url = 'http://www.orkan.is/Orkan-X/Stodvar'
 	res = requests.get(url, headers=utils.headers())
 	html = etree.fromstring(res.content, etree.HTMLParser())
