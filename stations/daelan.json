@@ -1,0 +1,23 @@
+{
+    "dn_000": {
+        "geo": {
+            "lat": 64.131015,
+            "lon": -21.877297
+        },
+        "name": "Fellsmúli"
+    },
+    "dn_001": {
+        "geo": {
+            "lat": 64.112573,
+            "lon": -21.842023
+        },
+        "name": "Staldrið Stekkjarbakki"
+    },
+    "dn_002": {
+        "geo": {
+            "lat": 64.100437,
+            "lon": -21.888480
+        },
+        "name": "Smáralind"
+    }
+}

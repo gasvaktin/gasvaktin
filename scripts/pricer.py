@@ -16,6 +16,10 @@ def main():
 			'stations': '../stations/n1.json'
 		},
 		{
+			'name': glob.DAELAN,
+			'stations': '../stations/daelan.json'
+		},
+		{
 			'name': glob.OB,
 			'stations': '../stations/ob.json'
 		},
@@ -46,14 +50,14 @@ def main():
 			station['company'] = company['name']
 			all_stations[key] = station
 
-	# station-individual prices
-	atlantsolia_prices = scraper.get_individual_atlantsolia_prices()
-	# station-global prices
+	# station prices
+	atlantsolia_prices = scraper.get_individual_atlantsolia_prices() # individual
 	n1_prices          = scraper.get_global_n1_prices()
+	daelan_prices      = scraper.get_global_daelan_prices()
 	ob_prices          = scraper.get_global_ob_prices()
 	olis_prices        = scraper.get_global_olis_prices()
 	orkan_prices       = scraper.get_global_orkan_prices()
-	orkan_x_prices     = scraper.get_individual_orkan_x_prices()
+	orkan_x_prices     = scraper.get_individual_orkan_x_prices() # individual
 	skeljungur_prices  = scraper.get_global_skeljungur_prices()
 
 	list_of_stations = []
@@ -70,6 +74,11 @@ def main():
 			station['bensin95_discount'] = n1_prices['bensin95_discount']
 			station['diesel']            = n1_prices['diesel']
 			station['diesel_discount']   = n1_prices['diesel_discount']
+		elif station['company'] == glob.DAELAN:
+			station['bensin95']          = daelan_prices['bensin95']
+			station['bensin95_discount'] = daelan_prices['bensin95_discount']
+			station['diesel']            = daelan_prices['diesel']
+			station['diesel_discount']   = daelan_prices['diesel_discount']
 		elif station['company'] == glob.OB:
 			station['bensin95']          = ob_prices['bensin95']
 			station['bensin95_discount'] = ob_prices['bensin95_discount']

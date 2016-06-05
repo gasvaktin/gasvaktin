@@ -3,6 +3,7 @@
 
 ATLANTSOLIA = u'Atlantsolía'
 N1          = u'N1'
+DAELAN      = u'Dælan'
 OLIS        = u'Olís'
 OB          = u'ÓB'
 SKELJUNGUR  = u'Skeljungur'

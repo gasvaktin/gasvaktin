@@ -101,6 +101,24 @@ def get_global_n1_prices():
 	prices['diesel_discount'] = float(diesel_discount_text.replace('"','').replace(',','.'))
 	return prices
 
+def get_global_daelan_prices():
+	# Dælan currently does not expose their prices on the website http://daelan.is/.
+	# When asking Dælan about this the answers have been that they're working on adding it to their site soon.
+	# Last time I asked (2016-06-03) the answer was:
+	# "Verðið í dag á Dælunni er 172,7 fyrir díselolíu og 191,7 fyrir bensín."
+	# "Erum við að vinna að því að koma þeim verðum á síðuna okkar og vonandi gengur það eftir í næstu viku."
+	#
+	# Hardcoded prices, 2016-06-05
+	hardcoded_bensin95 = 191.7
+	hardcoded_diesel = 172.7
+	return {
+		'bensin95': hardcoded_bensin95,
+		'diesel': hardcoded_diesel,
+		# Dælan has no special discount prices
+		'bensin95_discount': None,
+		'diesel_discount': None
+	}
+
 def get_global_olis_prices():
 	url = 'http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
 	res = requests.get(url, headers=utils.headers())
@@ -210,8 +228,9 @@ def get_individual_orkan_x_prices():
 		prices[key] = {
 			'bensin95': bensin95,
 			'diesel': diesel,
-			'bensin95_discount': None, # Orkan X has no special discount stuff
-			'diesel_discount': None    # (it's one of its trademarks)
+			# Orkan X has no special discount prices
+			'bensin95_discount': None,
+			'diesel_discount': None
 		}
 	return prices
 
