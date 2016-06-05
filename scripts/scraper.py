@@ -173,12 +173,40 @@ def get_individual_orkan_x_prices():
 	html = etree.fromstring(res.content, etree.HTMLParser())
 	table = html.find('.//*[@id="content"]/div/div[2]/div/table')
 	prices = {}
+	# Issue: it has come up that prices are missing for station in this list,
+	#        I sent Orkan X a line about this last friday (2016-06-03), their reply was:
+	#        "takk fyrir að láta okkur vita við kippum þessu i lag :)"
+	#        still not fixed
+	# Solution: let's assume a station with missing prices has the highest prices shown for other stations in the list
+	# <find_highest_prices>
+	highest_bensin95 = None
+	highest_diesel = None
+	for column in table:
+		if column[0].text == 'Orkan X':
+			continue # skip header
+		if column[1].text is not None:
+			bensin95 = float(column[1].text.replace(',','.'))
+			if highest_bensin95 is None or highest_bensin95 < bensin95:
+				highest_bensin95 = bensin95
+		if column[2].text is not None:
+			diesel = float(column[2].text.replace(',','.'))
+			if highest_diesel is None or highest_diesel < diesel:
+				highest_diesel = diesel
+	assert(highest_bensin95 is not None)
+	assert(highest_diesel is not None)
+	# </find_highest_prices>
 	for column in table:
 		if column[0].text == 'Orkan X':
 			continue # skip header
 		key = glob.ORKAN_X_LOCATION_RELATION[column[0][0].text]
-		bensin95 = float(column[1].text.replace(',','.'))
-		diesel = float(column[2].text.replace(',','.'))
+		if column[1].text is not None:
+			bensin95 = float(column[1].text.replace(',','.'))
+		else:
+			bensin95 = highest_bensin95
+		if column[2].text is not None:
+			diesel = float(column[2].text.replace(',','.'))
+		else:
+			bensin95 = highest_diesel
 		prices[key] = {
 			'bensin95': bensin95,
 			'diesel': diesel,
