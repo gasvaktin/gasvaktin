@@ -248,6 +248,45 @@
             "name": "Stykkishólmur"
         }, 
         {
+            "bensin95": 191.7, 
+            "bensin95_discount": null, 
+            "company": "Dælan", 
+            "diesel": 172.7, 
+            "diesel_discount": null, 
+            "geo": {
+                "lat": 64.131015, 
+                "lon": -21.877297
+            }, 
+            "key": "dn_000", 
+            "name": "Fellsmúli"
+        }, 
+        {
+            "bensin95": 191.7, 
+            "bensin95_discount": null, 
+            "company": "Dælan", 
+            "diesel": 172.7, 
+            "diesel_discount": null, 
+            "geo": {
+                "lat": 64.112573, 
+                "lon": -21.842023
+            }, 
+            "key": "dn_001", 
+            "name": "Staldrið Stekkjarbakki"
+        }, 
+        {
+            "bensin95": 191.7, 
+            "bensin95_discount": null, 
+            "company": "Dælan", 
+            "diesel": 172.7, 
+            "diesel_discount": null, 
+            "geo": {
+                "lat": 64.100437, 
+                "lon": -21.88848
+            }, 
+            "key": "dn_002", 
+            "name": "Smáralind"
+        }, 
+        {
             "bensin95": 211.5, 
             "bensin95_discount": 205.5, 
             "company": "N1", 
@@ -605,50 +644,11 @@
             "diesel": 196.4, 
             "diesel_discount": 190.4, 
             "geo": {
-                "lat": 64.13102772, 
-                "lon": -21.87711328
-            }, 
-            "key": "n1_027", 
-            "name": "Fellsmúli"
-        }, 
-        {
-            "bensin95": 211.5, 
-            "bensin95_discount": 205.5, 
-            "company": "N1", 
-            "diesel": 196.4, 
-            "diesel_discount": 190.4, 
-            "geo": {
-                "lat": 64.11274826, 
-                "lon": -21.84203535
-            }, 
-            "key": "n1_028", 
-            "name": "Stekkjarbakki"
-        }, 
-        {
-            "bensin95": 211.5, 
-            "bensin95_discount": 205.5, 
-            "company": "N1", 
-            "diesel": 196.4, 
-            "diesel_discount": 190.4, 
-            "geo": {
                 "lat": 64.14123192, 
                 "lon": -21.84930146
             }, 
             "key": "n1_029", 
             "name": "Vatnagarðar"
-        }, 
-        {
-            "bensin95": 211.5, 
-            "bensin95_discount": 205.5, 
-            "company": "N1", 
-            "diesel": 196.4, 
-            "diesel_discount": 190.4, 
-            "geo": {
-                "lat": 64.10046058, 
-                "lon": -21.88856363
-            }, 
-            "key": "n1_030", 
-            "name": "Smáralind"
         }, 
         {
             "bensin95": 211.5, 
