@@ -7,6 +7,7 @@ Gasvaktin watches the following Icelandic oil companies:
 
 * [Atlantsolía](http://atlantsolia.is/)
 * [N1](https://www.n1.is/)
+  - [Dælan](http://daelan.is/) (low-cost company owned by N1)
 * [Olís](http://www.olis.is/)
   - [ÓB](http://www.ob.is/) (low-cost company owned by Olís)
 * [Skeljungur](http://www.skeljungur.is/)
@@ -56,6 +57,16 @@ List of stations can be found [here](https://www.n1.is/stodvar/). With a bit of 
 #### Prices
 
 List price (price without any discount) can be seen [here](https://www.n1.is/listaverd/), discount price given if you have an N1 business card can be seen [here](https://www.n1.is/eldsneyti). We assume these prices to be global for all N1 stations as we can't find station individual prices anywhere.
+
+### Dælan
+
+#### Stations
+
+Station locations are shown on a map on [dælan.is](http://daelan.is/).
+
+#### Prices
+
+When asing Dælan, they say they are working on exposing their prices on their page, they hope to have done this before the end of this week (written at 2016-06-05). Until then price for them is hard coded and queried for updated prices every three days via social media.
 
 ### Olís (and ÓB)
 
