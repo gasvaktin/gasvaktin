@@ -20,7 +20,7 @@ def get_individual_atlantsolia_prices():
 	diesel_start_text = 'tempPrice = parseFloat($(\'#AllmentDisel\').text().replace(",", ".")) - '
 	diesel_end_text = ';'
 	diesel_start = html_text.find(diesel_start_text) + len(diesel_start_text)
-	diesel_end = diesel_start + html_text[bensin95_start:].find(bensin95_end_text)
+	diesel_end = diesel_start + html_text[bensin95_start:].find(diesel_end_text)
 	diesel_discount_text = html_text[diesel_start:diesel_end]
 	discounts = {
 		'bensin95': float(bensin95_discount_text),
