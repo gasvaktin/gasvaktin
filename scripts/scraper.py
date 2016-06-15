@@ -10,39 +10,26 @@ def get_individual_atlantsolia_prices():
 	url = 'http://atlantsolia.is/stodvarverd.aspx'
 	res = requests.get(url, headers=utils.headers())
 	html_text = res.content
-	# bensin95 discount, is 3 ISK when writing this but you never know
-	bensin95_start_text = 'tempPrice = parseFloat($(\'#Allment95\').text().replace(",",".")) - '
-	bensin95_end_text = ';'
-	bensin95_start = html_text.find(bensin95_start_text) + len(bensin95_start_text)
-	bensin95_end = bensin95_start + html_text[bensin95_start:].find(bensin95_end_text)
-	bensin95_discount_text = html_text[bensin95_start:bensin95_end]
-	# diesel discount, is 3 ISK when writing this but you never know
-	diesel_start_text = 'tempPrice = parseFloat($(\'#AllmentDisel\').text().replace(",", ".")) - '
-	diesel_end_text = ';'
-	diesel_start = html_text.find(diesel_start_text) + len(diesel_start_text)
-	diesel_end = diesel_start + html_text[bensin95_start:].find(diesel_end_text)
-	diesel_discount_text = html_text[diesel_start:diesel_end]
-	discounts = {
-		'bensin95': float(bensin95_discount_text),
-		'diesel': float(diesel_discount_text)
-	}
-	# parse prices from html
+	# Atlantsolía has changed their discount system to mirror Orkan
+	# https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
+	# the default discount, available to all who have the Atlantsolía pump key, is 3.2 ISK
+	# Source:
+	# https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
+	# For consistency we just use the minimum default discount
 	html = etree.fromstring(html_text, etree.HTMLParser())
-	div_prices = html.find('.//div[@id="mainLayer"]/div[8]/div[7]')
+	div_prices = html.find('.//*[@id="content"]/div/div/div/div[2]/div/div/table/tbody')
 	prices = {}
 	for div_price in div_prices:
-		if not div_price.values() == ['overflow:hidden']:
-			continue # skip empty divs
-		if div_price[1].text == '95 okt.':
-			continue # skip header
-		key = relation[div_price[0][0].text]
-		bensin95 = float(div_price[1][0].text.replace(',','.'))
-		diesel = float(div_price[2][0].text.replace(',','.'))
+		key = relation[div_price[0].text]
+		bensin95 = float(div_price[1].text.replace(',','.'))
+		diesel = float(div_price[2].text.replace(',','.'))
+		bensin95_discount = bensin95 - glob.ATLANTSOLIA_MINIMUM_DISCOUNT
+		diesel_discount = diesel - glob.ATLANTSOLIA_MINIMUM_DISCOUNT
 		prices[key] = {
 			'bensin95': bensin95,
 			'diesel': diesel,
-			'bensin95_discount': bensin95 - discounts['bensin95'],
-			'diesel_discount': diesel - discounts['diesel']
+			'bensin95_discount': int(bensin95_discount*10)/10.0,
+			'diesel_discount': int(diesel_discount*10)/10.0
 		}
 	return prices
 

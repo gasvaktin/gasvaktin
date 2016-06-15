@@ -11,37 +11,44 @@ ORKAN       = u'Orkan'
 ORKAN_X     = u'Orkan X'
 
 ATLANTSOLIA_LOCATION_RELATION = {
-	u'Akureyri - Baldursnes':                                         'ao_000',
-	u'Akureyri - Gler\xc3\xa1rtorg':                                  'ao_001',
-	u'Reykjav\xc3\xadk - B\xc3\xadldsh\xc3\xb6f\xc3\xb0i':            'ao_002',
-	u'Borgarnes':                                                     'ao_003',
-	u'K\xc3\xb3pavogur - B\xc3\xba\xc3\xb0ark\xc3\xb3r':              'ao_004',
-	u'Egilssta\xc3\xb0ir':                                            'ao_005',
-	u'Hafnarfj\xc3\xb6r\xc3\xb0ur - Hafnarfjar\xc3\xb0arh\xc3\xb6fn': 'ao_006',
-	u'Hverager\xc3\xb0i':                                             'ao_007',
-	u'Hafnarfj\xc3\xb6r\xc3\xb0ur - Flatahraun':                      'ao_008',
-	u'K\xc3\xb3pavogur - K\xc3\xb3pavogsbraut':                       'ao_009',
-	u'Mosfellsb\xc3\xa6r':                                            'ao_010',
-	u'Njar\xc3\xb0v\xc3\xadk':                                        'ao_011',
-	u'Reykjav\xc3\xadk - \xc3\x96skjuhl\xc3\xad\xc3\xb0':             'ao_012',
-	u'Selfoss':                                                       'ao_013',
-	u'Reykjav\xc3\xadk - Skeifan':                                    'ao_014',
-	u'K\xc3\xb3pavogur Skemmuvegur':                                  'ao_015',
-	u'Reykjav\xc3\xadk - Sk\xc3\xbalagata':                           'ao_016',
-	u'Reykjav\xc3\xadk - Sprengisandur':                              'ao_017',
-	u'Stykkish\xc3\xb3lmur':                                          'ao_018'
+	u'Akureyri - Baldursnes':                         'ao_000',
+	u'Akureyri - Gler\xe1rtorg':                      'ao_001',
+	u'Reykjav\xedk - B\xedldsh\xf6f\xf0i':            'ao_002',
+	u'Borgarnes':                                     'ao_003',
+	u'K\xf3pavogur - B\xfa\xf0ark\xf3r':              'ao_004',
+	u'Egilssta\xf0ir':                                'ao_005',
+	u'Hafnarfj\xf6r\xf0ur - Hafnarfjar\xf0arh\xf6fn': 'ao_006',
+	u'Hverager\xf0i':                                 'ao_007',
+	u'Hafnarfj\xf6r\xf0ur - Flatahraun':              'ao_008',
+	u'K\xf3pavogur - K\xf3pavogsbraut':               'ao_009',
+	u'Mosfellsb\xe6r':                                'ao_010',
+	u'Njar\xf0v\xedk':                                'ao_011',
+	u'Reykjav\xedk - \xd6skjuhl\xed\xf0':             'ao_012',
+	u'Selfoss':                                       'ao_013',
+	u'Reykjav\xedk - Skeifan':                        'ao_014',
+	u'K\xf3pavogur Skemmuvegur':                      'ao_015',
+	u'Reykjav\xedk - Sk\xfalagata':                   'ao_016',
+	u'Reykjav\xedk - Sprengisandur':                  'ao_017',
+	u'Stykkish\xf3lmur':                              'ao_018'
 }
 
 ORKAN_X_LOCATION_RELATION = {
-	u'Ei\xf0istorg (Orkan X)':                                        'ox_000',
-	u'Miklabraut (vi\xf0 Kringluna)':                                 'ox_001',
-	u'Skemmuvegur (Orkan X)':                                         'ox_002',
-	u'Sp\xf6ngin (Orkan X)':                                          'ox_003',
-	u'Egilssta\xf0ir':                                                'ox_004',
-	u'Akureyri, Kjarnagata':                                          'ox_005',
-	u'Akranes, Smi\xf0juv\xf6llum':                                   'ox_006',
-	u'Hverager\xf0i':                                                 'ox_007',
+	u'Ei\xf0istorg (Orkan X)':        'ox_000',
+	u'Miklabraut (vi\xf0 Kringluna)': 'ox_001',
+	u'Skemmuvegur (Orkan X)':         'ox_002',
+	u'Sp\xf6ngin (Orkan X)':          'ox_003',
+	u'Egilssta\xf0ir':                'ox_004',
+	u'Akureyri, Kjarnagata':          'ox_005',
+	u'Akranes, Smi\xf0juv\xf6llum':   'ox_006',
+	u'Hverager\xf0i':                 'ox_007',
 }
+
+# Atlantsolía has changed their discount system to mirror Orkan
+# https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
+# the default discount, available to all who have the Atlantsolía pump key, is 3.2 ISK
+# Source:
+# https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
+ATLANTSOLIA_MINIMUM_DISCOUNT = 3.2
 
 # Orkan has a 3-step discount system controlled by your spendings on gas from them the month before
 # See more info here: https://www.orkan.is/Afslattarthrep
