@@ -11,36 +11,36 @@ ORKAN       = u'Orkan'
 ORKAN_X     = u'Orkan X'
 
 ATLANTSOLIA_LOCATION_RELATION = {
-	u'Akureyri - Baldursnes':                         'ao_000',
-	u'Akureyri - Gler\xe1rtorg':                      'ao_001',
-	u'Reykjav\xedk - B\xedldsh\xf6f\xf0i':            'ao_002',
-	u'Borgarnes':                                     'ao_003',
-	u'K\xf3pavogur - B\xfa\xf0ark\xf3r':              'ao_004',
-	u'Egilssta\xf0ir':                                'ao_005',
-	u'Hafnarfj\xf6r\xf0ur - Hafnarfjar\xf0arh\xf6fn': 'ao_006',
-	u'Hverager\xf0i':                                 'ao_007',
-	u'Hafnarfj\xf6r\xf0ur - Flatahraun':              'ao_008',
-	u'K\xf3pavogur - K\xf3pavogsbraut':               'ao_009',
-	u'Mosfellsb\xe6r':                                'ao_010',
-	u'Njar\xf0v\xedk':                                'ao_011',
-	u'Reykjav\xedk - \xd6skjuhl\xed\xf0':             'ao_012',
-	u'Selfoss':                                       'ao_013',
-	u'Reykjav\xedk - Skeifan':                        'ao_014',
-	u'K\xf3pavogur Skemmuvegur':                      'ao_015',
-	u'Reykjav\xedk - Sk\xfalagata':                   'ao_016',
-	u'Reykjav\xedk - Sprengisandur':                  'ao_017',
-	u'Stykkish\xf3lmur':                              'ao_018'
+	u'Akureyri Baldursnes':     'ao_000',
+	u'Akureyri Gler\xe1rtorg':  'ao_001',
+	u'B\xedldsh\xf6f\xf0i':     'ao_002',
+	u'Borgarnes':               'ao_003',
+	u'B\xfa\xf0ark\xf3r':       'ao_004',
+	u'Egilssta\xf0ir':          'ao_005',
+	u'Hafnarfjar\xf0arh\xf6fn': 'ao_006',
+	u'Hverager\xf0i':           'ao_007',
+	u'Kaplakriki':              'ao_008',
+	u'K\xf3pavogsbraut':        'ao_009',
+	u'Mosfellsb\xe6r':          'ao_010',
+	u'Njar\xf0v\xedk':          'ao_011',
+	u'\xd6skjuhl\xed\xf0':      'ao_012',
+	u'Selfoss':                 'ao_013',
+	u'Skeifan':                 'ao_014',
+	u'Skemmuvegi':              'ao_015',
+	u'Sk\xfalagata':            'ao_016',
+	u'Sprengisandur':           'ao_017',
+	u'Stykkish\xf3lmur':        'ao_018'
 }
 
 ORKAN_X_LOCATION_RELATION = {
-	u'Ei\xf0istorg (Orkan X)':        'ox_000',
-	u'Miklabraut (vi\xf0 Kringluna)': 'ox_001',
-	u'Skemmuvegur (Orkan X)':         'ox_002',
-	u'Sp\xf6ngin (Orkan X)':          'ox_003',
-	u'Egilssta\xf0ir':                'ox_004',
-	u'Akureyri, Kjarnagata':          'ox_005',
-	u'Akranes, Smi\xf0juv\xf6llum':   'ox_006',
-	u'Hverager\xf0i':                 'ox_007',
+	u'Ei\xf0istorg (Orkan X)':                'ox_000',
+	u'Miklabraut v. Kringluna (Orkan X)':     'ox_001',
+	u'Skemmuvegur (Orkan X)':                 'ox_002',
+	u'Sp\xf6ngin (Orkan X)':                  'ox_003',
+	u'Egilssta\xf0ir (Orkan X)':              'ox_004',
+	u'Akureyri, Kjarnagata (Orkan X)':        'ox_005',
+	u'Akranes, Smi\xf0juv\xf6llum (Orkan X)': 'ox_006',
+	u'Hverager\xf0i (Orkan X)':               'ox_007',
 }
 
 # Atlantsolía has changed their discount system to mirror Orkan

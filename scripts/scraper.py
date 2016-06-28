@@ -20,7 +20,7 @@ def get_individual_atlantsolia_prices():
 	div_prices = html.find('.//*[@id="content"]/div/div/div/div[2]/div/div/table/tbody')
 	prices = {}
 	for div_price in div_prices:
-		key = relation[div_price[0].text]
+		key = relation[div_price[0][0].text]
 		bensin95 = float(div_price[1].text.replace(',','.'))
 		diesel = float(div_price[2].text.replace(',','.'))
 		bensin95_discount = bensin95 - glob.ATLANTSOLIA_MINIMUM_DISCOUNT
