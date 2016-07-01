@@ -3,6 +3,8 @@
 
 Gasvaktin aims to be an open and automated price lookup project for petrol stations in Iceland (95 octan bensin and diesel).
 
+If you're interested in working with the data provided by this project there is a publicly available API endpoint which exposes current price data, the API is hosted by the awesome icelandic [apis.is project](http://docs.apis.is/#endpoint-petrol).
+
 Gasvaktin watches the following Icelandic oil companies:
 
 * [Atlantsolía](http://atlantsolia.is/)
@@ -42,7 +44,7 @@ Atlantsolía has a list of its stations [here](http://atlantsolia.is/nav/Stodvar
 
 Gas price for each station can be found [here](http://atlantsolia.is/stodvarverd.aspx), also showing discount prices available if you have Atlantsolía gas key ring.
 
-### N1
+### N1 (and Dælan)
 
 #### Stations
 
@@ -54,19 +56,13 @@ List of stations can be found [here](https://www.n1.is/stodvar/). With a bit of 
 		User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
 	}
 
+Station locations for Dælan are shown on a picture of a map on [dælan.is](http://daelan.is/).
+
 #### Prices
 
 List price (price without any discount) can be seen [here](https://www.n1.is/listaverd/), discount price given if you have an N1 business card can be seen [here](https://www.n1.is/eldsneyti). We assume these prices to be global for all N1 stations as we can't find station individual prices anywhere.
 
-### Dælan
-
-#### Stations
-
-Station locations are shown on a map on [dælan.is](http://daelan.is/).
-
-#### Prices
-
-When asing Dælan, they say they are working on exposing their prices on their page, they hope to have done this before the end of this week (written at 2016-06-05). Until then price for them is hard coded and queried for updated prices every three days via social media.
+When I contacted Dælan, they said they were working on exposing their prices on their page, they hoped to have done so soon(^TM) (since then soon has passed). Last time I heard from them (2016-06-24) they said everything was ready but they were unable to deploy the changes because of a change ban as so many key web developers are currently on summer vacation. Until then price for them is hard coded and queried for updated prices every three days manually (ugh) via social media. If you, dear reader, notice it's wrong please contact [@Loknar](https://github.com/Loknar/).
 
 ### Olís (and ÓB)
 
