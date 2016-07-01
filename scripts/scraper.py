@@ -95,9 +95,9 @@ def get_global_daelan_prices():
 	# "Verðið í dag á Dælunni er 172,7 fyrir díselolíu og 191,7 fyrir bensín."
 	# "Erum við að vinna að því að koma þeim verðum á síðuna okkar og vonandi gengur það eftir í næstu viku."
 	#
-	# Hardcoded prices, 2016-06-05
-	hardcoded_bensin95 = 191.7
-	hardcoded_diesel = 172.7
+	# Hardcoded prices, last changed 2016-07-01
+	hardcoded_bensin95 = 192.5
+	hardcoded_diesel = 175.5
 	return {
 		'bensin95': hardcoded_bensin95,
 		'diesel': hardcoded_diesel,
