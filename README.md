@@ -3,7 +3,7 @@
 
 Gasvaktin aims to be an open and automated price lookup project for petrol stations in Iceland (95 octan bensin and diesel).
 
-If you're interested in working with the data provided by this project there is a publicly available API endpoint which exposes current price data, the API is hosted by the awesome icelandic [apis.is project](http://docs.apis.is/#endpoint-petrol).
+If you're interested in working with the data provided by this project there is a publicly available API endpoint which exposes current price data, the API is hosted by the awesome icelandic [apis.is](http://docs.apis.is/#endpoint-petrol) project.
 
 Gasvaktin watches the following Icelandic oil companies:
 
