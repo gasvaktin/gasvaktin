@@ -48,7 +48,7 @@ ORKAN_X_LOCATION_RELATION = {
 # 3.2 ISK
 # Source:
 # https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
-ATLANTSOLIA_MINIMUM_DISCOUNT = 3.2
+ATLANTSOLIA_MINIMUM_DISCOUNT = 3.0
 
 # Orkan has a 3-step discount system controlled by your spendings on gas from
 # them the month before
