@@ -36,9 +36,7 @@ Data over petrol stations and locations is currently just static. Price data fro
 
 #### Stations
 
-Atlantsolía has a list of its stations [here](http://atlantsolia.is/nav/StodvarStadsetningar.aspx). Looking at the source stations data is available in the following format:
-
-	var LocationsMarker = [['Akureyri+Baldursnes', 65.6991300000000, -18.135231, 0,'<div ></div>','/images/stadsetningar_netid.gif'],['Akureyri+Gler%c3%a1rtorg', 65.6878070000000, -18.100104, 1,'<div ></div>','/images/stadsetningar_netid.gif'],['B%c3%adldsh%c3%b6f%c3%b0i', 64.1253970000000, -21.813054, 2,'<div ></div>','/images/stadsetningar_netid.gif'],['Borgarnes', 64.5675445000000, -21.8934511, 3,'<div ></div>','/images/stadsetningar_netid.gif'], ...
+Atlantsolía has a list of its stations [here](https://www.atlantsolia.is/stodvar/).
 
 #### Prices
 
