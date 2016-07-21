@@ -108,9 +108,9 @@ def get_global_daelan_prices():
     # "Erum við að vinna að því að koma þeim verðum á síðuna okkar og vonandi
     # gengur það eftir í næstu viku."
     #
-    # Hardcoded prices, last changed 2016-07-14
+    # Hardcoded prices, last changed 2016-07-21
     hardcoded_bensin95 = 191.2
-    hardcoded_diesel = 174.6
+    hardcoded_diesel = 175.7
     return {
         'bensin95': hardcoded_bensin95,
         'diesel': hardcoded_diesel,
