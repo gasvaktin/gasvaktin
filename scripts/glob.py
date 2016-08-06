@@ -53,7 +53,11 @@ ATLANTSOLIA_MINIMUM_DISCOUNT = 3.0
 # Orkan has a 3-step discount system controlled by your spendings on gas from
 # them the month before
 # See more info here: https://www.orkan.is/Afslattarthrep
-ORKAN_MINIMUM_DISCOUNT = 5.0
+# Discount info:
+# Step 1, 0-50L,   [ 3 ISK ] + [ 2 ISK if your personal station] = [  5 ISK ]
+# Step 2, 50-150L, [ 5 ISK ] + [ 2 ISK if your personal station] = [  7 ISK ]
+# Step 3, 150L+,   [ 8 ISK ] + [ 2 ISK if your personal station] = [ 10 ISK ]
+ORKAN_MINIMUM_DISCOUNT = 3.0
 
 BROWSERS_UA = [
     ('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) '
