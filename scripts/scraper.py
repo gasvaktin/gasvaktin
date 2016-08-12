@@ -99,21 +99,14 @@ def get_global_n1_prices():
 
 
 def get_global_daelan_prices():
-    # Dælan currently does not expose their prices on the website
-    # http://daelan.is/.
-    # When asking Dælan about this the answers have been that they're working
-    # on adding it to their site soon.
-    # Last time I asked (2016-06-03) the answer was:
-    # "Verðið í dag á Dælunni er 172,7 fyrir díselolíu og 191,7 fyrir bensín."
-    # "Erum við að vinna að því að koma þeim verðum á síðuna okkar og vonandi
-    # gengur það eftir í næstu viku."
-    #
-    # Hardcoded prices, last changed 2016-07-21
-    hardcoded_bensin95 = 191.2
-    hardcoded_diesel = 175.7
+    price_endpoint = 'http://n1.sendiradid.is/umbraco/api/Fuel/GetFuelPriceForDaelan'
+    res = requests.get(price_endpoint, headers=utils.headers())
+    data = res.json()
+    assert(data[0]['description'] == u'Bens\xedn')
+    assert(data[1]['description'] == u'D\xedsel')
     return {
-        'bensin95': hardcoded_bensin95,
-        'diesel': hardcoded_diesel,
+        'bensin95': float(data[0]['price'].replace(',', '.')),
+        'diesel': float(data[1]['price'].replace(',', '.')),
         # Dælan has no special discount prices
         'bensin95_discount': None,
         'diesel_discount': None
@@ -255,6 +248,8 @@ if __name__ == '__main__':
     print 'Testing scrapers\n'
     print 'Atlantsolía'
     print get_individual_atlantsolia_prices()
+    print 'Dælan'
+    print get_global_daelan_prices()
     print 'N1'
     print get_global_n1_prices()
     print 'Olís'
