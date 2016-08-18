@@ -60,7 +60,7 @@ Station locations for Dælan are shown on a picture of a map on [dælan.is](http
 
 List price (price without any discount) can be seen [here](https://www.n1.is/listaverd/), discount price given if you have an N1 business card can be seen [here](https://www.n1.is/eldsneyti). We assume these prices to be global for all N1 stations as we can't find station individual prices anywhere.
 
-When I contacted Dælan, they said they were working on exposing their prices on their page, they hoped to have done so soon(^TM) (since then soon has passed). Last time I heard from them (2016-06-24) they said everything was ready but they were unable to deploy the changes because of a change ban as so many key web developers are currently on summer vacation. Until then price for them is hard coded and queried for updated prices every three days manually (ugh) via social media. If you, dear reader, notice [the hardcoded prices](https://github.com/gasvaktin/gasvaktin/blob/master/scripts/scraper.py#L112-L113) are wrong please pm a maintainer.
+Dælan stations don't have any discount prices, prices are shown on [dælan.is](http://daelan.is/).
 
 ### Olís (and ÓB)
 
