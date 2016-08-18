@@ -12,17 +12,17 @@ DESC = 'Average-prices-over-time data extractor tool for Gasvaktin'
 # Used to extract price changes over periods of time from the gasvaktin repo.
 
 
-def calc_mean(my_list):
+def calc_median(my_list):
     '''
-    Miðgildi (e. mean)
+    Miðgildi (e. median)
     '''
     sorted_list = sorted(my_list)
     return sorted_list[len(sorted_list) / 2]
 
 
-def calc_median(mylist):
+def calc_mean(mylist):
     '''
-    Meðaltal (e. median)
+    Meðaltal (e. mean)
     '''
     return sum(mylist) / max(len(mylist), 1)
 
@@ -60,7 +60,7 @@ def compare_samples(cur, prev):
     )
 
 
-def read_price_changes(parser, repo, fromdate=None, todate=None):
+def read_price_changes(repo, fromdate=None, todate=None):
     '''
     @repo: instance of git.Repo() for the gasvaktin repo
     @fromdate: string containing date on format YYYY-MM-DD
@@ -207,7 +207,6 @@ if __name__ == '__main__':
         error_msg = 'Could not read git repo from "%s".' % (repo_path, )
         fail_nicely(parser, error_msg)
     price_changes = read_price_changes(
-        parser,
         repo,
         fromdate=my_args.from_date,
         todate=my_args.to_date
