@@ -129,16 +129,16 @@ def read_price_changes(repo, fromdate=None, todate=None):
                 price_changes[key] = []
 
             sample = {
-                'mean_bensin95': calc_mean(data[key]['b']),
+                'mean_bensin95': one_decimal(calc_mean(data[key]['b'])),
                 'mean_bensin95_discount': (
-                    calc_mean(data[key]['b_d']) if data[key]['b_d'] else None
+                    one_decimal(calc_mean(data[key]['b_d'])) if data[key]['b_d'] else None
                 ),
                 'median_bensin95': one_decimal(calc_median(data[key]['b'])),
                 'median_bensin95_discount': (
                     one_decimal(calc_median(data[key]['b_d']))
                     if data[key]['b_d'] else None
                 ),
-                'mean_diesel': calc_mean(data[key]['d']),
+                'mean_diesel': one_decimal(calc_mean(data[key]['d'])),
                 'mean_diesel_discount': (
                     one_decimal(calc_mean(data[key]['d_d']))
                     if data[key]['d_d'] else None
