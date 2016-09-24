@@ -603,61 +603,54 @@
     },
     "n1_089": {
         "geo": {
-            "lat": 64.14355661,
-            "lon": -21.96624893
-        },
-        "name": "Bílaþjónustan - Ægisíða"
-    },
-    "n1_090": {
-        "geo": {
             "lat": 65.57608204,
             "lon": -23.16786521
         },
         "name": "Flókalundur"
     },
-    "n1_091": {
+    "n1_090": {
         "geo": {
             "lat": 65.69082228,
             "lon": -18.10851345
         },
         "name": "Söluturn - Akureyri - Hörgárbraut"
     },
-    "n1_092": {
+    "n1_091": {
         "geo": {
             "lat": 64.14355661,
             "lon": -21.96624893
         },
         "name": "Ægisíða"
     },
-    "n1_093": {
+    "n1_092": {
         "geo": {
             "lat": 63.967244,
             "lon": -22.575896
         },
         "name": "Sjálfsafgreiðslustöð - Reykjanesbær"
     },
-    "n1_094": {
+    "n1_093": {
         "geo": {
             "lat": 63.997471,
             "lon": -22.630219
         },
         "name": "Bílaleiga Akureyrar / Höldur"
     },
-    "n1_095": {
+    "n1_094": {
         "geo": {
             "lat": 63.971948,
             "lon": -22.591223
         },
         "name": "Knútstöð Keflavíkurflugvelli - Innan girðingar"
     },
-    "n1_096": {
+    "n1_095": {
         "geo": {
             "lat": 63.971604,
             "lon": -22.590831
         },
         "name": "Knútstöð Keflavíkurflugvelli - Utan girðingar"
     },
-    "n1_097": {
+    "n1_096": {
         "geo": {
             "lat": 64.100852,
             "lon": -21.780112
