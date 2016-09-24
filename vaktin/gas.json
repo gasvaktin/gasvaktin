@@ -1411,23 +1411,10 @@
             "diesel": 189.8, 
             "diesel_discount": 183.8, 
             "geo": {
-                "lat": 64.14355661, 
-                "lon": -21.96624893
-            }, 
-            "key": "n1_089", 
-            "name": "Bílaþjónustan - Ægisíða"
-        }, 
-        {
-            "bensin95": 198.8, 
-            "bensin95_discount": 192.8, 
-            "company": "N1", 
-            "diesel": 189.8, 
-            "diesel_discount": 183.8, 
-            "geo": {
                 "lat": 65.57608204, 
                 "lon": -23.16786521
             }, 
-            "key": "n1_090", 
+            "key": "n1_089", 
             "name": "Flókalundur"
         }, 
         {
@@ -1440,7 +1427,7 @@
                 "lat": 65.69082228, 
                 "lon": -18.10851345
             }, 
-            "key": "n1_091", 
+            "key": "n1_090", 
             "name": "Söluturn - Akureyri - Hörgárbraut"
         }, 
         {
@@ -1453,7 +1440,7 @@
                 "lat": 64.14355661, 
                 "lon": -21.96624893
             }, 
-            "key": "n1_092", 
+            "key": "n1_091", 
             "name": "Ægisíða"
         }, 
         {
@@ -1466,7 +1453,7 @@
                 "lat": 63.967244, 
                 "lon": -22.575896
             }, 
-            "key": "n1_093", 
+            "key": "n1_092", 
             "name": "Sjálfsafgreiðslustöð - Reykjanesbær"
         }, 
         {
@@ -1479,7 +1466,7 @@
                 "lat": 63.997471, 
                 "lon": -22.630219
             }, 
-            "key": "n1_094", 
+            "key": "n1_093", 
             "name": "Bílaleiga Akureyrar / Höldur"
         }, 
         {
@@ -1492,7 +1479,7 @@
                 "lat": 63.971948, 
                 "lon": -22.591223
             }, 
-            "key": "n1_095", 
+            "key": "n1_094", 
             "name": "Knútstöð Keflavíkurflugvelli - Innan girðingar"
         }, 
         {
@@ -1505,7 +1492,7 @@
                 "lat": 63.971604, 
                 "lon": -22.590831
             }, 
-            "key": "n1_096", 
+            "key": "n1_095", 
             "name": "Knútstöð Keflavíkurflugvelli - Utan girðingar"
         }, 
         {
@@ -1518,7 +1505,7 @@
                 "lat": 64.100852, 
                 "lon": -21.780112
             }, 
-            "key": "n1_097", 
+            "key": "n1_096", 
             "name": "Norðlingaholt"
         }, 
         {
