@@ -39,34 +39,10 @@ def get_individual_atlantsolia_prices():
 
 
 def get_global_n1_prices():
-    url_listaverd = 'https://www.n1.is/listaverd/'
-    url_listaverd_api = 'https://www.n1.is/umbraco/api/fuel/GetListPrice'
     url_eldsneyti = 'https://www.n1.is/eldsneyti/'
     url_eldsneyti_api = 'https://www.n1.is/umbraco/api/fuel/GetSingleFuelPrice'
     headers = utils.headers()
     session = requests.Session()
-    session.get(url_listaverd, headers=headers)
-    headers_listaverd_api = {
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate',
-        'Accept-Language': 'en-US,en;q=0.8,is;q=0.6',
-        'Connection': 'keep-alive',
-        'Content-Length': '0',
-        'Host': 'www.n1.is',
-        'Origin': 'https://www.n1.is',
-        'Referer': 'https://www.n1.is/listaverd/',
-        'User-Agent': headers['User-Agent'],
-        'X-Requested-With': 'XMLHttpRequest'
-    }
-    res = session.post(url_listaverd_api, headers=headers_listaverd_api)
-    datas = res.json()
-    prices = {}
-    # prices without discount
-    for data in datas:
-        if data['description'] == u'Bens\xedn':
-            prices['bensin95'] = float(data['price'].replace(',', '.'))
-        elif data['description'] == u'D\xedsel':
-            prices['diesel'] = float(data['price'].replace(',', '.'))
     session.get(url_eldsneyti, headers=headers)
     post_data_bensin = 'fuelType=95+Oktan'
     post_data_diesel = 'fuelType=D%C3%ADsel'
@@ -90,11 +66,25 @@ def get_global_n1_prices():
     res = session.post(url_eldsneyti_api, data=post_data_diesel,
                        headers=headers_eldsneyti_api)
     diesel_discount_text = res.content
-    # prices with discount
-    prices['bensin95_discount'] = float(bensin95_discount_text.replace(
-                                        '"', '').replace(',', '.'))
-    prices['diesel_discount'] = float(diesel_discount_text.replace(
-                                      '"', '').replace(',', '.'))
+    prices = {}
+    # prices without discount
+    prices['bensin95'] = float(
+        bensin95_discount_text.replace('"', '').replace(',', '.'))
+    prices['diesel'] = float(
+        diesel_discount_text.replace('"', '').replace(',', '.'))
+    # N1 offers discount of 3 ISK and 2 N1 points per liter according to the
+    # following page: https://www.n1.is/n1-kortid/saekja-um-kort/
+    # +++
+    # Einstaklingar, Eldsneyti: Þú færð 3 kr. afslátt þegar þú tekur eldsneyti
+    # og safnar 2 N1 punktum á litrann í leiðinni
+    # +++
+    # These N1 points are a type of credits at N1 which you can exchange for
+    # gasoline (and/or periodic offers they provide) at the rate 1 ISK per
+    # point, but as it's a form of earned credits and not an actual discount we
+    # disregard the points but value the 3 ISK discount.
+    n1_discount = 3
+    prices['bensin95_discount'] = prices['bensin95'] - n1_discount
+    prices['diesel_discount'] = prices['diesel'] - n1_discount
     return prices
 
 

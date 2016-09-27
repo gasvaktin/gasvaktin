@@ -58,7 +58,7 @@ Station locations for Dælan are shown on a picture of a map on [dælan.is](http
 
 #### Prices
 
-List price (price without any discount) can be seen [here](https://www.n1.is/listaverd/), discount price given if you have an N1 business card can be seen [here](https://www.n1.is/eldsneyti). We assume these prices to be global for all N1 stations as we can't find station individual prices anywhere.
+Price without discount can be seen [here](https://www.n1.is/eldsneyti/). We assume these prices to be global for all N1 stations as we can't find station individual prices anywhere. Discount for N1 business card holders can be seen [here](https://www.n1.is/n1-kortid/saekja-um-kort/). At the time of this writing the discount amount is 3 ISK and 2 N1 points per liter, both for bensin and diesel.
 
 Dælan stations don't have any discount prices, prices are shown on [dælan.is](http://daelan.is/).
 
