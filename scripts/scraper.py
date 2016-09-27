@@ -99,7 +99,7 @@ def get_global_n1_prices():
 
 
 def get_global_daelan_prices():
-    price_endpoint = 'http://n1.sendiradid.is/umbraco/api/Fuel/GetFuelPriceForDaelan'
+    price_endpoint = 'https://www.n1.is/umbraco/api/Fuel/GetFuelPriceForDaelan'
     res = requests.get(price_endpoint, headers=utils.headers())
     data = res.json()
     assert(data[0]['description'] == u'Bens\xedn')
