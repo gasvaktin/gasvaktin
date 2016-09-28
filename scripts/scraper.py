@@ -82,7 +82,7 @@ def get_global_n1_prices():
     # gasoline (and/or periodic offers they provide) at the rate 1 ISK per
     # point, but as it's a form of earned credits and not an actual discount we
     # disregard the points but value the 3 ISK discount.
-    n1_discount = 3
+    n1_discount = 3.0
     prices['bensin95_discount'] = prices['bensin95'] - n1_discount
     prices['diesel_discount'] = prices['diesel'] - n1_discount
     return prices
@@ -147,11 +147,24 @@ def get_global_skeljungur_prices():
                              'div[1]/div[4]/h2')).text
     bensin95 = float(bensin95_text.replace(' kr.', '').replace(',', '.'))
     diesel = float(diesel_text.replace(' kr.', '').replace(',', '.'))
+    # Skeljungur offers 4 ISK discount for their company card holders according
+    # to this page: http://www.skeljungur.is/einstaklingar/
+    # +++
+    # KORT OG LYKLAR SKELJUNGS VEITA AFSLÁTT HJÁ ORKUNNI OG SKELJUNGI
+    # AFSLÁTTUR Á HVERN ELDSNEYTISLÍTRA
+    # * 10 kr í upphafsafslátt í fyrstu 2 skiptin
+    # * 3 kr hjá Orkunni
+    # * 4 kr hjá Skeljungi
+    # * 15 kr á afmælisdegi lykilhafa
+    # * 2 kr viðbótarafsláttur á Þinni stöð
+    # * Allt að 10 kr fastur afsláttur á Orkunni í Afsláttarþrepi Orkunnar
+    # +++
+    skeljungur_discount = 4.0
     return {
         'bensin95': bensin95,
         'diesel': diesel,
-        'bensin95_discount': None,  # skeljungur has no special discount stuff
-        'diesel_discount': None  # (that's what their subsidiary Orkan is for)
+        'bensin95_discount': bensin95 - skeljungur_discount,
+        'diesel_discount': diesel - skeljungur_discount
     }
 
 
