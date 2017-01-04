@@ -117,7 +117,7 @@ def read_price_changes(repo, fromdate=None, todate=None):
             if c_key == 'n1' and timestamp_text < '2016-09-27T23:45':
                 # We were logging wrong price for N1 up until this moment,
                 # see the following commit for more info:
-                # https://github.com/gasvaktin/gasvaktin/commit/900f702908ddcce7b9816ce4049be50eec9f8ce6
+                # 900f702908ddcce7b9816ce4049be50eec9f8ce6
                 bensin95 = station['bensin95_discount']
                 bensin95_discount = bensin95 - 3
                 diesel = station['diesel_discount']
@@ -151,7 +151,6 @@ def read_price_changes(repo, fromdate=None, todate=None):
                 one_decimal(calc_median(data[key]['d_d']))
                 if data[key]['d_d'] else None
             )
-            # 2016-09-27T23:45
             sample = {
                 'mean_bensin95': mean_bensin95,
                 'mean_bensin95_discount': mean_bensin95_discount,
