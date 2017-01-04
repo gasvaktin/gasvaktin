@@ -116,11 +116,10 @@ def main():
     data = {'stations': list_of_stations}
 
     data_json_pretty_file = os.path.join(current_dir, '../vaktin/gas.json')
-    data_minified_pretty_file = os.path.join(current_dir,
-                                             '../vaktin/gas.min.json')
+    data_json_mini_file = os.path.join(current_dir, '../vaktin/gas.min.json')
 
     utils.save_to_json(data_json_pretty_file, data, pretty=True)
-    utils.save_to_json(data_minified_pretty_file, data, pretty=False)
+    utils.save_to_json(data_json_mini_file, data, pretty=False)
 
 if __name__ == '__main__':
     main()
