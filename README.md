@@ -5,14 +5,16 @@ Gasvaktin aims to be an open and automated price lookup project for petrol stati
 
 Check out [gasvaktin.is](https://gasvaktin.is/) if you're travelling Iceland and want to find your preferred petrol station in your near vicinity.
 
-If you're interested in working with the data provided by this project there is a publicly available API endpoint which exposes current price data, the API is hosted by the awesome icelandic [apis.is](http://docs.apis.is/#endpoint-petrol) project.
+If you're interested in working with the current petrol price data provided there is a publicly available API endpoint which exposes current price data, the API is hosted by the awesome icelandic [apis.is](http://docs.apis.is/#endpoint-petrol) project, check it out.
 
-If you are interested in price changes over time, you can extract that info from the git history in this repo via the following:
+If you are interested in punctuality data on price changes over time, it can be extracted it from the git history in this repo via the following:
 
 	cd scripts
-	python extract_price_changes.py
+	python punctuality.py
 
-If you notice any issues or errors please contact a maintainer, or submit a PR to fix the issue.
+Run `python punctuality.py -h` to see available input arguments.
+
+If you notice any issues or errors please contact maintainer, or submit a PR to fix the issue.
 
 Gasvaktin watches the following Icelandic oil companies:
 
