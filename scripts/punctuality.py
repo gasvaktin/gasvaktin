@@ -8,7 +8,9 @@ import sys
 
 import git
 
-DESC = 'Average-prices-over-time data extractor tool for Gasvaktin'
+import utils
+
+DESC = 'Average-prices-over-time punctuality data extractor tool for Gasvaktin'
 # Used to extract price changes over periods of time from the gasvaktin repo.
 
 
@@ -67,16 +69,6 @@ def read_price_changes(repo, fromdate=None, todate=None):
     @todate: string containing date on format YYYY-MM-DD
     returns a data filled object
     '''
-    if fromdate is not None:
-        try:
-            fromdate = datetime.datetime.strptime(fromdate, '%Y-%m-%d')
-        except:
-            fail_nicely('--from-date not in format YYYY-MM-DD')
-    if todate is not None:
-        try:
-            todate = datetime.datetime.strptime(fromdate, '%Y-%m-%d')
-        except:
-            fail_nicely('--to-date not in format YYYY-MM-DD')
     path = 'vaktin/gas.json'
     revgenerator = (  # commits generator
         (commit, (commit.tree / path).data_stream.read())
@@ -131,7 +123,8 @@ def read_price_changes(repo, fromdate=None, todate=None):
             sample = {
                 'mean_bensin95': one_decimal(calc_mean(data[key]['b'])),
                 'mean_bensin95_discount': (
-                    one_decimal(calc_mean(data[key]['b_d'])) if data[key]['b_d'] else None
+                    one_decimal(calc_mean(data[key]['b_d']))
+                    if data[key]['b_d'] else None
                 ),
                 'median_bensin95': one_decimal(calc_median(data[key]['b'])),
                 'median_bensin95_discount': (
@@ -157,33 +150,14 @@ def read_price_changes(repo, fromdate=None, todate=None):
     return price_changes
 
 
-def save_to_json(filepath, data, pretty=False):
-    '''
-    takes in filepath and data object saves data to json in filepath
-    '''
-    if pretty:
-        data_text = json.dumps(
-            data,
-            indent=4,
-            ensure_ascii=False,
-            sort_keys=True
-        )
-    else:
-        data_text = json.dumps(
-            data,
-            separators=(',', ':'),
-            ensure_ascii=False,
-            sort_keys=True
-        )
-    print >> open(filepath, 'w'), data_text
-
 if __name__ == '__main__':
+    current_dir = os.path.dirname(os.path.realpath(__file__))
     parser = argparse.ArgumentParser(description=DESC)
     parser.add_argument(  # example: '~/repo/gasvaktin'
         '-r',
         '--repository',
         help='Path to gasvaktin repository',
-        required=True
+        required=False
     )
     parser.add_argument(
         '-f',
@@ -197,8 +171,17 @@ if __name__ == '__main__':
         help='End date of time period to extract data',
         required=False
     )
+    parser.add_argument(
+        '-o',
+        '--output-directory',
+        help='Output directory to write punctuality json files',
+        required=False
+    )
     my_args = parser.parse_args()
-    repo_path = my_args.repository
+    if my_args.repository is None:
+        repo_path = os.path.join(current_dir, '..')
+    else:
+        repo_path = my_args.repository
     if not os.path.exists(repo_path):
         fail_nicely(parser, 'Path "%s" seems to not exist.' % (repo_path, ))
     try:
@@ -206,11 +189,30 @@ if __name__ == '__main__':
     except:
         error_msg = 'Could not read git repo from "%s".' % (repo_path, )
         fail_nicely(parser, error_msg)
+    if my_args.from_date is not None:
+        try:
+            datetime.datetime.strptime(my_args.from_date, '%Y-%m-%d')
+        except ValueError:
+            fail_nicely(parser, '--from-date not in format YYYY-MM-DD')
+    if my_args.to_date is not None:
+        try:
+            datetime.datetime.strptime(my_args.to_date, '%Y-%m-%d')
+        except ValueError:
+            fail_nicely(parser, '--to-date not in format YYYY-MM-DD')
     price_changes = read_price_changes(
         repo,
         fromdate=my_args.from_date,
         todate=my_args.to_date
     )
-    out_name = 'price_changes'
-    save_to_json('%s.json' % (out_name, ), price_changes, pretty=True)
-    save_to_json('%s.min.json' % (out_name, ), price_changes)
+    if my_args.output_directory is None:
+        output_directory = os.path.join(current_dir, '../vaktin/')
+    else:
+        output_directory = my_args.output_directory
+    data_json_pretty_file = os.path.join(
+        output_directory, 'punctuality.json'
+    )
+    data_json_mini_file = os.path.join(
+        output_directory, 'punctuality.min.json'
+    )
+    utils.save_to_json(data_json_pretty_file, price_changes, pretty=True)
+    utils.save_to_json(data_json_mini_file, price_changes, pretty=False)
