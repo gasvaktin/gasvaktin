@@ -110,37 +110,57 @@ def read_price_changes(repo, fromdate=None, todate=None):
                     'b_d': [],
                     'd_d': []
                 }
-            data[c_key]['b'].append(station['bensin95'])
-            data[c_key]['d'].append(station['diesel'])
-            if station['bensin95_discount'] is not None:
-                data[c_key]['b_d'].append(station['bensin95_discount'])
-            if station['diesel_discount'] is not None:
-                data[c_key]['d_d'].append(station['diesel_discount'])
+            bensin95 = station['bensin95']
+            bensin95_discount = station['bensin95_discount']
+            diesel = station['diesel']
+            diesel_discount = station['diesel_discount']
+            if c_key == 'n1' and timestamp_text < '2016-09-27T23:45':
+                # We were logging wrong price for N1 up until this moment,
+                # see the following commit for more info:
+                # https://github.com/gasvaktin/gasvaktin/commit/900f702908ddcce7b9816ce4049be50eec9f8ce6
+                bensin95 = station['bensin95_discount']
+                bensin95_discount = bensin95 - 3
+                diesel = station['diesel_discount']
+                diesel_discount = diesel - 3
+            data[c_key]['b'].append(bensin95)
+            data[c_key]['d'].append(diesel)
+            if bensin95_discount is not None:
+                data[c_key]['b_d'].append(bensin95_discount)
+            if diesel_discount is not None:
+                data[c_key]['d_d'].append(diesel_discount)
         for key in data:
             if key not in price_changes:
                 price_changes[key] = []
-
+            mean_bensin95 = one_decimal(calc_mean(data[key]['b']))
+            mean_bensin95_discount = (
+                one_decimal(calc_mean(data[key]['b_d']))
+                if data[key]['b_d'] else None
+            )
+            median_bensin95 = one_decimal(calc_median(data[key]['b']))
+            median_bensin95_discount = (
+                one_decimal(calc_median(data[key]['b_d']))
+                if data[key]['b_d'] else None
+            )
+            mean_diesel = one_decimal(calc_mean(data[key]['d']))
+            mean_diesel_discount = (
+                one_decimal(calc_mean(data[key]['d_d']))
+                if data[key]['d_d'] else None
+            )
+            median_diesel = one_decimal(calc_median(data[key]['d']))
+            median_diesel_discount = (
+                one_decimal(calc_median(data[key]['d_d']))
+                if data[key]['d_d'] else None
+            )
+            # 2016-09-27T23:45
             sample = {
-                'mean_bensin95': one_decimal(calc_mean(data[key]['b'])),
-                'mean_bensin95_discount': (
-                    one_decimal(calc_mean(data[key]['b_d']))
-                    if data[key]['b_d'] else None
-                ),
-                'median_bensin95': one_decimal(calc_median(data[key]['b'])),
-                'median_bensin95_discount': (
-                    one_decimal(calc_median(data[key]['b_d']))
-                    if data[key]['b_d'] else None
-                ),
-                'mean_diesel': one_decimal(calc_mean(data[key]['d'])),
-                'mean_diesel_discount': (
-                    one_decimal(calc_mean(data[key]['d_d']))
-                    if data[key]['d_d'] else None
-                ),
-                'median_diesel': one_decimal(calc_median(data[key]['d'])),
-                'median_diesel_discount': (
-                    one_decimal(calc_median(data[key]['d_d']))
-                    if data[key]['d_d'] else None
-                ),
+                'mean_bensin95': mean_bensin95,
+                'mean_bensin95_discount': mean_bensin95_discount,
+                'median_bensin95': median_bensin95,
+                'median_bensin95_discount': median_bensin95_discount,
+                'mean_diesel': mean_diesel,
+                'mean_diesel_discount': mean_diesel_discount,
+                'median_diesel': median_diesel,
+                'median_diesel_discount': median_diesel_discount,
                 'stations_count': len(data[key]['b']),
                 'timestamp': timestamp_text,
             }
