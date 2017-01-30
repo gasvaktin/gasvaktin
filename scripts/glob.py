@@ -42,13 +42,29 @@ ORKAN_X_LOCATION_RELATION = {
     u'Hverager\xf0i (Orkan X)': 'ox_007',
 }
 
-# Atlantsolía has changed their discount system to mirror Orkan
+# Atlantsolía has changed their discount system to mirror Orkan, this discount
+# system is called "MEIRA FYRIR ÞIG"
 # https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
 # the default discount, available to all who have the Atlantsolía pump key, is
-# 3.2 ISK
+# 3 ISK
+# Additionally they provide an extra 2 ISK discount on a single station of your
+# personal choice.
 # Source:
 # https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
 ATLANTSOLIA_MINIMUM_DISCOUNT = 3.0
+
+# N1 offers discount of 5 ISK and 2 N1 points per liter according to the
+# following page: https://www.n1.is/n1-kortid/saekja-um-kort/
+# +++
+# Eldsneyti: 5 króna afsláttur af bensín og dísel og 2 N1 punktar að auki á
+# á hvern lítra
+# +++
+# These N1 points are a type of credits at N1 which you can exchange for
+# gasoline (and/or periodic offers they provide) at the rate 1 ISK per
+# point, but as it's a form of earned credits which you can only use doing
+# business with the N1 company and not an actual discount we disregard the
+# disregard the N1 points but value the 5 ISK discount.
+N1_DISCOUNT = 5.0
 
 # Orkan has a 3-step discount system controlled by your spendings on gas from
 # them the month before
@@ -58,6 +74,20 @@ ATLANTSOLIA_MINIMUM_DISCOUNT = 3.0
 # Step 2, 50-150L, [ 5 ISK ] + [ 2 ISK if your personal station] = [  7 ISK ]
 # Step 3, 150L+,   [ 8 ISK ] + [ 2 ISK if your personal station] = [ 10 ISK ]
 ORKAN_MINIMUM_DISCOUNT = 3.0
+
+# Skeljungur offers 4 ISK discount for their company card holders according
+# to this page: http://www.skeljungur.is/einstaklingar/
+# +++
+# KORT OG LYKLAR SKELJUNGS VEITA AFSLÁTT HJÁ ORKUNNI OG SKELJUNGI
+# AFSLÁTTUR Á HVERN ELDSNEYTISLÍTRA
+# * 10 kr í upphafsafslátt í fyrstu 2 skiptin
+# * 3 kr hjá Orkunni
+# * 4 kr hjá Skeljungi
+# * 15 kr á afmælisdegi lykilhafa
+# * 2 kr viðbótarafsláttur á Þinni stöð
+# * Allt að 10 kr fastur afsláttur á Orkunni í Afsláttarþrepi Orkunnar
+# +++
+SKELJUNGUR_DISCOUNT = 4.0
 
 BROWSERS_UA = [
     ('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) '

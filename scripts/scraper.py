@@ -12,13 +12,6 @@ def get_individual_atlantsolia_prices():
     url = 'http://atlantsolia.is/stodvarverd.aspx'
     res = requests.get(url, headers=utils.headers())
     html_text = res.content
-    # Atlantsolía has changed their discount system to mirror Orkan
-    # https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
-    # the default discount, available to all who have the Atlantsolía pump key,
-    # is 3.2 ISK
-    # Source:
-    # https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
-    # For consistency we just use the minimum default discount
     html = etree.fromstring(html_text, etree.HTMLParser())
     div_prices = html.find(('.//*[@id="content"]/div/div/div/div[2]/div/div/'
                             'table/tbody'))
@@ -67,24 +60,12 @@ def get_global_n1_prices():
                        headers=headers_eldsneyti_api)
     diesel_discount_text = res.content
     prices = {}
-    # prices without discount
     prices['bensin95'] = float(
         bensin95_discount_text.replace('"', '').replace(',', '.'))
     prices['diesel'] = float(
         diesel_discount_text.replace('"', '').replace(',', '.'))
-    # N1 offers discount of 3 ISK and 2 N1 points per liter according to the
-    # following page: https://www.n1.is/n1-kortid/saekja-um-kort/
-    # +++
-    # Einstaklingar, Eldsneyti: Þú færð 3 kr. afslátt þegar þú tekur eldsneyti
-    # og safnar 2 N1 punktum á litrann í leiðinni
-    # +++
-    # These N1 points are a type of credits at N1 which you can exchange for
-    # gasoline (and/or periodic offers they provide) at the rate 1 ISK per
-    # point, but as it's a form of earned credits and not an actual discount we
-    # disregard the points but value the 3 ISK discount.
-    n1_discount = 3.0
-    prices['bensin95_discount'] = prices['bensin95'] - n1_discount
-    prices['diesel_discount'] = prices['diesel'] - n1_discount
+    prices['bensin95_discount'] = prices['bensin95'] - glob.N1_DISCOUNT
+    prices['diesel_discount'] = prices['diesel'] - glob.N1_DISCOUNT
     return prices
 
 
@@ -97,7 +78,7 @@ def get_global_daelan_prices():
     return {
         'bensin95': float(data[0]['price'].replace(',', '.')),
         'diesel': float(data[1]['price'].replace(',', '.')),
-        # Dælan has no special discount prices
+        # Dælan has no discount prices
         'bensin95_discount': None,
         'diesel_discount': None
     }
@@ -147,24 +128,11 @@ def get_global_skeljungur_prices():
                              'div[1]/div[4]/h2')).text
     bensin95 = float(bensin95_text.replace(' kr.', '').replace(',', '.'))
     diesel = float(diesel_text.replace(' kr.', '').replace(',', '.'))
-    # Skeljungur offers 4 ISK discount for their company card holders according
-    # to this page: http://www.skeljungur.is/einstaklingar/
-    # +++
-    # KORT OG LYKLAR SKELJUNGS VEITA AFSLÁTT HJÁ ORKUNNI OG SKELJUNGI
-    # AFSLÁTTUR Á HVERN ELDSNEYTISLÍTRA
-    # * 10 kr í upphafsafslátt í fyrstu 2 skiptin
-    # * 3 kr hjá Orkunni
-    # * 4 kr hjá Skeljungi
-    # * 15 kr á afmælisdegi lykilhafa
-    # * 2 kr viðbótarafsláttur á Þinni stöð
-    # * Allt að 10 kr fastur afsláttur á Orkunni í Afsláttarþrepi Orkunnar
-    # +++
-    skeljungur_discount = 4.0
     return {
         'bensin95': bensin95,
         'diesel': diesel,
-        'bensin95_discount': bensin95 - skeljungur_discount,
-        'diesel_discount': diesel - skeljungur_discount
+        'bensin95_discount': bensin95 - glob.SKELJUNGUR_DISCOUNT,
+        'diesel_discount': diesel - glob.SKELJUNGUR_DISCOUNT
     }
 
 
@@ -239,15 +207,13 @@ def get_individual_orkan_x_prices():
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
-            # Orkan X has no special discount prices
+            # Orkan X has no discount prices
             'bensin95_discount': None,
             'diesel_discount': None
         }
     return prices
 
 if __name__ == '__main__':
-    # Some manual testing
-    # TODO: add automatic tests?
     print 'Testing scrapers\n'
     print 'Atlantsolía'
     print get_individual_atlantsolia_prices()
