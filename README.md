@@ -7,13 +7,6 @@ Check out [gasvaktin.is](https://gasvaktin.is/) if you're travelling Iceland and
 
 If you're interested in working with the current petrol price data provided there is a publicly available API endpoint which exposes current price data, the API is hosted by the awesome icelandic [apis.is](http://docs.apis.is/#endpoint-petrol) project, check it out.
 
-If you are interested in trends data on price changes over time, it can be extracted it from the git history in this repo via the following:
-
-	cd scripts
-	python trends.py
-
-Run `python trends.py -h` to see available input arguments.
-
 If you notice any issues or errors please contact maintainer, or submit a PR to fix the issue.
 
 Gasvaktin watches the following Icelandic oil companies:
@@ -42,6 +35,13 @@ This updates the pretty `vaktin/gas.json` and the minified `vaktin/gas.min.json`
 ## Origination of data
 
 Data over petrol stations and locations is currently just static. Price data from the oil companies is fetched regularly. See [here](https://gist.github.com/gasvaktin) for more details on when prices were last checked.
+
+If you're interested in price trends over time, it can be extracted from git history via the following:
+
+	cd scripts
+	python trends.py
+
+Run `python trends.py -h` to see available input arguments.
 
 ### Atlantsolía
 
