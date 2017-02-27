@@ -7,12 +7,12 @@ Check out [gasvaktin.is](https://gasvaktin.is/) if you're travelling Iceland and
 
 If you're interested in working with the current petrol price data provided there is a publicly available API endpoint which exposes current price data, the API is hosted by the awesome icelandic [apis.is](http://docs.apis.is/#endpoint-petrol) project, check it out.
 
-If you are interested in punctuality data on price changes over time, it can be extracted it from the git history in this repo via the following:
+If you are interested in trends data on price changes over time, it can be extracted it from the git history in this repo via the following:
 
 	cd scripts
-	python punctuality.py
+	python trends.py
 
-Run `python punctuality.py -h` to see available input arguments.
+Run `python trends.py -h` to see available input arguments.
 
 If you notice any issues or errors please contact maintainer, or submit a PR to fix the issue.
 

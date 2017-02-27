@@ -10,8 +10,8 @@ import git
 
 import utils
 
-DESC = 'Average-prices-over-time punctuality data extractor tool for Gasvaktin'
-# Used to extract price changes over periods of time from the gasvaktin repo.
+DESC = 'Average-prices-over-time trends data extractor tool'
+# Used to extract price changes over periods of time from gasvaktin repo.
 
 
 def calc_median(my_list):
@@ -193,7 +193,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '-o',
         '--output-directory',
-        help='Output directory to write punctuality json files',
+        help='Output directory to write trends json files',
         required=False
     )
     my_args = parser.parse_args()
@@ -228,10 +228,10 @@ if __name__ == '__main__':
     else:
         output_directory = my_args.output_directory
     data_json_pretty_file = os.path.join(
-        output_directory, 'punctuality.json'
+        output_directory, 'trends.json'
     )
     data_json_mini_file = os.path.join(
-        output_directory, 'punctuality.min.json'
+        output_directory, 'trends.min.json'
     )
     utils.save_to_json(data_json_pretty_file, price_changes, pretty=True)
     utils.save_to_json(data_json_mini_file, price_changes, pretty=False)
