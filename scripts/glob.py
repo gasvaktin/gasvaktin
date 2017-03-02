@@ -45,8 +45,12 @@ ORKAN_X_LOCATION_RELATION = {
 # Atlantsolía has changed their discount system to mirror Orkan, this discount
 # system is called "MEIRA FYRIR ÞIG"
 # https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
-# the default discount, available to all who have the Atlantsolía pump key, is
-# 3 ISK
+# MEIRA FYRIR ÞIG info:
+# 0-49,99L   [ 3 ISK ] + [ 2 ISK on your personal station] = [  5 ISK ]
+# 50-149,99L [ 5 ISK ] + [ 2 ISK on your personal station] = [  7 ISK ]
+# 150L       [ 8 ISK ] + [ 2 ISK on your personal station] = [ 10 ISK ]
+# the default discount, available to all who have the Atlantsolía pump key, and
+# regardless of station, is 3 ISK
 # Additionally they provide an extra 2 ISK discount on a single station of your
 # personal choice.
 # Source:
@@ -67,13 +71,13 @@ ATLANTSOLIA_MINIMUM_DISCOUNT = 3.0
 N1_DISCOUNT = 5.0
 
 # Orkan has a 3-step discount system controlled by your spendings on gas from
-# them the month before
+# them in the previous motnth
 # See more info here: https://www.orkan.is/Afslattarthrep
 # Discount info:
-# Step 1, 0-50L,   [ 3 ISK ] + [ 2 ISK if your personal station] = [  5 ISK ]
-# Step 2, 50-150L, [ 5 ISK ] + [ 2 ISK if your personal station] = [  7 ISK ]
+# Step 1, 0-50L,   [ 5 ISK ] + [ 2 ISK if your personal station] = [  7 ISK ]
+# Step 2, 50-150L, [ 6 ISK ] + [ 2 ISK if your personal station] = [  8 ISK ]
 # Step 3, 150L+,   [ 8 ISK ] + [ 2 ISK if your personal station] = [ 10 ISK ]
-ORKAN_MINIMUM_DISCOUNT = 3.0
+ORKAN_MINIMUM_DISCOUNT = 5.0
 
 # Skeljungur offers 4 ISK discount for their company card holders according
 # to this page: http://www.skeljungur.is/einstaklingar/
@@ -81,13 +85,14 @@ ORKAN_MINIMUM_DISCOUNT = 3.0
 # KORT OG LYKLAR SKELJUNGS VEITA AFSLÁTT HJÁ ORKUNNI OG SKELJUNGI
 # AFSLÁTTUR Á HVERN ELDSNEYTISLÍTRA
 # * 10 kr í upphafsafslátt í fyrstu 2 skiptin
-# * 3 kr hjá Orkunni
-# * 4 kr hjá Skeljungi
+# * 5 kr hjá Orkunni
+# * 5 kr hjá Skeljungi
+# * 2 kr. viðbótarafsláttur á [Þinni stöð](orkan.is/afslattarthrep/thin-stod/)
 # * 15 kr á afmælisdegi lykilhafa
 # * 2 kr viðbótarafsláttur á Þinni stöð
 # * Allt að 10 kr fastur afsláttur á Orkunni í Afsláttarþrepi Orkunnar
 # +++
-SKELJUNGUR_DISCOUNT = 4.0
+SKELJUNGUR_DISCOUNT = 5.0
 
 BROWSERS_UA = [
     ('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) '
