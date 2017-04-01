@@ -248,10 +248,10 @@
             "name": "Stykkishólmur"
         }, 
         {
-            "bensin95": 192.3, 
+            "bensin95": 188.7, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 184.2, 
+            "diesel": 180.6, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.131015, 
@@ -261,10 +261,10 @@
             "name": "Fellsmúli"
         }, 
         {
-            "bensin95": 192.3, 
+            "bensin95": 188.7, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 184.2, 
+            "diesel": 180.6, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.112573, 
@@ -274,10 +274,10 @@
             "name": "Staldrið Stekkjarbakki"
         }, 
         {
-            "bensin95": 192.3, 
+            "bensin95": 188.7, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 184.2, 
+            "diesel": 180.6, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.100437, 
