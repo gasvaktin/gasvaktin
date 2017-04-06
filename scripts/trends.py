@@ -84,6 +84,10 @@ def read_price_changes(repo, fromdate=None, todate=None):
             # skip the 'min' auto commits
             continue
         timestamp_text = commit.message[19:35]
+        if timestamp_text == '2017-04-06T09:38':
+            # skip strange N1 change (23.5 ISK up and down), for more info:
+            # a0783100209f0cf43b28271e3433c2c56c650447
+            continue
         timestamp = datetime.datetime.strptime(
             timestamp_text,
             '%Y-%m-%dT%H:%M'
