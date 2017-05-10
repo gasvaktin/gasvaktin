@@ -93,7 +93,7 @@ List of stations for Skeljungur, Orkan and Orkan X can be seen [here](http://www
 
 #### Prices
 
-Prices without discount for Skeljungur and Orkan can be seen [here](http://www.skeljungur.is/einstaklingar/eldsneytisverd/), and station individual prices for Orkan X can be found [here](http://www.orkan.is/Orkan-X/Stodvar). Info on discount for Orkan can be seen [here](https://www.orkan.is/Afslattarthrep), but it's threefold when this is written (5/7/10 ISK discount) and is controlled by how much gas you bought from Orkan the month before. To make things easier we only provide discount price for the starter discount. Neither Skeljungur nor Orkan X maintain a discount program.
+Prices without discount for Skeljungur and Orkan can be seen [here](http://www.skeljungur.is/einstaklingar/eldsneytisverd/), and station individual prices for Orkan X can be found [here](http://www.orkan.is/Orkan-X/Stodvar). Info on discount for Skeljungur can be seen [here](https://www.skeljungur.is/einstaklingar/), and for Orkan it can be seen [here](https://www.orkan.is/Afslattarthrep), it's threefold when this is written (5/6/8 ISK discount) and is controlled by how much gas you bought from Orkan the month before (also an extra +2 discount for selected station). To simplify things we only use the default minimum discount. Orkan X does not maintain a discount program.
 
 ## Maintainer
 
