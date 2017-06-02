@@ -15,6 +15,10 @@ def main():
             'stations': '../stations/atlantsolia.json'
         },
         {
+            'name': glob.COSTCO,
+            'stations': '../stations/costco.json'
+        },
+        {
             'name': glob.N1,
             'stations': '../stations/n1.json'
         },
@@ -55,6 +59,7 @@ def main():
 
     # station prices
     atlantsolia_prices = scraper.get_individual_atlantsolia_prices()
+    costco_prices = scraper.get_global_costco_prices()
     n1_prices = scraper.get_global_n1_prices()
     daelan_prices = scraper.get_global_daelan_prices()
     ob_prices = scraper.get_global_ob_prices()
@@ -74,6 +79,11 @@ def main():
             station['diesel'] = atlantsolia_prices[key]['diesel']
             station['diesel_discount'] = (
                 atlantsolia_prices[key]['diesel_discount'])
+        if station['company'] == glob.COSTCO:
+            station['bensin95'] = costco_prices['bensin95']
+            station['bensin95_discount'] = costco_prices['bensin95_discount']
+            station['diesel'] = costco_prices['diesel']
+            station['diesel_discount'] = costco_prices['diesel_discount']
         elif station['company'] == glob.N1:
             station['bensin95'] = n1_prices['bensin95']
             station['bensin95_discount'] = n1_prices['bensin95_discount']

@@ -31,6 +31,59 @@ def get_individual_atlantsolia_prices():
     return prices
 
 
+def get_global_costco_prices():
+    # Costco does not intend to show petrol price on their webpage according to
+    # email reply I've received from them, so we have no choice but to hardcode
+    # their prices if we wish to include their prices in Gasvaktin.
+    # Instead of hardcoding prices in the repo itself like with Dælan last
+    # summer I've created a personal Google Docs Spreadsheet to hold their
+    # current petrol prices, Simplifies updating prices if away from
+    # workstation.
+    headers = {
+        'Accept': (
+            'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,'
+            '*/*;q=0.8'
+        ),
+        'Accept-Encoding': 'gzip, deflate, sdch, br',
+        'Accept-Language': 'en-US,en;q=0.8,is;q=0.6,da;q=0.4',
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache',
+        'User-Agent': utils.random_ua()
+    }
+    url = (
+        'https://docs.google.com/spreadsheets/d/'
+        '18xuZbhfInW_6Loua3_4LE7KxbGPsh-_3IFfLpf3uwYE/edit'
+    )
+    res = requests.get(url, headers=headers)
+    res.raise_for_status()
+    # <shameless-incredibly-naive-html-parsing>
+    bensin = None
+    diesel = None
+    html_text = res.content
+    for line in html_text.split('\n'):
+        if line.startswith(' Bensin,'):
+            bensin = float(line[8:].replace(' ', ''))
+        if line.startswith(' Diesel,'):
+            diesel = float(line[8:].replace(' ', ''))
+        if bensin is not None and diesel is not None:
+            break
+    if bensin is None or diesel is None:
+        err_msg = 'Failed to read costco prices (%s, %s)\n%s ...' % (
+            bensin,
+            diesel,
+            html_text[:10000]
+        )
+        raise Exception(err_msg)
+    # </shameless-incredibly-naive-html-parsing>
+    return {
+        'bensin95': bensin,
+        'diesel': diesel,
+        # Costco has no discount program
+        'bensin95_discount': None,
+        'diesel_discount': None
+    }
+
+
 def get_global_n1_prices():
     url_eldsneyti = 'https://www.n1.is/eldsneyti/'
     url_eldsneyti_api = 'https://www.n1.is/umbraco/api/fuel/GetSingleFuelPrice'
@@ -78,7 +131,7 @@ def get_global_daelan_prices():
     return {
         'bensin95': float(data[0]['price'].replace(',', '.')),
         'diesel': float(data[1]['price'].replace(',', '.')),
-        # Dælan has no discount prices
+        # Dælan has no discount program
         'bensin95_discount': None,
         'diesel_discount': None
     }
@@ -207,7 +260,7 @@ def get_individual_orkan_x_prices():
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
-            # Orkan X has no discount prices
+            # Orkan X has no discount program
             'bensin95_discount': None,
             'diesel_discount': None
         }
@@ -217,6 +270,8 @@ if __name__ == '__main__':
     print 'Testing scrapers\n'
     print 'Atlantsolía'
     print get_individual_atlantsolia_prices()
+    print 'Costco'
+    print get_global_costco_prices()
     print 'Dælan'
     print get_global_daelan_prices()
     print 'N1'

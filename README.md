@@ -55,6 +55,16 @@ Atlantsolía has a list of its stations [here](https://www.atlantsolia.is/stodva
 
 Gas price for each station can be found [here](http://atlantsolia.is/stodvarverd.aspx), also showing discount prices available if you have Atlantsolía gas key ring.
 
+### Costco Iceland
+
+#### Stations
+
+Costco Iceland has a single petrol station in Iceland, in Kauptún next to IKEA. Note that you can't buy petrol at this station unless you're a Costco member, Costco membership card in Iceland costs ~5.000 ISK (~49 USD) annually.
+
+#### Prices
+
+Costco Iceland doesn't plan on showing their petrol prices on their web, at least not in the near future, so we currently have no way of tracking their prices except reading it straight off their pumps in Kauptún. We check and update their prices from time to time in [this Google Docs Spreadsheet](https://docs.google.com/spreadsheets/d/18xuZbhfInW_6Loua3_4LE7KxbGPsh-_3IFfLpf3uwYE/) but due to this procedure not being automatic, prices may not be correct from time to time.
+
 ### N1 (and Dælan)
 
 #### Stations

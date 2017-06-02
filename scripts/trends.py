@@ -103,6 +103,33 @@ def read_price_changes(repo, fromdate=None, todate=None):
         revlist.append((timestamp_text, stations))
     revlist = reversed(revlist)
     price_changes = {}
+    # add Costco trends before we started showing them
+    price_changes['co'] = [
+        {
+            "mean_bensin95": 169.9,
+            "mean_bensin95_discount": None,
+            "mean_diesel": 164.9,
+            "mean_diesel_discount": None,
+            "median_bensin95": 169.9,
+            "median_bensin95_discount": None,
+            "median_diesel": 164.9,
+            "median_diesel_discount": None,
+            "stations_count": 3,
+            "timestamp": "2017-05-19T08:00"
+        },
+        {
+            "mean_bensin95": 169.9,
+            "mean_bensin95_discount": None,
+            "mean_diesel": 161.9,
+            "mean_diesel_discount": None,
+            "median_bensin95": 169.9,
+            "median_bensin95_discount": None,
+            "median_diesel": 161.9,
+            "median_diesel_discount": None,
+            "stations_count": 3,
+            "timestamp": "2017-05-25T10:00"
+        }
+    ]
     for timestamp_text, stations in revlist:
         data = {}
         for station in stations['stations']:

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 ATLANTSOLIA = u'Atlantsolía'
+COSTCO = u'Costco Iceland'
 N1 = u'N1'
 DAELAN = u'Dælan'
 OLIS = u'Olís'
