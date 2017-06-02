@@ -44,19 +44,19 @@ ORKAN_X_LOCATION_RELATION = {
 }
 
 # Atlantsolía has changed their discount system to mirror Orkan, this discount
-# system is called "MEIRA FYRIR ÞIG"
+# system is called "MEIRA FYRIR ÞIG".
 # https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
-# MEIRA FYRIR ÞIG info:
-# 0-49,99L   [ 3 ISK ] + [ 2 ISK on your personal station] = [  5 ISK ]
-# 50-149,99L [ 5 ISK ] + [ 2 ISK on your personal station] = [  7 ISK ]
-# 150L       [ 8 ISK ] + [ 2 ISK on your personal station] = [ 10 ISK ]
-# the default discount, available to all who have the Atlantsolía pump key, and
-# regardless of station, is 3 ISK
+# MEIRA FYRIR ÞIG discount info:
+# 0-49,99L   [  5 ISK ] + [ 2 ISK on your personal station] = [  7 ISK ]
+# 50-149,99L [  7 ISK ] + [ 2 ISK on your personal station] = [  9 ISK ]
+# 150L       [ 10 ISK ] + [ 2 ISK on your personal station] = [ 12 ISK ]
+# The default discount, available to all who have the Atlantsolía pump key, and
+# regardless of station, is 5 ISK.
 # Additionally they provide an extra 2 ISK discount on a single station of your
 # personal choice.
 # Source:
 # https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
-ATLANTSOLIA_MINIMUM_DISCOUNT = 3.0
+ATLANTSOLIA_MINIMUM_DISCOUNT = 5.0
 
 # N1 offers discount of 5 ISK and 2 N1 points per liter according to the
 # following page: https://www.n1.is/n1-kortid/saekja-um-kort/
