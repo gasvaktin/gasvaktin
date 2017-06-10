@@ -261,10 +261,10 @@
             "name": "Kauptún"
         }, 
         {
-            "bensin95": 182.2, 
+            "bensin95": 180.2, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 169.6, 
+            "diesel": 167.6, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.131015, 
@@ -274,10 +274,10 @@
             "name": "Fellsmúli"
         }, 
         {
-            "bensin95": 182.2, 
+            "bensin95": 180.2, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 169.6, 
+            "diesel": 167.6, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.112573, 
@@ -287,10 +287,10 @@
             "name": "Staldrið Stekkjarbakki"
         }, 
         {
-            "bensin95": 182.2, 
+            "bensin95": 180.2, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 169.6, 
+            "diesel": 167.6, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.100437, 
