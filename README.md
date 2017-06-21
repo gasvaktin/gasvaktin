@@ -14,6 +14,7 @@ If you notice any issues or errors please contact maintainer, or submit a PR to 
 Gasvaktin watches the following Icelandic oil companies:
 
 * [Atlantsolía](http://atlantsolia.is/)
+* [Costco Iceland](http://costco.is/)
 * [N1](https://www.n1.is/)
   - [Dælan](http://daelan.is/) (low-cost company owned by N1)
 * [Olís](http://www.olis.is/)
