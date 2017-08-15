@@ -66,11 +66,11 @@
             "name": "Búðarkór"
         }, 
         {
-            "bensin95": 190.7, 
-            "bensin95_discount": 185.7, 
+            "bensin95": 188.7, 
+            "bensin95_discount": 183.7, 
             "company": "Atlantsolía", 
-            "diesel": 180.9, 
-            "diesel_discount": 175.9, 
+            "diesel": 178.9, 
+            "diesel_discount": 173.9, 
             "geo": {
                 "lat": 65.259896, 
                 "lon": -14.39789
@@ -92,11 +92,11 @@
             "name": "Hafnarfjarðarhöfn"
         }, 
         {
-            "bensin95": 190.7, 
-            "bensin95_discount": 185.7, 
+            "bensin95": 188.7, 
+            "bensin95_discount": 183.7, 
             "company": "Atlantsolía", 
-            "diesel": 180.9, 
-            "diesel_discount": 175.9, 
+            "diesel": 178.9, 
+            "diesel_discount": 173.9, 
             "geo": {
                 "lat": 63.994238, 
                 "lon": -21.185975
@@ -196,11 +196,11 @@
             "name": "Skeifan"
         }, 
         {
-            "bensin95": 190.7, 
-            "bensin95_discount": 185.7, 
+            "bensin95": 188.7, 
+            "bensin95_discount": 183.7, 
             "company": "Atlantsolía", 
-            "diesel": 180.9, 
-            "diesel_discount": 175.9, 
+            "diesel": 178.9, 
+            "diesel_discount": 173.9, 
             "geo": {
                 "lat": 64.110091, 
                 "lon": -21.852653
