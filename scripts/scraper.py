@@ -196,13 +196,18 @@ def get_individual_orkan_prices():
     div_table = html.find('.//*[@id="content"]/div/div[2]/div/div[2]')
     prices = {}
     key = None
+    skip_orkan_x_price = False
     for element in div_table:
         element_class = element.get('class')
         if element_class.startswith('petrol-station'):
             if '(Orkan X)' in element[0].text:
+                skip_orkan_x_price = True
                 continue
             key = glob.ORKAN_LOCATION_RELATION[element[0].text]
         if element_class.startswith('general'):
+            if skip_orkan_x_price:
+                skip_orkan_x_price = False
+                continue
             bensin95 = float(element[0].text.replace(',', '.'))
             diesel = float(element[1].text.replace(',', '.'))
             # Orkan has a 3-step discount system controlled by your spendings
