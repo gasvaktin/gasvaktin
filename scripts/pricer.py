@@ -64,7 +64,7 @@ def main():
     daelan_prices = scraper.get_global_daelan_prices()
     ob_prices = scraper.get_global_ob_prices()
     olis_prices = scraper.get_global_olis_prices()
-    orkan_prices = scraper.get_global_orkan_prices()
+    orkan_prices = scraper.get_individual_orkan_prices()
     orkan_x_prices = scraper.get_individual_orkan_x_prices()
     skeljungur_prices = scraper.get_global_skeljungur_prices()
 
@@ -105,10 +105,11 @@ def main():
             station['diesel'] = olis_prices['diesel']
             station['diesel_discount'] = olis_prices['diesel_discount']
         elif station['company'] == glob.ORKAN:
-            station['bensin95'] = orkan_prices['bensin95']
-            station['bensin95_discount'] = orkan_prices['bensin95_discount']
-            station['diesel'] = orkan_prices['diesel']
-            station['diesel_discount'] = orkan_prices['diesel_discount']
+            station['bensin95'] = orkan_prices[key]['bensin95']
+            station['bensin95_discount'] = (
+                orkan_prices[key]['bensin95_discount'])
+            station['diesel'] = orkan_prices[key]['diesel']
+            station['diesel_discount'] = orkan_prices[key]['diesel_discount']
         elif station['company'] == glob.ORKAN_X:
             station['bensin95'] = orkan_x_prices[key]['bensin95']
             station['bensin95_discount'] = (

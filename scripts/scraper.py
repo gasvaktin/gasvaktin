@@ -189,30 +189,35 @@ def get_global_skeljungur_prices():
     }
 
 
-def get_global_orkan_prices():
-    url = 'http://www.skeljungur.is/einstaklingar/eldsneytisverd/'
+def get_individual_orkan_prices():
+    url = 'https://www.orkan.is/Orkustodvar'
     res = requests.get(url, headers=utils.headers())
     html = etree.fromstring(res.content, etree.HTMLParser())
-    bensin95_text = html.find(('.//*[@id="st-container"]/div/div/div/div/'
-                               'div[2]/div/div/div[1]/div[1]/div[1]/section/'
-                               'div/div[2]/div[2]/div[2]/h2')).text
-    diesel_text = html.find(('.//*[@id="st-container"]/div/div/div/div/div[2]/'
-                             'div/div/div[1]/div[1]/div[1]/section/div/div[2]/'
-                             'div[2]/div[4]/h2')).text
-    bensin95 = float(bensin95_text.replace(' kr.', '').replace(',', '.'))
-    diesel = float(diesel_text.replace(' kr.', '').replace(',', '.'))
-    # Orkan has a 3-step discount system controlled by your spendings on
-    # gas from them the month before
-    # See more info here: https://www.orkan.is/Afslattarthrep
-    # For consistency we just use the minimum default discount
-    bensin95_discount = bensin95 - glob.ORKAN_MINIMUM_DISCOUNT
-    diesel_discount = diesel - glob.ORKAN_MINIMUM_DISCOUNT
-    return {
-        'bensin95': bensin95,
-        'diesel': diesel,
-        'bensin95_discount': bensin95_discount,
-        'diesel_discount': diesel_discount
-    }
+    div_table = html.find('.//*[@id="content"]/div/div[2]/div/div[2]')
+    prices = {}
+    key = None
+    for element in div_table:
+        element_class = element.get('class')
+        if element_class.startswith('petrol-station'):
+            if '(Orkan X)' in element[0].text:
+                continue
+            key = glob.ORKAN_LOCATION_RELATION[element[0].text]
+        if element_class.startswith('general'):
+            bensin95 = float(element[0].text.replace(',', '.'))
+            diesel = float(element[1].text.replace(',', '.'))
+            # Orkan has a 3-step discount system controlled by your spendings
+            # on gas from them the month before
+            # See more info here: https://www.orkan.is/Afslattarthrep
+            # For consistency we just use the minimum default discount
+            bensin95_discount = bensin95 - glob.ORKAN_MINIMUM_DISCOUNT
+            diesel_discount = diesel - glob.ORKAN_MINIMUM_DISCOUNT
+            prices[key] = {
+                'bensin95': bensin95,
+                'diesel': diesel,
+                'bensin95_discount': bensin95_discount,
+                'diesel_discount': diesel_discount
+            }
+    return prices
 
 
 def get_individual_orkan_x_prices():
@@ -283,6 +288,6 @@ if __name__ == '__main__':
     print 'Skeljungur'
     print get_global_skeljungur_prices()
     print 'Orkan'
-    print get_global_orkan_prices()
+    print get_individual_orkan_prices()
     print 'Orkan X'
     print get_individual_orkan_x_prices()
