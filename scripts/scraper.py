@@ -190,32 +190,37 @@ def get_global_skeljungur_prices():
 
 
 def get_individual_orkan_prices():
+    # reads prices for Orkan and Orkan X stations because they're now on the
+    # same webpage
     url = 'https://www.orkan.is/Orkustodvar'
     res = requests.get(url, headers=utils.headers())
     html = etree.fromstring(res.content, etree.HTMLParser())
     div_table = html.find('.//*[@id="content"]/div/div[2]/div/div[2]')
     prices = {}
     key = None
-    skip_orkan_x_price = False
     for element in div_table:
         element_class = element.get('class')
         if element_class.startswith('petrol-station'):
-            if '(Orkan X)' in element[0].text:
-                skip_orkan_x_price = True
+            if element[0].text in glob.ORKAN_LOCATION_RELATION:
+                key = glob.ORKAN_LOCATION_RELATION[element[0].text]
+            elif element[0].text in glob.ORKAN_X_LOCATION_RELATION:
+                key = glob.ORKAN_X_LOCATION_RELATION[element[0].text]
+            else:
                 continue
-            key = glob.ORKAN_LOCATION_RELATION[element[0].text]
         if element_class.startswith('general'):
-            if skip_orkan_x_price:
-                skip_orkan_x_price = False
-                continue
             bensin95 = float(element[0].text.replace(',', '.'))
             diesel = float(element[1].text.replace(',', '.'))
-            # Orkan has a 3-step discount system controlled by your spendings
-            # on gas from them the month before
-            # See more info here: https://www.orkan.is/Afslattarthrep
-            # For consistency we just use the minimum default discount
-            bensin95_discount = bensin95 - glob.ORKAN_MINIMUM_DISCOUNT
-            diesel_discount = diesel - glob.ORKAN_MINIMUM_DISCOUNT
+            # Orkan X stations have keys starting with "ox", while ordinary
+            # Orkan statins have keys starting with "or"
+            bensin95_discount = None
+            diesel_discount = None
+            if key.startswith('or'):
+                # Orkan has a 3-step discount system controlled by your
+                # spendings on gas from them the month before
+                # See more info here: https://www.orkan.is/Afslattarthrep
+                # For consistency we just use the minimum default discount
+                bensin95_discount = bensin95 - glob.ORKAN_MINIMUM_DISCOUNT
+                diesel_discount = diesel - glob.ORKAN_MINIMUM_DISCOUNT
             prices[key] = {
                 'bensin95': bensin95,
                 'diesel': diesel,
@@ -224,57 +229,6 @@ def get_individual_orkan_prices():
             }
     return prices
 
-
-def get_individual_orkan_x_prices():
-    url = 'http://www.orkan.is/Orkan-X/Stodvar'
-    res = requests.get(url, headers=utils.headers())
-    html = etree.fromstring(res.content, etree.HTMLParser())
-    table = html.find('.//*[@id="content"]/div/div[2]/div/table')
-    prices = {}
-    # Issue: it has come up that prices are missing for station in this list,
-    #        I sent Orkan X a line about this last friday (2016-06-03), their
-    #        reply was:
-    #        "takk fyrir að láta okkur vita við kippum þessu i lag :)"
-    #        still not fixed
-    # Solution: let's assume a station with missing prices has the highest
-    # prices shown for other stations in the list
-    # <find_highest_prices>
-    highest_bensin95 = None
-    highest_diesel = None
-    for column in table:
-        if column[0].text == 'Orkan X':
-            continue  # skip header
-        if column[1].text is not None:
-            bensin95 = float(column[1].text.replace(',', '.'))
-            if highest_bensin95 is None or highest_bensin95 < bensin95:
-                highest_bensin95 = bensin95
-        if column[2].text is not None:
-            diesel = float(column[2].text.replace(',', '.'))
-            if highest_diesel is None or highest_diesel < diesel:
-                highest_diesel = diesel
-    assert(highest_bensin95 is not None)
-    assert(highest_diesel is not None)
-    # </find_highest_prices>
-    for column in table:
-        if column[0].text == 'Orkan X':
-            continue  # skip header
-        key = glob.ORKAN_X_LOCATION_RELATION[column[0][0].text]
-        if column[1].text is not None:
-            bensin95 = float(column[1].text.replace(',', '.'))
-        else:
-            bensin95 = highest_bensin95
-        if column[2].text is not None:
-            diesel = float(column[2].text.replace(',', '.'))
-        else:
-            bensin95 = highest_diesel
-        prices[key] = {
-            'bensin95': bensin95,
-            'diesel': diesel,
-            # Orkan X has no discount program
-            'bensin95_discount': None,
-            'diesel_discount': None
-        }
-    return prices
 
 if __name__ == '__main__':
     print 'Testing scrapers\n'
@@ -292,7 +246,5 @@ if __name__ == '__main__':
     print get_global_ob_prices()
     print 'Skeljungur'
     print get_global_skeljungur_prices()
-    print 'Orkan'
+    print 'Orkan (including Orkan X)'
     print get_individual_orkan_prices()
-    print 'Orkan X'
-    print get_individual_orkan_x_prices()
