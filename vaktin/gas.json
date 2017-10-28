@@ -3095,10 +3095,10 @@
             "name": "Miklabraut"
         }, 
         {
-            "bensin95": 179.9, 
+            "bensin95": 179.7, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 170.2, 
+            "diesel": 170.0, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.11066, 
