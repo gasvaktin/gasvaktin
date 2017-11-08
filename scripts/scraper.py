@@ -122,19 +122,25 @@ def get_global_n1_prices():
     return prices
 
 
-def get_global_daelan_prices():
+def get_individual_daelan_prices():
+    relation = glob.DAELAN_LOCATION_RELATION
     price_endpoint = 'https://www.n1.is/umbraco/api/Fuel/GetFuelPriceForDaelan'
     res = requests.get(price_endpoint, headers=utils.headers())
-    data = res.json()
-    assert(data[0]['description'] == u'Bens\xedn')
-    assert(data[1]['description'] == u'D\xedsel')
-    return {
-        'bensin95': float(data[0]['price'].replace(',', '.')),
-        'diesel': float(data[1]['price'].replace(',', '.')),
-        # Dælan has no discount program
-        'bensin95_discount': None,
-        'diesel_discount': None
-    }
+    stations = res.json()
+    prices = {}
+    for station in stations:
+        assert('location' in station)
+        assert('gasPrice' in station)
+        assert('diselPrice' in station)
+        key = relation[station['location']]
+        prices[key] = {
+            'bensin95': float(station['gasPrice'].replace(',', '.')),
+            'diesel': float(station['diselPrice'].replace(',', '.')),
+            # Dælan has no discount program
+            'bensin95_discount': None,
+            'diesel_discount': None
+        }
+    return prices
 
 
 def get_global_olis_prices():
@@ -237,7 +243,7 @@ if __name__ == '__main__':
     print 'Costco'
     print get_global_costco_prices()
     print 'Dælan'
-    print get_global_daelan_prices()
+    print get_individual_daelan_prices()
     print 'N1'
     print get_global_n1_prices()
     print 'Olís'

@@ -32,6 +32,12 @@ ATLANTSOLIA_LOCATION_RELATION = {
     u'Stykkish\xf3lmur': 'ao_018'
 }
 
+DAELAN_LOCATION_RELATION = {
+    u'Fellsm\xfali': 'dn_000',
+    u'Mj\xf3dd': 'dn_001',
+    u'Sm\xe1ralind': 'dn_002'
+}
+
 ORKAN_LOCATION_RELATION = {
     u'Dalvegur': 'or_000',
     u'Gylfafl\xf6t': 'or_001',
