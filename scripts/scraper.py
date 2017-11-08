@@ -124,8 +124,13 @@ def get_global_n1_prices():
 
 def get_individual_daelan_prices():
     relation = glob.DAELAN_LOCATION_RELATION
+    headers = utils.headers()
+    session = requests.Session()
+    session.get('http://daelan.is/', headers=headers)
+    session.get('https://www.n1.is/', headers=headers)
     price_endpoint = 'https://www.n1.is/umbraco/api/Fuel/GetFuelPriceForDaelan'
-    res = requests.get(price_endpoint, headers=utils.headers())
+    res = session.get(price_endpoint, headers=headers)
+    res.raise_for_status()
     stations = res.json()
     prices = {}
     for station in stations:
