@@ -18,8 +18,8 @@ def get_individual_atlantsolia_prices():
     prices = {}
     for div_price in div_prices:
         key = relation[div_price[0][0].text]
-        bensin95 = float(div_price[1].text.replace(',', '.'))
-        diesel = float(div_price[2].text.replace(',', '.'))
+        bensin95 = float(div_price[1][0].text.replace(',', '.'))
+        diesel = float(div_price[2][0].text.replace(',', '.'))
         bensin95_discount = bensin95 - glob.ATLANTSOLIA_MINIMUM_DISCOUNT
         diesel_discount = diesel - glob.ATLANTSOLIA_MINIMUM_DISCOUNT
         prices[key] = {
