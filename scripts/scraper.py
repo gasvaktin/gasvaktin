@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import datetime
 from lxml import etree
+import os
 import requests
 
 import glob
@@ -164,7 +166,17 @@ def get_global_olis_prices():
     }
 
 
-def get_global_ob_prices():
+def get_individual_ob_prices():
+    # Note:
+    # Price data source for OB is a single global price, however, this November
+    # (2017) there will be 17 ISK discount on selected stations, these stations
+    # are the following:
+    # OB Fjardarkaupum, Baejarlind, Starengi, Snorrabraut and Akureyri
+    #    ob_012         ob_010      ob_029    ob_028          ob_001
+    # Source:
+    # facebook.com/ob.bensin/photos/a.208957995809394.57356.162016470503547/1561399113898602/
+    # TODO:
+    # After 2017-11-30 this can be reverted
     url = 'http://www.ob.is/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers())
     html = etree.fromstring(res.content, etree.HTMLParser())
@@ -172,12 +184,36 @@ def get_global_ob_prices():
     diesel_text = html.find('.//*[@id="gas-price"]/span[2]').text
     bensin_discount_text = html.find('.//*[@id="gas-price"]/span[3]').text
     diesel_discount_text = html.find('.//*[@id="gas-price"]/span[4]').text
-    return {
-        'bensin95': float(bensin95_text.replace(',', '.')),
-        'diesel': float(diesel_text.replace(',', '.')),
-        'bensin95_discount': float(bensin_discount_text.replace(',', '.')),
-        'diesel_discount': float(diesel_discount_text.replace(',', '.'))
-    }
+    bensin95 = float(bensin95_text.replace(',', '.'))
+    diesel = float(diesel_text.replace(',', '.'))
+    usual_bensin95_discount = float(bensin_discount_text.replace(',', '.'))
+    usual_diesel_discount = float(diesel_discount_text.replace(',', '.'))
+    prices = {}
+    ob_stations = utils.load_json(
+        os.path.join(
+            os.path.dirname(os.path.realpath(__file__)),
+            '../stations/ob.json'
+        )
+    )
+    now = datetime.datetime.now()
+    then = datetime.datetime.strptime('2017-11-30T23:59', '%Y-%m-%dT%H:%M')
+    november_discount = 17
+    selected_ob_stations = (
+        'ob_001', 'ob_010', 'ob_012', 'ob_028', 'ob_029'
+    )
+    for key in ob_stations:
+        bensin95_discount = usual_bensin95_discount
+        diesel_discount = usual_diesel_discount
+        if key in selected_ob_stations and now < then:
+            bensin95_discount = bensin95 - november_discount
+            diesel_discount = diesel - november_discount
+        prices[key] = {
+            'bensin95': bensin95,
+            'diesel': diesel,
+            'bensin95_discount': bensin95_discount,
+            'diesel_discount': diesel_discount
+        }
+    return prices
 
 
 def get_global_skeljungur_prices():
@@ -254,7 +290,7 @@ if __name__ == '__main__':
     print 'Olís'
     print get_global_olis_prices()
     print 'ÓB'
-    print get_global_ob_prices()
+    print get_individual_ob_prices()
     print 'Skeljungur'
     print get_global_skeljungur_prices()
     print 'Orkan (including Orkan X)'
