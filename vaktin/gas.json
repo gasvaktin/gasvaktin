@@ -1536,10 +1536,10 @@
         }, 
         {
             "bensin95": 203.9, 
-            "bensin95_discount": 186.9, 
+            "bensin95_discount": 200.9, 
             "company": "ÓB", 
             "diesel": 195.9, 
-            "diesel_discount": 178.9, 
+            "diesel_discount": 192.9, 
             "geo": {
                 "lat": 65.687038, 
                 "lon": -18.128579
@@ -1653,10 +1653,10 @@
         }, 
         {
             "bensin95": 203.9, 
-            "bensin95_discount": 186.9, 
+            "bensin95_discount": 200.9, 
             "company": "ÓB", 
             "diesel": 195.9, 
-            "diesel_discount": 178.9, 
+            "diesel_discount": 192.9, 
             "geo": {
                 "lat": 64.099134, 
                 "lon": -21.881032
@@ -1679,10 +1679,10 @@
         }, 
         {
             "bensin95": 203.9, 
-            "bensin95_discount": 186.9, 
+            "bensin95_discount": 200.9, 
             "company": "ÓB", 
             "diesel": 195.9, 
-            "diesel_discount": 178.9, 
+            "diesel_discount": 192.9, 
             "geo": {
                 "lat": 64.081674, 
                 "lon": -21.939331
@@ -1887,10 +1887,10 @@
         }, 
         {
             "bensin95": 203.9, 
-            "bensin95_discount": 186.9, 
+            "bensin95_discount": 200.9, 
             "company": "ÓB", 
             "diesel": 195.9, 
-            "diesel_discount": 178.9, 
+            "diesel_discount": 192.9, 
             "geo": {
                 "lat": 64.139686, 
                 "lon": -21.920814
@@ -1900,10 +1900,10 @@
         }, 
         {
             "bensin95": 203.9, 
-            "bensin95_discount": 186.9, 
+            "bensin95_discount": 200.9, 
             "company": "ÓB", 
             "diesel": 195.9, 
-            "diesel_discount": 178.9, 
+            "diesel_discount": 192.9, 
             "geo": {
                 "lat": 64.15102, 
                 "lon": -21.773935
