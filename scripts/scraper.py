@@ -168,15 +168,15 @@ def get_global_olis_prices():
 
 def get_individual_ob_prices():
     # Note:
-    # Price data source for OB is a single global price, however, this November
-    # (2017) there will be 17 ISK discount on selected stations, these stations
-    # are the following:
+    # Price data source for OB is a single global price, however, this December
+    # (2017) (oh and the November month before) there will be 17 ISK discount
+    # on selected stations, these stations are the following:
     # OB Fjardarkaupum, Baejarlind, Starengi, Snorrabraut and Akureyri
     #    ob_012         ob_010      ob_029    ob_028          ob_001
     # Source:
-    # facebook.com/ob.bensin/photos/a.208957995809394.57356.162016470503547/1561399113898602/
+    # facebook.com/ob.bensin/photos/a.208957995809394.57356.162016470503547/1581943655177481/
     # TODO:
-    # After 2017-11-30 this can be reverted
+    # In 2018 this can be reverted
     url = 'http://www.ob.is/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers())
     html = etree.fromstring(res.content, etree.HTMLParser())
@@ -196,8 +196,8 @@ def get_individual_ob_prices():
         )
     )
     now = datetime.datetime.now()
-    then = datetime.datetime.strptime('2017-11-30T23:59', '%Y-%m-%dT%H:%M')
-    november_discount = 17
+    then = datetime.datetime.strptime('2017-12-31T23:59', '%Y-%m-%dT%H:%M')
+    december_discount = 17
     selected_ob_stations = (
         'ob_001', 'ob_010', 'ob_012', 'ob_028', 'ob_029'
     )
@@ -205,8 +205,8 @@ def get_individual_ob_prices():
         bensin95_discount = usual_bensin95_discount
         diesel_discount = usual_diesel_discount
         if key in selected_ob_stations and now < then:
-            bensin95_discount = bensin95 - november_discount
-            diesel_discount = diesel - november_discount
+            bensin95_discount = bensin95 - december_discount
+            diesel_discount = diesel - december_discount
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
