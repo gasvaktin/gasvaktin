@@ -88,6 +88,10 @@ def read_price_changes(repo, fromdate=None, todate=None):
             # skip strange N1 change (23.5 ISK up and down), for more info:
             # a0783100209f0cf43b28271e3433c2c56c650447
             continue
+        if timestamp_text == '2018-01-11T11:00':
+            # skip strange Orkan change (~100 ISK up and down), for more info:
+            # 5c031c459ada0b95347da63c9e33d83954a8e609
+            continue
         timestamp = datetime.datetime.strptime(
             timestamp_text,
             '%Y-%m-%dT%H:%M'
