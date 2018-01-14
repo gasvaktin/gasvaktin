@@ -224,6 +224,11 @@ BAD_AUTOPRICES_CHANGES = [
         'note': 'Dælan diesel changed for a short time to N1 price and back'
     },
     {
+        'timestamp_text': '2017-10-27T16:00',
+        'commit_hash': 'b050ad1a673223f5a2fe2993997041614484855f',
+        'note': 'slight price log where Dælan diesel was still wrong'
+    },
+    {
         'timestamp_text': '2018-01-11T11:00',
         'commit_hash': '5c031c459ada0b95347da63c9e33d83954a8e609',
         'note': 'Orkan bad change (~100 ISK down and back up)'
