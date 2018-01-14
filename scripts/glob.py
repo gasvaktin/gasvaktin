@@ -196,3 +196,36 @@ BROWSERS_UA = [
     ('Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:16.0.1) Gecko/20121011 '
      'Firefox/16.0.1)')
 ]
+
+BAD_AUTOPRICES_CHANGES = [
+    {
+        'timestamp_text': '2017-04-06T09:38',
+        'commit_hash': 'a0783100209f0cf43b28271e3433c2c56c650447',
+        'note': 'N1 bad change (23.5 ISK up and down)'
+    },
+    {
+        'timestamp_text': '2017-06-15T23:15',
+        'commit_hash': '821ccc907fec62415cc6d57f93d953205fd4d331',
+        'note': 'Dælan diesel changed for a short time to N1 price and back'
+    },
+    {
+        'timestamp_text': '2017-07-13T08:30',
+        'commit_hash': 'fbf5eb81cbca3ed2091280b6cb6746975d309616',
+        'note': 'Orkan bad change (down to Orkan X like price and back up)'
+    },
+    {
+        'timestamp_text': '2017-10-25T21:45',
+        'commit_hash': 'ab4f01ccbe5486adc1ee838a892344035d4cc86b',
+        'note': 'Dælan diesel changed for a short time to N1 price and back'
+    },
+    {
+        'timestamp_text': '2017-10-27T11:30',
+        'commit_hash': 'f5439ce43ae49d5926a48a9be52888d56075c8f1',
+        'note': 'Dælan diesel changed for a short time to N1 price and back'
+    },
+    {
+        'timestamp_text': '2018-01-11T11:00',
+        'commit_hash': '5c031c459ada0b95347da63c9e33d83954a8e609',
+        'note': 'Orkan bad change (~100 ISK down and back up)'
+    }
+]

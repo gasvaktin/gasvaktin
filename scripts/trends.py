@@ -8,6 +8,7 @@ import sys
 
 import git
 
+import glob
 import utils
 
 DESC = 'Average-prices-over-time trends data extractor tool'
@@ -84,13 +85,14 @@ def read_price_changes(repo, fromdate=None, todate=None):
             # skip the 'min' auto commits
             continue
         timestamp_text = commit.message[19:35]
-        if timestamp_text == '2017-04-06T09:38':
-            # skip strange N1 change (23.5 ISK up and down), for more info:
-            # a0783100209f0cf43b28271e3433c2c56c650447
-            continue
-        if timestamp_text == '2018-01-11T11:00':
-            # skip strange Orkan change (~100 ISK up and down), for more info:
-            # 5c031c459ada0b95347da63c9e33d83954a8e609
+        # skip bad price changes
+        bad_commit = False
+        for bad_change in glob.BAD_AUTOPRICES_CHANGES:
+            if (timestamp_text == bad_change['timestamp_text'] and
+               commit.hexsha == bad_change['commit_hash']):
+                bad_commit = True
+                break
+        if bad_commit:
             continue
         timestamp = datetime.datetime.strptime(
             timestamp_text,
@@ -102,7 +104,6 @@ def read_price_changes(repo, fromdate=None, todate=None):
         if todate and todate < timestamp:
             # ignore price changes after to-date if provided
             continue
-        timestamp_text = commit.message[19:35]
         stations = json.loads(filecontents)
         revlist.append((timestamp_text, stations))
     revlist = reversed(revlist)
@@ -240,7 +241,7 @@ if __name__ == '__main__':
         fail_nicely(parser, 'Path "%s" seems to not exist.' % (repo_path, ))
     try:
         repo = git.Repo(repo_path)
-    except:
+    except Exception:
         error_msg = 'Could not read git repo from "%s".' % (repo_path, )
         fail_nicely(parser, error_msg)
     if my_args.from_date is not None:
