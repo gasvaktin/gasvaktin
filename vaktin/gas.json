@@ -14,11 +14,11 @@
             "name": "Baldursnes Akureyri"
         }, 
         {
-            "bensin95": 209.9, 
-            "bensin95_discount": 204.9, 
+            "bensin95": 205.9, 
+            "bensin95_discount": 200.9, 
             "company": "Atlantsolía", 
-            "diesel": 202.3, 
-            "diesel_discount": 197.3, 
+            "diesel": 198.3, 
+            "diesel_discount": 193.3, 
             "geo": {
                 "lat": 65.687807, 
                 "lon": -18.100104
@@ -66,11 +66,11 @@
             "name": "Búðarkór"
         }, 
         {
-            "bensin95": 209.9, 
-            "bensin95_discount": 204.9, 
+            "bensin95": 205.9, 
+            "bensin95_discount": 200.9, 
             "company": "Atlantsolía", 
-            "diesel": 202.3, 
-            "diesel_discount": 197.3, 
+            "diesel": 198.3, 
+            "diesel_discount": 193.3, 
             "geo": {
                 "lat": 65.259896, 
                 "lon": -14.39789
@@ -92,11 +92,11 @@
             "name": "Hafnarfjarðarhöfn"
         }, 
         {
-            "bensin95": 209.9, 
-            "bensin95_discount": 204.9, 
+            "bensin95": 205.9, 
+            "bensin95_discount": 200.9, 
             "company": "Atlantsolía", 
-            "diesel": 202.3, 
-            "diesel_discount": 197.3, 
+            "diesel": 198.3, 
+            "diesel_discount": 193.3, 
             "geo": {
                 "lat": 63.994238, 
                 "lon": -21.185975
@@ -105,11 +105,11 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 209.9, 
-            "bensin95_discount": 204.9, 
+            "bensin95": 203.9, 
+            "bensin95_discount": 198.9, 
             "company": "Atlantsolía", 
-            "diesel": 202.3, 
-            "diesel_discount": 197.3, 
+            "diesel": 196.3, 
+            "diesel_discount": 191.3, 
             "geo": {
                 "lat": 64.076516, 
                 "lon": -21.937885
@@ -196,11 +196,11 @@
             "name": "Skeifan"
         }, 
         {
-            "bensin95": 209.9, 
-            "bensin95_discount": 204.9, 
+            "bensin95": 203.9, 
+            "bensin95_discount": 198.9, 
             "company": "Atlantsolía", 
-            "diesel": 202.3, 
-            "diesel_discount": 197.3, 
+            "diesel": 196.3, 
+            "diesel_discount": 191.3, 
             "geo": {
                 "lat": 64.110091, 
                 "lon": -21.852653
