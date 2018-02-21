@@ -3069,6 +3069,110 @@
             "name": "Þorlákshöfn"
         }, 
         {
+            "bensin95": 210.8, 
+            "bensin95_discount": 205.8, 
+            "company": "Orkan", 
+            "diesel": 203.2, 
+            "diesel_discount": 198.2, 
+            "geo": {
+                "lat": 64.142126, 
+                "lon": -21.952957
+            }, 
+            "key": "or_048", 
+            "name": "Birkimelur"
+        }, 
+        {
+            "bensin95": 210.8, 
+            "bensin95_discount": 205.8, 
+            "company": "Orkan", 
+            "diesel": 203.2, 
+            "diesel_discount": 198.2, 
+            "geo": {
+                "lat": 64.131308, 
+                "lon": -21.918266
+            }, 
+            "key": "or_049", 
+            "name": "Bústaðavegur"
+        }, 
+        {
+            "bensin95": 210.8, 
+            "bensin95_discount": 205.8, 
+            "company": "Orkan", 
+            "diesel": 203.2, 
+            "diesel_discount": 198.2, 
+            "geo": {
+                "lat": 64.145763, 
+                "lon": -21.85861
+            }, 
+            "key": "or_050", 
+            "name": "Kleppsvegur"
+        }, 
+        {
+            "bensin95": 210.8, 
+            "bensin95_discount": 205.8, 
+            "company": "Orkan", 
+            "diesel": 203.2, 
+            "diesel_discount": 198.2, 
+            "geo": {
+                "lat": 64.102104, 
+                "lon": -21.884002
+            }, 
+            "key": "or_051", 
+            "name": "Smárinn"
+        }, 
+        {
+            "bensin95": 210.8, 
+            "bensin95_discount": 205.8, 
+            "company": "Orkan", 
+            "diesel": 203.2, 
+            "diesel_discount": 198.2, 
+            "geo": {
+                "lat": 64.101745, 
+                "lon": -21.831087
+            }, 
+            "key": "or_052", 
+            "name": "Suðurfell"
+        }, 
+        {
+            "bensin95": 210.8, 
+            "bensin95_discount": 205.8, 
+            "company": "Orkan", 
+            "diesel": 203.2, 
+            "diesel_discount": 198.2, 
+            "geo": {
+                "lat": 64.123847, 
+                "lon": -21.804124
+            }, 
+            "key": "or_053", 
+            "name": "Vesturlandsvegur"
+        }, 
+        {
+            "bensin95": 210.8, 
+            "bensin95_discount": 205.8, 
+            "company": "Orkan", 
+            "diesel": 203.2, 
+            "diesel_discount": 198.2, 
+            "geo": {
+                "lat": 65.695775, 
+                "lon": -18.122012
+            }, 
+            "key": "or_054", 
+            "name": "Hörgárbraut"
+        }, 
+        {
+            "bensin95": 210.8, 
+            "bensin95_discount": 205.8, 
+            "company": "Orkan", 
+            "diesel": 203.2, 
+            "diesel_discount": 198.2, 
+            "geo": {
+                "lat": 63.995624, 
+                "lon": -21.185094
+            }, 
+            "key": "or_055", 
+            "name": "Hveragerði"
+        }, 
+        {
             "bensin95": 203.4, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
@@ -3108,10 +3212,10 @@
             "name": "Skemmuvegur"
         }, 
         {
-            "bensin95": 210.8, 
+            "bensin95": 203.4, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 203.2, 
+            "diesel": 195.8, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.149823, 
@@ -3173,121 +3277,17 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 211.8, 
-            "bensin95_discount": 206.8, 
-            "company": "Skeljungur", 
-            "diesel": 206.6, 
-            "diesel_discount": 201.6, 
-            "geo": {
-                "lat": 64.142126, 
-                "lon": -21.952957
-            }, 
-            "key": "sk_000", 
-            "name": "Birkimelur"
-        }, 
-        {
-            "bensin95": 211.8, 
-            "bensin95_discount": 206.8, 
-            "company": "Skeljungur", 
-            "diesel": 206.6, 
-            "diesel_discount": 201.6, 
-            "geo": {
-                "lat": 64.131308, 
-                "lon": -21.918266
-            }, 
-            "key": "sk_001", 
-            "name": "Bústaðavegur"
-        }, 
-        {
-            "bensin95": 211.8, 
-            "bensin95_discount": 206.8, 
-            "company": "Skeljungur", 
-            "diesel": 206.6, 
-            "diesel_discount": 201.6, 
+            "bensin95": 203.4, 
+            "bensin95_discount": null, 
+            "company": "Orkan X", 
+            "diesel": 195.8, 
+            "diesel_discount": null, 
             "geo": {
                 "lat": 64.090027, 
                 "lon": -21.926312
             }, 
-            "key": "sk_002", 
+            "key": "ox_008", 
             "name": "Garðabær"
-        }, 
-        {
-            "bensin95": 211.8, 
-            "bensin95_discount": 206.8, 
-            "company": "Skeljungur", 
-            "diesel": 206.6, 
-            "diesel_discount": 201.6, 
-            "geo": {
-                "lat": 64.145763, 
-                "lon": -21.85861
-            }, 
-            "key": "sk_003", 
-            "name": "Kleppsvegur"
-        }, 
-        {
-            "bensin95": 211.8, 
-            "bensin95_discount": 206.8, 
-            "company": "Skeljungur", 
-            "diesel": 206.6, 
-            "diesel_discount": 201.6, 
-            "geo": {
-                "lat": 64.102104, 
-                "lon": -21.884002
-            }, 
-            "key": "sk_004", 
-            "name": "Smárinn"
-        }, 
-        {
-            "bensin95": 211.8, 
-            "bensin95_discount": 206.8, 
-            "company": "Skeljungur", 
-            "diesel": 206.6, 
-            "diesel_discount": 201.6, 
-            "geo": {
-                "lat": 64.101745, 
-                "lon": -21.831087
-            }, 
-            "key": "sk_005", 
-            "name": "Suðurfell"
-        }, 
-        {
-            "bensin95": 211.8, 
-            "bensin95_discount": 206.8, 
-            "company": "Skeljungur", 
-            "diesel": 206.6, 
-            "diesel_discount": 201.6, 
-            "geo": {
-                "lat": 64.123847, 
-                "lon": -21.804124
-            }, 
-            "key": "sk_006", 
-            "name": "Vesturlandsvegur"
-        }, 
-        {
-            "bensin95": 211.8, 
-            "bensin95_discount": 206.8, 
-            "company": "Skeljungur", 
-            "diesel": 206.6, 
-            "diesel_discount": 201.6, 
-            "geo": {
-                "lat": 65.695775, 
-                "lon": -18.122012
-            }, 
-            "key": "sk_007", 
-            "name": "Hörgárbraut"
-        }, 
-        {
-            "bensin95": 211.8, 
-            "bensin95_discount": 206.8, 
-            "company": "Skeljungur", 
-            "diesel": 206.6, 
-            "diesel_discount": 201.6, 
-            "geo": {
-                "lat": 63.995624, 
-                "lon": -21.185094
-            }, 
-            "key": "sk_008", 
-            "name": "Hveragerði"
         }
     ]
 }
