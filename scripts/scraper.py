@@ -216,26 +216,6 @@ def get_individual_ob_prices():
     return prices
 
 
-def get_global_skeljungur_prices():
-    url = 'http://www.skeljungur.is/einstaklingar/eldsneytisverd/'
-    res = requests.get(url, headers=utils.headers())
-    html = etree.fromstring(res.content, etree.HTMLParser())
-    bensin95_text = html.find(('.//*[@id="st-container"]/div/div/div/div/'
-                               'div[2]/div/div/div[1]/div[1]/div[1]/section/'
-                               'div/div[2]/div[1]/div[2]/h2')).text
-    diesel_text = html.find(('.//*[@id="st-container"]/div/div/div/div/div[2]/'
-                             'div/div/div[1]/div[1]/div[1]/section/div/div[2]/'
-                             'div[1]/div[4]/h2')).text
-    bensin95 = float(bensin95_text.replace(' kr.', '').replace(',', '.'))
-    diesel = float(diesel_text.replace(' kr.', '').replace(',', '.'))
-    return {
-        'bensin95': bensin95,
-        'diesel': diesel,
-        'bensin95_discount': bensin95 - glob.SKELJUNGUR_DISCOUNT,
-        'diesel_discount': diesel - glob.SKELJUNGUR_DISCOUNT
-    }
-
-
 def get_individual_orkan_prices():
     # reads prices for Orkan and Orkan X stations because they're now on the
     # same webpage
@@ -274,6 +254,12 @@ def get_individual_orkan_prices():
                 'bensin95_discount': bensin95_discount,
                 'diesel_discount': diesel_discount
             }
+    # TEMPORARY_FIX while three former Skeljungur stations are missing from the
+    # list of stations on Orkan webpage
+    for key in ['or_053', 'or_054', 'or_055']:
+        if key not in prices:
+            prices[key] = prices['or_000']
+    # /TEMPORARY_FIX
     return prices
 
 
@@ -291,7 +277,5 @@ if __name__ == '__main__':
     print get_global_olis_prices()
     print 'ÓB'
     print get_individual_ob_prices()
-    print 'Skeljungur'
-    print get_global_skeljungur_prices()
     print 'Orkan (including Orkan X)'
     print get_individual_orkan_prices()

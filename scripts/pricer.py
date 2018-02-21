@@ -41,10 +41,6 @@ def main():
         {
             'name': glob.ORKAN_X,
             'stations': '../stations/orkanx.json'
-        },
-        {
-            'name': glob.SKELJUNGUR,
-            'stations': '../stations/skeljungur.json'
         }
     ]
 
@@ -65,7 +61,6 @@ def main():
     ob_prices = scraper.get_individual_ob_prices()
     olis_prices = scraper.get_global_olis_prices()
     orkan_prices = scraper.get_individual_orkan_prices()
-    skeljungur_prices = scraper.get_global_skeljungur_prices()
 
     list_of_stations = []
 
@@ -116,12 +111,6 @@ def main():
                 orkan_prices[key]['bensin95_discount'])
             station['diesel'] = orkan_prices[key]['diesel']
             station['diesel_discount'] = orkan_prices[key]['diesel_discount']
-        elif station['company'] == glob.SKELJUNGUR:
-            station['bensin95'] = skeljungur_prices['bensin95']
-            station['bensin95_discount'] = (
-                skeljungur_prices['bensin95_discount'])
-            station['diesel'] = skeljungur_prices['diesel']
-            station['diesel_discount'] = skeljungur_prices['diesel_discount']
         list_of_stations.append(station)
 
     data = {'stations': list_of_stations}

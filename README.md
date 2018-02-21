@@ -100,13 +100,15 @@ Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodv
 
 #### Stations
 
+Skeljungur has rebranded its remaining stations to Orkan in the timeframe of 2017-11 to 2018-02, there are no fuel stations operating under the Skeljungur brand anymore.
+
 List of stations for Skeljungur, Orkan and Orkan X can be seen [here](http://www.skeljungur.is/einstaklingar/stadsetning-stodva/). With a bit of examination like with N1 we can see a JSON endpoint/file which exposes stations list and location info. Example:
 
 	GET http://www.skeljungur.is/LisaLib/GetSupportFile.aspx?id=d070afa9-d1ff-11e4-80e4-005056a6135c
 
 #### Prices
 
-Prices without discount for Skeljungur and Orkan can be seen [here](http://www.skeljungur.is/einstaklingar/eldsneytisverd/), and station individual prices for Orkan X can be found [here](http://www.orkan.is/Orkan-X/Stodvar). Info on discount for Skeljungur can be seen [here](https://www.skeljungur.is/einstaklingar/), and for Orkan it can be seen [here](https://www.orkan.is/Afslattarthrep), it's threefold when this is written (5/6/8 ISK discount) and is controlled by how much gas you bought from Orkan the month before (also an extra +2 discount for selected station). To simplify things we only use the default minimum discount. Orkan X does not maintain a discount program.
+Prices for Orkan and Orkan X individual stations can be seen [here](https://www.orkan.is/Orkustodvar). [Discount for Orkan (Afsláttarþrep)](https://www.orkan.is/Afslattarthrep) is threefold when this is written (5/6/8 ISK discount) and is controlled by how much gas you bought from Orkan the month before (also an extra +2 discount for a selected station). To simplify we only use the default minimum discount. Orkan X does not maintain a discount program.
 
 ## Maintainer
 

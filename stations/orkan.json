@@ -334,5 +334,61 @@
             "lon": -21.378168
         },
         "name": "Þorlákshöfn"
+    },
+    "or_048": {
+        "geo": {
+            "lat": 64.142126,
+            "lon": -21.952957
+        },
+        "name": "Birkimelur"
+    },
+    "or_049": {
+        "geo": {
+            "lat": 64.131308,
+            "lon": -21.918266
+        },
+        "name": "Bústaðavegur"
+    },
+    "or_050": {
+        "geo": {
+            "lat": 64.145763,
+            "lon": -21.858610
+        },
+        "name": "Kleppsvegur"
+    },
+    "or_051": {
+        "geo": {
+            "lat": 64.102104,
+            "lon": -21.884002
+        },
+        "name": "Smárinn"
+    },
+    "or_052": {
+        "geo": {
+            "lat": 64.101745,
+            "lon": -21.831087
+        },
+        "name": "Suðurfell"
+    },
+    "or_053": {
+        "geo": {
+            "lat": 64.123847,
+            "lon": -21.804124
+        },
+        "name": "Vesturlandsvegur"
+    },
+    "or_054": {
+        "geo": {
+            "lat": 65.695775,
+            "lon": -18.122012
+        },
+        "name": "Hörgárbraut"
+    },
+    "or_055": {
+        "geo": {
+            "lat": 63.995624,
+            "lon": -21.185094
+        },
+        "name": "Hveragerði"
     }
 }

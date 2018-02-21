@@ -87,6 +87,14 @@ ORKAN_LOCATION_RELATION = {
     u'Vestmannaeyjar': 'or_045',
     u'V\xedk \xed M\xfdrdal': 'or_046',
     u'\xdeorl\xe1ksh\xf6fn': 'or_047',
+    u'Birkimelur': 'or_048',
+    u'B\xfasta\xf0avegur': 'or_049',
+    u'Kleppsvegur': 'or_050',
+    u'Sm\xe1rinn': 'or_051',
+    u'Su\xf0urfell': 'or_052',
+    u'Vesturlandsvegur': 'or_053',
+    u'H\xf6rg\xe1rbraut': 'or_054',
+    u'Hverager\xf0i': 'or_055',
 }
 
 ORKAN_X_LOCATION_RELATION = {
@@ -98,6 +106,7 @@ ORKAN_X_LOCATION_RELATION = {
     u'Akureyri, Kjarnagata (Orkan X)': 'ox_005',
     u'Akranes, Smi\xf0juv\xf6llum (Orkan X)': 'ox_006',
     u'Hverager\xf0i (Orkan X)': 'ox_007',
+    u'Gar\xf0ab\xe6r (Orkan X)': 'ox_008',
 }
 
 # Atlantsolía has changed their discount system to mirror Orkan, this discount
@@ -136,21 +145,6 @@ N1_DISCOUNT = 5.0
 # Step 2, 50-150L, [ 6 ISK ] + [ 2 ISK if your personal station] = [  8 ISK ]
 # Step 3, 150L+,   [ 8 ISK ] + [ 2 ISK if your personal station] = [ 10 ISK ]
 ORKAN_MINIMUM_DISCOUNT = 5.0
-
-# Skeljungur offers 4 ISK discount for their company card holders according
-# to this page: http://www.skeljungur.is/einstaklingar/
-# +++
-# KORT OG LYKLAR SKELJUNGS VEITA AFSLÁTT HJÁ ORKUNNI OG SKELJUNGI
-# AFSLÁTTUR Á HVERN ELDSNEYTISLÍTRA
-# * 10 kr í upphafsafslátt í fyrstu 2 skiptin
-# * 5 kr hjá Orkunni
-# * 5 kr hjá Skeljungi
-# * 2 kr. viðbótarafsláttur á [Þinni stöð](orkan.is/afslattarthrep/thin-stod/)
-# * 15 kr á afmælisdegi lykilhafa
-# * 2 kr viðbótarafsláttur á Þinni stöð
-# * Allt að 10 kr fastur afsláttur á Orkunni í Afsláttarþrepi Orkunnar
-# +++
-SKELJUNGUR_DISCOUNT = 5.0
 
 BROWSERS_UA = [
     ('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) '
