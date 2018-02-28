@@ -258,7 +258,11 @@ def get_individual_orkan_prices():
     # list of stations on Orkan webpage
     for key in ['or_053', 'or_054', 'or_055']:
         if key not in prices:
-            prices[key] = prices['or_000']
+            prices[key] = prices['or_000'].copy()
+            if key in ['or_054', 'or_055']:
+                # diesel currently 1 ISK more expensive on these two stations
+                prices[key]['diesel'] += 1
+                prices[key]['diesel_discount'] += 1
     # /TEMPORARY_FIX
     return prices
 
