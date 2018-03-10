@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import datetime
 from lxml import etree
 import os
 import requests
@@ -167,16 +166,6 @@ def get_global_olis_prices():
 
 
 def get_individual_ob_prices():
-    # Note:
-    # Price data source for OB is a single global price, however, this December
-    # (2017) (oh and the November month before) there will be 17 ISK discount
-    # on selected stations, these stations are the following:
-    # OB Fjardarkaupum, Baejarlind, Starengi, Snorrabraut and Akureyri
-    #    ob_012         ob_010      ob_029    ob_028          ob_001
-    # Source:
-    # facebook.com/ob.bensin/photos/a.208957995809394.57356.162016470503547/1581943655177481/
-    # TODO:
-    # In 2018 this can be reverted
     url = 'http://www.ob.is/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers())
     html = etree.fromstring(res.content, etree.HTMLParser())
@@ -186,8 +175,8 @@ def get_individual_ob_prices():
     diesel_discount_text = html.find('.//*[@id="gas-price"]/span[4]').text
     bensin95 = float(bensin95_text.replace(',', '.'))
     diesel = float(diesel_text.replace(',', '.'))
-    usual_bensin95_discount = float(bensin_discount_text.replace(',', '.'))
-    usual_diesel_discount = float(diesel_discount_text.replace(',', '.'))
+    bensin95_discount = float(bensin_discount_text.replace(',', '.'))
+    diesel_discount = float(diesel_discount_text.replace(',', '.'))
     prices = {}
     ob_stations = utils.load_json(
         os.path.join(
@@ -195,18 +184,9 @@ def get_individual_ob_prices():
             '../stations/ob.json'
         )
     )
-    now = datetime.datetime.now()
-    then = datetime.datetime.strptime('2017-12-31T23:59', '%Y-%m-%dT%H:%M')
-    december_discount = 17
-    selected_ob_stations = (
-        'ob_001', 'ob_010', 'ob_012', 'ob_028', 'ob_029'
-    )
     for key in ob_stations:
-        bensin95_discount = usual_bensin95_discount
-        diesel_discount = usual_diesel_discount
-        if key in selected_ob_stations and now < then:
-            bensin95_discount = bensin95 - december_discount
-            diesel_discount = diesel - december_discount
+        bensin95_discount = bensin95_discount
+        diesel_discount = diesel_discount
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
