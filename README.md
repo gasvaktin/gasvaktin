@@ -54,7 +54,7 @@ Atlantsolía has a list of its stations [here](https://www.atlantsolia.is/stodva
 
 #### Prices
 
-Gas price for each station can be found [here](http://atlantsolia.is/stodvarverd.aspx), also showing discount prices available if you have Atlantsolía gas key ring.
+Gas price for each station can be found [here](http://atlantsolia.is/stodvarverd.aspx), also showing discount prices available if you have Atlantsolía fuel key ring.
 
 ### Costco Iceland
 
@@ -94,21 +94,19 @@ List of stations can be seen [here](http://www.olis.is/solustadir/thjonustustodv
 
 #### Prices
 
-Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/) and prices for ÓB can be seen [here](http://www.ob.is/eldsneytisverd/), both with and without special gas key ring discount.
+Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/) and prices for ÓB can be seen [here](http://www.ob.is/eldsneytisverd/), both with and without special fuel key ring discount.
 
 ### Skeljungur (and Orkan (and Orkan X))
 
 #### Stations
 
-Skeljungur has rebranded its remaining stations to Orkan in the timeframe of 2017-11 to 2018-02, there are no fuel stations operating under the Skeljungur brand anymore.
+In the beginning of 2018 Skeljungur rebranded its remaining stations to Orkan, there are no fuel stations operating under the Skeljungur brand anymore.
 
-List of stations for Skeljungur, Orkan and Orkan X can be seen [here](http://www.skeljungur.is/einstaklingar/stadsetning-stodva/). With a bit of examination like with N1 we can see a JSON endpoint/file which exposes stations list and location info. Example:
-
-	GET http://www.skeljungur.is/LisaLib/GetSupportFile.aspx?id=d070afa9-d1ff-11e4-80e4-005056a6135c
+List of stations for Orkan and Orkan X can be seen [here](https://www.orkan.is/orkan/orkustodvar/).
 
 #### Prices
 
-Prices for Orkan and Orkan X individual stations can be seen [here](https://www.orkan.is/Orkustodvar). [Discount for Orkan (Afsláttarþrep)](https://www.orkan.is/Afslattarthrep) is threefold when this is written (5/6/8 ISK discount) and is controlled by how much gas you bought from Orkan the month before (also an extra +2 discount for a selected station). To simplify we only use the default minimum discount. Orkan X does not maintain a discount program.
+Prices for Orkan and Orkan X individual stations can be seen [here](https://www.orkan.is/orkan/orkustodvar/). Information on the [discount for Orkan (Afsláttarþrep)](https://www.orkan.is/orkan/serkjor/) is currently missing from the updated Orkan website, before the update there was information available that it's threefold (5/6/8 ISK discount) and is controlled by how much fuel you bought from Orkan the month before (extra +2 discount for user selected station). To simplify we only use the default minimum discount, currently 5 ISK. Orkan X does not maintain a discount program.
 
 ## Maintainer
 

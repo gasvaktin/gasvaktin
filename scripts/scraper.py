@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from lxml import etree
+import lxml.etree
 import os
 import requests
 
@@ -13,7 +13,7 @@ def get_individual_atlantsolia_prices():
     url = 'http://atlantsolia.is/stodvarverd.aspx'
     res = requests.get(url, headers=utils.headers())
     html_text = res.content
-    html = etree.fromstring(html_text, etree.HTMLParser())
+    html = lxml.etree.fromstring(html_text, lxml.etree.HTMLParser())
     div_prices = html.find(('.//*[@id="content"]/div/div/div/div[2]/div/div/'
                             'table/tbody'))
     prices = {}
@@ -152,7 +152,7 @@ def get_individual_daelan_prices():
 def get_global_olis_prices():
     url = 'http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers())
-    html = etree.fromstring(res.content, etree.HTMLParser())
+    html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
     bensin95_text = html.find('.//*[@id="gas-price"]/span[1]').text
     diesel_text = html.find('.//*[@id="gas-price"]/span[2]').text
     bensin_discount_text = html.find('.//*[@id="gas-price"]/span[4]').text
@@ -168,7 +168,7 @@ def get_global_olis_prices():
 def get_individual_ob_prices():
     url = 'http://www.ob.is/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers())
-    html = etree.fromstring(res.content, etree.HTMLParser())
+    html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
     bensin95_text = html.find('.//*[@id="gas-price"]/span[1]').text
     diesel_text = html.find('.//*[@id="gas-price"]/span[2]').text
     bensin_discount_text = html.find('.//*[@id="gas-price"]/span[3]').text
@@ -197,27 +197,27 @@ def get_individual_ob_prices():
 
 
 def get_individual_orkan_prices():
-    # reads prices for Orkan and Orkan X stations because they're now on the
-    # same webpage
-    url = 'https://www.orkan.is/Orkustodvar'
+    # Read prices for Orkan and Orkan X stations because they're both on the
+    # same webpage.
+    url = 'https://www.orkan.is/orkan/orkustodvar/'
     res = requests.get(url, headers=utils.headers())
-    html = etree.fromstring(res.content, etree.HTMLParser())
-    div_table = html.find('.//*[@id="content"]/div/div[2]/div/div[2]')
+    html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
+    div_element = html.find('.//div[@class="accordion__container"]')
+    territories = div_element.findall('.//div[@class="accordion__child"]')
     prices = {}
     key = None
-    for element in div_table:
-        element_class = element.get('class')
-        if element_class.startswith('petrol-station'):
-            if element[0].text in glob.ORKAN_LOCATION_RELATION:
-                key = glob.ORKAN_LOCATION_RELATION[element[0].text]
-            elif element[0].text in glob.ORKAN_X_LOCATION_RELATION:
-                key = glob.ORKAN_X_LOCATION_RELATION[element[0].text]
+    for territory in territories:
+        for station in territory:
+            station_name = station[0][0].text
+            bensin95 = float(station[1].text.replace(',', '.'))
+            diesel = float(station[2].text.replace(',', '.'))
+            if station_name in glob.ORKAN_LOCATION_RELATION:
+                key = glob.ORKAN_LOCATION_RELATION[station_name]
+            elif station_name in glob.ORKAN_X_LOCATION_RELATION:
+                key = glob.ORKAN_X_LOCATION_RELATION[station_name]
             else:
                 continue
-        if element_class.startswith('general'):
-            bensin95 = float(element[0].text.replace(',', '.'))
-            diesel = float(element[1].text.replace(',', '.'))
-            # Orkan X stations have keys starting with "ox", while ordinary
+            # Orkan X stations have key starting with "ox", while ordinary
             # Orkan statins have keys starting with "or"
             bensin95_discount = None
             diesel_discount = None
