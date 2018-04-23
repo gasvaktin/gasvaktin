@@ -3264,10 +3264,10 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 207.4, 
+            "bensin95": 208.4, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 199.8, 
+            "diesel": 200.8, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.090027, 
@@ -3277,10 +3277,10 @@
             "name": "Garðabær"
         }, 
         {
-            "bensin95": 202.5, 
+            "bensin95": 203.5, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 196.2, 
+            "diesel": 197.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.117737, 
