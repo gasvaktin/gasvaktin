@@ -105,10 +105,10 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 211.9, 
+            "bensin95": 189.9, 
             "bensin95_discount": null, 
             "company": "Atlantsolía", 
-            "diesel": 204.3, 
+            "diesel": 182.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.076516, 
