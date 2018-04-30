@@ -19,7 +19,7 @@ ATLANTSOLIA_LOCATION_RELATION = {
     u'Egilssta\xf0ir': 'ao_005',
     u'Hafnarfjar\xf0arh\xf6fn': 'ao_006',
     u'Hverager\xf0i': 'ao_007',
-    u'Kaplakriki': 'ao_008',
+    u'Kaplakriki *': 'ao_008',
     u'K\xf3pavogsbraut': 'ao_009',
     u'Mosfellsb\xe6r': 'ao_010',
     u'Njar\xf0v\xedk': 'ao_011',

@@ -16,18 +16,30 @@ def get_individual_atlantsolia_prices():
     html = lxml.etree.fromstring(html_text, lxml.etree.HTMLParser())
     div_prices = html.find(('.//*[@id="content"]/div/div/div/div[2]/div/div/'
                             'table/tbody'))
+    # Atlantsolia recently declared one of its stations to be without discount,
+    # on their site that station is marked with a star (*) and the following
+    # comment at the bottom:
+    # "* Engir afslaettir gilda"
+    discountless_stations = ('ao_008', )
     prices = {}
     for div_price in div_prices:
         key = relation[div_price[0][0].text]
         bensin95 = float(div_price[1][0].text.replace(',', '.'))
         diesel = float(div_price[2][0].text.replace(',', '.'))
-        bensin95_discount = bensin95 - glob.ATLANTSOLIA_MINIMUM_DISCOUNT
-        diesel_discount = diesel - glob.ATLANTSOLIA_MINIMUM_DISCOUNT
+        bensin95_discount = int(
+            (bensin95 - glob.ATLANTSOLIA_MINIMUM_DISCOUNT) * 10
+        ) / 10.0
+        diesel_discount = int(
+            (diesel - glob.ATLANTSOLIA_MINIMUM_DISCOUNT) * 10
+        ) / 10.0
+        if key in discountless_stations:
+            bensin95_discount = None
+            diesel_discount = None
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
-            'bensin95_discount': int(bensin95_discount * 10) / 10.0,
-            'diesel_discount': int(diesel_discount * 10) / 10.0
+            'bensin95_discount': bensin95_discount,
+            'diesel_discount': diesel_discount
         }
     return prices
 
