@@ -10,7 +10,7 @@ import utils
 
 def get_individual_atlantsolia_prices():
     relation = glob.ATLANTSOLIA_LOCATION_RELATION
-    url = 'http://atlantsolia.is/stodvarverd.aspx'
+    url = 'https://www.atlantsolia.is/stodvaverd/'
     res = requests.get(url, headers=utils.headers())
     html_text = res.content
     html = lxml.etree.fromstring(html_text, lxml.etree.HTMLParser())
@@ -98,7 +98,7 @@ def get_global_costco_prices():
 
 
 def get_global_n1_prices():
-    url_eldsneyti = 'https://www.n1.is/eldsneyti/'
+    url_eldsneyti = 'https://www.n1.is/thjonusta/eldsneyti'
     url_eldsneyti_api = 'https://www.n1.is/umbraco/api/fuel/GetSingleFuelPrice'
     headers = utils.headers()
     session = requests.Session()
