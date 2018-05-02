@@ -3212,10 +3212,10 @@
             "name": "Spöngin"
         }, 
         {
-            "bensin95": 210.8, 
+            "bensin95": 207.8, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 203.2, 
+            "diesel": 200.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 65.263121, 
@@ -3225,10 +3225,10 @@
             "name": "Egilsstaðir"
         }, 
         {
-            "bensin95": 210.8, 
+            "bensin95": 207.8, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 203.2, 
+            "diesel": 200.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 65.665889, 
@@ -3251,10 +3251,10 @@
             "name": "Akranes"
         }, 
         {
-            "bensin95": 210.8, 
+            "bensin95": 207.8, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 203.2, 
+            "diesel": 200.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 63.995433, 
