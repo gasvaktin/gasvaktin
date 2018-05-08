@@ -14,11 +14,11 @@
             "name": "Baldursnes Akureyri"
         }, 
         {
-            "bensin95": 215.9, 
-            "bensin95_discount": 210.9, 
+            "bensin95": 214.9, 
+            "bensin95_discount": 209.9, 
             "company": "Atlantsolía", 
-            "diesel": 207.3, 
-            "diesel_discount": 202.3, 
+            "diesel": 206.3, 
+            "diesel_discount": 201.3, 
             "geo": {
                 "lat": 65.687807, 
                 "lon": -18.100104
@@ -66,11 +66,11 @@
             "name": "Búðarkór"
         }, 
         {
-            "bensin95": 215.9, 
-            "bensin95_discount": 210.9, 
+            "bensin95": 214.9, 
+            "bensin95_discount": 209.9, 
             "company": "Atlantsolía", 
-            "diesel": 207.3, 
-            "diesel_discount": 202.3, 
+            "diesel": 206.3, 
+            "diesel_discount": 201.3, 
             "geo": {
                 "lat": 65.259896, 
                 "lon": -14.39789
@@ -92,11 +92,11 @@
             "name": "Hafnarfjarðarhöfn"
         }, 
         {
-            "bensin95": 215.9, 
-            "bensin95_discount": 210.9, 
+            "bensin95": 214.9, 
+            "bensin95_discount": 209.9, 
             "company": "Atlantsolía", 
-            "diesel": 207.3, 
-            "diesel_discount": 202.3, 
+            "diesel": 206.3, 
+            "diesel_discount": 201.3, 
             "geo": {
                 "lat": 63.994238, 
                 "lon": -21.185975
@@ -105,10 +105,10 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 191.9, 
+            "bensin95": 188.9, 
             "bensin95_discount": null, 
             "company": "Atlantsolía", 
-            "diesel": 183.9, 
+            "diesel": 181.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.076516, 
