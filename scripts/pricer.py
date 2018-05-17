@@ -83,6 +83,28 @@ def main():
             station['bensin95_discount'] = n1_prices['bensin95_discount']
             station['diesel'] = n1_prices['diesel']
             station['diesel_discount'] = n1_prices['diesel_discount']
+            if key == 'n1_006':
+                # N1 station in Storihjalli, near Skemmuvegur in Reykjavik
+                # irl observation tells us the fuel price there is 8 ISK
+                # cheaper than their global price.
+                # At some point N1 added the following comment to their global
+                # one price webpage:
+                #
+                #     https://www.n1.is/thjonusta/eldsneyti
+                #     "* algengasta sjalfsafgreidsluverdid"
+                #
+                # meaning this one global price might not be the case on all
+                # N1 stations, I'd like to see N1 then move from showing one
+                # global price to show individual prices for stations or list
+                # stations that have different prices than the global one,
+                # this is a matter of transparency to N1 customers.
+                station['bensin95'] -= 8.0
+                station['bensin95_discount'] -= 8.0
+                station['diesel'] -= 8.0
+                station['diesel_discount'] -= 8.0
+                # Note: this above price "fix" is bad and will very likely
+                # become wrong in near future, however, I believe it to be a
+                # good thing to add this for now.
         elif station['company'] == glob.DAELAN:
             station['bensin95'] = daelan_prices[key]['bensin95']
             station['bensin95_discount'] = (
