@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import datetime
 import lxml.etree
 import os
 import requests
@@ -196,9 +197,31 @@ def get_individual_ob_prices():
             '../stations/ob.json'
         )
     )
+    # 15 ISK discount for selected stations
+    #
+    # Occasionally, selected OB stations have had higher discount than usually
+    # for a specified month, now it seems they're going to do this every month
+    # from now on (according to fb post).
+    # facebook.com/ob.bensin/photos/a.208957995809394.57356.162016470503547/1807565599281951/
+    #
+    # Stations with additional discount in July 2018:
+    # * Borgarnes (ob_009)
+    # * Baejarlind (ob_010)
+    # * Starengi (ob_029)
+    # * Isafjordur (ob_018)
+    # * Reydarfjordur (ob_026)
+    additional_discount = 15
+    additional_discount_stations = (
+        'ob_009', 'ob_010', 'ob_029', 'ob_018', 'ob_026',
+    )
+    now = datetime.datetime.now()
+    end = datetime.datetime.strptime('2018-07-31T23:59', '%Y-%m-%dT%H:%M')
     for key in ob_stations:
         bensin95_discount = bensin95_discount
         diesel_discount = diesel_discount
+        if now < end and key in additional_discount_stations:
+            bensin95_discount = bensin95 - additional_discount
+            diesel_discount = diesel - additional_discount
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
