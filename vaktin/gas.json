@@ -261,10 +261,10 @@
             "name": "Kauptún"
         }, 
         {
-            "bensin95": 218.8, 
+            "bensin95": 220.9, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 208.8, 
+            "diesel": 209.8, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.131015, 
@@ -274,10 +274,10 @@
             "name": "Fellsmúli"
         }, 
         {
-            "bensin95": 218.8, 
+            "bensin95": 220.9, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 208.8, 
+            "diesel": 209.8, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.112573, 
