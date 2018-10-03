@@ -3147,10 +3147,10 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 221.9, 
+            "bensin95": 223.3, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 213.8, 
+            "diesel": 217.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.149452, 
@@ -3160,10 +3160,10 @@
             "name": "Eiðistorg"
         }, 
         {
-            "bensin95": 221.9, 
+            "bensin95": 223.3, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 213.8, 
+            "diesel": 217.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.132046, 
@@ -3173,10 +3173,10 @@
             "name": "Miklabraut"
         }, 
         {
-            "bensin95": 217.8, 
+            "bensin95": 218.7, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 208.2, 
+            "diesel": 208.7, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.11066, 
@@ -3186,10 +3186,10 @@
             "name": "Skemmuvegur"
         }, 
         {
-            "bensin95": 221.9, 
+            "bensin95": 223.3, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 213.8, 
+            "diesel": 217.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.149823, 
@@ -3202,7 +3202,7 @@
             "bensin95": 221.9, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 213.8, 
+            "diesel": 219.3, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 65.263121, 
@@ -3215,7 +3215,7 @@
             "bensin95": 221.9, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 213.8, 
+            "diesel": 219.3, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 65.665889, 
@@ -3225,10 +3225,10 @@
             "name": "Akureyri"
         }, 
         {
-            "bensin95": 221.9, 
+            "bensin95": 222.9, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 213.8, 
+            "diesel": 220.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.32685, 
@@ -3241,7 +3241,7 @@
             "bensin95": 221.9, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 213.8, 
+            "diesel": 219.3, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 63.995433, 
@@ -3251,10 +3251,10 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 221.9, 
+            "bensin95": 223.3, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 213.8, 
+            "diesel": 217.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.090027, 
@@ -3264,10 +3264,10 @@
             "name": "Garðabær"
         }, 
         {
-            "bensin95": 217.8, 
+            "bensin95": 218.7, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 208.2, 
+            "diesel": 208.7, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.117737, 
