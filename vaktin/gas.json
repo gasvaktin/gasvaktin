@@ -235,11 +235,11 @@
             "name": "Sprengisandur"
         }, 
         {
-            "bensin95": 229.8, 
-            "bensin95_discount": 224.8, 
+            "bensin95": 224.8, 
+            "bensin95_discount": 219.8, 
             "company": "Atlantsolía", 
-            "diesel": 227.2, 
-            "diesel_discount": 222.2, 
+            "diesel": 222.2, 
+            "diesel_discount": 217.2, 
             "geo": {
                 "lat": 65.07071, 
                 "lon": -22.733996
