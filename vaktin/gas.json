@@ -144,11 +144,11 @@
             "name": "Mosfellsbær"
         }, 
         {
-            "bensin95": 231.8, 
-            "bensin95_discount": 226.8, 
+            "bensin95": 226.8, 
+            "bensin95_discount": 221.8, 
             "company": "Atlantsolía", 
-            "diesel": 231.2, 
-            "diesel_discount": 226.2, 
+            "diesel": 226.2, 
+            "diesel_discount": 221.2, 
             "geo": {
                 "lat": 63.987463, 
                 "lon": -22.549396
