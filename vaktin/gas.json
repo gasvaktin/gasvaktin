@@ -2926,11 +2926,11 @@
             "name": "Reykjanesbær"
         }, 
         {
-            "bensin95": 228.6, 
-            "bensin95_discount": 223.6, 
+            "bensin95": 223.7, 
+            "bensin95_discount": 218.7, 
             "company": "Orkan", 
-            "diesel": 229.1, 
-            "diesel_discount": 224.1, 
+            "diesel": 226.1, 
+            "diesel_discount": 221.1, 
             "geo": {
                 "lat": 64.037636, 
                 "lon": -22.707148
