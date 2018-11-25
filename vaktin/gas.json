@@ -2679,8 +2679,8 @@
             "name": "Furuvellir"
         }, 
         {
-            "bensin95": 219.6, 
-            "bensin95_discount": 214.6, 
+            "bensin95": 217.6, 
+            "bensin95_discount": 212.6, 
             "company": "Orkan", 
             "diesel": 221.1, 
             "diesel_discount": 216.1, 
@@ -3121,8 +3121,8 @@
             "name": "Vesturlandsvegur"
         }, 
         {
-            "bensin95": 226.6, 
-            "bensin95_discount": 221.6, 
+            "bensin95": 223.6, 
+            "bensin95_discount": 218.6, 
             "company": "Orkan", 
             "diesel": 227.1, 
             "diesel_discount": 222.1, 
@@ -3134,8 +3134,8 @@
             "name": "Hörgárbraut"
         }, 
         {
-            "bensin95": 226.6, 
-            "bensin95_discount": 221.6, 
+            "bensin95": 223.6, 
+            "bensin95_discount": 218.6, 
             "company": "Orkan", 
             "diesel": 227.1, 
             "diesel_discount": 222.1, 
@@ -3173,7 +3173,7 @@
             "name": "Miklabraut"
         }, 
         {
-            "bensin95": 214.7, 
+            "bensin95": 214.3, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
             "diesel": 215.2, 
@@ -3264,7 +3264,7 @@
             "name": "Garðabær"
         }, 
         {
-            "bensin95": 214.7, 
+            "bensin95": 214.3, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
             "diesel": 215.2, 
