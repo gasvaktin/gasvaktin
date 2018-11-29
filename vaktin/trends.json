@@ -3579,6 +3579,18 @@
             "median_diesel_discount": null, 
             "stations_count": 3, 
             "timestamp": "2018-11-27T09:30"
+        }, 
+        {
+            "mean_bensin95": 213.5, 
+            "mean_bensin95_discount": null, 
+            "mean_diesel": 211.8, 
+            "mean_diesel_discount": null, 
+            "median_bensin95": 210.9, 
+            "median_bensin95_discount": null, 
+            "median_diesel": 213.3, 
+            "median_diesel_discount": null, 
+            "stations_count": 3, 
+            "timestamp": "2018-11-29T17:45"
         }
     ], 
     "n1": [
