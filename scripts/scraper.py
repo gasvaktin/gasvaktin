@@ -8,6 +8,8 @@ import requests
 import glob
 import utils
 
+requests.packages.urllib3.disable_warnings()
+
 
 def get_individual_atlantsolia_prices():
     relation = glob.ATLANTSOLIA_LOCATION_RELATION
@@ -163,8 +165,8 @@ def get_individual_daelan_prices():
 
 
 def get_global_olis_prices():
-    url = 'http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
-    res = requests.get(url, headers=utils.headers())
+    url = 'https://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
+    res = requests.get(url, headers=utils.headers(), verify=False)
     html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
     bensin95_text = html.find('.//*[@id="gas-price"]/span[1]').text
     diesel_text = html.find('.//*[@id="gas-price"]/span[2]').text
@@ -179,8 +181,8 @@ def get_global_olis_prices():
 
 
 def get_individual_ob_prices():
-    url = 'http://www.ob.is/eldsneytisverd/'
-    res = requests.get(url, headers=utils.headers())
+    url = 'https://www.ob.is/eldsneytisverd/'
+    res = requests.get(url, headers=utils.headers(), verify=False)
     html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
     bensin95_text = html.find('.//*[@id="gas-price"]/span[1]').text
     diesel_text = html.find('.//*[@id="gas-price"]/span[2]').text
@@ -235,7 +237,7 @@ def get_individual_orkan_prices():
     # Read prices for Orkan and Orkan X stations because they're both on the
     # same webpage.
     url = 'https://www.orkan.is/orkan/orkustodvar/'
-    res = requests.get(url, headers=utils.headers())
+    res = requests.get(url, headers=utils.headers(), verify=False)
     html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
     div_element = html.find('.//div[@class="accordion__container"]')
     territories = div_element.findall('.//div[@class="accordion__child"]')
