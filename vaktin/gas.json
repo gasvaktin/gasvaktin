@@ -2679,11 +2679,11 @@
             "name": "Furuvellir"
         }, 
         {
-            "bensin95": 215.4, 
-            "bensin95_discount": 210.4, 
+            "bensin95": 214.4, 
+            "bensin95_discount": 209.4, 
             "company": "Orkan", 
-            "diesel": 217.1, 
-            "diesel_discount": 212.1, 
+            "diesel": 212.3, 
+            "diesel_discount": 207.3, 
             "geo": {
                 "lat": 66.048819, 
                 "lon": -17.344342
@@ -2770,11 +2770,11 @@
             "name": "Bolungarvík"
         }, 
         {
-            "bensin95": 218.7, 
-            "bensin95_discount": 213.7, 
+            "bensin95": 217.7, 
+            "bensin95_discount": 212.7, 
             "company": "Orkan", 
-            "diesel": 223.1, 
-            "diesel_discount": 218.1, 
+            "diesel": 220.7, 
+            "diesel_discount": 215.7, 
             "geo": {
                 "lat": 66.060808, 
                 "lon": -23.174836
@@ -2809,11 +2809,11 @@
             "name": "Skagabraut Akranes"
         }, 
         {
-            "bensin95": 219.8, 
-            "bensin95_discount": 214.8, 
+            "bensin95": 218.8, 
+            "bensin95_discount": 213.8, 
             "company": "Orkan", 
-            "diesel": 222.6, 
-            "diesel_discount": 217.6, 
+            "diesel": 220.2, 
+            "diesel_discount": 215.2, 
             "geo": {
                 "lat": 64.543622, 
                 "lon": -21.908963
@@ -3264,10 +3264,10 @@
             "name": "Garðabær"
         }, 
         {
-            "bensin95": 213.5, 
+            "bensin95": 211.5, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 216.0, 
+            "diesel": 214.0, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.117737, 
