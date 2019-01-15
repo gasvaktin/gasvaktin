@@ -3082,11 +3082,11 @@
             "name": "Kleppsvegur"
         }, 
         {
-            "bensin95": 220.4, 
-            "bensin95_discount": 215.4, 
+            "bensin95": 213.2, 
+            "bensin95_discount": 208.2, 
             "company": "Orkan", 
-            "diesel": 220.7, 
-            "diesel_discount": 215.7, 
+            "diesel": 214.7, 
+            "diesel_discount": 209.7, 
             "geo": {
                 "lat": 64.102104, 
                 "lon": -21.884002
