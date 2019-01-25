@@ -77,10 +77,10 @@ def get_global_costco_prices():
     diesel = None
     html_text = res.content
     for line in html_text.split('\n'):
-        if line.startswith(' Bensin,'):
-            bensin = float(line[8:].replace(' ', ''))
-        if line.startswith(' Diesel,'):
-            diesel = float(line[8:].replace(' ', ''))
+        if line.lstrip().startswith('Bensin,'):
+            bensin = float(line.lstrip()[7:].replace(' ', ''))
+        if line.lstrip().startswith('Diesel,'):
+            diesel = float(line.lstrip()[7:].replace(' ', ''))
         if bensin is not None and diesel is not None:
             break
     if bensin is None or diesel is None:
