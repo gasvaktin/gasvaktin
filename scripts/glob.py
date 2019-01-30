@@ -152,13 +152,32 @@ N1_DISCOUNT = 5.0
 # something similar as "the most common self-service price", similar to the
 # message shown on n1.is/thjonusta/eldsneyti/ and has been stated as far as we
 # know since 2018-05-17.
+# N1 Fossvogur observed to be a price deviant station IRL, was first 3 ISK lower,
+# then at some point changed to 5 ISK and has held that number for I believe two
+# price changes.
+# N1 Isafjordur suspected of deviance, phone call and asking for the fuel price
+# resulted in price deviance information shown below. Not observed price deviance
+# by myself, so there is of course a possibility that employee who answered me on
+# the phone provided me with incorrect price data.
 N1_PRICE_DIFF = {
+    'n1_005': {  # Fossvogur
+        'bensin95': -5.0,
+        'bensin95_discount': -5.0,
+        'diesel': -5.0,
+        'diesel_discount': -5.0
+    },
     'n1_006': {  # Storihjalli
         'bensin95': -8.0,
         'bensin95_discount': -8.0,
         'diesel': -8.0,
         'diesel_discount': -8.0
     },
+    'n1_017': {  # Isafjordur
+        'bensin95': -3.0,
+        'bensin95_discount': -3.0,
+        'diesel': 0.0,
+        'diesel_discount': 0.0
+    }
 }
 
 # Orkan has a 3-step discount system controlled by your spendings on gas from
