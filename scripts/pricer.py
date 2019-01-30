@@ -61,78 +61,60 @@ def main():
     ob_prices = scraper.get_individual_ob_prices()
     olis_prices = scraper.get_global_olis_prices()
     orkan_prices = scraper.get_individual_orkan_prices()
+    prices_map = {
+        glob.ATLANTSOLIA: {
+            'data': atlantsolia_prices,
+            'type': glob.PRICETYPE.INDIVIDUAL
+        },
+        glob.COSTCO: {
+            'data': costco_prices,
+            'type': glob.PRICETYPE.GLOBAL
+        },
+        glob.N1: {
+            'data': n1_prices,
+            'type': glob.PRICETYPE.GLOBAL
+        },
+        glob.DAELAN: {
+            'data': daelan_prices,
+            'type': glob.PRICETYPE.INDIVIDUAL
+        },
+        glob.OB: {
+            'data': ob_prices,
+            'type': glob.PRICETYPE.INDIVIDUAL
+        },
+        glob.OLIS: {
+            'data': olis_prices,
+            'type': glob.PRICETYPE.GLOBAL
+        },
+        glob.ORKAN: {
+            'data': orkan_prices,
+            'type': glob.PRICETYPE.INDIVIDUAL
+        },
+        glob.ORKAN_X: {
+            'data': orkan_prices,
+            'type': glob.PRICETYPE.INDIVIDUAL
+        }
+    }
 
     list_of_stations = []
+    price_keys = ['bensin95', 'bensin95_discount', 'diesel', 'diesel_discount']
 
     for key, station in sorted(all_stations.items()):
         station['key'] = key
-        if station['company'] == glob.ATLANTSOLIA:
-            station['bensin95'] = atlantsolia_prices[key]['bensin95']
-            station['bensin95_discount'] = (
-                atlantsolia_prices[key]['bensin95_discount'])
-            station['diesel'] = atlantsolia_prices[key]['diesel']
-            station['diesel_discount'] = (
-                atlantsolia_prices[key]['diesel_discount'])
-        if station['company'] == glob.COSTCO:
-            station['bensin95'] = costco_prices['bensin95']
-            station['bensin95_discount'] = costco_prices['bensin95_discount']
-            station['diesel'] = costco_prices['diesel']
-            station['diesel_discount'] = costco_prices['diesel_discount']
-        elif station['company'] == glob.N1:
-            station['bensin95'] = n1_prices['bensin95']
-            station['bensin95_discount'] = n1_prices['bensin95_discount']
-            station['diesel'] = n1_prices['diesel']
-            station['diesel_discount'] = n1_prices['diesel_discount']
-            if key == 'n1_006':
-                # N1 station in Storihjalli, near Skemmuvegur in Reykjavik
-                # irl observation tells us the fuel price there is 8 ISK
-                # cheaper than their global price.
-                # At some point N1 added the following comment to their global
-                # one price webpage:
-                #
-                #     https://www.n1.is/thjonusta/eldsneyti
-                #     "* algengasta sjalfsafgreidsluverdid"
-                #
-                # meaning this one global price might not be the case on all
-                # N1 stations, I'd like to see N1 then move from showing one
-                # global price to show individual prices for stations or list
-                # stations that have different prices than the global one,
-                # this is a matter of transparency to N1 customers.
-                station['bensin95'] -= 8.0
-                station['bensin95_discount'] -= 8.0
-                station['diesel'] -= 8.0
-                station['diesel_discount'] -= 8.0
-                # Note: this above price "fix" is bad and will very likely
-                # become wrong in near future, however, I believe it to be a
-                # good thing to add this for now.
-        elif station['company'] == glob.DAELAN:
-            station['bensin95'] = daelan_prices[key]['bensin95']
-            station['bensin95_discount'] = (
-                daelan_prices[key]['bensin95_discount'])
-            station['diesel'] = daelan_prices[key]['diesel']
-            station['diesel_discount'] = daelan_prices[key]['diesel_discount']
-        elif station['company'] == glob.OB:
-            station['bensin95'] = ob_prices[key]['bensin95']
-            station['bensin95_discount'] = ob_prices[key]['bensin95_discount']
-            station['diesel'] = ob_prices[key]['diesel']
-            station['diesel_discount'] = ob_prices[key]['diesel_discount']
-        elif station['company'] == glob.OLIS:
-            station['bensin95'] = olis_prices['bensin95']
-            station['bensin95_discount'] = olis_prices['bensin95_discount']
-            station['diesel'] = olis_prices['diesel']
-            station['diesel_discount'] = olis_prices['diesel_discount']
-        elif station['company'] == glob.ORKAN:
-            station['bensin95'] = orkan_prices[key]['bensin95']
-            station['bensin95_discount'] = (
-                orkan_prices[key]['bensin95_discount'])
-            station['diesel'] = orkan_prices[key]['diesel']
-            station['diesel_discount'] = orkan_prices[key]['diesel_discount']
-        elif station['company'] == glob.ORKAN_X:
-            station['bensin95'] = orkan_prices[key]['bensin95']
-            station['bensin95_discount'] = (
-                orkan_prices[key]['bensin95_discount'])
-            station['diesel'] = orkan_prices[key]['diesel']
-            station['diesel_discount'] = orkan_prices[key]['diesel_discount']
+        if prices_map[station['company']]['type'] == glob.PRICETYPE.INDIVIDUAL:
+            for price_key in price_keys:
+                station[price_key] = prices_map[station['company']]['data'][key][price_key]
+        elif prices_map[station['company']]['type'] == glob.PRICETYPE.GLOBAL:
+            for price_key in price_keys:
+                station[price_key] = prices_map[station['company']]['data'][price_key]
+            if station['company'] == glob.N1 and key in glob.N1_PRICE_DIFF:
+                # Some N1 stations have been observed in real life to have fixed
+                # different prices from the most common price which is shown
+                # on N1 webpage.
+                for price_key in price_keys:
+                    station[price_key] += glob.N1_PRICE_DIFF[key][price_key]
+                # Note: hardcoded price deviances, in no way guaranteed to
+                # be permanently correct.
         list_of_stations.append(station)
 
     data = {'stations': list_of_stations}

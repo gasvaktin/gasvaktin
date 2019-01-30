@@ -10,6 +10,12 @@ SKELJUNGUR = u'Skeljungur'
 ORKAN = u'Orkan'
 ORKAN_X = u'Orkan X'
 
+
+class PRICETYPE:
+    INDIVIDUAL = 0
+    GLOBAL = 1
+
+
 ATLANTSOLIA_LOCATION_RELATION = {
     u'Akureyri Baldursnes': 'ao_000',
     u'Akureyri Gler\xe1rtorg': 'ao_001',
@@ -136,6 +142,24 @@ ATLANTSOLIA_MINIMUM_DISCOUNT = 5.0
 # business with the N1 company and not an actual discount we disregard the
 # disregard the N1 points but value the 5 ISK discount.
 N1_DISCOUNT = 5.0
+# Since 2018-05-17 (see commit c308d1a7b5e088ddf8ef99f3ca00aa29af39019e) we've
+# observed that N1 in Storihjalli maintains 8 ISK lower fuel price there than
+# elsewhere. This has since then been checked occasionally in real world and
+# is correct still today. But please note, hardcoded fixed price deviances like
+# this might suddenly change and there might be more price deviance stations out
+# there currently or in the future.
+# Planning to add a note on N1 stations shown on Gasvaktin.is stating
+# something similar as "the most common self-service price", similar to the
+# message shown on n1.is/thjonusta/eldsneyti/ and has been stated as far as we
+# know since 2018-05-17.
+N1_PRICE_DIFF = {
+    'n1_006': {  # Storihjalli
+        'bensin95': -8.0,
+        'bensin95_discount': -8.0,
+        'diesel': -8.0,
+        'diesel_discount': -8.0
+    },
+}
 
 # Orkan has a 3-step discount system controlled by your spendings on gas from
 # them in the previous motnth
