@@ -161,16 +161,16 @@ N1_DISCOUNT = 5.0
 # the phone provided me with incorrect price data.
 N1_PRICE_DIFF = {
     'n1_005': {  # Fossvogur
-        'bensin95': -5.0,
-        'bensin95_discount': -5.0,
-        'diesel': -5.0,
-        'diesel_discount': -5.0
+        'bensin95': -6.0,
+        'bensin95_discount': -6.0,
+        'diesel': -6.0,
+        'diesel_discount': -6.0
     },
     'n1_006': {  # Storihjalli
-        'bensin95': -8.0,
-        'bensin95_discount': -8.0,
-        'diesel': -8.0,
-        'diesel_discount': -8.0
+        'bensin95': -9.0,
+        'bensin95_discount': -9.0,
+        'diesel': -9.0,
+        'diesel_discount': -9.0
     },
     'n1_017': {  # Isafjordur
         'bensin95': -3.0,
