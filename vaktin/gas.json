@@ -365,11 +365,11 @@
             "name": "Borgartún"
         }, 
         {
-            "bensin95": 220.9, 
-            "bensin95_discount": 215.9, 
+            "bensin95": 215.9, 
+            "bensin95_discount": 210.9, 
             "company": "N1", 
-            "diesel": 221.9, 
-            "diesel_discount": 216.9, 
+            "diesel": 216.9, 
+            "diesel_discount": 211.9, 
             "geo": {
                 "lat": 64.11732426, 
                 "lon": -21.89915966
@@ -521,8 +521,8 @@
             "name": "Sauðárkrókur"
         }, 
         {
-            "bensin95": 220.9, 
-            "bensin95_discount": 215.9, 
+            "bensin95": 217.9, 
+            "bensin95_discount": 212.9, 
             "company": "N1", 
             "diesel": 221.9, 
             "diesel_discount": 216.9, 
