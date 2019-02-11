@@ -2809,11 +2809,11 @@
             "name": "Skagabraut Akranes"
         }, 
         {
-            "bensin95": 219.8, 
-            "bensin95_discount": 214.8, 
+            "bensin95": 219.1, 
+            "bensin95_discount": 214.1, 
             "company": "Orkan", 
-            "diesel": 220.2, 
-            "diesel_discount": 215.2, 
+            "diesel": 220.1, 
+            "diesel_discount": 215.1, 
             "geo": {
                 "lat": 64.543622, 
                 "lon": -21.908963
