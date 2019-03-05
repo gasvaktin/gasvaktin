@@ -41,7 +41,8 @@ ATLANTSOLIA_LOCATION_RELATION = {
 DAELAN_LOCATION_RELATION = {
     u'Fellsm\xfali': 'dn_000',
     u'Mj\xf3dd': 'dn_001',
-    u'Sm\xe1ralind': 'dn_002'
+    u'Sm\xe1ralind': 'dn_002',
+    u'H\xe6\xf0arsm\xe1ri': 'dn_002'  # what the fuck
 }
 
 ORKAN_LOCATION_RELATION = {
