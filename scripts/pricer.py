@@ -103,7 +103,22 @@ def main():
         station['key'] = key
         if prices_map[station['company']]['type'] == glob.PRICETYPE.INDIVIDUAL:
             for price_key in price_keys:
-                station[price_key] = prices_map[station['company']]['data'][key][price_key]
+                if key.startswith('dn') and key not in prices_map[station['company']]['data']:
+                    # <TEMPORARY DAELAN MEASURE>
+                    #
+                    # Daelan has received two new stations from N1 and new owners have now
+                    # taken over its business, however, for now it seems they will continue
+                    # to use the N1 backend to provide online fuel price on daelan.is webpage
+                    # but yet these two new stations are not shown and propably won't show up
+                    # until the new Daelan owners have renovated their website.
+                    #
+                    # Until then we tie the price on the two new stations to the price in
+                    # Daelan Fellsmuli
+                    #
+                    # </TEMPORARY DAELAN MEASURE>
+                    station[price_key] = prices_map[station['company']]['data']['dn_000'][price_key]
+                else:
+                    station[price_key] = prices_map[station['company']]['data'][key][price_key]
         elif prices_map[station['company']]['type'] == glob.PRICETYPE.GLOBAL:
             for price_key in price_keys:
                 station[price_key] = prices_map[station['company']]['data'][price_key]
