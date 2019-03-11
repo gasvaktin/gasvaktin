@@ -173,6 +173,12 @@ N1_PRICE_DIFF = {
         'diesel': -9.0,
         'diesel_discount': -9.0
     },
+    'n1_007': {  # Laekjargata
+        'bensin95': -3.0,
+        'bensin95_discount': -3.0,
+        'diesel': -3.0,
+        'diesel_discount': -3.0
+    },
     'n1_017': {  # Isafjordur
         'bensin95': -3.0,
         'bensin95_discount': -3.0,
