@@ -168,10 +168,10 @@ N1_PRICE_DIFF = {
         'diesel_discount': -6.0
     },
     'n1_006': {  # Storihjalli
-        'bensin95': -9.0,
-        'bensin95_discount': -9.0,
-        'diesel': -9.0,
-        'diesel_discount': -9.0
+        'bensin95': -10.5,
+        'bensin95_discount': -10.5,
+        'diesel': -10.5,
+        'diesel_discount': -10.5
     },
     'n1_007': {  # Laekjargata
         'bensin95': -3.0,
