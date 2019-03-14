@@ -3173,10 +3173,10 @@
             "name": "Miklabraut"
         }, 
         {
-            "bensin95": 218.7, 
+            "bensin95": 217.4, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 208.7, 
+            "diesel": 218.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.11066, 
@@ -3264,10 +3264,10 @@
             "name": "Garðabær"
         }, 
         {
-            "bensin95": 218.7, 
+            "bensin95": 217.4, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 208.7, 
+            "diesel": 218.2, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.117737, 
