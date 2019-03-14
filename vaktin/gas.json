@@ -2770,11 +2770,11 @@
             "name": "Bolungarvík"
         }, 
         {
-            "bensin95": 223.3, 
-            "bensin95_discount": 218.3, 
+            "bensin95": 221.8, 
+            "bensin95_discount": 216.8, 
             "company": "Orkan", 
-            "diesel": 224.1, 
-            "diesel_discount": 219.1, 
+            "diesel": 222.6, 
+            "diesel_discount": 217.6, 
             "geo": {
                 "lat": 66.060808, 
                 "lon": -23.174836
@@ -3082,11 +3082,11 @@
             "name": "Kleppsvegur"
         }, 
         {
-            "bensin95": 220.3, 
-            "bensin95_discount": 215.3, 
+            "bensin95": 218.8, 
+            "bensin95_discount": 213.8, 
             "company": "Orkan", 
-            "diesel": 221.1, 
-            "diesel_discount": 216.1, 
+            "diesel": 219.6, 
+            "diesel_discount": 214.6, 
             "geo": {
                 "lat": 64.102104, 
                 "lon": -21.884002
@@ -3173,10 +3173,10 @@
             "name": "Miklabraut"
         }, 
         {
-            "bensin95": 217.4, 
+            "bensin95": 218.7, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 218.2, 
+            "diesel": 208.7, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.11066, 
@@ -3264,10 +3264,10 @@
             "name": "Garðabær"
         }, 
         {
-            "bensin95": 217.4, 
+            "bensin95": 218.7, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 218.2, 
+            "diesel": 208.7, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.117737, 
