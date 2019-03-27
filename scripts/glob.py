@@ -35,7 +35,8 @@ ATLANTSOLIA_LOCATION_RELATION = {
     u'Skemmuvegi': 'ao_015',
     u'Sk\xfalagata': 'ao_016',
     u'Sprengisandur': 'ao_017',
-    u'Stykkish\xf3lmur': 'ao_018'
+    u'Stykkish\xf3lmur': 'ao_018',
+    u'Starengi': 'ao_019'
 }
 
 DAELAN_LOCATION_RELATION = {
