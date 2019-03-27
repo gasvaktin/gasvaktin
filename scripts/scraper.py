@@ -138,30 +138,36 @@ def get_global_n1_prices():
     return prices
 
 
-def get_individual_daelan_prices():
-    relation = glob.DAELAN_LOCATION_RELATION
+def get_global_daelan_prices():
     headers = utils.headers()
     session = requests.Session()
-    session.get('http://daelan.is/', headers=headers)
-    session.get('https://www.n1.is/', headers=headers)
-    price_endpoint = 'https://www.n1.is/umbraco/api/Fuel/GetFuelPriceForDaelan'
-    res = session.get(price_endpoint, headers=headers)
-    res.raise_for_status()
-    stations = res.json()
-    prices = {}
-    for station in stations:
-        assert('location' in station)
-        assert('gasPrice' in station)
-        assert('diselPrice' in station)
-        key = relation[station['location']]
-        prices[key] = {
-            'bensin95': float(station['gasPrice'].replace(',', '.')),
-            'diesel': float(station['diselPrice'].replace(',', '.')),
-            # Dælan has no discount program
-            'bensin95_discount': None,
-            'diesel_discount': None
-        }
-    return prices
+    res = session.get('https://daelan.is/', headers=headers)
+    html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
+    price_info_container = html.find('.//div[@id="gas-price-info-container"]')
+    bensin95 = None
+    diesel = None
+    for column in price_info_container.findall('.//li'):
+        if column.find('.//span').text == u'D\xedsel':
+            diesel_text = column.find('.//em').text.strip()
+            if diesel_text.endswith(' kr.'):
+                diesel_text = diesel_text[:-4]
+            diesel_text = diesel_text.replace(',', '.')
+            diesel = float(diesel_text)
+        elif column.find('.//span').text == u'Bens\xedn':
+            bensin95_text = column.find('.//em').text.strip()
+            if bensin95_text.endswith(' kr.'):
+                bensin95_text = bensin95_text[:-4]
+            bensin95_text = bensin95_text.replace(',', '.')
+            bensin95 = float(bensin95_text)
+    assert(bensin95 is not None)
+    assert(diesel is not None)
+    return {
+        'bensin95': bensin95,
+        'diesel': diesel,
+        # Dælan has no discount program
+        'bensin95_discount': None,
+        'diesel_discount': None
+    }
 
 
 def get_global_olis_prices():
@@ -291,7 +297,7 @@ if __name__ == '__main__':
     print 'Costco'
     print get_global_costco_prices()
     print 'Dælan'
-    print get_individual_daelan_prices()
+    print get_global_daelan_prices()
     print 'N1'
     print get_global_n1_prices()
     print 'Olís'
