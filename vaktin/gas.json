@@ -2770,11 +2770,11 @@
             "name": "Bolungarvík"
         }, 
         {
-            "bensin95": 227.1, 
-            "bensin95_discount": 222.1, 
+            "bensin95": 225.7, 
+            "bensin95_discount": 220.7, 
             "company": "Orkan", 
-            "diesel": 225.7, 
-            "diesel_discount": 220.7, 
+            "diesel": 224.7, 
+            "diesel_discount": 219.7, 
             "geo": {
                 "lat": 66.060808, 
                 "lon": -23.174836
