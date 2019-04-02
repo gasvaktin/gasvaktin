@@ -36,7 +36,11 @@ ATLANTSOLIA_LOCATION_RELATION = {
     u'Sk\xfalagata': 'ao_016',
     u'Sprengisandur': 'ao_017',
     u'Stykkish\xf3lmur': 'ao_018',
-    u'Starengi': 'ao_019'
+    u'Starengi': 'ao_019',
+    u'Kirkjust\xe9tt': 'ao_020',
+    u'Knarrvogur': 'ao_021',  # typo in address?
+    u'Knarravogur': 'ao_021',  # put these two just in case ..
+    u'Knarrarvogur': 'ao_021'
 }
 
 ORKAN_LOCATION_RELATION = {

@@ -90,13 +90,6 @@
         },
         "name": "Fjarðarkaup"
     },
-    "ob_013": {
-        "geo": {
-            "lat": 64.126553,
-            "lon": -21.756855
-        },
-        "name": "Grafarholt"
-    },
     "ob_014": {
         "geo": {
             "lat": 63.839785,
@@ -173,13 +166,6 @@
             "lon": -22.546893
         },
         "name": "Njarðvík"
-    },
-    "ob_025": {
-        "geo": {
-            "lat": 64.127972,
-            "lon": -21.848568
-        },
-        "name": "Knarravogur"
     },
     "ob_026": {
         "geo": {

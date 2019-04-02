@@ -138,5 +138,19 @@
             "lon": -21.773935
         },
         "name": "Starengi"
+    },
+    "ao_020": {
+        "geo": {
+            "lat": 64.126553,
+            "lon": -21.756855
+        },
+        "name": "Kirkjustétt"
+    },
+    "ao_021": {
+        "geo": {
+            "lat": 64.127972,
+            "lon": -21.848568
+        },
+        "name": "Knarrarvogur"
     }
 }
