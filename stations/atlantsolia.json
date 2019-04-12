@@ -152,5 +152,12 @@
             "lon": -21.848568
         },
         "name": "Knarrarvogur"
+    },
+    "ao_022": {
+        "geo": {
+            "lat": 64.242146,
+            "lon": -21.829835
+        },
+        "name": "Kjalarnes"
     }
 }

@@ -40,7 +40,8 @@ ATLANTSOLIA_LOCATION_RELATION = {
     u'Kirkjust\xe9tt': 'ao_020',
     u'Knarrvogur': 'ao_021',  # typo in address?
     u'Knarravogur': 'ao_021',  # put these two just in case ..
-    u'Knarrarvogur': 'ao_021'
+    u'Knarrarvogur': 'ao_021',
+    u'Kjalarnes': 'ao_022'
 }
 
 ORKAN_LOCATION_RELATION = {
