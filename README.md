@@ -16,7 +16,7 @@ Gasvaktin watches the following Icelandic oil companies:
 * [Atlantsolía](http://atlantsolia.is/)
 * [Costco Iceland](http://costco.is/)
 * [N1](https://www.n1.is/)
-  - [Dælan](http://daelan.is/) (low-cost company owned by N1)
+* [Dælan](http://daelan.is/) (low-cost company [previously owned by N1](https://twitter.com/gasvaktin/status/1082985305278464000))
 * [Olís](http://www.olis.is/)
   - [ÓB](http://www.ob.is/) (low-cost company owned by Olís)
 * [Skeljungur](http://www.skeljungur.is/)
@@ -66,7 +66,7 @@ Costco Iceland has a single petrol station in Iceland, in Kauptún next to IKEA.
 
 Costco Iceland doesn't plan on showing their petrol prices on their web, at least not in the near future, so we currently have no way of tracking their prices except reading it straight off their pumps in Kauptún. We check and update their prices from time to time in [this Google Docs Spreadsheet](https://docs.google.com/spreadsheets/d/18xuZbhfInW_6Loua3_4LE7KxbGPsh-_3IFfLpf3uwYE/) but due to this procedure not being automatic, prices may not be correct from time to time.
 
-### N1 (and Dælan)
+### N1
 
 #### Stations
 
@@ -78,13 +78,19 @@ List of stations can be found [here](https://www.n1.is/stodvar/). With a bit of 
 		User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
 	}
 
-Station locations for Dælan are shown on a picture of a map on [dælan.is](http://daelan.is/).
-
 #### Prices
 
 Price without discount can be seen [here](https://www.n1.is/eldsneyti/). We assume these prices to be global for all N1 stations as we can't find station individual prices anywhere. Discount for N1 business card holders can be seen [here](https://www.n1.is/n1-kortid/saekja-um-kort/). At the time of this writing the discount amount is 3 ISK and 2 N1 points per liter, both for bensin and diesel.
 
-Dælan stations don't have any discount prices, prices are shown on [dælan.is](http://daelan.is/).
+### Dælan
+
+#### Stations
+
+Station locations for Dælan are shown on a picture of a map on [dælan.is](https://daelan.is/).
+
+#### Prices
+
+Dælan stations don't have any discount prices, prices are shown on [dælan.is](https://daelan.is/).
 
 ### Olís (and ÓB)
 
