@@ -390,5 +390,12 @@
             "lon": -21.926312
         },
         "name": "Garðabær"
+    },
+    "or_056": {
+        "geo": {
+            "lat": 64.132046,
+            "lon": -21.893384
+        },
+        "name": "Miklabraut við Kringluna"
     }
 }

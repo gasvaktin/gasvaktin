@@ -100,6 +100,8 @@ ORKAN_LOCATION_RELATION = {
     u'Vesturlandsvegur': 'or_052',
     u'H\xf6rg\xe1rbraut': 'or_053',
     u'Hverager\xf0i': 'or_054',
+    u'Gar\xf0ab\xe6r': 'or_055',
+    u'Miklabraut v. Kringluna': 'or_056'
 }
 
 ORKAN_X_LOCATION_RELATION = {
@@ -111,7 +113,6 @@ ORKAN_X_LOCATION_RELATION = {
     u'Akureyri, Kjarnagata (Orkan X)': 'ox_005',
     u'Akranes, Smi\xf0juv\xf6llum (Orkan X)': 'ox_006',
     u'Hverager\xf0i (Orkan X)': 'ox_007',
-    u'Gar\xf0ab\xe6r (Orkan X)': 'ox_008',
     u'Hraunb\xe6r (Orkan X)': 'ox_009',
 }
 

@@ -6,13 +6,6 @@
         },
         "name": "Eiðistorg"
     },
-    "ox_001": {
-        "geo": {
-            "lat": 64.132046,
-            "lon": -21.893384
-        },
-        "name": "Miklabraut"
-    },
     "ox_002": {
         "geo": {
             "lat": 64.110660,
