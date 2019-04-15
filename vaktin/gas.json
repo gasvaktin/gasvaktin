@@ -2770,8 +2770,8 @@
             "name": "Bolungarvík"
         }, 
         {
-            "bensin95": 229.1, 
-            "bensin95_discount": 224.1, 
+            "bensin95": 231.0, 
+            "bensin95_discount": 226.0, 
             "company": "Orkan", 
             "diesel": 225.7, 
             "diesel_discount": 220.7, 
@@ -2796,8 +2796,8 @@
             "name": "Súðavík"
         }, 
         {
-            "bensin95": 230.1, 
-            "bensin95_discount": 225.1, 
+            "bensin95": 232.0, 
+            "bensin95_discount": 227.0, 
             "company": "Orkan", 
             "diesel": 225.7, 
             "diesel_discount": 220.7, 
@@ -2809,8 +2809,8 @@
             "name": "Skagabraut Akranes"
         }, 
         {
-            "bensin95": 230.8, 
-            "bensin95_discount": 225.8, 
+            "bensin95": 232.0, 
+            "bensin95_discount": 227.0, 
             "company": "Orkan", 
             "diesel": 225.7, 
             "diesel_discount": 220.7, 
@@ -3082,8 +3082,8 @@
             "name": "Kleppsvegur"
         }, 
         {
-            "bensin95": 226.1, 
-            "bensin95_discount": 221.1, 
+            "bensin95": 228.0, 
+            "bensin95_discount": 223.0, 
             "company": "Orkan", 
             "diesel": 221.5, 
             "diesel_discount": 216.5, 
