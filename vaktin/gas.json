@@ -2770,11 +2770,11 @@
             "name": "Bolungarvík"
         }, 
         {
-            "bensin95": 230.1, 
-            "bensin95_discount": 225.1, 
+            "bensin95": 231.0, 
+            "bensin95_discount": 226.0, 
             "company": "Orkan", 
-            "diesel": 226.7, 
-            "diesel_discount": 221.7, 
+            "diesel": 224.5, 
+            "diesel_discount": 219.5, 
             "geo": {
                 "lat": 66.060808, 
                 "lon": -23.174836
@@ -2809,11 +2809,11 @@
             "name": "Skagabraut Akranes"
         }, 
         {
-            "bensin95": 233.1, 
-            "bensin95_discount": 228.1, 
+            "bensin95": 231.0, 
+            "bensin95_discount": 226.0, 
             "company": "Orkan", 
-            "diesel": 226.7, 
-            "diesel_discount": 221.7, 
+            "diesel": 224.5, 
+            "diesel_discount": 219.5, 
             "geo": {
                 "lat": 64.543622, 
                 "lon": -21.908963
