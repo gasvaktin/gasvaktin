@@ -1,11 +1,11 @@
 {
     "stations": [
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 65.69913, 
                 "lon": -18.135231
@@ -14,11 +14,11 @@
             "name": "Baldursnes Akureyri"
         }, 
         {
-            "bensin95": 230.2, 
-            "bensin95_discount": 225.2, 
+            "bensin95": 232.3, 
+            "bensin95_discount": 227.3, 
             "company": "Atlantsolía", 
-            "diesel": 222.6, 
-            "diesel_discount": 217.6, 
+            "diesel": 223.9, 
+            "diesel_discount": 218.9, 
             "geo": {
                 "lat": 65.687807, 
                 "lon": -18.100104
@@ -27,11 +27,11 @@
             "name": "Glerártorg Akureyri"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.125397, 
                 "lon": -21.813054
@@ -40,11 +40,11 @@
             "name": "Bíldshöfði"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.5675445, 
                 "lon": -21.8934511
@@ -53,11 +53,11 @@
             "name": "Borgarnes"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.087301, 
                 "lon": -21.832666
@@ -66,11 +66,11 @@
             "name": "Búðarkór"
         }, 
         {
-            "bensin95": 230.2, 
-            "bensin95_discount": 225.2, 
+            "bensin95": 232.3, 
+            "bensin95_discount": 227.3, 
             "company": "Atlantsolía", 
-            "diesel": 222.6, 
-            "diesel_discount": 217.6, 
+            "diesel": 223.9, 
+            "diesel_discount": 218.9, 
             "geo": {
                 "lat": 65.259896, 
                 "lon": -14.39789
@@ -79,11 +79,11 @@
             "name": "Egilsstaðir"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.064824, 
                 "lon": -21.976368
@@ -92,11 +92,11 @@
             "name": "Hafnarfjarðarhöfn"
         }, 
         {
-            "bensin95": 230.2, 
-            "bensin95_discount": 225.2, 
+            "bensin95": 232.3, 
+            "bensin95_discount": 227.3, 
             "company": "Atlantsolía", 
-            "diesel": 222.6, 
-            "diesel_discount": 217.6, 
+            "diesel": 223.9, 
+            "diesel_discount": 218.9, 
             "geo": {
                 "lat": 63.994238, 
                 "lon": -21.185975
@@ -105,10 +105,10 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 204.9, 
+            "bensin95": 203.1, 
             "bensin95_discount": null, 
             "company": "Atlantsolía", 
-            "diesel": 198.2, 
+            "diesel": 199.5, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.076516, 
@@ -118,11 +118,11 @@
             "name": "Kaplakriki"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.11123, 
                 "lon": -21.935749
@@ -131,11 +131,11 @@
             "name": "Kópavogsbraut"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.16388, 
                 "lon": -21.690617
@@ -144,11 +144,11 @@
             "name": "Mosfellsbær"
         }, 
         {
-            "bensin95": 230.2, 
-            "bensin95_discount": 225.2, 
+            "bensin95": 232.3, 
+            "bensin95_discount": 227.3, 
             "company": "Atlantsolía", 
-            "diesel": 222.6, 
-            "diesel_discount": 217.6, 
+            "diesel": 223.9, 
+            "diesel_discount": 218.9, 
             "geo": {
                 "lat": 63.987463, 
                 "lon": -22.549396
@@ -157,11 +157,11 @@
             "name": "Njarðvík"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.131921, 
                 "lon": -21.923792
@@ -170,11 +170,11 @@
             "name": "Öskjuhlíð"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 63.946582, 
                 "lon": -21.013048
@@ -183,11 +183,11 @@
             "name": "Selfoss"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.132171, 
                 "lon": -21.87077
@@ -196,11 +196,11 @@
             "name": "Skeifan"
         }, 
         {
-            "bensin95": 230.2, 
-            "bensin95_discount": 225.2, 
+            "bensin95": 232.3, 
+            "bensin95_discount": 227.3, 
             "company": "Atlantsolía", 
-            "diesel": 222.6, 
-            "diesel_discount": 217.6, 
+            "diesel": 223.9, 
+            "diesel_discount": 218.9, 
             "geo": {
                 "lat": 64.110091, 
                 "lon": -21.852653
@@ -209,11 +209,11 @@
             "name": "Skemmuvegur"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.1460022, 
                 "lon": -21.9184388
@@ -222,11 +222,11 @@
             "name": "Skúlagata"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.120944, 
                 "lon": -21.847966
@@ -235,11 +235,11 @@
             "name": "Sprengisandur"
         }, 
         {
-            "bensin95": 230.2, 
-            "bensin95_discount": 225.2, 
+            "bensin95": 232.3, 
+            "bensin95_discount": 227.3, 
             "company": "Atlantsolía", 
-            "diesel": 222.6, 
-            "diesel_discount": 217.6, 
+            "diesel": 223.9, 
+            "diesel_discount": 218.9, 
             "geo": {
                 "lat": 65.07071, 
                 "lon": -22.733996
@@ -248,11 +248,11 @@
             "name": "Stykkishólmur"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.15102, 
                 "lon": -21.773935
@@ -261,11 +261,11 @@
             "name": "Starengi"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.126553, 
                 "lon": -21.756855
@@ -274,11 +274,11 @@
             "name": "Kirkjustétt"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.127972, 
                 "lon": -21.848568
@@ -287,11 +287,11 @@
             "name": "Knarrarvogur"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 232.3, 
             "company": "Atlantsolía", 
-            "diesel": 227.6, 
-            "diesel_discount": 222.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 223.9, 
             "geo": {
                 "lat": 64.242146, 
                 "lon": -21.829835
@@ -1561,11 +1561,11 @@
             "name": "Norðlingaholt"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.32448, 
                 "lon": -22.068174
@@ -1574,11 +1574,11 @@
             "name": "Akranes"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 65.687038, 
                 "lon": -18.128579
@@ -1587,11 +1587,11 @@
             "name": "Akureyri"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 65.683468, 
                 "lon": -18.089544
@@ -1600,11 +1600,11 @@
             "name": "BSO Akureyri"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.098399, 
                 "lon": -21.896353
@@ -1613,11 +1613,11 @@
             "name": "Arnarsmári"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.156265, 
                 "lon": -21.751538
@@ -1626,11 +1626,11 @@
             "name": "Barðastaðir"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.675027, 
                 "lon": -21.664718
@@ -1639,11 +1639,11 @@
             "name": "Baulan"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.124787, 
                 "lon": -21.832257
@@ -1652,11 +1652,11 @@
             "name": "Bíldshöfði"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 65.656328, 
                 "lon": -20.285202
@@ -1665,11 +1665,11 @@
             "name": "Blönduós"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 66.158337, 
                 "lon": -23.246431
@@ -1678,11 +1678,11 @@
             "name": "Bolungarvík"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.544544, 
                 "lon": -21.908073
@@ -1691,11 +1691,11 @@
             "name": "Borgarnes"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.099134, 
                 "lon": -21.881032
@@ -1704,11 +1704,11 @@
             "name": "Bæjarlind"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 63.862244, 
                 "lon": -21.148026
@@ -1717,11 +1717,11 @@
             "name": "Eyrarbakki"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.081674, 
                 "lon": -21.939331
@@ -1730,11 +1730,11 @@
             "name": "Fjarðarkaup"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 63.839785, 
                 "lon": -22.433883
@@ -1743,11 +1743,11 @@
             "name": "Grindavík"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.358868, 
                 "lon": -21.780723
@@ -1756,11 +1756,11 @@
             "name": "Grundartangi"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 65.70132, 
                 "lon": -21.692706
@@ -1769,11 +1769,11 @@
             "name": "Hólmavík"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 66.039173, 
                 "lon": -17.343145
@@ -1782,11 +1782,11 @@
             "name": "Húsavík"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 66.068678, 
                 "lon": -23.121961
@@ -1795,11 +1795,11 @@
             "name": "Ísafjörður"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 63.794656, 
                 "lon": -18.038831
@@ -1808,11 +1808,11 @@
             "name": "Kirkjubæjarklaustur"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 63.879342, 
                 "lon": -20.500932
@@ -1821,11 +1821,11 @@
             "name": "Landvegamót"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.059089, 
                 "lon": -21.971533
@@ -1834,11 +1834,11 @@
             "name": "Melabraut"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.074889, 
                 "lon": -20.764193
@@ -1847,11 +1847,11 @@
             "name": "Minni Borg"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 65.147542, 
                 "lon": -13.695884
@@ -1860,11 +1860,11 @@
             "name": "Neskaupstaður"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 63.979938, 
                 "lon": -22.546893
@@ -1873,11 +1873,11 @@
             "name": "Njarðvík"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 65.034512, 
                 "lon": -14.231985
@@ -1886,11 +1886,11 @@
             "name": "Reyðarfjörður"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 63.943678, 
                 "lon": -21.008184
@@ -1899,11 +1899,11 @@
             "name": "Selfoss"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.139686, 
                 "lon": -21.920814
@@ -1912,11 +1912,11 @@
             "name": "Snorrabraut"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 65.071966, 
                 "lon": -22.732975
@@ -1925,11 +1925,11 @@
             "name": "Stykkishólmur"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 64.044579, 
                 "lon": -21.986533
@@ -1938,11 +1938,11 @@
             "name": "Suðurhella"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 63.442409, 
                 "lon": -20.268868
@@ -1951,11 +1951,11 @@
             "name": "Vestmannaeyjar"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 237.3, 
+            "bensin95_discount": 234.3, 
             "company": "ÓB", 
-            "diesel": 227.6, 
-            "diesel_discount": 224.6, 
+            "diesel": 228.9, 
+            "diesel_discount": 225.9, 
             "geo": {
                 "lat": 63.856356, 
                 "lon": -21.374275
