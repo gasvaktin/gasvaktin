@@ -2796,11 +2796,11 @@
             "name": "Súðavík"
         }, 
         {
-            "bensin95": 233.1, 
-            "bensin95_discount": 228.1, 
+            "bensin95": 235.2, 
+            "bensin95_discount": 230.2, 
             "company": "Orkan", 
-            "diesel": 226.5, 
-            "diesel_discount": 221.5, 
+            "diesel": 227.9, 
+            "diesel_discount": 222.9, 
             "geo": {
                 "lat": 64.320056, 
                 "lon": -22.069411
@@ -3082,11 +3082,11 @@
             "name": "Kleppsvegur"
         }, 
         {
-            "bensin95": 228.1, 
-            "bensin95_discount": 223.1, 
+            "bensin95": 230.2, 
+            "bensin95_discount": 225.2, 
             "company": "Orkan", 
-            "diesel": 220.7, 
-            "diesel_discount": 215.7, 
+            "diesel": 222.1, 
+            "diesel_discount": 217.1, 
             "geo": {
                 "lat": 64.102104, 
                 "lon": -21.884002
@@ -3147,8 +3147,8 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 228.2, 
-            "bensin95_discount": 223.2, 
+            "bensin95": 233.1, 
+            "bensin95_discount": 228.1, 
             "company": "Orkan", 
             "diesel": 222.5, 
             "diesel_discount": 217.5, 
@@ -3186,7 +3186,7 @@
             "name": "Eiðistorg"
         }, 
         {
-            "bensin95": 219.9, 
+            "bensin95": 220.0, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
             "diesel": 218.2, 
@@ -3251,10 +3251,10 @@
             "name": "Akranes"
         }, 
         {
-            "bensin95": 228.2, 
+            "bensin95": 230.3, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 222.5, 
+            "diesel": 223.8, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 63.995433, 
@@ -3264,7 +3264,7 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 219.9, 
+            "bensin95": 220.0, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
             "diesel": 218.2, 
