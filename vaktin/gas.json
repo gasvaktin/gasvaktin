@@ -2770,8 +2770,8 @@
             "name": "Bolungarvík"
         }, 
         {
-            "bensin95": 232.2, 
-            "bensin95_discount": 227.2, 
+            "bensin95": 235.2, 
+            "bensin95_discount": 230.2, 
             "company": "Orkan", 
             "diesel": 227.9, 
             "diesel_discount": 222.9, 
@@ -2874,11 +2874,11 @@
             "name": "Ólafsvík"
         }, 
         {
-            "bensin95": 230.1, 
-            "bensin95_discount": 225.1, 
+            "bensin95": 232.2, 
+            "bensin95_discount": 227.2, 
             "company": "Orkan", 
-            "diesel": 224.5, 
-            "diesel_discount": 219.5, 
+            "diesel": 223.8, 
+            "diesel_discount": 218.8, 
             "geo": {
                 "lat": 65.072872, 
                 "lon": -22.732583
@@ -2926,11 +2926,11 @@
             "name": "Reykjanesbær"
         }, 
         {
-            "bensin95": 230.1, 
-            "bensin95_discount": 225.1, 
+            "bensin95": 232.2, 
+            "bensin95_discount": 227.2, 
             "company": "Orkan", 
-            "diesel": 224.5, 
-            "diesel_discount": 219.5, 
+            "diesel": 223.8, 
+            "diesel_discount": 218.8, 
             "geo": {
                 "lat": 64.037636, 
                 "lon": -22.707148
