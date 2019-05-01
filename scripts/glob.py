@@ -108,6 +108,7 @@ ORKAN_X_LOCATION_RELATION = {
     u'Ei\xf0istorg (Orkan X)': 'ox_000',
     u'Miklabraut v. Kringluna (Orkan X)': 'ox_001',
     u'Skemmuvegur (Orkan X)': 'ox_002',
+    u'Skemmuvegur': 'ox_002',
     u'Sp\xf6ngin (Orkan X)': 'ox_003',
     u'Egilssta\xf0ir (Orkan X)': 'ox_004',
     u'Akureyri, Kjarnagata (Orkan X)': 'ox_005',
