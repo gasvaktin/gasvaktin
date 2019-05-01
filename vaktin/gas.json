@@ -300,10 +300,10 @@
             "name": "Kjalarnes"
         }, 
         {
-            "bensin95": 203.9, 
+            "bensin95": 205.9, 
             "bensin95_discount": null, 
             "company": "Costco Iceland", 
-            "diesel": 196.9, 
+            "diesel": 197.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.075267, 
@@ -313,10 +313,10 @@
             "name": "Kauptún"
         }, 
         {
-            "bensin95": 220.1, 
+            "bensin95": 222.2, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 218.3, 
+            "diesel": 214.7, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.131015, 
@@ -326,10 +326,10 @@
             "name": "Fellsmúli"
         }, 
         {
-            "bensin95": 220.1, 
+            "bensin95": 222.2, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 218.3, 
+            "diesel": 214.7, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.112573, 
@@ -339,10 +339,10 @@
             "name": "Mjódd"
         }, 
         {
-            "bensin95": 220.1, 
+            "bensin95": 222.2, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 218.3, 
+            "diesel": 214.7, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.09886543, 
@@ -352,10 +352,10 @@
             "name": "Hæðarsmári"
         }, 
         {
-            "bensin95": 220.1, 
+            "bensin95": 222.2, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 218.3, 
+            "diesel": 214.7, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.09370915, 
@@ -365,10 +365,10 @@
             "name": "Salavegur"
         }, 
         {
-            "bensin95": 220.1, 
+            "bensin95": 222.2, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 218.3, 
+            "diesel": 214.7, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.14123192, 
@@ -2770,11 +2770,11 @@
             "name": "Bolungarvík"
         }, 
         {
-            "bensin95": 235.2, 
-            "bensin95_discount": 230.2, 
+            "bensin95": 233.1, 
+            "bensin95_discount": 228.1, 
             "company": "Orkan", 
-            "diesel": 227.9, 
-            "diesel_discount": 222.9, 
+            "diesel": 225.6, 
+            "diesel_discount": 220.6, 
             "geo": {
                 "lat": 66.060808, 
                 "lon": -23.174836
@@ -3186,10 +3186,10 @@
             "name": "Eiðistorg"
         }, 
         {
-            "bensin95": 220.0, 
+            "bensin95": 222.1, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 218.2, 
+            "diesel": 218.6, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.11066, 
@@ -3264,10 +3264,10 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 220.0, 
+            "bensin95": 222.1, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 218.2, 
+            "diesel": 214.6, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.117737, 
