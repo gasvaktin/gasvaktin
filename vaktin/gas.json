@@ -3251,10 +3251,10 @@
             "name": "Akranes"
         }, 
         {
-            "bensin95": 232.7, 
+            "bensin95": 235.1, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 225.4, 
+            "diesel": 226.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 63.995433, 
@@ -3264,10 +3264,10 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 222.1, 
+            "bensin95": 224.5, 
             "bensin95_discount": null, 
             "company": "Orkan X", 
-            "diesel": 214.6, 
+            "diesel": 216.1, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.117737, 
