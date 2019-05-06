@@ -2773,8 +2773,8 @@
             "bensin95": 235.5, 
             "bensin95_discount": 230.5, 
             "company": "Orkan", 
-            "diesel": 227.2, 
-            "diesel_discount": 222.2, 
+            "diesel": 227.1, 
+            "diesel_discount": 222.1, 
             "geo": {
                 "lat": 66.060808, 
                 "lon": -23.174836
@@ -2809,11 +2809,11 @@
             "name": "Skagabraut Akranes"
         }, 
         {
-            "bensin95": 237.2, 
-            "bensin95_discount": 232.2, 
+            "bensin95": 235.5, 
+            "bensin95_discount": 230.5, 
             "company": "Orkan", 
-            "diesel": 228.8, 
-            "diesel_discount": 223.8, 
+            "diesel": 227.1, 
+            "diesel_discount": 222.1, 
             "geo": {
                 "lat": 64.543622, 
                 "lon": -21.908963
