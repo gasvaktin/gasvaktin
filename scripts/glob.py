@@ -34,7 +34,7 @@ ATLANTSOLIA_LOCATION_RELATION = {
     u'Skeifan': 'ao_014',
     u'Skemmuvegi': 'ao_015',
     u'Sk\xfalagata': 'ao_016',
-    u'Sprengisandur': 'ao_017',
+    u'Sprengisandur *': 'ao_017',
     u'Stykkish\xf3lmur': 'ao_018',
     u'Starengi': 'ao_019',
     u'Kirkjust\xe9tt': 'ao_020',
@@ -43,6 +43,10 @@ ATLANTSOLIA_LOCATION_RELATION = {
     u'Knarrarvogur': 'ao_021',
     u'Kjalarnes': 'ao_022'
 }
+# Atlantsolia declared one (and now two) of its stations to be without discount,
+# on their site that station is marked with a star (*) and the following comment at the bottom:
+# "* Engir afslaettir gilda"
+ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_008', 'ao_017']
 
 ORKAN_LOCATION_RELATION = {
     u'Dalvegur': 'or_000',
