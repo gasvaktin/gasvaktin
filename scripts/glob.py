@@ -48,6 +48,32 @@ ATLANTSOLIA_LOCATION_RELATION = {
 # "* Engir afslaettir gilda"
 ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_008', 'ao_017']
 
+OB_MINIMUM_DISCOUNT = 5
+# OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
+# shuffle the stations every month.
+# In 2019-06 the stations are the following:
+# * Baejarlind (ob_010)  <-- this station was made discountless 2019-06-04T11:39, see below
+# * Thorlakshofn (ob_033)
+# * Akureyri - Hlidarbraut (ob_001)
+# * Blonduos (ob_007)
+# * Varmahlid (ob_034)
+OB_EXTRA_DISCOUNT_STATIONS = ['ob_033', 'ob_001', 'ob_007', 'ob_034']
+OB_EXTRA_DISCOUNT_AMOUNT = 15
+OB_EXTRA_DISCOUNT_UNTIL = '2019-06-30T23:59'
+# OB joins the discountless madness
+# https://www.facebook.com/ob.bensin/photos/a.208957995809394/2301004636604709/
+# Says the following (2019-06-04T11:39):
+# ------------------------------------------------------------------------------------------------
+# OB hefur nu laekkad verð á eldsneytislitranum umtalsvert á thremur stoðvum!
+# * Fjardarkaupum i Hafnarfirdi (ob_012)
+# * Arnarsmara í Kopavogi (ob_003)
+# * Baejarlind í Kopavogi (ob_010)
+# Bensinslitrinn á thessum stodvum er nu a 211.4 ISK og disellitrinn a 202 ISK
+# Afslattur med lyklum og kortum gildir ekki a thessum stodvum. Allir lykil-og korthafar Olis og
+# OB njota eftir sem adur afslattar af eldsneyti og odrum vorum a Olis og OB stodvum um land allt.
+# ------------------------------------------------------------------------------------------------
+OB_DISCOUNTLESS_STATIONS = ['ob_012', 'ob_003', 'ob_010']
+
 ORKAN_LOCATION_RELATION = {
     u'Dalvegur': 'or_000',
     u'Gylfafl\xf6t': 'or_001',

@@ -184,14 +184,24 @@ def get_individual_ob_prices():
     url = 'https://www.ob.is/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers(), verify=False)
     html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
-    bensin95_text = html.find('.//*[@id="gas-price"]/span[1]').text
-    diesel_text = html.find('.//*[@id="gas-price"]/span[2]').text
-    bensin_discount_text = html.find('.//*[@id="gas-price"]/span[3]').text
-    diesel_discount_text = html.find('.//*[@id="gas-price"]/span[4]').text
-    bensin95 = float(bensin95_text.replace(',', '.'))
-    diesel = float(diesel_text.replace(',', '.'))
-    bensin95_discount = float(bensin_discount_text.replace(',', '.'))
-    diesel_discount = float(diesel_discount_text.replace(',', '.'))
+    data = {
+        'stations': {},
+        'highest': {'bensin95': None, 'diesel': None}
+    }
+    price_table = html.find('.//table[@id="gas-prices"]')
+    for row in price_table.findall('.//tr'):
+        if len(row.findall('.//td')) == 0:
+            continue
+        if row.findall('.//td')[0].get('style') == 'border:0px;':
+            continue
+        name = unicode(row.findall('.//td')[0].text.strip())
+        bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
+        diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
+        data['stations'][name] = {'bensin95': bensin, 'diesel': diesel}
+        if data['highest']['bensin95'] is None or data['highest']['bensin95'] < bensin:
+            data['highest']['bensin95'] = bensin
+        if data['highest']['diesel'] is None or data['highest']['diesel'] < diesel:
+            data['highest']['diesel'] = diesel
     prices = {}
     ob_stations = utils.load_json(
         os.path.join(
@@ -199,31 +209,29 @@ def get_individual_ob_prices():
             '../stations/ob.json'
         )
     )
-    # 15 ISK discount for selected stations in September
-    #
-    # Occasionally, selected OB stations have had higher discount than usually
-    # for a specified month, it seems they're going to do this every month from
-    # now on (according to fb post in September).
-    # facebook.com/ob.bensin/photos/a.208957995809394/1904154726289704/
-    #
-    # Stations with additional discount in September 2018:
-    # * Baejarlind (ob_010)
-    # * Fjardarkaup (ob_012)
-    # * Njardvik (ob_024)
-    # * Starengi (ob_029)
-    # * Borgarnes (ob_009)
-    additional_discount = 15
-    additional_discount_stations = (
-        'ob_010', 'ob_012', 'ob_024', 'ob_029', 'ob_009',
-    )
     now = datetime.datetime.now()
-    end = datetime.datetime.strptime('2018-09-30T23:59', '%Y-%m-%dT%H:%M')
+    end = datetime.datetime.strptime(glob.OB_EXTRA_DISCOUNT_UNTIL, '%Y-%m-%dT%H:%M')
     for key in ob_stations:
-        bensin95_discount = bensin95_discount
-        diesel_discount = diesel_discount
-        if now < end and key in additional_discount_stations:
-            bensin95_discount = bensin95 - additional_discount
-            diesel_discount = diesel - additional_discount
+        if key in glob.OB_DISCOUNTLESS_STATIONS:
+            bensin95 = data['stations'][u'B\xe6jarlind']['bensin95']
+            bensin95_discount = None
+            diesel = data['stations'][u'B\xe6jarlind']['diesel']
+            diesel_discount = None
+        elif ob_stations[key][u'name'] in data['stations']:
+            bensin95 = data['stations'][ob_stations[key][u'name']]['bensin95']
+            bensin95_discount = int((bensin95 - glob.OB_MINIMUM_DISCOUNT) * 10) / 10.0
+            diesel = data['stations'][ob_stations[key][u'name']]['diesel']
+            diesel_discount = int((diesel - glob.OB_MINIMUM_DISCOUNT) * 10) / 10.0
+        else:
+            bensin95 = data['highest']['bensin95']
+            bensin95_discount = int((bensin95 - glob.OB_MINIMUM_DISCOUNT) * 10) / 10.0
+            diesel = data['highest']['diesel']
+            diesel_discount = int((diesel - glob.OB_MINIMUM_DISCOUNT) * 10) / 10.0
+        if key in glob.OB_EXTRA_DISCOUNT_STATIONS and now < end:
+            if bensin95_discount is not None:
+                bensin95_discount = int((bensin95 - glob.OB_EXTRA_DISCOUNT_AMOUNT) * 10) / 10.0
+            if diesel_discount is not None:
+                diesel_discount = int((diesel - glob.OB_EXTRA_DISCOUNT_AMOUNT) * 10) / 10.0
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
