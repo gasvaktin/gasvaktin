@@ -59,7 +59,7 @@ def main():
     n1_prices = scraper.get_global_n1_prices()
     daelan_prices = scraper.get_global_daelan_prices()
     ob_prices = scraper.get_individual_ob_prices()
-    olis_prices = scraper.get_global_olis_prices()
+    olis_prices = scraper.get_individual_olis_prices()
     orkan_prices = scraper.get_individual_orkan_prices()
     prices_map = {
         glob.ATLANTSOLIA: {
@@ -84,7 +84,7 @@ def main():
         },
         glob.OLIS: {
             'data': olis_prices,
-            'type': glob.PRICETYPE.GLOBAL
+            'type': glob.PRICETYPE.INDIVIDUAL
         },
         glob.ORKAN: {
             'data': orkan_prices,

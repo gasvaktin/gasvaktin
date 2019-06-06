@@ -48,6 +48,7 @@ ATLANTSOLIA_LOCATION_RELATION = {
 # "* Engir afslaettir gilda"
 ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_008', 'ao_017']
 
+OLIS_MINIMUM_DISCOUNT = 5
 OB_MINIMUM_DISCOUNT = 5
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.

@@ -164,20 +164,51 @@ def get_global_daelan_prices():
     }
 
 
-def get_global_olis_prices():
+def get_individual_olis_prices():
     url = 'https://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers(), verify=False)
     html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
-    bensin95_text = html.find('.//*[@id="gas-price"]/span[1]').text
-    diesel_text = html.find('.//*[@id="gas-price"]/span[2]').text
-    bensin_discount_text = html.find('.//*[@id="gas-price"]/span[4]').text
-    diesel_discount_text = html.find('.//*[@id="gas-price"]/span[5]').text
-    return {
-        'bensin95': float(bensin95_text.replace(',', '.')),
-        'diesel': float(diesel_text.replace(',', '.')),
-        'bensin95_discount': float(bensin_discount_text.replace(',', '.')),
-        'diesel_discount': float(diesel_discount_text.replace(',', '.'))
+    data = {
+        'stations': {},
+        'highest': {'bensin95': None, 'diesel': None}
     }
+    price_table = html.find('.//table')  # theres just one table element, let's use that ofc
+    for row in price_table.findall('.//tr'):
+        if len(row.findall('.//td')) < 3:
+            continue
+        if row.findall('.//td')[0].text.strip() == '':
+            continue
+        name = unicode(row.findall('.//td')[0].text.strip())
+        bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
+        diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
+        data['stations'][name] = {'bensin95': bensin, 'diesel': diesel}
+        if data['highest']['bensin95'] is None or data['highest']['bensin95'] < bensin:
+            data['highest']['bensin95'] = bensin
+        if data['highest']['diesel'] is None or data['highest']['diesel'] < diesel:
+            data['highest']['diesel'] = diesel
+    prices = {}
+    olis_stations = utils.load_json(
+        os.path.join(
+            os.path.dirname(os.path.realpath(__file__)),
+            '../stations/olis.json'
+        )
+    )
+    for key in olis_stations:
+        if olis_stations[key][u'name'] in data['stations']:
+            bensin95 = data['stations'][olis_stations[key][u'name']]['bensin95']
+            diesel = data['stations'][olis_stations[key][u'name']]['diesel']
+        else:
+            bensin95 = data['highest']['bensin95']
+            diesel = data['highest']['diesel']
+        bensin95_discount = int((bensin95 - glob.OLIS_MINIMUM_DISCOUNT) * 10) / 10.0
+        diesel_discount = int((diesel - glob.OLIS_MINIMUM_DISCOUNT) * 10) / 10.0
+        prices[key] = {
+            'bensin95': bensin95,
+            'diesel': diesel,
+            'bensin95_discount': bensin95_discount,
+            'diesel_discount': diesel_discount
+        }
+    return prices
 
 
 def get_individual_ob_prices():
@@ -303,7 +334,7 @@ if __name__ == '__main__':
     print 'N1'
     print get_global_n1_prices()
     print 'Olís'
-    print get_global_olis_prices()
+    print get_individual_olis_prices()
     print 'ÓB'
     print get_individual_ob_prices()
     print 'Orkan (including Orkan X)'
