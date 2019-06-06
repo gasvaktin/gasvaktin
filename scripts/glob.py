@@ -185,6 +185,12 @@ N1_PRICE_DIFF = {
         'diesel': -3.0,
         'diesel_discount': -3.0
     },
+    'n1_011': {  # Reykjavikurvegur
+        'bensin95': -12.0,
+        'bensin95_discount': -12.0,
+        'diesel': -12.0,
+        'diesel_discount': -12.0
+    },
     'n1_017': {  # Isafjordur
         'bensin95': -3.0,
         'bensin95_discount': -3.0,
