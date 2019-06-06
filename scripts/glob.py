@@ -148,6 +148,7 @@ ORKAN_X_LOCATION_RELATION = {
     u'Hverager\xf0i (Orkan X)': 'ox_007',
     u'Hraunb\xe6r (Orkan X)': 'ox_009',
 }
+ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006']
 
 # Atlantsolía has changed their discount system to mirror Orkan, this discount
 # system is called "MEIRA FYRIR ÞIG".

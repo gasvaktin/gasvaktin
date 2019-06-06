@@ -304,6 +304,9 @@ def get_individual_orkan_prices():
                 # For consistency we just use the minimum default discount
                 bensin95_discount = bensin95 - glob.ORKAN_MINIMUM_DISCOUNT
                 diesel_discount = diesel - glob.ORKAN_MINIMUM_DISCOUNT
+            if key in glob.ORKAN_DISCOUNTLESS_STATIONS:
+                bensin95_discount = None
+                diesel_discount = None
             prices[key] = {
                 'bensin95': bensin95,
                 'diesel': diesel,
