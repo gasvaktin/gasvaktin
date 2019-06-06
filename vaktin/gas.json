@@ -105,10 +105,10 @@
             "name": "Hveragerði"
         }, 
         {
-            "bensin95": 211.7, 
+            "bensin95": 211.4, 
             "bensin95_discount": null, 
             "company": "Atlantsolía", 
-            "diesel": 202.9, 
+            "diesel": 202.0, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.076516, 
@@ -313,10 +313,10 @@
             "name": "Kauptún"
         }, 
         {
-            "bensin95": 211.2, 
+            "bensin95": 219.9, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 201.8, 
+            "diesel": 209.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.131015, 
@@ -326,10 +326,10 @@
             "name": "Fellsmúli"
         }, 
         {
-            "bensin95": 211.2, 
+            "bensin95": 219.9, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 201.8, 
+            "diesel": 209.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.112573, 
@@ -339,10 +339,10 @@
             "name": "Mjódd"
         }, 
         {
-            "bensin95": 211.2, 
+            "bensin95": 219.9, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 201.8, 
+            "diesel": 209.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.09886543, 
@@ -352,10 +352,10 @@
             "name": "Hæðarsmári"
         }, 
         {
-            "bensin95": 211.2, 
+            "bensin95": 219.9, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 201.8, 
+            "diesel": 209.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.09370915, 
@@ -365,10 +365,10 @@
             "name": "Salavegur"
         }, 
         {
-            "bensin95": 211.2, 
+            "bensin95": 219.9, 
             "bensin95_discount": null, 
             "company": "Dælan", 
-            "diesel": 201.8, 
+            "diesel": 209.9, 
             "diesel_discount": null, 
             "geo": {
                 "lat": 64.14123192, 
