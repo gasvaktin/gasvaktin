@@ -244,9 +244,9 @@ def get_individual_ob_prices():
     end = datetime.datetime.strptime(glob.OB_EXTRA_DISCOUNT_UNTIL, '%Y-%m-%dT%H:%M')
     for key in ob_stations:
         if key in glob.OB_DISCOUNTLESS_STATIONS:
-            bensin95 = data['stations'][u'B\xe6jarlind']['bensin95']
+            bensin95 = data['stations'][u'B\xc3\xa6jarlind']['bensin95']
             bensin95_discount = None
-            diesel = data['stations'][u'B\xe6jarlind']['diesel']
+            diesel = data['stations'][u'B\xc3\xa6jarlind']['diesel']
             diesel_discount = None
         elif ob_stations[key][u'name'] in data['stations']:
             bensin95 = data['stations'][ob_stations[key][u'name']]['bensin95']
