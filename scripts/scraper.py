@@ -179,13 +179,25 @@ def get_individual_olis_prices():
         if row.findall('.//td')[0].text.strip() == '':
             continue
         name = unicode(row.findall('.//td')[0].text.strip())
-        bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
-        diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
+        bensin = None
+        if row.findall('.//td')[1].text.strip() != '':
+            bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
+        diesel = None
+        if row.findall('.//td')[2].text.strip() != '':
+            diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
         data['stations'][name] = {'bensin95': bensin, 'diesel': diesel}
         if data['highest']['bensin95'] is None or data['highest']['bensin95'] < bensin:
             data['highest']['bensin95'] = bensin
         if data['highest']['diesel'] is None or data['highest']['diesel'] < diesel:
             data['highest']['diesel'] = diesel
+    assert(data['highest']['bensin95'] is not None)
+    assert(data['highest']['diesel'] is not None)
+    for name in data['stations']:
+        # fallback to highest provided price if for some reason it's not provided ._.
+        if data['stations'][name]['bensin95'] is None:
+            data['stations'][name]['bensin95'] = data['highest']['bensin95']
+        if data['stations'][name]['diesel'] is None:
+            data['stations'][name]['diesel'] = data['highest']['diesel']
     prices = {}
     olis_stations = utils.load_json(
         os.path.join(
