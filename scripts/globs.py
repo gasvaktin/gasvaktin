@@ -1,14 +1,14 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
-ATLANTSOLIA = u'Atlantsolía'
-COSTCO = u'Costco Iceland'
-N1 = u'N1'
-DAELAN = u'Dælan'
-OLIS = u'Olís'
-OB = u'ÓB'
-SKELJUNGUR = u'Skeljungur'
-ORKAN = u'Orkan'
-ORKAN_X = u'Orkan X'
+ATLANTSOLIA = 'Atlantsolía'
+COSTCO = 'Costco Iceland'
+N1 = 'N1'
+DAELAN = 'Dælan'
+OLIS = 'Olís'
+OB = 'ÓB'
+SKELJUNGUR = 'Skeljungur'
+ORKAN = 'Orkan'
+ORKAN_X = 'Orkan X'
 
 
 class PRICETYPE:
@@ -17,31 +17,31 @@ class PRICETYPE:
 
 
 ATLANTSOLIA_LOCATION_RELATION = {
-    u'Akureyri Baldursnes': 'ao_000',
-    u'Akureyri Gler\xe1rtorg': 'ao_001',
-    u'B\xedldsh\xf6f\xf0i': 'ao_002',
-    u'Borgarnes': 'ao_003',
-    u'B\xfa\xf0ark\xf3r': 'ao_004',
-    u'Egilssta\xf0ir': 'ao_005',
-    u'Hafnarfjar\xf0arh\xf6fn': 'ao_006',
-    u'Hverager\xf0i': 'ao_007',
-    u'Kaplakriki *': 'ao_008',
-    u'K\xf3pavogsbraut': 'ao_009',
-    u'Mosfellsb\xe6r': 'ao_010',
-    u'Njar\xf0v\xedk': 'ao_011',
-    u'\xd6skjuhl\xed\xf0': 'ao_012',
-    u'Selfoss': 'ao_013',
-    u'Skeifan': 'ao_014',
-    u'Skemmuvegi': 'ao_015',
-    u'Sk\xfalagata': 'ao_016',
-    u'Sprengisandur *': 'ao_017',
-    u'Stykkish\xf3lmur': 'ao_018',
-    u'Starengi': 'ao_019',
-    u'Kirkjust\xe9tt': 'ao_020',
-    u'Knarrvogur': 'ao_021',  # typo in address?
-    u'Knarravogur': 'ao_021',  # put these two just in case ..
-    u'Knarrarvogur': 'ao_021',
-    u'Kjalarnes': 'ao_022'
+    'Akureyri Baldursnes': 'ao_000',
+    'Akureyri Glerártorg': 'ao_001',
+    'Bíldshöfði': 'ao_002',
+    'Borgarnes': 'ao_003',
+    'Búðarkór': 'ao_004',
+    'Egilsstaðir': 'ao_005',
+    'Hafnarfjarðarhöfn': 'ao_006',
+    'Hveragerði': 'ao_007',
+    'Kaplakriki *': 'ao_008',
+    'Kópavogsbraut': 'ao_009',
+    'Mosfellsbær': 'ao_010',
+    'Njarðvík': 'ao_011',
+    'Öskjuhlíð': 'ao_012',
+    'Selfoss': 'ao_013',
+    'Skeifan': 'ao_014',
+    'Skemmuvegi': 'ao_015',
+    'Skúlagata': 'ao_016',
+    'Sprengisandur *': 'ao_017',
+    'Stykkishólmur': 'ao_018',
+    'Starengi': 'ao_019',
+    'Kirkjustétt': 'ao_020',
+    'Knarrvogur': 'ao_021',  # typo in address?
+    'Knarravogur': 'ao_021',  # put these two just in case ..
+    'Knarrarvogur': 'ao_021',
+    'Kjalarnes': 'ao_022'
 }
 # Atlantsolia declared one (and now two) of its stations to be without discount,
 # on their site that station is marked with a star (*) and the following comment at the bottom:
@@ -49,7 +49,77 @@ ATLANTSOLIA_LOCATION_RELATION = {
 ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_008', 'ao_017']
 
 OLIS_MINIMUM_DISCOUNT = 5
+OLIS_LOCATION_RELATION = {
+    'Baula': 'ol_016',
+    'Borgarnes': 'ol_017',
+    'Akranes, Esjubraut': 'ol_012',
+    'Akranes, Umboð': 'ol_013',
+    'Akureyri, bensínstöð': 'ol_014',
+    'Arnarstapi - bensínstöð': 'ol_015',
+    'Álfheimar': 'ol_001',
+    'Ánanaust': 'ol_002',
+    'Básinn': 'ol_025',
+    'Dalvík Bensínstöð': 'ol_018',
+    'Fellabær': 'ol_019',
+    'Ferstikla Veitingaskáli': 'ol_020',
+    'Garðabær': 'ol_004',
+    'Gullinbrú': 'ol_005',
+    'Hamraborg': 'ol_006',
+    'Hella - bensínstöð': 'ol_021',
+    'Hornafjörður bensínst.': 'ol_024',
+    'Húsavík': 'ol_023',
+    'Klöpp': 'ol_008',
+    'Langitangi': 'ol_009',
+    'Litla-Kaffistofan': 'ol_027',
+    'Mjódd': 'ol_000',
+    'Neskaupstaður': 'ol_028',
+    'Norðlingaholt': 'ol_010',
+    'Ólafsfjörður, bensínstöð': 'ol_029',
+    'Reyðarfjörður': 'ol_030',
+    'Sauðárkrókur - þjónustust.': 'ol_031',
+    'Selfoss': 'ol_032',
+    'Siglufjörður bensínstöð': 'ol_033',
+    'Skagaströnd bensínst.': 'ol_034',
+    'Sæbraut': 'ol_011'
+}
 OB_MINIMUM_DISCOUNT = 5
+OB_LOCATION_RELATION = {
+    'Arnarsmára': 'ob_003',
+    'Bæjarlind': 'ob_010',
+    'Fjarðarkaup': 'ob_012',
+    'Borgarnes': 'ob_009',
+    'Akranes, Esjubraut': 'ob_000',
+    'Aðalgötu': 'ob_035',
+    'Akureyri': 'ob_001',
+    'Akureyri BSÓ': 'ob_002',
+    'Barðastaðir': 'ob_004',
+    'Baula': 'ob_005',
+    'Bíldshöfða': 'ob_006',
+    'Blönduós': 'ob_007',
+    'Bolungarvík': 'ob_008',
+    'Búðardalur': '',  # note: station missing
+    'Eyrarbakka': 'ob_011',
+    'Grindavík': 'ob_014',
+    'Grundartanga': 'ob_015',
+    'Hólmavík': 'ob_016',
+    'Húsavík': 'ob_017',
+    'Ísafjörður': 'ob_018',
+    'Kirkjubæjarklaustur': 'ob_019',
+    'Landvegamót': 'ob_020',
+    'Laugabakki': 'ol_036',
+    'Melabraut': 'ob_021',
+    'Minni Borg': 'ob_022',
+    'Neskaupstaður': 'ob_023',
+    'Njarðvík': 'ob_024',
+    'Reyðarfjörður': 'ob_026',
+    'Selfoss': 'ob_027',
+    'Snorrabraut': 'ob_028',
+    'Stykkishólmur': 'ob_030',
+    'Suðurhella': 'ob_031',
+    'Varmahlíð': 'ob_034',
+    'Vestmannaeyjar Klettur': 'ob_032',
+    'Þorlákshöfn': 'ob_033'
+}
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
 # In 2019-06 the stations are the following:
@@ -76,77 +146,77 @@ OB_EXTRA_DISCOUNT_UNTIL = '2019-06-30T23:59'
 OB_DISCOUNTLESS_STATIONS = ['ob_012', 'ob_003', 'ob_010']
 
 ORKAN_LOCATION_RELATION = {
-    u'Dalvegur': 'or_000',
-    u'Gylfafl\xf6t': 'or_001',
-    u'Klettagar\xf0ar': 'or_002',
-    u'K\xe6nan': 'or_003',
-    u'Laugavegur': 'or_004',
-    u'Miklabraut': 'or_005',
-    u'Reykjav\xedkurvegur': 'or_006',
-    u'Sk\xf3garhl\xed\xf0': 'or_007',
-    u'Su\xf0urstr\xf6nd': 'or_008',
-    u'Egilssta\xf0ir, Fagradalsbraut': 'or_009',
-    u'Eskifj\xf6r\xf0ur': 'or_010',
-    u'F\xe1skr\xfa\xf0sfj\xf6r\xf0ur': 'or_011',
-    u'Hallormssta\xf0ur': 'or_012',
-    u'Neskaupsta\xf0ur': 'or_013',
-    u'Rey\xf0arfj\xf6r\xf0ur': 'or_014',
-    u'Sey\xf0isfj\xf6r\xf0ur': 'or_015',
-    u'Skj\xf6ld\xf3lfssta\xf0ir': 'or_016',
-    u'\xc1rsk\xf3gssandur': 'or_017',
-    u'Furuvellir': 'or_018',
-    u'H\xfasav\xedk': 'or_019',
-    u'Hvammstangi': 'or_020',
-    u'M\xfdrarvegur': 'or_021',
-    u'M\xfdvatn': 'or_022',
-    u'Sau\xf0\xe1rkr\xf3kur': 'or_023',
-    u'B\xedldudalur': 'or_024',
-    u'Bolungarv\xedk': 'or_025',
-    u'\xcdsafj\xf6r\xf0ur': 'or_026',
-    u'S\xfa\xf0av\xedk': 'or_027',
-    u'Akranes, Skagabraut': 'or_028',
-    u'Borgarnes': 'or_029',
-    u'Grundarfj\xf6r\xf0ur': 'or_030',
-    u'Hre\xf0avatnssk\xe1li': 'or_031',
-    u'H\xfasafell': 'or_032',
-    u'\xd3lafsv\xedk': 'or_033',
-    u'Stykkish\xf3lmur': 'or_034',
-    u'Grindav\xedk': 'or_035',
-    u'Keflav\xedkurflugv\xf6llur': 'or_036',
-    u'Reykjanesb\xe6r': 'or_037',
-    u'Sandger\xf0i': 'or_038',
-    u'Freysnes': 'or_039',
-    u'Hvolsv\xf6llur': 'or_040',
-    u'Selfoss': 'or_041',
-    u'Stokkseyri': 'or_042',
-    u'\xdathl\xed\xf0': 'or_043',
-    u'Vestmannaeyjar': 'or_044',
-    u'V\xedk \xed M\xfdrdal': 'or_045',
-    u'\xdeorl\xe1ksh\xf6fn': 'or_046',
-    u'Birkimelur': 'or_047',
-    u'B\xfasta\xf0avegur': 'or_048',
-    u'Kleppsvegur': 'or_049',
-    u'Sm\xe1rinn': 'or_050',
-    u'Su\xf0urfell': 'or_051',
-    u'Vesturlandsvegur': 'or_052',
-    u'H\xf6rg\xe1rbraut': 'or_053',
-    u'Hverager\xf0i': 'or_054',
-    u'Gar\xf0ab\xe6r': 'or_055',
-    u'Miklabraut v. Kringluna': 'or_056'
+    'Dalvegur': 'or_000',
+    'Gylfaflöt': 'or_001',
+    'Klettagarðar': 'or_002',
+    'Kænan': 'or_003',
+    'Laugavegur': 'or_004',
+    'Miklabraut': 'or_005',
+    'Reykjavíkurvegur': 'or_006',
+    'Skógarhlíð': 'or_007',
+    'Suðurströnd': 'or_008',
+    'Egilsstaðir, Fagradalsbraut': 'or_009',
+    'Eskifjörður': 'or_010',
+    'Fáskrúðsfjörður': 'or_011',
+    'Hallormsstaður': 'or_012',
+    'Neskaupstaður': 'or_013',
+    'Reyðarfjörður': 'or_014',
+    'Seyðisfjörður': 'or_015',
+    'Skjöldólfsstaðir': 'or_016',
+    'Árskógssandur': 'or_017',
+    'Furuvellir': 'or_018',
+    'Húsavík': 'or_019',
+    'Hvammstangi': 'or_020',
+    'Mýrarvegur': 'or_021',
+    'Mývatn': 'or_022',
+    'Sauðárkrókur': 'or_023',
+    'Bíldudalur': 'or_024',
+    'Bolungarvík': 'or_025',
+    'Ísafjörður': 'or_026',
+    'Súðavík': 'or_027',
+    'Akranes, Skagabraut': 'or_028',
+    'Borgarnes': 'or_029',
+    'Grundarfjörður': 'or_030',
+    'Hreðavatnsskáli': 'or_031',
+    'Húsafell': 'or_032',
+    'Ólafsvík': 'or_033',
+    'Stykkishólmur': 'or_034',
+    'Grindavík': 'or_035',
+    'Keflavíkurflugvöllur': 'or_036',
+    'Reykjanesbær': 'or_037',
+    'Sandgerði': 'or_038',
+    'Freysnes': 'or_039',
+    'Hvolsvöllur': 'or_040',
+    'Selfoss': 'or_041',
+    'Stokkseyri': 'or_042',
+    'Úthlíð': 'or_043',
+    'Vestmannaeyjar': 'or_044',
+    'Vík í Mýrdal': 'or_045',
+    'Þorlákshöfn': 'or_046',
+    'Birkimelur': 'or_047',
+    'Bústaðavegur': 'or_048',
+    'Kleppsvegur': 'or_049',
+    'Smárinn': 'or_050',
+    'Suðurfell': 'or_051',
+    'Vesturlandsvegur': 'or_052',
+    'Hörgárbraut': 'or_053',
+    'Hveragerði': 'or_054',
+    'Garðabær': 'or_055',
+    'Miklabraut v. Kringluna': 'or_056'
 }
 
 ORKAN_X_LOCATION_RELATION = {
-    u'Ei\xf0istorg (Orkan X)': 'ox_000',
-    u'Ei\xf0istorg': 'ox_000',
+    u'Eiðistorg (Orkan X)': 'ox_000',
+    u'Eiðistorg': 'ox_000',
     u'Miklabraut v. Kringluna (Orkan X)': 'ox_001',
     u'Skemmuvegur (Orkan X)': 'ox_002',
     u'Skemmuvegur': 'ox_002',
-    u'Sp\xf6ngin (Orkan X)': 'ox_003',
-    u'Egilssta\xf0ir (Orkan X)': 'ox_004',
+    u'Spöngin (Orkan X)': 'ox_003',
+    u'Egilsstaðir (Orkan X)': 'ox_004',
     u'Akureyri, Kjarnagata (Orkan X)': 'ox_005',
-    u'Akranes, Smi\xf0juv\xf6llum (Orkan X)': 'ox_006',
-    u'Hverager\xf0i (Orkan X)': 'ox_007',
-    u'Hraunb\xe6r (Orkan X)': 'ox_009',
+    u'Akranes, Smiðjuvöllum (Orkan X)': 'ox_006',
+    u'Hveragerði (Orkan X)': 'ox_007',
+    u'Hraunbær (Orkan X)': 'ox_009',
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006']
 
