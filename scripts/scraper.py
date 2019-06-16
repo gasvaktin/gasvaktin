@@ -1,18 +1,27 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import datetime
 import lxml.etree
 import os
 import requests
+import sys
 
-import glob
-import utils
-
-requests.packages.urllib3.disable_warnings()
+try:
+    import logman
+except ModuleNotFoundError:
+    sys.path.append('.')
+    sys.path.append('..')
+    import logman
+try:
+    from scripts import globs
+    from scripts import utils
+except ModuleNotFoundError:
+    import globs
+    import utils
 
 
 def get_individual_atlantsolia_prices():
-    relation = glob.ATLANTSOLIA_LOCATION_RELATION
+    relation = globs.ATLANTSOLIA_LOCATION_RELATION
     url = 'https://www.atlantsolia.is/stodvaverd/'
     res = requests.get(url, headers=utils.headers())
     html_text = res.content
@@ -24,12 +33,12 @@ def get_individual_atlantsolia_prices():
         bensin95 = float(div_price[1][0].text.replace(',', '.'))
         diesel = float(div_price[2][0].text.replace(',', '.'))
         bensin95_discount = int(
-            (bensin95 - glob.ATLANTSOLIA_MINIMUM_DISCOUNT) * 10
+            (bensin95 - globs.ATLANTSOLIA_MINIMUM_DISCOUNT) * 10
         ) / 10.0
         diesel_discount = int(
-            (diesel - glob.ATLANTSOLIA_MINIMUM_DISCOUNT) * 10
+            (diesel - globs.ATLANTSOLIA_MINIMUM_DISCOUNT) * 10
         ) / 10.0
-        if key in glob.ATLANTSOLIA_DISCOUNTLESS_STATIONS:
+        if key in globs.ATLANTSOLIA_DISCOUNTLESS_STATIONS:
             bensin95_discount = None
             diesel_discount = None
         prices[key] = {
@@ -69,7 +78,7 @@ def get_global_costco_prices():
     # <shameless-incredibly-naive-html-parsing>
     bensin = None
     diesel = None
-    html_text = res.content
+    html_text = res.content.decode('utf-8')
     for line in html_text.split('\n'):
         if line.lstrip().startswith('Bensin,'):
             bensin = float(line.lstrip()[7:].replace(' ', ''))
@@ -115,20 +124,16 @@ def get_global_n1_prices():
         'X-Requested-With': 'XMLHttpRequest'
     }
     headers_eldsneyti_api['Content-Length'] = str(len(post_data_bensin))
-    res = session.post(url_eldsneyti_api, data=post_data_bensin,
-                       headers=headers_eldsneyti_api)
-    bensin95_discount_text = res.content
+    res = session.post(url_eldsneyti_api, data=post_data_bensin, headers=headers_eldsneyti_api)
+    bensin95_discount_text = res.content.decode('utf-8')
     headers_eldsneyti_api['Content-Length'] = str(len(post_data_diesel))
-    res = session.post(url_eldsneyti_api, data=post_data_diesel,
-                       headers=headers_eldsneyti_api)
-    diesel_discount_text = res.content
+    res = session.post(url_eldsneyti_api, data=post_data_diesel, headers=headers_eldsneyti_api)
+    diesel_discount_text = res.content.decode('utf-8')
     prices = {}
-    prices['bensin95'] = float(
-        bensin95_discount_text.replace('"', '').replace(',', '.'))
-    prices['diesel'] = float(
-        diesel_discount_text.replace('"', '').replace(',', '.'))
-    prices['bensin95_discount'] = prices['bensin95'] - glob.N1_DISCOUNT
-    prices['diesel_discount'] = prices['diesel'] - glob.N1_DISCOUNT
+    prices['bensin95'] = float(bensin95_discount_text.replace('"', '').replace(',', '.'))
+    prices['diesel'] = float(diesel_discount_text.replace('"', '').replace(',', '.'))
+    prices['bensin95_discount'] = prices['bensin95'] - globs.N1_DISCOUNT
+    prices['diesel_discount'] = prices['diesel'] - globs.N1_DISCOUNT
     return prices
 
 
@@ -136,18 +141,18 @@ def get_global_daelan_prices():
     headers = utils.headers()
     session = requests.Session()
     res = session.get('https://daelan.is/', headers=headers)
-    html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
+    html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
     price_info_container = html.find('.//div[@id="gas-price-info-container"]')
     bensin95 = None
     diesel = None
     for column in price_info_container.findall('.//li'):
-        if column.find('.//span').text == u'D\xedsel':
+        if column.find('.//span').text == 'Dísel':
             diesel_text = column.find('.//em').text.strip()
             if diesel_text.endswith(' kr.'):
                 diesel_text = diesel_text[:-4]
             diesel_text = diesel_text.replace(',', '.')
             diesel = float(diesel_text)
-        elif column.find('.//span').text == u'Bens\xedn':
+        elif column.find('.//span').text == 'Bensín':
             bensin95_text = column.find('.//em').text.strip()
             if bensin95_text.endswith(' kr.'):
                 bensin95_text = bensin95_text[:-4]
@@ -166,8 +171,8 @@ def get_global_daelan_prices():
 
 def get_individual_olis_prices():
     url = 'https://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
-    res = requests.get(url, headers=utils.headers(), verify=False)
-    html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
+    res = requests.get(url, headers=utils.headers())
+    html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
     data = {
         'stations': {},
         'highest': {'bensin95': None, 'diesel': None}
@@ -178,14 +183,15 @@ def get_individual_olis_prices():
             continue
         if row.findall('.//td')[0].text.strip() == '':
             continue
-        name = unicode(row.findall('.//td')[0].text.strip())
+        name = row.findall('.//td')[0].text.strip()
+        station_key = globs.OLIS_LOCATION_RELATION[name]
         bensin = None
         if row.findall('.//td')[1].text.strip() != '':
             bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
         diesel = None
         if row.findall('.//td')[2].text.strip() != '':
             diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
-        data['stations'][name] = {'bensin95': bensin, 'diesel': diesel}
+        data['stations'][station_key] = {'bensin95': bensin, 'diesel': diesel}
         if data['highest']['bensin95'] is None or data['highest']['bensin95'] < bensin:
             data['highest']['bensin95'] = bensin
         if data['highest']['diesel'] is None or data['highest']['diesel'] < diesel:
@@ -206,14 +212,14 @@ def get_individual_olis_prices():
         )
     )
     for key in olis_stations:
-        if olis_stations[key][u'name'] in data['stations']:
-            bensin95 = data['stations'][olis_stations[key][u'name']]['bensin95']
-            diesel = data['stations'][olis_stations[key][u'name']]['diesel']
+        if key in data['stations']:
+            bensin95 = data['stations'][key]['bensin95']
+            diesel = data['stations'][key]['diesel']
         else:
             bensin95 = data['highest']['bensin95']
             diesel = data['highest']['diesel']
-        bensin95_discount = int((bensin95 - glob.OLIS_MINIMUM_DISCOUNT) * 10) / 10.0
-        diesel_discount = int((diesel - glob.OLIS_MINIMUM_DISCOUNT) * 10) / 10.0
+        bensin95_discount = int((bensin95 - globs.OLIS_MINIMUM_DISCOUNT) * 10) / 10.0
+        diesel_discount = int((diesel - globs.OLIS_MINIMUM_DISCOUNT) * 10) / 10.0
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
@@ -225,8 +231,8 @@ def get_individual_olis_prices():
 
 def get_individual_ob_prices():
     url = 'https://www.ob.is/eldsneytisverd/'
-    res = requests.get(url, headers=utils.headers(), verify=False)
-    html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
+    res = requests.get(url, headers=utils.headers())
+    html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
     data = {
         'stations': {},
         'highest': {'bensin95': None, 'diesel': None}
@@ -237,10 +243,11 @@ def get_individual_ob_prices():
             continue
         if row.findall('.//td')[0].get('style') == 'border:0px;':
             continue
-        name = unicode(row.findall('.//td')[0].text.strip())
+        name = row.findall('.//td')[0].text.strip()
+        station_key = globs.OB_LOCATION_RELATION[name]
         bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
         diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
-        data['stations'][name] = {'bensin95': bensin, 'diesel': diesel}
+        data['stations'][station_key] = {'bensin95': bensin, 'diesel': diesel}
         if data['highest']['bensin95'] is None or data['highest']['bensin95'] < bensin:
             data['highest']['bensin95'] = bensin
         if data['highest']['diesel'] is None or data['highest']['diesel'] < diesel:
@@ -253,28 +260,24 @@ def get_individual_ob_prices():
         )
     )
     now = datetime.datetime.now()
-    end = datetime.datetime.strptime(glob.OB_EXTRA_DISCOUNT_UNTIL, '%Y-%m-%dT%H:%M')
+    end = datetime.datetime.strptime(globs.OB_EXTRA_DISCOUNT_UNTIL, '%Y-%m-%dT%H:%M')
     for key in ob_stations:
-        if key in glob.OB_DISCOUNTLESS_STATIONS:
-            bensin95 = data['stations'][u'B\xc3\xa6jarlind']['bensin95']
-            bensin95_discount = None
-            diesel = data['stations'][u'B\xc3\xa6jarlind']['diesel']
-            diesel_discount = None
-        elif ob_stations[key][u'name'] in data['stations']:
-            bensin95 = data['stations'][ob_stations[key][u'name']]['bensin95']
-            bensin95_discount = int((bensin95 - glob.OB_MINIMUM_DISCOUNT) * 10) / 10.0
-            diesel = data['stations'][ob_stations[key][u'name']]['diesel']
-            diesel_discount = int((diesel - glob.OB_MINIMUM_DISCOUNT) * 10) / 10.0
+        if key in data['stations']:
+            bensin95 = data['stations'][key]['bensin95']
+            diesel = data['stations'][key]['diesel']
         else:
             bensin95 = data['highest']['bensin95']
-            bensin95_discount = int((bensin95 - glob.OB_MINIMUM_DISCOUNT) * 10) / 10.0
             diesel = data['highest']['diesel']
-            diesel_discount = int((diesel - glob.OB_MINIMUM_DISCOUNT) * 10) / 10.0
-        if key in glob.OB_EXTRA_DISCOUNT_STATIONS and now < end:
+        bensin95_discount = int((bensin95 - globs.OB_MINIMUM_DISCOUNT) * 10) / 10.0
+        diesel_discount = int((diesel - globs.OB_MINIMUM_DISCOUNT) * 10) / 10.0
+        if key in globs.OB_DISCOUNTLESS_STATIONS:
+            bensin95_discount = None
+            diesel_discount = None
+        if key in globs.OB_EXTRA_DISCOUNT_STATIONS and now < end:
             if bensin95_discount is not None:
-                bensin95_discount = int((bensin95 - glob.OB_EXTRA_DISCOUNT_AMOUNT) * 10) / 10.0
+                bensin95_discount = int((bensin95 - globs.OB_EXTRA_DISCOUNT_AMOUNT) * 10) / 10.0
             if diesel_discount is not None:
-                diesel_discount = int((diesel - glob.OB_EXTRA_DISCOUNT_AMOUNT) * 10) / 10.0
+                diesel_discount = int((diesel - globs.OB_EXTRA_DISCOUNT_AMOUNT) * 10) / 10.0
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
@@ -288,8 +291,8 @@ def get_individual_orkan_prices():
     # Read prices for Orkan and Orkan X stations because they're both on the
     # same webpage.
     url = 'https://www.orkan.is/orkan/orkustodvar/'
-    res = requests.get(url, headers=utils.headers(), verify=False)
-    html = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
+    res = requests.get(url, headers=utils.headers())
+    html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
     div_element = html.find('.//div[@class="accordion__container"]')
     territories = div_element.findall('.//div[@class="accordion__child"]')
     prices = {}
@@ -299,10 +302,10 @@ def get_individual_orkan_prices():
             station_name = station[0][0].text
             bensin95 = float(station[1].text.replace(',', '.'))
             diesel = float(station[2].text.replace(',', '.'))
-            if station_name in glob.ORKAN_LOCATION_RELATION:
-                key = glob.ORKAN_LOCATION_RELATION[station_name]
-            elif station_name in glob.ORKAN_X_LOCATION_RELATION:
-                key = glob.ORKAN_X_LOCATION_RELATION[station_name]
+            if station_name in globs.ORKAN_LOCATION_RELATION:
+                key = globs.ORKAN_LOCATION_RELATION[station_name]
+            elif station_name in globs.ORKAN_X_LOCATION_RELATION:
+                key = globs.ORKAN_X_LOCATION_RELATION[station_name]
             else:
                 continue
             # Orkan X stations have key starting with "ox", while ordinary
@@ -314,9 +317,9 @@ def get_individual_orkan_prices():
                 # spendings on gas from them the month before
                 # See more info here: https://www.orkan.is/Afslattarthrep
                 # For consistency we just use the minimum default discount
-                bensin95_discount = bensin95 - glob.ORKAN_MINIMUM_DISCOUNT
-                diesel_discount = diesel - glob.ORKAN_MINIMUM_DISCOUNT
-            if key in glob.ORKAN_DISCOUNTLESS_STATIONS:
+                bensin95_discount = bensin95 - globs.ORKAN_MINIMUM_DISCOUNT
+                diesel_discount = diesel - globs.ORKAN_MINIMUM_DISCOUNT
+            if key in globs.ORKAN_DISCOUNTLESS_STATIONS:
                 bensin95_discount = None
                 diesel_discount = None
             prices[key] = {
@@ -338,19 +341,32 @@ def get_individual_orkan_prices():
     return prices
 
 
+def testrun(selection):
+    if logman.Logger is None:
+        logman.init(role='cli', log_to_file=False)
+    run_all = ('all' in selection)
+    if run_all or 'ao' in selection:
+        logman.info('Atlantsolía')
+        logman.info(get_individual_atlantsolia_prices())
+    if run_all or 'co' in selection:
+        logman.info('Costco')
+        logman.info(get_global_costco_prices())
+    if run_all or 'dn' in selection:
+        logman.info('Dælan')
+        logman.info(get_global_daelan_prices())
+    if run_all or 'n1' in selection:
+        logman.info('N1')
+        logman.info(get_global_n1_prices())
+    if run_all or 'ol' in selection:
+        logman.info('Olís')
+        logman.info(get_individual_olis_prices())
+    if run_all or 'ob' in selection:
+        logman.info('ÓB')
+        logman.info(get_individual_ob_prices())
+    if run_all or 'or' in selection or 'ox' in selection:
+        logman.info('Orkan (including Orkan X)')
+        logman.info(get_individual_orkan_prices())
+
+
 if __name__ == '__main__':
-    print 'Testing scrapers\n'
-    print 'Atlantsolía'
-    print get_individual_atlantsolia_prices()
-    print 'Costco'
-    print get_global_costco_prices()
-    print 'Dælan'
-    print get_global_daelan_prices()
-    print 'N1'
-    print get_global_n1_prices()
-    print 'Olís'
-    print get_individual_olis_prices()
-    print 'ÓB'
-    print get_individual_ob_prices()
-    print 'Orkan (including Orkan X)'
-    print get_individual_orkan_prices()
+    testrun(['all'])

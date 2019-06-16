@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import argparse
 import datetime
@@ -8,8 +8,12 @@ import sys
 
 import git
 
-import glob
-import utils
+try:
+    from scripts import globs
+    from scripts import utils
+except ModuleNotFoundError:
+    import globs
+    import utils
 
 DESC = 'Average-prices-over-time trends data extractor tool'
 # Used to extract price changes over periods of time from gasvaktin repo.
@@ -20,7 +24,7 @@ def calc_median(my_list):
     Miðgildi (e. median)
     '''
     sorted_list = sorted(my_list)
-    return sorted_list[len(sorted_list) / 2]
+    return sorted_list[int(len(sorted_list) / 2)]
 
 
 def calc_mean(mylist):
@@ -87,9 +91,9 @@ def read_price_changes(repo, fromdate=None, todate=None):
         timestamp_text = commit.message[19:35]
         # skip bad price changes
         bad_commit = False
-        for bad_change in glob.BAD_AUTOPRICES_CHANGES:
+        for bad_change in globs.BAD_AUTOPRICES_CHANGES:
             if (timestamp_text == bad_change['timestamp_text'] and
-               commit.hexsha == bad_change['commit_hash']):
+                    commit.hexsha == bad_change['commit_hash']):
                 bad_commit = True
                 break
         if bad_commit:

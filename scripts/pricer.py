@@ -1,45 +1,50 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import os
 
-import glob
-import scraper
-import utils
+try:
+    from scripts import globs
+    from scripts import scraper
+    from scripts import utils
+except ModuleNotFoundError:
+    import globs
+    import scraper
+    import utils
 
 
 def main():
     current_dir = os.path.dirname(os.path.realpath(__file__))
     companies = [
         {
-            'name': glob.ATLANTSOLIA,
+            'name': globs.ATLANTSOLIA,
             'stations': '../stations/atlantsolia.json'
         },
         {
-            'name': glob.COSTCO,
+            'name': globs.COSTCO,
             'stations': '../stations/costco.json'
         },
         {
-            'name': glob.N1,
+            'name': globs.N1,
             'stations': '../stations/n1.json'
         },
         {
-            'name': glob.DAELAN,
+            'name': globs.DAELAN,
             'stations': '../stations/daelan.json'
         },
         {
-            'name': glob.OB,
+            'name': globs.OB,
             'stations': '../stations/ob.json'
         },
         {
-            'name': glob.OLIS,
+            'name': globs.OLIS,
             'stations': '../stations/olis.json'
         },
         {
-            'name': glob.ORKAN,
+            'name': globs.ORKAN,
             'stations': '../stations/orkan.json'
         },
         {
-            'name': glob.ORKAN_X,
+            'name': globs.ORKAN_X,
             'stations': '../stations/orkanx.json'
         }
     ]
@@ -62,37 +67,37 @@ def main():
     olis_prices = scraper.get_individual_olis_prices()
     orkan_prices = scraper.get_individual_orkan_prices()
     prices_map = {
-        glob.ATLANTSOLIA: {
+        globs.ATLANTSOLIA: {
             'data': atlantsolia_prices,
-            'type': glob.PRICETYPE.INDIVIDUAL
+            'type': globs.PRICETYPE.INDIVIDUAL
         },
-        glob.COSTCO: {
+        globs.COSTCO: {
             'data': costco_prices,
-            'type': glob.PRICETYPE.GLOBAL
+            'type': globs.PRICETYPE.GLOBAL
         },
-        glob.N1: {
+        globs.N1: {
             'data': n1_prices,
-            'type': glob.PRICETYPE.GLOBAL
+            'type': globs.PRICETYPE.GLOBAL
         },
-        glob.DAELAN: {
+        globs.DAELAN: {
             'data': daelan_prices,
-            'type': glob.PRICETYPE.GLOBAL
+            'type': globs.PRICETYPE.GLOBAL
         },
-        glob.OB: {
+        globs.OB: {
             'data': ob_prices,
-            'type': glob.PRICETYPE.INDIVIDUAL
+            'type': globs.PRICETYPE.INDIVIDUAL
         },
-        glob.OLIS: {
+        globs.OLIS: {
             'data': olis_prices,
-            'type': glob.PRICETYPE.INDIVIDUAL
+            'type': globs.PRICETYPE.INDIVIDUAL
         },
-        glob.ORKAN: {
+        globs.ORKAN: {
             'data': orkan_prices,
-            'type': glob.PRICETYPE.INDIVIDUAL
+            'type': globs.PRICETYPE.INDIVIDUAL
         },
-        glob.ORKAN_X: {
+        globs.ORKAN_X: {
             'data': orkan_prices,
-            'type': glob.PRICETYPE.INDIVIDUAL
+            'type': globs.PRICETYPE.INDIVIDUAL
         }
     }
 
@@ -101,7 +106,7 @@ def main():
 
     for key, station in sorted(all_stations.items()):
         station['key'] = key
-        if prices_map[station['company']]['type'] == glob.PRICETYPE.INDIVIDUAL:
+        if prices_map[station['company']]['type'] == globs.PRICETYPE.INDIVIDUAL:
             for price_key in price_keys:
                 if key.startswith('dn') and key not in prices_map[station['company']]['data']:
                     # <TEMPORARY DAELAN MEASURE>
@@ -119,15 +124,15 @@ def main():
                     station[price_key] = prices_map[station['company']]['data']['dn_000'][price_key]
                 else:
                     station[price_key] = prices_map[station['company']]['data'][key][price_key]
-        elif prices_map[station['company']]['type'] == glob.PRICETYPE.GLOBAL:
+        elif prices_map[station['company']]['type'] == globs.PRICETYPE.GLOBAL:
             for price_key in price_keys:
                 station[price_key] = prices_map[station['company']]['data'][price_key]
-            if station['company'] == glob.N1 and key in glob.N1_PRICE_DIFF:
+            if station['company'] == globs.N1 and key in globs.N1_PRICE_DIFF:
                 # Some N1 stations have been observed in real life to have fixed
                 # different prices from the most common price which is shown
                 # on N1 webpage.
                 for price_key in price_keys:
-                    station[price_key] += glob.N1_PRICE_DIFF[key][price_key]
+                    station[price_key] += globs.N1_PRICE_DIFF[key][price_key]
                 # Note: hardcoded price deviances, in no way guaranteed to
                 # be permanently correct.
         list_of_stations.append(station)

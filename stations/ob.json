@@ -222,5 +222,19 @@
             "lon": -19.44661661
         },
         "name": "Varmahlíð"
+    },
+    "ob_035": {
+        "geo": {
+            "lat": 63.998111,
+            "lon": -22.588235
+        },
+        "name": "Reykjanesbær Aðalgata"
+    },
+    "ob_036": {
+        "geo": {
+            "lat": 65.326053,
+            "lon": -20.892402
+        },
+        "name": "Laugarbakki"
     }
 }
