@@ -259,8 +259,12 @@ def init(role, output_dir='./logs/', log_to_cli=True, log_to_file=True):
     if Logger is not None:
         Logger.warning('logger already initialized')
 
+    output_dir_abs = os.path.abspath(output_dir)
+    if output_dir.startswith('./'):
+        output_dir_abs = os.path.join(os.path.dirname(os.path.realpath(__file__)), output_dir)
+
     # create main logger
-    Logger = configure_logger(Name, role, Log_Config, output_dir, log_to_cli, log_to_file)
+    Logger = configure_logger(Name, role, Log_Config, output_dir_abs, log_to_cli, log_to_file)
     # extend log functions
     debug = Logger.debug
     info = Logger.info
