@@ -24,16 +24,19 @@ Gasvaktin watches the following Icelandic oil companies:
 
 ## Setup and usage
 
-You need to install [python 2.7 and pip](http://docs.python-guide.org/en/latest/starting/install/win/) and install the following python modules:
+You need to install [Python3 (3.6.8 or newer) and pip](https://docs.python-guide.org/starting/install3/win/) and install the following python modules:
 
 	pip install -r pip_requirements.txt
 
+Note: Either make sure Python3 is set to default over Python2, or use `python3` and `pip3` instead of `python` and `pip`. Python2 lifecycle ends in 2019, so hopefully we can stop worrying about default Python in 2020.
+
 Open a terminal in this repository and
 
-	cd scripts
-	python pricer.py
+	python3 gasvaktin.py --collect-and-write-data
 
-This updates the pretty `vaktin/gas.json` and the minified `vaktin/gas.min.json` with newest price data from the oil companies webpages. The script `pricer.py` is run daily and price changes if any are automatically commited to the repository.
+This updates the pretty `vaktin/gas.json` and the minified `vaktin/gas.min.json` with newest price data from the oil companies webpages. This is run every 15 minutes and in case of price changes they are automatically commited to the repository.
+
+Run `python gasvaktin.py --help` to see available input arguments.
 
 ## Origination of data
 
@@ -44,7 +47,7 @@ If you're interested in price trends over time, it can be extracted from git his
 	cd scripts
 	python trends.py
 
-Run `python trends.py -h` to see available input arguments.
+Run `python trends.py --help` to see available input arguments.
 
 ### Atlantsolía
 
@@ -80,7 +83,7 @@ List of stations can be found [here](https://www.n1.is/stodvar/). With a bit of 
 
 #### Prices
 
-Price without discount can be seen [here](https://www.n1.is/eldsneyti/). We assume these prices to be global for all N1 stations as we can't find station individual prices anywhere. Discount for N1 business card holders can be seen [here](https://www.n1.is/n1-kortid/saekja-um-kort/). At the time of this writing the discount amount is 3 ISK and 2 N1 points per liter, both for bensin and diesel.
+Price without discount can be seen [here](https://www.n1.is/eldsneyti/). We assume these prices to be global for all N1 stations as we can't find station individual prices anywhere. Discount for N1 business card holders can be seen [here](https://www.n1.is/n1-kortid/saekja-um-kort/). At the time of this writing the discount amount is 5 ISK and 2 N1 points per liter, both for bensin and diesel.
 
 ### Dælan
 
@@ -100,7 +103,7 @@ List of stations can be seen [here](http://www.olis.is/solustadir/thjonustustodv
 
 #### Prices
 
-Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/) and prices for ÓB can be seen [here](http://www.ob.is/eldsneytisverd/), both with and without special fuel key ring discount.
+Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/) and prices for ÓB can be seen [here](http://www.ob.is/eldsneytisverd/), you can find information on special fuel key ring discount [here](https://www.olis.is/vidskiptakort/olis-lykill).
 
 ### Skeljungur (and Orkan (and Orkan X))
 
