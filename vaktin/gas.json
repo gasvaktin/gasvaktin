@@ -1899,11 +1899,11 @@
             "name": "Snorrabraut"
         },
         {
-            "bensin95": 236.7,
-            "bensin95_discount": 231.7,
+            "bensin95": 231.6,
+            "bensin95_discount": 226.6,
             "company": "ÓB",
-            "diesel": 225.7,
-            "diesel_discount": 220.7,
+            "diesel": 220.7,
+            "diesel_discount": 215.7,
             "geo": {
                 "lat": 65.071966,
                 "lon": -22.732975
@@ -2448,7 +2448,7 @@
             "bensin95": 209.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 199.9,
+            "diesel": 199.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2526,7 +2526,7 @@
             "bensin95": 209.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 199.9,
+            "diesel": 199.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
