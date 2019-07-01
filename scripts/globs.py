@@ -289,6 +289,12 @@ N1_PRICE_DIFF = {
         'diesel': -12.0,
         'diesel_discount': -12.0
     },
+    'n1_013': {  # Borgarnes
+        'bensin95': -6.0,
+        'bensin95_discount': -6.0,
+        'diesel': -6.0,
+        'diesel_discount': -6.0
+    },
     'n1_017': {  # Isafjordur
         'bensin95': -3.0,
         'bensin95_discount': -3.0,
