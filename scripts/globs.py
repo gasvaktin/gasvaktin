@@ -41,7 +41,8 @@ ATLANTSOLIA_LOCATION_RELATION = {
     'Knarrvogur': 'ao_021',  # typo in address?
     'Knarravogur': 'ao_021',  # put these two just in case ..
     'Knarrarvogur': 'ao_021',
-    'Kjalarnes': 'ao_022'
+    'Kjalarnes': 'ao_022',
+    'Háaleitisbraut': 'ao_023'
 }
 # Atlantsolia declared one (and now two) of its stations to be without discount,
 # on their site that station is marked with a star (*) and the following comment at the bottom:

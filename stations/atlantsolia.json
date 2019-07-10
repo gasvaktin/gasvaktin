@@ -159,5 +159,12 @@
             "lon": -21.829835
         },
         "name": "Kjalarnes"
+    },
+    "ao_023": {
+        "geo": {
+            "lat": 64.137569,
+            "lon": -21.890902
+        },
+        "name": "Háaleitisbraut"
     }
 }
