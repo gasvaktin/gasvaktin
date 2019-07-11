@@ -1600,10 +1600,10 @@
             "name": "BSO Akureyri"
         },
         {
-            "bensin95": 211.7,
+            "bensin95": 208.4,
             "bensin95_discount": null,
             "company": "ÓB",
-            "diesel": 201.9,
+            "diesel": 198.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.098399,
@@ -1691,10 +1691,10 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 211.7,
+            "bensin95": 208.4,
             "bensin95_discount": null,
             "company": "ÓB",
-            "diesel": 201.9,
+            "diesel": 198.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.099134,
@@ -1717,10 +1717,10 @@
             "name": "Eyrarbakki"
         },
         {
-            "bensin95": 211.7,
+            "bensin95": 208.4,
             "bensin95_discount": null,
             "company": "ÓB",
-            "diesel": 201.9,
+            "diesel": 198.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.081674,
