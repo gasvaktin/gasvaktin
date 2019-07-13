@@ -214,6 +214,7 @@ ORKAN_X_LOCATION_RELATION = {
     u'Skemmuvegur (Orkan X)': 'ox_002',
     u'Skemmuvegur': 'ox_002',
     u'Spöngin (Orkan X)': 'ox_003',
+    u'Spöngin': 'ox_003',
     u'Egilsstaðir (Orkan X)': 'ox_004',
     u'Akureyri, Kjarnagata (Orkan X)': 'ox_005',
     u'Akranes, Smiðjuvöllum (Orkan X)': 'ox_006',
