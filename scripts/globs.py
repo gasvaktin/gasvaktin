@@ -216,9 +216,13 @@ ORKAN_X_LOCATION_RELATION = {
     u'Spöngin (Orkan X)': 'ox_003',
     u'Spöngin': 'ox_003',
     u'Egilsstaðir (Orkan X)': 'ox_004',
+    u'Egilsstaðir, Miðvangi': 'ox_004',
     u'Akureyri, Kjarnagata (Orkan X)': 'ox_005',
+    u'Akureyri, Kjarnagata': 'ox_005',
     u'Akranes, Smiðjuvöllum (Orkan X)': 'ox_006',
+    u'Akranes, Smiðjuvöllum': 'ox_006',
     u'Hveragerði (Orkan X)': 'ox_007',
+    u'Hveragerði, Sunnumörk': 'ox_007',
     u'Hraunbær (Orkan X)': 'ox_009',
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006']
