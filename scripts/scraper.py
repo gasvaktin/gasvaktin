@@ -299,7 +299,7 @@ def get_individual_orkan_prices():
     key = None
     for territory in territories:
         for station in territory:
-            station_name = station[0][0].text
+            station_name = station[0][0].text.strip()
             bensin95 = float(station[1].text.replace(',', '.'))
             diesel = float(station[2].text.replace(',', '.'))
             if station_name in globs.ORKAN_LOCATION_RELATION:
