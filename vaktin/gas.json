@@ -2445,10 +2445,10 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 208.3,
+            "bensin95": 206.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 198.8,
+            "diesel": 196.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2523,10 +2523,10 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 208.3,
+            "bensin95": 206.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 198.8,
+            "diesel": 196.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2822,11 +2822,11 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 233.5,
-            "bensin95_discount": 228.5,
+            "bensin95": 234.4,
+            "bensin95_discount": 229.4,
             "company": "Orkan",
-            "diesel": 223.4,
-            "diesel_discount": 218.4,
+            "diesel": 224.4,
+            "diesel_discount": 219.4,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
