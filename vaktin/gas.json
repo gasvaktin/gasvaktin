@@ -2926,11 +2926,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 237.6,
-            "bensin95_discount": 232.6,
+            "bensin95": 240.1,
+            "bensin95_discount": 235.1,
             "company": "Orkan",
-            "diesel": 226.5,
-            "diesel_discount": 221.5,
+            "diesel": 228.6,
+            "diesel_discount": 223.6,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
@@ -3121,11 +3121,11 @@
             "name": "Suðurfell"
         },
         {
-            "bensin95": 237.6,
-            "bensin95_discount": 232.6,
+            "bensin95": 240.1,
+            "bensin95_discount": 235.1,
             "company": "Orkan",
-            "diesel": 226.5,
-            "diesel_discount": 221.5,
+            "diesel": 228.6,
+            "diesel_discount": 223.6,
             "geo": {
                 "lat": 64.123847,
                 "lon": -21.804124
