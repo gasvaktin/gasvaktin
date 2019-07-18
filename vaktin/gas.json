@@ -716,11 +716,11 @@
             "name": "Selfoss"
         },
         {
-            "bensin95": 242.1,
-            "bensin95_discount": 237.1,
+            "bensin95": 239.1,
+            "bensin95_discount": 234.1,
             "company": "N1",
-            "diesel": 231.5,
-            "diesel_discount": 226.5,
+            "diesel": 228.5,
+            "diesel_discount": 223.5,
             "geo": {
                 "lat": 63.99605943,
                 "lon": -21.19322495
