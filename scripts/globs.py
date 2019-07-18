@@ -299,7 +299,7 @@ N1_PRICE_DIFF = {
         'diesel': 0.0,
         'diesel_discount': 0.0
     },
-    'n1_025': {  # Hveraferði
+    'n1_025': {  # Hveragerði
         'bensin95': -3.0,
         'bensin95_discount': -3.0,
         'diesel': -3.0,
