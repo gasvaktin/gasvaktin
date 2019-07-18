@@ -3187,93 +3187,93 @@
         },
         {
             "bensin95": 240.1,
-            "bensin95_discount": null,
-            "company": "Orkan X",
+            "bensin95_discount": 235.1,
+            "company": "Orkan",
             "diesel": 228.6,
-            "diesel_discount": null,
+            "diesel_discount": 223.6,
             "geo": {
                 "lat": 64.149452,
                 "lon": -21.984109
             },
-            "key": "ox_000",
+            "key": "or_057",
             "name": "Eiðistorg"
         },
         {
             "bensin95": 240.1,
-            "bensin95_discount": null,
-            "company": "Orkan X",
+            "bensin95_discount": 235.1,
+            "company": "Orkan",
             "diesel": 228.6,
-            "diesel_discount": null,
+            "diesel_discount": 223.6,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
             },
-            "key": "ox_002",
+            "key": "or_058",
             "name": "Skemmuvegur"
         },
         {
             "bensin95": 240.1,
-            "bensin95_discount": null,
-            "company": "Orkan X",
+            "bensin95_discount": 235.1,
+            "company": "Orkan",
             "diesel": 228.6,
-            "diesel_discount": null,
+            "diesel_discount": 223.6,
             "geo": {
                 "lat": 64.149823,
                 "lon": -21.787291
             },
-            "key": "ox_003",
+            "key": "or_059",
             "name": "Spöngin"
         },
         {
             "bensin95": 233.9,
-            "bensin95_discount": null,
-            "company": "Orkan X",
+            "bensin95_discount": 228.9,
+            "company": "Orkan",
             "diesel": 222.6,
-            "diesel_discount": null,
+            "diesel_discount": 217.6,
             "geo": {
                 "lat": 65.263121,
                 "lon": -14.406162
             },
-            "key": "ox_004",
+            "key": "or_060",
             "name": "Egilsstaðir"
         },
         {
             "bensin95": 233.9,
-            "bensin95_discount": null,
-            "company": "Orkan X",
+            "bensin95_discount": 228.9,
+            "company": "Orkan",
             "diesel": 222.6,
-            "diesel_discount": null,
+            "diesel_discount": 217.6,
             "geo": {
                 "lat": 65.665889,
                 "lon": -18.103367
             },
-            "key": "ox_005",
+            "key": "or_061",
             "name": "Akureyri"
         },
         {
             "bensin95": 240.1,
-            "bensin95_discount": null,
-            "company": "Orkan X",
+            "bensin95_discount": 235.1,
+            "company": "Orkan",
             "diesel": 228.6,
-            "diesel_discount": null,
+            "diesel_discount": 223.6,
             "geo": {
                 "lat": 64.32685,
                 "lon": -22.055915
             },
-            "key": "ox_006",
+            "key": "or_062",
             "name": "Akranes"
         },
         {
             "bensin95": 233.9,
-            "bensin95_discount": null,
-            "company": "Orkan X",
+            "bensin95_discount": 228.9,
+            "company": "Orkan",
             "diesel": 222.6,
-            "diesel_discount": null,
+            "diesel_discount": 217.6,
             "geo": {
                 "lat": 63.995433,
                 "lon": -21.191837
             },
-            "key": "ox_007",
+            "key": "or_063",
             "name": "Hveragerði"
         },
         {
@@ -3286,7 +3286,7 @@
                 "lat": 64.117737,
                 "lon": -21.797643
             },
-            "key": "ox_009",
+            "key": "ox_000",
             "name": "Hraunbær"
         }
     ]
