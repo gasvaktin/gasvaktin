@@ -3134,11 +3134,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 238.6,
-            "bensin95_discount": 233.6,
+            "bensin95": 241.1,
+            "bensin95_discount": 236.1,
             "company": "Orkan",
-            "diesel": 226.5,
-            "diesel_discount": 221.5,
+            "diesel": 229.6,
+            "diesel_discount": 224.6,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
@@ -3147,11 +3147,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 238.6,
-            "bensin95_discount": 233.6,
+            "bensin95": 241.1,
+            "bensin95_discount": 236.1,
             "company": "Orkan",
-            "diesel": 226.5,
-            "diesel_discount": 221.5,
+            "diesel": 229.6,
+            "diesel_discount": 224.6,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
