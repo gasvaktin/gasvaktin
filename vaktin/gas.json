@@ -2510,11 +2510,11 @@
             "name": "Laugavegur"
         },
         {
-            "bensin95": 237.6,
-            "bensin95_discount": 232.6,
+            "bensin95": 240.1,
+            "bensin95_discount": 235.1,
             "company": "Orkan",
-            "diesel": 226.5,
-            "diesel_discount": 221.5,
+            "diesel": 228.6,
+            "diesel_discount": 223.6,
             "geo": {
                 "lat": 64.13266,
                 "lon": -21.893096
@@ -3069,11 +3069,11 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 238.6,
-            "bensin95_discount": 233.6,
+            "bensin95": 240.1,
+            "bensin95_discount": 235.1,
             "company": "Orkan",
-            "diesel": 227.5,
-            "diesel_discount": 222.5,
+            "diesel": 228.6,
+            "diesel_discount": 223.6,
             "geo": {
                 "lat": 64.131308,
                 "lon": -21.918266
@@ -3186,10 +3186,10 @@
             "name": "Miklabraut við Kringluna"
         },
         {
-            "bensin95": 237.6,
+            "bensin95": 240.1,
             "bensin95_discount": null,
             "company": "Orkan X",
-            "diesel": 226.5,
+            "diesel": 228.6,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.149452,
