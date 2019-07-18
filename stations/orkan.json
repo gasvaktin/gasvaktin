@@ -397,5 +397,54 @@
             "lon": -21.893384
         },
         "name": "Miklabraut við Kringluna"
+    },
+    "or_057": {
+        "geo": {
+            "lat": 64.149452,
+            "lon": -21.984109
+        },
+        "name": "Eiðistorg"
+    },
+    "or_058": {
+        "geo": {
+            "lat": 64.110660,
+            "lon": -21.852019
+        },
+        "name": "Skemmuvegur"
+    },
+    "or_059": {
+        "geo": {
+            "lat": 64.149823,
+            "lon": -21.787291
+        },
+        "name": "Spöngin"
+    },
+    "or_060": {
+        "geo": {
+            "lat": 65.263121,
+            "lon": -14.406162
+        },
+        "name": "Egilsstaðir"
+    },
+    "or_061": {
+        "geo": {
+            "lat": 65.665889,
+            "lon": -18.103367
+        },
+        "name": "Akureyri"
+    },
+    "or_062": {
+        "geo": {
+            "lat": 64.326850,
+            "lon": -22.055915
+        },
+        "name": "Akranes"
+    },
+    "or_063": {
+        "geo": {
+            "lat": 63.995433,
+            "lon": -21.191837
+        },
+        "name": "Hveragerði"
     }
 }

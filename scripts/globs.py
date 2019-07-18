@@ -204,26 +204,17 @@ ORKAN_LOCATION_RELATION = {
     'Hörgárbraut': 'or_053',
     'Hveragerði': 'or_054',
     'Garðabær': 'or_055',
-    'Miklabraut v. Kringluna': 'or_056'
+    'Miklabraut v. Kringluna': 'or_056',
+    'Eiðistorg': 'or_057',
+    'Skemmuvegur': 'or_058',
+    'Spöngin': 'or_059',
+    'Egilsstaðir, Miðvangi': 'or_060',
+    'Akureyri, Kjarnagata': 'or_061',
+    'Akranes, Smiðjuvöllum': 'or_062',
+    'Hveragerði, Sunnumörk': 'or_063'
 }
-
 ORKAN_X_LOCATION_RELATION = {
-    u'Eiðistorg (Orkan X)': 'ox_000',
-    u'Eiðistorg': 'ox_000',
-    u'Miklabraut v. Kringluna (Orkan X)': 'ox_001',
-    u'Skemmuvegur (Orkan X)': 'ox_002',
-    u'Skemmuvegur': 'ox_002',
-    u'Spöngin (Orkan X)': 'ox_003',
-    u'Spöngin': 'ox_003',
-    u'Egilsstaðir (Orkan X)': 'ox_004',
-    u'Egilsstaðir, Miðvangi': 'ox_004',
-    u'Akureyri, Kjarnagata (Orkan X)': 'ox_005',
-    u'Akureyri, Kjarnagata': 'ox_005',
-    u'Akranes, Smiðjuvöllum (Orkan X)': 'ox_006',
-    u'Akranes, Smiðjuvöllum': 'ox_006',
-    u'Hveragerði (Orkan X)': 'ox_007',
-    u'Hveragerði, Sunnumörk': 'ox_007',
-    u'Hraunbær (Orkan X)': 'ox_009',
+    'Hraunbær (Orkan X)': 'ox_000'
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006']
 
