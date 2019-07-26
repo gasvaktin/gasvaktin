@@ -2445,7 +2445,7 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 204.8,
+            "bensin95": 202.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 195.8,
@@ -2523,7 +2523,7 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 204.8,
+            "bensin95": 202.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 195.8,
@@ -2562,8 +2562,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 232.1,
-            "bensin95_discount": 227.1,
+            "bensin95": 230.1,
+            "bensin95_discount": 225.1,
             "company": "Orkan",
             "diesel": 221.6,
             "diesel_discount": 216.6,
@@ -2887,8 +2887,8 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 232.1,
-            "bensin95_discount": 227.1,
+            "bensin95": 230.1,
+            "bensin95_discount": 225.1,
             "company": "Orkan",
             "diesel": 221.6,
             "diesel_discount": 216.6,
@@ -2939,8 +2939,8 @@
             "name": "Reykjanesbær"
         },
         {
-            "bensin95": 232.1,
-            "bensin95_discount": 227.1,
+            "bensin95": 230.1,
+            "bensin95_discount": 225.1,
             "company": "Orkan",
             "diesel": 221.6,
             "diesel_discount": 216.6,
@@ -3238,8 +3238,8 @@
             "name": "Egilsstaðir"
         },
         {
-            "bensin95": 232.1,
-            "bensin95_discount": 227.1,
+            "bensin95": 230.1,
+            "bensin95_discount": 225.1,
             "company": "Orkan",
             "diesel": 221.6,
             "diesel_discount": 216.6,
@@ -3264,8 +3264,8 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 232.1,
-            "bensin95_discount": 227.1,
+            "bensin95": 230.1,
+            "bensin95_discount": 225.1,
             "company": "Orkan",
             "diesel": 221.6,
             "diesel_discount": 216.6,
