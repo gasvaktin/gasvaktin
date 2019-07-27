@@ -69,11 +69,9 @@ def get_global_costco_prices():
         'Pragma': 'no-cache',
         'User-Agent': utils.random_ua()
     }
-    url = (
-        'https://docs.google.com/spreadsheets/d/'
-        '18xuZbhfInW_6Loua3_4LE7KxbGPsh-_3IFfLpf3uwYE/edit'
-    )
-    res = requests.get(url, headers=headers)
+    google_doc_url = 'https://docs.google.com/spreadsheets/d/{id}/edit'
+    doc_id = '18xuZbhfInW_6Loua3_4LE7KxbGPsh-_3IFfLpf3uwYE'
+    res = requests.get(google_doc_url.format(id=doc_id), headers=headers)
     res.raise_for_status()
     # <shameless-incredibly-naive-html-parsing>
     bensin = None
@@ -97,43 +95,52 @@ def get_global_costco_prices():
     return {
         'bensin95': bensin,
         'diesel': diesel,
-        # Costco has no discount program
-        'bensin95_discount': None,
+        'bensin95_discount': None,  # Costco has no discount program
         'diesel_discount': None
     }
 
 
-def get_global_n1_prices():
-    url_eldsneyti = 'https://www.n1.is/thjonusta/eldsneyti'
-    url_eldsneyti_api = 'https://www.n1.is/umbraco/api/fuel/GetSingleFuelPrice'
+def get_individual_n1_prices():
+    url_eldsneyti = 'https://www.n1.is/thjonusta/eldsneyti/daeluverd/'
+    url_eldsneyti_api = 'https://www.n1.is/umbraco/api/fuel/getfuelprices'
     headers = utils.headers()
     session = requests.Session()
     session.get(url_eldsneyti, headers=headers)
-    post_data_bensin = 'fuelType=95+Oktan'
-    post_data_diesel = 'fuelType=D%C3%ADsel'
     headers_eldsneyti_api = {
         'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate',
-        'Accept-Language': 'en-US,en;q=0.8,is;q=0.6',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'en-US,en;q=0.9,is-IS;q=0.8,is;q=0.7',
         'Connection': 'keep-alive',
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Content-Length': '0',
         'Host': 'www.n1.is',
         'Origin': 'https://www.n1.is',
-        'Referer': 'https://www.n1.is/eldsneyti/',
-        'User-Agent': headers['User-Agent'],
-        'X-Requested-With': 'XMLHttpRequest'
+        'Referer': 'https://www.n1.is/thjonusta/eldsneyti/daeluverd/',
+        'User-Agent': headers['User-Agent']
     }
-    headers_eldsneyti_api['Content-Length'] = str(len(post_data_bensin))
-    res = session.post(url_eldsneyti_api, data=post_data_bensin, headers=headers_eldsneyti_api)
-    bensin95_discount_text = res.content.decode('utf-8')
-    headers_eldsneyti_api['Content-Length'] = str(len(post_data_diesel))
-    res = session.post(url_eldsneyti_api, data=post_data_diesel, headers=headers_eldsneyti_api)
-    diesel_discount_text = res.content.decode('utf-8')
+    res = session.post(url_eldsneyti_api, data='', headers=headers_eldsneyti_api)
+    res.raise_for_status()
+    stations = res.json()
     prices = {}
-    prices['bensin95'] = float(bensin95_discount_text.replace('"', '').replace(',', '.'))
-    prices['diesel'] = float(diesel_discount_text.replace('"', '').replace(',', '.'))
-    prices['bensin95_discount'] = prices['bensin95'] - globs.N1_DISCOUNT
-    prices['diesel_discount'] = prices['diesel'] - globs.N1_DISCOUNT
+    names_ignore_words = ['Þjónustustöð', 'Sjálfsafgreiðslustöð', 'Sjálfsafgreiðsla']
+    for station in stations:
+        # <get-name>
+        name = station['Name']  # sometimes a bit dirty, so we attempt to clean it up
+        for word in names_ignore_words:
+            name = name.replace(word, '')
+        name = name.replace('-', ' ')
+        name = ' '.join(name.split())
+        # </get-name>
+        key = globs.N1_LOCATION_RELATION[name]
+        bensin95 = float(station['GasPrice'].replace(',', '.'))
+        bensin95_discount = bensin95 - globs.N1_DISCOUNT
+        diesel = float(station['DiselPrice'].replace(',', '.'))
+        diesel_discount = diesel - globs.N1_DISCOUNT
+        prices[key] = {
+            'bensin95': bensin95,
+            'diesel': diesel,
+            'bensin95_discount': bensin95_discount,
+            'diesel_discount': diesel_discount
+        }
     return prices
 
 
@@ -163,8 +170,7 @@ def get_global_daelan_prices():
     return {
         'bensin95': bensin95,
         'diesel': diesel,
-        # Dælan has no discount program
-        'bensin95_discount': None,
+        'bensin95_discount': None,  # Dælan has no discount program
         'diesel_discount': None
     }
 
@@ -288,8 +294,7 @@ def get_individual_ob_prices():
 
 
 def get_individual_orkan_prices():
-    # Read prices for Orkan and Orkan X stations because they're both on the
-    # same webpage.
+    # Read prices for Orkan and Orkan X stations because they're both on the same webpage.
     url = 'https://www.orkan.is/orkan/orkustodvar/'
     res = requests.get(url, headers=utils.headers())
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
@@ -328,16 +333,6 @@ def get_individual_orkan_prices():
                 'bensin95_discount': bensin95_discount,
                 'diesel_discount': diesel_discount
             }
-    # TEMPORARY_FIX while three former Skeljungur stations are missing from the
-    # list of stations on Orkan webpage
-    for key in ['or_053', 'or_054', 'or_055']:
-        if key not in prices:
-            prices[key] = prices['or_000'].copy()
-            if key in ['or_054', 'or_055']:
-                # diesel currently 1 ISK more expensive on these two stations
-                prices[key]['diesel'] += 1
-                prices[key]['diesel_discount'] += 1
-    # /TEMPORARY_FIX
     return prices
 
 
@@ -356,7 +351,7 @@ def testrun(selection):
         logman.info(get_global_daelan_prices())
     if run_all or 'n1' in selection:
         logman.info('N1')
-        logman.info(get_global_n1_prices())
+        logman.info(get_individual_n1_prices())
     if run_all or 'ol' in selection:
         logman.info('Olís')
         logman.info(get_individual_olis_prices())

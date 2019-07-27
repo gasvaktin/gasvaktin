@@ -73,19 +73,11 @@ Costco Iceland doesn't plan on showing their petrol prices on their web, at leas
 
 #### Stations
 
-List of stations can be found [here](https://www.n1.is/stodvar/). With a bit of examination we can see a JSON endpoint which exposes stations list and location info. Example:
-	
-	POST https://www.n1.is/umbraco/api/stations/get
-	Headers = {
-		Cookie: _ga=GA1.2.789097346.1420231531; StoreInfo=StoreAlias=IS
-		User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
-	}
+N1 station locations can be viewed [here](https://www.n1.is/stodvar/).
 
 #### Prices
 
-Once it was possible to view a single global price [here](https://www.n1.is/eldsneyti/), however around 2018-05 N1 added [a note basicly stating the provided price might not be entirely global](https://github.com/gasvaktin/gasvaktin/commit/c308d1a7b5e088ddf8ef99f3ca00aa29af39019e). As time passed more and more stations became price deviants, attempts have been made to add information on the deviants based on real life observations which are kept [here](https://github.com/gasvaktin/gasvaktin/blob/master/scripts/globs.py#L265-L302). At some point in time during the summer 2019 fuel prices stopped showing up on the N1 website, however the JSON endpoint we've been accessing hasn't been removed yet so we can still access the global prices they once displayed on their website. We assume these prices to be global for all N1 stations, however we know there are deviant stations and out there, and prices for deviants currently just have hardcoded shift values from the provided global prices. [ :heart: Hopefully N1 will simply add individual fuel price information for all stations to the website, so we can cease these deviant shenanigans. :heart: ]
-
-Discount for N1 business card holders can be seen [here](https://www.n1.is/n1-kortid/saekja-um-kort/). At the time of this writing the discount amount is 5 ISK and 2 N1 points per liter, both for bensin and diesel.
+Prices for N1 can be found [here](https://www.n1.is/thjonusta/eldsneyti/daeluverd/), you can find information on special fuel card discount [here](https://www.n1.is/n1-kortid/saekja-um-kortid/). At the time of this writing the minimum discount amount is 5 ISK and 2 N1 points per liter, both for bensin and diesel.
 
 ### Dælan
 

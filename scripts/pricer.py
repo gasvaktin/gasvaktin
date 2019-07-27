@@ -61,7 +61,7 @@ def main():
     # station prices
     atlantsolia_prices = scraper.get_individual_atlantsolia_prices()
     costco_prices = scraper.get_global_costco_prices()
-    n1_prices = scraper.get_global_n1_prices()
+    n1_prices = scraper.get_individual_n1_prices()
     daelan_prices = scraper.get_global_daelan_prices()
     ob_prices = scraper.get_individual_ob_prices()
     olis_prices = scraper.get_individual_olis_prices()
@@ -77,7 +77,7 @@ def main():
         },
         globs.N1: {
             'data': n1_prices,
-            'type': globs.PRICETYPE.GLOBAL
+            'type': globs.PRICETYPE.INDIVIDUAL
         },
         globs.DAELAN: {
             'data': daelan_prices,
@@ -108,33 +108,10 @@ def main():
         station['key'] = key
         if prices_map[station['company']]['type'] == globs.PRICETYPE.INDIVIDUAL:
             for price_key in price_keys:
-                if key.startswith('dn') and key not in prices_map[station['company']]['data']:
-                    # <TEMPORARY DAELAN MEASURE>
-                    #
-                    # Daelan has received two new stations from N1 and new owners have now
-                    # taken over its business, however, for now it seems they will continue
-                    # to use the N1 backend to provide online fuel price on daelan.is webpage
-                    # but yet these two new stations are not shown and propably won't show up
-                    # until the new Daelan owners have renovated their website.
-                    #
-                    # Until then we tie the price on the two new stations to the price in
-                    # Daelan Fellsmuli
-                    #
-                    # </TEMPORARY DAELAN MEASURE>
-                    station[price_key] = prices_map[station['company']]['data']['dn_000'][price_key]
-                else:
-                    station[price_key] = prices_map[station['company']]['data'][key][price_key]
+                station[price_key] = prices_map[station['company']]['data'][key][price_key]
         elif prices_map[station['company']]['type'] == globs.PRICETYPE.GLOBAL:
             for price_key in price_keys:
                 station[price_key] = prices_map[station['company']]['data'][price_key]
-            if station['company'] == globs.N1 and key in globs.N1_PRICE_DIFF:
-                # Some N1 stations have been observed in real life to have fixed
-                # different prices from the most common price which is shown
-                # on N1 webpage.
-                for price_key in price_keys:
-                    station[price_key] += globs.N1_PRICE_DIFF[key][price_key]
-                # Note: hardcoded price deviances, in no way guaranteed to
-                # be permanently correct.
         list_of_stations.append(station)
 
     data = {'stations': list_of_stations}

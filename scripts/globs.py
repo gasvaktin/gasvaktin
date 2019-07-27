@@ -233,78 +233,101 @@ ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006']
 # https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
 ATLANTSOLIA_MINIMUM_DISCOUNT = 5.0
 
-# N1 offers discount of 5 ISK and 2 N1 points per liter according to the
-# following page: https://www.n1.is/n1-kortid/saekja-um-kort/
-# +++
-# Eldsneyti: 5 króna afsláttur af bensín og dísel og 2 N1 punktar að auki á
-# á hvern lítra
-# +++
-# These N1 points are a type of credits at N1 which you can exchange for
-# gasoline (and/or periodic offers they provide) at the rate 1 ISK per
-# point, but as it's a form of earned credits which you can only use doing
-# business with the N1 company and not an actual discount we disregard the
+# N1 offers discount of 5 ISK and 2 N1 points per liter according to the following page:
+# https://www.n1.is/n1-kortid/saekja-um-kortid/
+# -----------------------------------------------------------------------------------------------
+# N1 kortið og N1 lykillinn kosta ekkert en færa þér bæði afslátt og punkta sem gilda sem inneign
+# í öllum viðskiptum við N1 
+# - 5 kr + 2 punktar að auki
+# -16 kr + 2 punktar á afmælisdaginn þinn
+# -15 kr + 2 punktar í 10. hvert skipti þegar keyptir eru 25 L eða meira af eldsneyti
+# -----------------------------------------------------------------------------------------------
+# These N1 points mentioned above are a type of credits at N1 which you can exchange for gasoline
+# (and/or periodic offers they provide) at the rate 1 ISK per point, but as it's a form of earned
+# credits which you can only use doing business with the N1 company and not an actual discount we
 # disregard the N1 points but value the 5 ISK discount.
 N1_DISCOUNT = 5.0
-# Since 2018-05-17 (see commit c308d1a7b5e088ddf8ef99f3ca00aa29af39019e) we've
-# observed that N1 in Storihjalli maintains 8 ISK lower fuel price there than
-# elsewhere. This has since then been checked occasionally in real world and
-# is correct still today. But please note, hardcoded fixed price deviances like
-# this might suddenly change and there might be more price deviance stations out
-# there currently or in the future.
-# Planning to add a note on N1 stations shown on Gasvaktin.is stating
-# something similar as "the most common self-service price", similar to the
-# message shown on n1.is/thjonusta/eldsneyti/ and has been stated as far as we
-# know since 2018-05-17.
-# N1 Fossvogur observed to be a price deviant station IRL, was first 3 ISK lower,
-# then at some point changed to 5 ISK and has held that number for I believe two
-# price changes.
-# N1 Isafjordur suspected of deviance, phone call and asking for the fuel price
-# resulted in price deviance information shown below. Not observed price deviance
-# by myself, so there is of course a possibility that employee who answered me on
-# the phone provided me with incorrect price data.
-N1_PRICE_DIFF = {
-    'n1_005': {  # Fossvogur
-        'bensin95': -6.0,
-        'bensin95_discount': -6.0,
-        'diesel': -6.0,
-        'diesel_discount': -6.0
-    },
-    'n1_006': {  # Storihjalli
-        'bensin95': -9.0,
-        'bensin95_discount': -9.0,
-        'diesel': -9.0,
-        'diesel_discount': -9.0
-    },
-    'n1_007': {  # Laekjargata
-        'bensin95': -3.0,
-        'bensin95_discount': -3.0,
-        'diesel': -3.0,
-        'diesel_discount': -3.0
-    },
-    'n1_011': {  # Reykjavikurvegur
-        'bensin95': -12.0,
-        'bensin95_discount': -12.0,
-        'diesel': -12.0,
-        'diesel_discount': -12.0
-    },
-    'n1_013': {  # Borgarnes
-        'bensin95': -6.0,
-        'bensin95_discount': -6.0,
-        'diesel': -6.0,
-        'diesel_discount': -6.0
-    },
-    'n1_017': {  # Isafjordur
-        'bensin95': -3.0,
-        'bensin95_discount': -3.0,
-        'diesel': 0.0,
-        'diesel_discount': 0.0
-    },
-    'n1_025': {  # Hveragerði
-        'bensin95': -3.0,
-        'bensin95_discount': -3.0,
-        'diesel': -3.0,
-        'diesel_discount': -3.0
-    }
+N1_LOCATION_RELATION = {
+    'Ártúnshöfði': 'n1_000',
+    'Bíldshöfði': 'n1_001',
+    'Gagnvegur': 'n1_002',
+    'Háholt': 'n1_003',
+    'Borgartún': 'n1_004',
+    'Fossvogur': 'n1_005',
+    'Stórihjalli': 'n1_006',
+    'Lækjargata': 'n1_007',
+    'Hringbraut': 'n1_008',
+    'Stóragerði': 'n1_009',
+    'Skógarsel': 'n1_010',
+    'Reykjavíkurvegur': 'n1_011',
+    'Akranes': 'n1_012',
+    'Borgarnes': 'n1_013',
+    'Staðarskáli': 'n1_014',
+    'Blönduós': 'n1_015',
+    'Sauðárkrókur': 'n1_016',
+    'Ísafirði': 'n1_017',
+    'Akureyri Hörgárbraut': 'n1_018',
+    'Akureyri Leiruvegur': 'n1_019',
+    'Húsavík': 'n1_020',
+    'Egilsstaðir': 'n1_021',
+    'Höfn': 'n1_022',
+    'Hvolsvöllur': 'n1_023',
+    'Selfoss': 'n1_024',
+    'Hveragerði': 'n1_025',
+    'Reykjanesbær': 'n1_026',
+    'Ásvellir': 'n1_027',
+    'Eskifjörður': 'n1_028',
+    'Reykholt': 'n1_029',
+    'Breiðablik': 'n1_030',
+    'Hellissandur': 'n1_031',
+    'Grundarfjörður': 'n1_032',
+    'Búðardalur': 'n1_033',
+    'Bjarkalundur': 'n1_034',
+    'Reykhólar': 'n1_035',
+    'Patreksfjörður': 'n1_036',
+    'Tálknafjörður': 'n1_037',
+    'Þingeyri': 'n1_038',
+    'Flateyri': 'n1_039',
+    'Norðurfjörður': 'n1_040',
+    'Drangsnes': 'n1_041',
+    'Hólmavík': 'n1_042',
+    'Hofsós': 'n1_043',
+    'Grenivík': 'n1_044',
+    'Reykjahlíð': 'n1_045',
+    'Fosshóll': 'n1_046',
+    'Laugar': 'n1_047',
+    'Kópasker': 'n1_048',
+    'Ásbyrgi': 'n1_049',
+    'Raufarhöfn': 'n1_050',
+    'Þórshöfn': 'n1_051',
+    'Bakkafjörður': 'n1_052',
+    'Dalvík': 'n1_053',
+    'Vopnafjörður': 'n1_054',
+    'Borgarfjörður Eystri': 'n1_055',
+    'Stöðvarfjörður': 'n1_056',
+    'Breiðdalsvík': 'n1_057',
+    'Djúpivogur': 'n1_058',
+    'Nesjar': 'n1_059',
+    'Fagurhólsmýri': 'n1_060',
+    'Kirkjubæjarklaustur': 'n1_061',
+    'Vík': 'n1_062',
+    'Vestmannaeyjar': 'n1_063',
+    'Árnes': 'n1_064',
+    'Flúðir': 'n1_065',
+    'Geysir': 'n1_066',
+    'Brautarhóll': 'n1_067',
+    'Laugarvatn': 'n1_068',
+    'Grindavík': 'n1_069',
+    'Sandgerði': 'n1_070',
+    'Garður': 'n1_071',
+    'Vogar': 'n1_072',
+    'Reyðarfjörður': 'n1_073',
+    'Akureyri Tryggvabraut': 'n1_074',
+    'Ólafsvík': 'n1_075',
+    'Flókalundur': 'n1_076',
+    'Ægisíða': 'n1_077',
+    'Knútstöð Keflavíkurflugvelli': 'n1_078',
+    'Norðlingaholt': 'n1_079'
 }
 
 # Orkan has a 3-step discount system controlled by your spendings on gas from
