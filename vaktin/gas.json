@@ -1445,16 +1445,16 @@
         },
         {
             "bensin95": 235.2,
-            "bensin95_discount": 230.2,
+            "bensin95_discount": 220.2,
             "company": "ÓB",
             "diesel": 226.7,
-            "diesel_discount": 221.7,
+            "diesel_discount": 211.7,
             "geo": {
                 "lat": 65.687038,
                 "lon": -18.128579
             },
             "key": "ob_001",
-            "name": "Akureyri"
+            "name": "Akureyri Hlíðarbraut"
         },
         {
             "bensin95": 235.2,
@@ -1467,7 +1467,7 @@
                 "lon": -18.089544
             },
             "key": "ob_002",
-            "name": "BSO Akureyri"
+            "name": "Akureyri BSO"
         },
         {
             "bensin95": 202.9,
@@ -1575,10 +1575,10 @@
         },
         {
             "bensin95": 235.2,
-            "bensin95_discount": 230.2,
+            "bensin95_discount": 220.2,
             "company": "ÓB",
             "diesel": 226.7,
-            "diesel_discount": 221.7,
+            "diesel_discount": 211.7,
             "geo": {
                 "lat": 63.862244,
                 "lon": -21.148026
@@ -1640,10 +1640,10 @@
         },
         {
             "bensin95": 235.2,
-            "bensin95_discount": 230.2,
+            "bensin95_discount": 220.2,
             "company": "ÓB",
             "diesel": 226.7,
-            "diesel_discount": 221.7,
+            "diesel_discount": 211.7,
             "geo": {
                 "lat": 66.039173,
                 "lon": -17.343145
@@ -1770,10 +1770,10 @@
         },
         {
             "bensin95": 235.2,
-            "bensin95_discount": 230.2,
+            "bensin95_discount": 220.2,
             "company": "ÓB",
             "diesel": 226.7,
-            "diesel_discount": 221.7,
+            "diesel_discount": 211.7,
             "geo": {
                 "lat": 64.139686,
                 "lon": -21.920814
@@ -1809,10 +1809,10 @@
         },
         {
             "bensin95": 235.2,
-            "bensin95_discount": 230.2,
+            "bensin95_discount": 220.2,
             "company": "ÓB",
             "diesel": 226.7,
-            "diesel_discount": 221.7,
+            "diesel_discount": 211.7,
             "geo": {
                 "lat": 63.442409,
                 "lon": -20.268868
