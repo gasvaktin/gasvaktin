@@ -123,16 +123,16 @@ OB_LOCATION_RELATION = {
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
-# In 2019-07 the stations are the following:
-# https://www.facebook.com/ob.bensin/photos/a.208957995809394/2349874545051051/
-# * Stykkishólmur
-# * Bolungarvík
-# * Reyðarfjörður
-# * Selfoss
-# * Njarðvík
-OB_EXTRA_DISCOUNT_STATIONS = ['ob_030', 'ob_008', 'ob_026', 'ob_027', 'ob_024']
+# In 2019-08 the stations are the following:
+# https://www.facebook.com/ob.bensin/photos/a.208957995809394/2406046666100505/
+# * Snorrabraut (ob_028)
+# * Akureyri Hlíðarbraut (ob_001)
+# * Eyrarbakka (ob_011)
+# * Vestmannaeyjum (ob_032)
+# * Húsavík (ob_017)
+OB_EXTRA_DISCOUNT_STATIONS = ['ob_028', 'ob_001', 'ob_011', 'ob_032', 'ob_017']
 OB_EXTRA_DISCOUNT_AMOUNT = 15
-OB_EXTRA_DISCOUNT_UNTIL = '2019-07-31T23:59'
+OB_EXTRA_DISCOUNT_UNTIL = '2019-08-31T23:59'
 # OB joins the discountless madness
 # https://www.facebook.com/ob.bensin/photos/a.208957995809394/2301004636604709/
 # Says the following (2019-06-04T11:39):
@@ -217,6 +217,14 @@ ORKAN_X_LOCATION_RELATION = {
     'Hraunbær (Orkan X)': 'ox_000'
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006']
+# Orkan has a 3-step discount system controlled by your spendings on gas from
+# them in the previous motnth
+# See more info here: https://www.orkan.is/Afslattarthrep
+# Discount info:
+# Step 1, 0-50L,   [ 5 ISK ] + [ 2 ISK if your personal station] = [  7 ISK ]
+# Step 2, 50-150L, [ 6 ISK ] + [ 2 ISK if your personal station] = [  8 ISK ]
+# Step 3, 150L+,   [ 8 ISK ] + [ 2 ISK if your personal station] = [ 10 ISK ]
+ORKAN_MINIMUM_DISCOUNT = 5.0
 
 # Atlantsolía has changed their discount system to mirror Orkan, this discount
 # system is called "MEIRA FYRIR ÞIG".
@@ -329,15 +337,6 @@ N1_LOCATION_RELATION = {
     'Knútstöð Keflavíkurflugvelli': 'n1_078',
     'Norðlingaholt': 'n1_079'
 }
-
-# Orkan has a 3-step discount system controlled by your spendings on gas from
-# them in the previous motnth
-# See more info here: https://www.orkan.is/Afslattarthrep
-# Discount info:
-# Step 1, 0-50L,   [ 5 ISK ] + [ 2 ISK if your personal station] = [  7 ISK ]
-# Step 2, 50-150L, [ 6 ISK ] + [ 2 ISK if your personal station] = [  8 ISK ]
-# Step 3, 150L+,   [ 8 ISK ] + [ 2 ISK if your personal station] = [ 10 ISK ]
-ORKAN_MINIMUM_DISCOUNT = 5.0
 
 BROWSERS_UA = [
     ('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) '
