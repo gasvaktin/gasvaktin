@@ -40,11 +40,11 @@
             "name": "Bíldshöfði"
         },
         {
-            "bensin95": 234.2,
-            "bensin95_discount": 229.2,
+            "bensin95": 229.2,
+            "bensin95_discount": 224.2,
             "company": "Atlantsolía",
-            "diesel": 224.7,
-            "diesel_discount": 219.7,
+            "diesel": 219.7,
+            "diesel_discount": 214.7,
             "geo": {
                 "lat": 64.5675445,
                 "lon": -21.8934511
