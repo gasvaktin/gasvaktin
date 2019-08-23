@@ -3108,11 +3108,11 @@
             "name": "Egilsstaðir"
         },
         {
-            "bensin95": 232.1,
-            "bensin95_discount": 227.1,
+            "bensin95": 229.1,
+            "bensin95_discount": 224.1,
             "company": "Orkan",
-            "diesel": 2216.0,
-            "diesel_discount": 2211.0,
+            "diesel": 219.6,
+            "diesel_discount": 214.6,
             "geo": {
                 "lat": 65.665889,
                 "lon": -18.103367
