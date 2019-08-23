@@ -3134,11 +3134,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 229.1,
-            "bensin95_discount": 224.1,
+            "bensin95": 234.1,
+            "bensin95_discount": 229.1,
             "company": "Orkan",
-            "diesel": 219.6,
-            "diesel_discount": 214.6,
+            "diesel": 224.6,
+            "diesel_discount": 219.6,
             "geo": {
                 "lat": 63.995433,
                 "lon": -21.191837
