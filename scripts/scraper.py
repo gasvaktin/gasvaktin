@@ -144,7 +144,7 @@ def get_individual_n1_prices():
     return prices
 
 
-def get_global_daelan_prices():
+def get_individual_daelan_prices():
     headers = utils.headers()
     session = requests.Session()
     res = session.get('https://daelan.is/', headers=headers)
@@ -152,27 +152,25 @@ def get_global_daelan_prices():
     price_info_container = html.find('.//div[@id="gas-price-info-container"]')
     bensin95 = None
     diesel = None
-    for column in price_info_container.findall('.//li'):
-        if column.find('.//span').text == 'Dísel':
-            diesel_text = column.find('.//em').text.strip()
-            if diesel_text.endswith(' kr.'):
-                diesel_text = diesel_text[:-4]
-            diesel_text = diesel_text.replace(',', '.')
-            diesel = float(diesel_text)
-        elif column.find('.//span').text == 'Bensín':
-            bensin95_text = column.find('.//em').text.strip()
-            if bensin95_text.endswith(' kr.'):
-                bensin95_text = bensin95_text[:-4]
-            bensin95_text = bensin95_text.replace(',', '.')
-            bensin95 = float(bensin95_text)
-    assert(bensin95 is not None)
-    assert(diesel is not None)
-    return {
-        'bensin95': bensin95,
-        'diesel': diesel,
-        'bensin95_discount': None,  # Dælan has no discount program
-        'diesel_discount': None
-    }
+    prices = {}
+    for column in price_info_container.findall('.//tr'):
+        if len(column.getchildren()) != 3:
+            continue
+        if column[0].text == 'Bensínstöð':
+            continue  # skip header
+        station_name = column[0].text
+        bensin_txt = column[1].text
+        diesel_txt = column[2].text
+        bensin95 = float(bensin_txt.replace(' kr.', '').replace(',', '.'))
+        diesel = float(diesel_txt.replace(' kr.', '').replace(',', '.'))
+        key = globs.DAELAN_LOCATION_RELATION[station_name]
+        prices[key] = {
+            'bensin95': bensin95,
+            'diesel': diesel,
+            'bensin95_discount': None,
+            'diesel_discount': None
+        }
+    return prices
 
 
 def get_individual_olis_prices():
@@ -348,7 +346,7 @@ def testrun(selection):
         logman.info(get_global_costco_prices())
     if run_all or 'dn' in selection:
         logman.info('Dælan')
-        logman.info(get_global_daelan_prices())
+        logman.info(get_individual_daelan_prices())
     if run_all or 'n1' in selection:
         logman.info('N1')
         logman.info(get_individual_n1_prices())

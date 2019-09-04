@@ -62,7 +62,7 @@ def main():
     atlantsolia_prices = scraper.get_individual_atlantsolia_prices()
     costco_prices = scraper.get_global_costco_prices()
     n1_prices = scraper.get_individual_n1_prices()
-    daelan_prices = scraper.get_global_daelan_prices()
+    daelan_prices = scraper.get_individual_daelan_prices()
     ob_prices = scraper.get_individual_ob_prices()
     olis_prices = scraper.get_individual_olis_prices()
     orkan_prices = scraper.get_individual_orkan_prices()
@@ -81,7 +81,7 @@ def main():
         },
         globs.DAELAN: {
             'data': daelan_prices,
-            'type': globs.PRICETYPE.GLOBAL
+            'type': globs.PRICETYPE.INDIVIDUAL
         },
         globs.OB: {
             'data': ob_prices,

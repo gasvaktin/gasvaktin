@@ -338,6 +338,14 @@ N1_LOCATION_RELATION = {
     'Norðlingaholt': 'n1_079'
 }
 
+DAELAN_LOCATION_RELATION = {
+    'Hæðasmári': 'dn_002',
+    'Salavegur': 'dn_003',
+    'Stekkjarbakki, Mjódd': 'dn_001',
+    'Holtagarðar': 'dn_004',
+    'Fellsmúli': 'dn_000'
+}
+
 BROWSERS_UA = [
     ('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) '
      'Chrome/17.0.963.66 Safari/535.11'),
