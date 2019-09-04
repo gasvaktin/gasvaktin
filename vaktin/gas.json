@@ -2068,11 +2068,11 @@
             "name": "Baulan"
         },
         {
-            "bensin95": 236.0,
-            "bensin95_discount": 231.0,
+            "bensin95": 231.9,
+            "bensin95_discount": 226.9,
             "company": "Olís",
-            "diesel": 224.5,
-            "diesel_discount": 219.5,
+            "diesel": 221.3,
+            "diesel_discount": 216.3,
             "geo": {
                 "lat": 64.544544,
                 "lon": -21.908073
