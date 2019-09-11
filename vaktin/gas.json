@@ -2666,11 +2666,11 @@
             "name": "Ísafjörður"
         },
         {
-            "bensin95": 234.7,
-            "bensin95_discount": 229.7,
+            "bensin95": 235.7,
+            "bensin95_discount": 230.7,
             "company": "Orkan",
-            "diesel": 223.7,
-            "diesel_discount": 218.7,
+            "diesel": 224.7,
+            "diesel_discount": 219.7,
             "geo": {
                 "lat": 66.025744,
                 "lon": -22.990537
@@ -2874,11 +2874,11 @@
             "name": "Stokkseyri"
         },
         {
-            "bensin95": 234.7,
-            "bensin95_discount": 229.7,
+            "bensin95": 235.7,
+            "bensin95_discount": 230.7,
             "company": "Orkan",
-            "diesel": 223.7,
-            "diesel_discount": 218.7,
+            "diesel": 224.7,
+            "diesel_discount": 219.7,
             "geo": {
                 "lat": 64.279476,
                 "lon": -20.443435
