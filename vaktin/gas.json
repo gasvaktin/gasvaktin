@@ -2315,10 +2315,10 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 200.6,
+            "bensin95": 198.8,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 192.6,
+            "diesel": 190.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2393,10 +2393,10 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 200.6,
+            "bensin95": 198.8,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 192.6,
+            "diesel": 190.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2679,11 +2679,11 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 232.1,
-            "bensin95_discount": 227.1,
+            "bensin95": 231.7,
+            "bensin95_discount": 226.7,
             "company": "Orkan",
-            "diesel": 221.6,
-            "diesel_discount": 216.6,
+            "diesel": 220.7,
+            "diesel_discount": 215.7,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
@@ -2939,11 +2939,11 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 232.1,
-            "bensin95_discount": 227.1,
+            "bensin95": 234.7,
+            "bensin95_discount": 229.7,
             "company": "Orkan",
-            "diesel": 221.6,
-            "diesel_discount": 216.6,
+            "diesel": 223.7,
+            "diesel_discount": 218.7,
             "geo": {
                 "lat": 64.131308,
                 "lon": -21.918266
@@ -2965,11 +2965,11 @@
             "name": "Kleppsvegur"
         },
         {
-            "bensin95": 232.1,
-            "bensin95_discount": 227.1,
+            "bensin95": 234.7,
+            "bensin95_discount": 229.7,
             "company": "Orkan",
-            "diesel": 221.6,
-            "diesel_discount": 216.6,
+            "diesel": 223.7,
+            "diesel_discount": 218.7,
             "geo": {
                 "lat": 64.102104,
                 "lon": -21.884002
