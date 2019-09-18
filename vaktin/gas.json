@@ -2432,11 +2432,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 227.1,
-            "bensin95_discount": 222.1,
+            "bensin95": 229.6,
+            "bensin95_discount": 224.6,
             "company": "Orkan",
-            "diesel": 216.6,
-            "diesel_discount": 211.6,
+            "diesel": 218.6,
+            "diesel_discount": 213.6,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2562,11 +2562,11 @@
             "name": "Furuvellir"
         },
         {
-            "bensin95": 234.2,
-            "bensin95_discount": 229.2,
+            "bensin95": 234.6,
+            "bensin95_discount": 229.6,
             "company": "Orkan",
-            "diesel": 222.7,
-            "diesel_discount": 217.7,
+            "diesel": 223.6,
+            "diesel_discount": 218.6,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
@@ -2656,8 +2656,8 @@
             "bensin95": 233.3,
             "bensin95_discount": 228.3,
             "company": "Orkan",
-            "diesel": 223.7,
-            "diesel_discount": 218.7,
+            "diesel": 223.6,
+            "diesel_discount": 218.6,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
@@ -2692,8 +2692,8 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 229.0,
-            "bensin95_discount": 224.0,
+            "bensin95": 229.6,
+            "bensin95_discount": 224.6,
             "company": "Orkan",
             "diesel": 218.6,
             "diesel_discount": 213.6,
@@ -2757,11 +2757,11 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 227.1,
-            "bensin95_discount": 222.1,
+            "bensin95": 229.6,
+            "bensin95_discount": 224.6,
             "company": "Orkan",
-            "diesel": 216.6,
-            "diesel_discount": 211.6,
+            "diesel": 218.6,
+            "diesel_discount": 213.6,
             "geo": {
                 "lat": 65.072872,
                 "lon": -22.732583
@@ -2809,11 +2809,11 @@
             "name": "Reykjanesbær"
         },
         {
-            "bensin95": 227.1,
-            "bensin95_discount": 222.1,
+            "bensin95": 229.6,
+            "bensin95_discount": 224.6,
             "company": "Orkan",
-            "diesel": 216.6,
-            "diesel_discount": 211.6,
+            "diesel": 218.6,
+            "diesel_discount": 213.6,
             "geo": {
                 "lat": 64.037636,
                 "lon": -22.707148
@@ -3134,8 +3134,8 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 229.9,
-            "bensin95_discount": 224.9,
+            "bensin95": 229.6,
+            "bensin95_discount": 224.6,
             "company": "Orkan",
             "diesel": 217.7,
             "diesel_discount": 212.7,
