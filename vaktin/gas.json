@@ -1197,11 +1197,11 @@
             "name": "Kirkjubæjarklaustur"
         },
         {
-            "bensin95": 239.4,
-            "bensin95_discount": 234.4,
+            "bensin95": 236.9,
+            "bensin95_discount": 231.9,
             "company": "N1",
-            "diesel": 231.9,
-            "diesel_discount": 226.9,
+            "diesel": 227.9,
+            "diesel_discount": 222.9,
             "geo": {
                 "lat": 63.41794382,
                 "lon": -19.00159478
