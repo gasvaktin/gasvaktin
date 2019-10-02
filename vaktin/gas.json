@@ -313,10 +313,23 @@
             "name": "Háaleitisbraut"
         },
         {
-            "bensin95": 194.9,
+            "bensin95": 231.7,
+            "bensin95_discount": 226.7,
+            "company": "Atlantsolía",
+            "diesel": 222.7,
+            "diesel_discount": 217.7,
+            "geo": {
+                "lat": 63.970686,
+                "lon": -22.518043
+            },
+            "key": "ao_024",
+            "name": "Stapabraut"
+        },
+        {
+            "bensin95": 196.9,
             "bensin95_discount": null,
             "company": "Costco Iceland",
-            "diesel": 186.9,
+            "diesel": 188.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.075267,
@@ -1871,6 +1884,19 @@
             },
             "key": "ob_036",
             "name": "Laugarbakki"
+        },
+        {
+            "bensin95": 236.7,
+            "bensin95_discount": 231.7,
+            "company": "ÓB",
+            "diesel": 227.7,
+            "diesel_discount": 222.7,
+            "geo": {
+                "lat": 63.417937,
+                "lon": -19.002232
+            },
+            "key": "ob_037",
+            "name": "Vík í Mýrdal"
         },
         {
             "bensin95": 239.3,
