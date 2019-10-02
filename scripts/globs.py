@@ -42,7 +42,8 @@ ATLANTSOLIA_LOCATION_RELATION = {
     'Knarravogur': 'ao_021',  # put these two just in case ..
     'Knarrarvogur': 'ao_021',
     'Kjalarnes': 'ao_022',
-    'Háaleitisbraut': 'ao_023'
+    'Háaleitisbraut': 'ao_023',
+    'Stapabraut': 'ao_024',
 }
 # Atlantsolia declared one (and now two) of its stations to be without discount,
 # on their site that station is marked with a star (*) and the following comment at the bottom:
@@ -119,7 +120,9 @@ OB_LOCATION_RELATION = {
     'Suðurhella': 'ob_031',
     'Varmahlíð': 'ob_034',
     'Vestmannaeyjar Klettur': 'ob_032',
-    'Þorlákshöfn': 'ob_033'
+    'Þorlákshöfn': 'ob_033',
+    'Vík': 'ob_037',
+    'Vík í Mýrdal': 'ob_037',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.

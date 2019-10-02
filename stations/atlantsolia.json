@@ -166,5 +166,12 @@
             "lon": -21.890902
         },
         "name": "Háaleitisbraut"
+    },
+    "ao_024": {
+        "geo": {
+            "lat": 63.970686,
+            "lon": -22.518043
+        },
+        "name": "Stapabraut"
     }
 }
