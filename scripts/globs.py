@@ -133,9 +133,9 @@ OB_LOCATION_RELATION = {
 # * Njarðvík (ob_024)
 # * Selfoss (ob_027)
 # * Varmahlíð (ob_034)
-OB_EXTRA_DISCOUNT_STATIONS = ['ob_000', 'ob_008', 'ob_024', 'ob_027', 'ob_034']
+OB_EXTRA_DISCOUNT_STATIONS = ['ob_007', 'ob_026', 'ob_028', 'ob_030', 'ob_032']
 OB_EXTRA_DISCOUNT_AMOUNT = 15
-OB_EXTRA_DISCOUNT_UNTIL = '2019-09-30T23:59'
+OB_EXTRA_DISCOUNT_UNTIL = '2019-10-31T23:59'
 # ------------------------------------------------------------------------------------------------
 # OB joins the discountless madness
 # https://www.facebook.com/ob.bensin/photos/a.208957995809394/2301004636604709/
