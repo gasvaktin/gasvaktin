@@ -1743,11 +1743,11 @@
             "name": "Neskaupstaður"
         },
         {
-            "bensin95": 236.7,
-            "bensin95_discount": 231.7,
+            "bensin95": 231.7,
+            "bensin95_discount": 226.7,
             "company": "ÓB",
-            "diesel": 227.7,
-            "diesel_discount": 222.7,
+            "diesel": 222.7,
+            "diesel_discount": 217.7,
             "geo": {
                 "lat": 63.979938,
                 "lon": -22.546893
