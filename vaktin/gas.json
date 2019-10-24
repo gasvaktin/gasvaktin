@@ -1444,11 +1444,11 @@
             "name": "Norðlingaholt"
         },
         {
-            "bensin95": 0.0,
-            "bensin95_discount": -5.0,
+            "bensin95": 239.4,
+            "bensin95_discount": 234.4,
             "company": "N1",
-            "diesel": 0.0,
-            "diesel_discount": -5.0,
+            "diesel": 231.9,
+            "diesel_discount": 226.9,
             "geo": {
                 "lat": 65.378695,
                 "lon": -20.643388
