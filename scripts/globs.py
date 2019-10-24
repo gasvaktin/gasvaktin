@@ -249,7 +249,7 @@ ATLANTSOLIA_MINIMUM_DISCOUNT = 5.0
 # https://www.n1.is/n1-kortid/saekja-um-kortid/
 # -----------------------------------------------------------------------------------------------
 # N1 kortið og N1 lykillinn kosta ekkert en færa þér bæði afslátt og punkta sem gilda sem inneign
-# í öllum viðskiptum við N1 
+# í öllum viðskiptum við N1
 # - 5 kr + 2 punktar að auki
 # -16 kr + 2 punktar á afmælisdaginn þinn
 # -15 kr + 2 punktar í 10. hvert skipti þegar keyptir eru 25 L eða meira af eldsneyti
@@ -339,7 +339,8 @@ N1_LOCATION_RELATION = {
     'Flókalundur': 'n1_076',
     'Ægisíða': 'n1_077',
     'Knútstöð Keflavíkurflugvelli': 'n1_078',
-    'Norðlingaholt': 'n1_079'
+    'Norðlingaholt': 'n1_079',
+    'Víðihlíð': 'n1_080',
 }
 
 DAELAN_LOCATION_RELATION = {
