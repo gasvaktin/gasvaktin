@@ -326,10 +326,10 @@
             "name": "Stapabraut"
         },
         {
-            "bensin95": 196.9,
+            "bensin95": 198.9,
             "bensin95_discount": null,
             "company": "Costco Iceland",
-            "diesel": 190.9,
+            "diesel": 192.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.075267,
@@ -1437,11 +1437,11 @@
             "diesel": 231.9,
             "diesel_discount": 226.9,
             "geo": {
-                "lat": 64.100852,
-                "lon": -21.780112
+                "lat": 65.378695,
+                "lon": -20.643388
             },
             "key": "n1_079",
-            "name": "Norðlingaholt"
+            "name": "Víðihlíð"
         },
         {
             "bensin95": 234.7,
