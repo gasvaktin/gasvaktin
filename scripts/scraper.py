@@ -141,6 +141,32 @@ def get_individual_n1_prices():
             'bensin95_discount': bensin95_discount,
             'diesel_discount': diesel_discount
         }
+    # <zero-price-problem>
+    # problem: a station is listed with 0 ISK price, solution: assume most frequent price instead
+    # find most frequent bensin and diesel price
+    price_frequency = {'bensin': {}, 'diesel': {}}
+    for key in prices:
+        # bensin
+        bensin_price_key = str(prices[key]['bensin95'])
+        if bensin_price_key not in price_frequency['bensin']:
+            price_frequency['bensin'][bensin_price_key] = 0
+        price_frequency['bensin'][bensin_price_key] += 1
+        # diesel
+        diesel_price_key = str(prices[key]['diesel'])
+        if diesel_price_key not in price_frequency['diesel']:
+            price_frequency['diesel'][diesel_price_key] = 0
+        price_frequency['diesel'][diesel_price_key] += 1
+    # most frequent prices
+    most_frequent_bensin_price = float(max(price_frequency['bensin']))
+    most_frequent_diesel_price = float(max(price_frequency['diesel']))
+    for key in prices:
+        if prices[key]['bensin95'] == 0.0:
+            prices[key]['bensin95'] = most_frequent_bensin_price
+            prices[key]['bensin95_discount'] = most_frequent_bensin_price - globs.N1_DISCOUNT
+        if prices[key]['diesel'] == 0.0:
+            prices[key]['diesel'] = most_frequent_diesel_price
+            prices[key]['diesel_discount'] = most_frequent_diesel_price - globs.N1_DISCOUNT
+    # </zero-price-problem>
     return prices
 
 
