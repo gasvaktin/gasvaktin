@@ -33,6 +33,7 @@ ATLANTSOLIA_LOCATION_RELATION = {
     'Selfoss': 'ao_013',
     'Skeifan': 'ao_014',
     'Skemmuvegi': 'ao_015',
+    'Skemmuvegur': 'ao_015',
     'Skúlagata': 'ao_016',
     'Sprengisandur *': 'ao_017',
     'Stykkishólmur': 'ao_018',
