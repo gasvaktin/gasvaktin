@@ -3147,11 +3147,11 @@
             "name": "Egilsstaðir"
         },
         {
-            "bensin95": 231.6,
-            "bensin95_discount": 226.6,
+            "bensin95": 231.0,
+            "bensin95_discount": 226.0,
             "company": "Orkan",
-            "diesel": 222.6,
-            "diesel_discount": 217.6,
+            "diesel": 222.1,
+            "diesel_discount": 217.1,
             "geo": {
                 "lat": 65.665889,
                 "lon": -18.103367
@@ -3160,11 +3160,11 @@
             "name": "Akureyri"
         },
         {
-            "bensin95": 236.6,
-            "bensin95_discount": 231.6,
+            "bensin95": 236.0,
+            "bensin95_discount": 231.0,
             "company": "Orkan",
-            "diesel": 227.6,
-            "diesel_discount": 222.6,
+            "diesel": 227.1,
+            "diesel_discount": 222.1,
             "geo": {
                 "lat": 64.32685,
                 "lon": -22.055915
@@ -3173,11 +3173,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 231.6,
-            "bensin95_discount": 226.6,
+            "bensin95": 231.0,
+            "bensin95_discount": 226.0,
             "company": "Orkan",
-            "diesel": 222.6,
-            "diesel_discount": 217.6,
+            "diesel": 222.1,
+            "diesel_discount": 217.1,
             "geo": {
                 "lat": 63.995433,
                 "lon": -21.191837
