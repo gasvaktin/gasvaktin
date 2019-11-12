@@ -2471,8 +2471,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 231.0,
-            "bensin95_discount": 226.0,
+            "bensin95": 231.6,
+            "bensin95_discount": 226.6,
             "company": "Orkan",
             "diesel": 222.1,
             "diesel_discount": 217.1,
@@ -2601,11 +2601,11 @@
             "name": "Furuvellir"
         },
         {
-            "bensin95": 235.0,
-            "bensin95_discount": 230.0,
+            "bensin95": 235.6,
+            "bensin95_discount": 230.6,
             "company": "Orkan",
-            "diesel": 226.1,
-            "diesel_discount": 221.1,
+            "diesel": 227.1,
+            "diesel_discount": 222.1,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
@@ -2718,8 +2718,8 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 234.0,
-            "bensin95_discount": 229.0,
+            "bensin95": 233.6,
+            "bensin95_discount": 228.6,
             "company": "Orkan",
             "diesel": 225.6,
             "diesel_discount": 220.6,
@@ -2731,11 +2731,11 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 230.0,
-            "bensin95_discount": 225.0,
+            "bensin95": 229.9,
+            "bensin95_discount": 224.9,
             "company": "Orkan",
-            "diesel": 222.5,
-            "diesel_discount": 217.5,
+            "diesel": 222.6,
+            "diesel_discount": 217.6,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
@@ -2796,8 +2796,8 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 231.0,
-            "bensin95_discount": 226.0,
+            "bensin95": 231.6,
+            "bensin95_discount": 226.6,
             "company": "Orkan",
             "diesel": 222.1,
             "diesel_discount": 217.1,
@@ -2822,8 +2822,8 @@
             "name": "Grindavík"
         },
         {
-            "bensin95": 231.0,
-            "bensin95_discount": 226.0,
+            "bensin95": 230.6,
+            "bensin95_discount": 225.6,
             "company": "Orkan",
             "diesel": 222.1,
             "diesel_discount": 217.1,
@@ -3147,8 +3147,8 @@
             "name": "Egilsstaðir"
         },
         {
-            "bensin95": 231.0,
-            "bensin95_discount": 226.0,
+            "bensin95": 231.6,
+            "bensin95_discount": 226.6,
             "company": "Orkan",
             "diesel": 222.1,
             "diesel_discount": 217.1,
@@ -3160,8 +3160,8 @@
             "name": "Akureyri"
         },
         {
-            "bensin95": 236.0,
-            "bensin95_discount": 231.0,
+            "bensin95": 236.6,
+            "bensin95_discount": 231.6,
             "company": "Orkan",
             "diesel": 227.1,
             "diesel_discount": 222.1,
@@ -3173,8 +3173,8 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 231.0,
-            "bensin95_discount": 226.0,
+            "bensin95": 231.6,
+            "bensin95_discount": 226.6,
             "company": "Orkan",
             "diesel": 222.1,
             "diesel_discount": 217.1,
