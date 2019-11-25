@@ -2822,11 +2822,11 @@
             "name": "Grindavík"
         },
         {
-            "bensin95": 230.6,
-            "bensin95_discount": 225.6,
+            "bensin95": 235.6,
+            "bensin95_discount": 230.6,
             "company": "Orkan",
-            "diesel": 222.1,
-            "diesel_discount": 217.1,
+            "diesel": 227.1,
+            "diesel_discount": 222.1,
             "geo": {
                 "lat": 63.999133,
                 "lon": -22.632292
@@ -2835,11 +2835,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 235.6,
-            "bensin95_discount": 230.6,
+            "bensin95": 230.6,
+            "bensin95_discount": 225.6,
             "company": "Orkan",
-            "diesel": 227.1,
-            "diesel_discount": 222.1,
+            "diesel": 222.1,
+            "diesel_discount": 217.1,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
