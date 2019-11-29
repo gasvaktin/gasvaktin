@@ -2734,8 +2734,8 @@
             "bensin95": 229.9,
             "bensin95_discount": 224.9,
             "company": "Orkan",
-            "diesel": 222.6,
-            "diesel_discount": 217.6,
+            "diesel": 224.1,
+            "diesel_discount": 219.1,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
@@ -2799,8 +2799,8 @@
             "bensin95": 230.5,
             "bensin95_discount": 225.5,
             "company": "Orkan",
-            "diesel": 222.1,
-            "diesel_discount": 217.1,
+            "diesel": 224.1,
+            "diesel_discount": 219.1,
             "geo": {
                 "lat": 65.072872,
                 "lon": -22.732583
@@ -3186,10 +3186,10 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 229.0,
+            "bensin95": 225.6,
             "bensin95_discount": null,
             "company": "Orkan X",
-            "diesel": 220.1,
+            "diesel": 219.1,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.117737,
