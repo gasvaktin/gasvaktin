@@ -1457,11 +1457,11 @@
             "name": "Víðihlíð"
         },
         {
-            "bensin95": 232.6,
-            "bensin95_discount": 227.6,
+            "bensin95": 233.6,
+            "bensin95_discount": 228.6,
             "company": "ÓB",
-            "diesel": 224.1,
-            "diesel_discount": 219.1,
+            "diesel": 225.5,
+            "diesel_discount": 220.5,
             "geo": {
                 "lat": 64.32448,
                 "lon": -22.068174
@@ -1496,10 +1496,10 @@
             "name": "Akureyri BSO"
         },
         {
-            "bensin95": 203.8,
+            "bensin95": 204.9,
             "bensin95_discount": null,
             "company": "ÓB",
-            "diesel": 199.3,
+            "diesel": 200.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.098399,
@@ -1574,11 +1574,11 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 228.8,
-            "bensin95_discount": 223.8,
+            "bensin95": 229.9,
+            "bensin95_discount": 224.9,
             "company": "ÓB",
-            "diesel": 223.1,
-            "diesel_discount": 218.1,
+            "diesel": 223.6,
+            "diesel_discount": 218.6,
             "geo": {
                 "lat": 64.544544,
                 "lon": -21.908073
@@ -1587,10 +1587,10 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 203.8,
+            "bensin95": 204.9,
             "bensin95_discount": null,
             "company": "ÓB",
-            "diesel": 199.3,
+            "diesel": 200.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.099134,
@@ -1613,10 +1613,10 @@
             "name": "Eyrarbakki"
         },
         {
-            "bensin95": 203.8,
+            "bensin95": 204.9,
             "bensin95_discount": null,
             "company": "ÓB",
-            "diesel": 199.3,
+            "diesel": 200.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.081674,
@@ -1756,11 +1756,11 @@
             "name": "Neskaupstaður"
         },
         {
-            "bensin95": 229.6,
-            "bensin95_discount": 224.6,
+            "bensin95": 230.7,
+            "bensin95_discount": 225.7,
             "company": "ÓB",
-            "diesel": 222.6,
-            "diesel_discount": 217.6,
+            "diesel": 224.2,
+            "diesel_discount": 219.2,
             "geo": {
                 "lat": 63.979938,
                 "lon": -22.546893
@@ -1808,11 +1808,11 @@
             "name": "Snorrabraut"
         },
         {
-            "bensin95": 229.5,
-            "bensin95_discount": 224.5,
+            "bensin95": 230.6,
+            "bensin95_discount": 225.6,
             "company": "ÓB",
-            "diesel": 222.6,
-            "diesel_discount": 217.6,
+            "diesel": 224.2,
+            "diesel_discount": 219.2,
             "geo": {
                 "lat": 65.071966,
                 "lon": -22.732975
