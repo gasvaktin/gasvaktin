@@ -274,6 +274,8 @@ def get_individual_ob_prices():
         if row.findall('.//td')[0].get('style') == 'border:0px;':
             continue
         name = row.findall('.//td')[0].text.strip()
+        if name == 'Ketilás í Fljótum':
+            continue  # throw this one for now, only diesel, needs investigation
         station_key = globs.OB_LOCATION_RELATION[name]
         bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
         diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
