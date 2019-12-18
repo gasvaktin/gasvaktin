@@ -1457,6 +1457,19 @@
             "name": "Víðihlíð"
         },
         {
+            "bensin95": 205.0,
+            "bensin95_discount": 200.0,
+            "company": "N1",
+            "diesel": 203.0,
+            "diesel_discount": 198.0,
+            "geo": {
+                "lat": 64.102003,
+                "lon": -21.873573
+            },
+            "key": "n1_081",
+            "name": "Skógarlind"
+        },
+        {
             "bensin95": 234.9,
             "bensin95_discount": 219.9,
             "company": "ÓB",
