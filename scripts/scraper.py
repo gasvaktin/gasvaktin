@@ -132,9 +132,13 @@ def get_individual_n1_prices():
         # </get-name>
         key = globs.N1_LOCATION_RELATION[name]
         bensin95 = float(station['GasPrice'].replace(',', '.'))
-        bensin95_discount = bensin95 - globs.N1_DISCOUNT
         diesel = float(station['DiselPrice'].replace(',', '.'))
-        diesel_discount = diesel - globs.N1_DISCOUNT
+        if key in globs.N1_DISCOUNTLESS_STATIONS:
+            bensin95_discount = None
+            diesel_discount = None
+        else:
+            bensin95_discount = bensin95 - globs.N1_DISCOUNT
+            diesel_discount = diesel - globs.N1_DISCOUNT
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,

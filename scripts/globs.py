@@ -344,6 +344,7 @@ N1_LOCATION_RELATION = {
     'Víðihlíð': 'n1_080',
     'Lindir': 'n1_081',
 }
+N1_DISCOUNTLESS_STATIONS = ['n1_081']
 
 DAELAN_LOCATION_RELATION = {
     'Hæðasmári': 'dn_002',
