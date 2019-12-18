@@ -342,6 +342,7 @@ N1_LOCATION_RELATION = {
     'Knútstöð Keflavíkurflugvelli': 'n1_078',
     'Norðlingaholt': 'n1_079',
     'Víðihlíð': 'n1_080',
+    'Lindir': 'n1_081',
 }
 
 DAELAN_LOCATION_RELATION = {
