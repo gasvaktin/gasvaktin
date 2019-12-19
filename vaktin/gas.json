@@ -1691,11 +1691,11 @@
             "name": "Húsavík"
         },
         {
-            "bensin95": 235.9,
-            "bensin95_discount": 230.9,
+            "bensin95": 230.9,
+            "bensin95_discount": 225.9,
             "company": "ÓB",
-            "diesel": 231.1,
-            "diesel_discount": 226.1,
+            "diesel": 226.1,
+            "diesel_discount": 221.1,
             "geo": {
                 "lat": 66.068678,
                 "lon": -23.121961
