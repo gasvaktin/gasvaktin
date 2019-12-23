@@ -105,10 +105,10 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 203.1,
+            "bensin95": 201.9,
             "bensin95_discount": null,
             "company": "Atlantsolía",
-            "diesel": 202.3,
+            "diesel": 200.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.076516,
@@ -222,10 +222,10 @@
             "name": "Skúlagata"
         },
         {
-            "bensin95": 203.1,
+            "bensin95": 201.9,
             "bensin95_discount": null,
             "company": "Atlantsolía",
-            "diesel": 202.3,
+            "diesel": 200.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.120944,
