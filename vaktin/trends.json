@@ -9127,6 +9127,18 @@
             "median_diesel_discount": 226.1,
             "stations_count": 35,
             "timestamp": "2019-12-19T10:00"
+        },
+        {
+            "mean_bensin95": 232.3,
+            "mean_bensin95_discount": 228.6,
+            "mean_diesel": 227.8,
+            "mean_diesel_discount": 223.8,
+            "median_bensin95": 235.9,
+            "median_bensin95_discount": 230.9,
+            "median_diesel": 231.1,
+            "median_diesel_discount": 226.1,
+            "stations_count": 35,
+            "timestamp": "2019-12-24T09:45"
         }
     ],
     "ol": [
