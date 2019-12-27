@@ -1483,11 +1483,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 235.9,
-            "bensin95_discount": 220.9,
+            "bensin95": 230.9,
+            "bensin95_discount": 215.9,
             "company": "ÓB",
-            "diesel": 231.1,
-            "diesel_discount": 216.1,
+            "diesel": 226.1,
+            "diesel_discount": 211.1,
             "geo": {
                 "lat": 65.687038,
                 "lon": -18.128579
@@ -1912,11 +1912,11 @@
             "name": "Laugarbakki"
         },
         {
-            "bensin95": 235.9,
-            "bensin95_discount": 230.9,
+            "bensin95": 235.1,
+            "bensin95_discount": 230.1,
             "company": "ÓB",
-            "diesel": 231.1,
-            "diesel_discount": 226.1,
+            "diesel": 229.2,
+            "diesel_discount": 224.2,
             "geo": {
                 "lat": 63.417937,
                 "lon": -19.002232
