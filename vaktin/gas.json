@@ -1457,10 +1457,10 @@
             "name": "Víðihlíð"
         },
         {
-            "bensin95": 210.0,
+            "bensin95": 209.0,
             "bensin95_discount": null,
             "company": "N1",
-            "diesel": 206.0,
+            "diesel": 205.0,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.102003,
