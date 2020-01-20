@@ -3069,11 +3069,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 237.3,
-            "bensin95_discount": 232.3,
+            "bensin95": 238.3,
+            "bensin95_discount": 233.3,
             "company": "Orkan",
-            "diesel": 232.5,
-            "diesel_discount": 227.5,
+            "diesel": 233.5,
+            "diesel_discount": 228.5,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
