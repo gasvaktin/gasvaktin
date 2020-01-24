@@ -625,11 +625,11 @@
             "name": "Sauðárkrókur"
         },
         {
-            "bensin95": 242.0,
-            "bensin95_discount": 237.0,
+            "bensin95": 234.8,
+            "bensin95_discount": 229.8,
             "company": "N1",
-            "diesel": 234.6,
-            "diesel_discount": 229.6,
+            "diesel": 229.9,
+            "diesel_discount": 224.9,
             "geo": {
                 "lat": 66.07472294,
                 "lon": -23.12308788
