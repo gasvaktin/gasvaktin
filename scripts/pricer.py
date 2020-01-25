@@ -42,10 +42,6 @@ def main():
         {
             'name': globs.ORKAN,
             'stations': '../stations/orkan.json'
-        },
-        {
-            'name': globs.ORKAN_X,
-            'stations': '../stations/orkanx.json'
         }
     ]
 
@@ -92,10 +88,6 @@ def main():
             'type': globs.PRICETYPE.INDIVIDUAL
         },
         globs.ORKAN: {
-            'data': orkan_prices,
-            'type': globs.PRICETYPE.INDIVIDUAL
-        },
-        globs.ORKAN_X: {
             'data': orkan_prices,
             'type': globs.PRICETYPE.INDIVIDUAL
         }

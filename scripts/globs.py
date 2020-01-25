@@ -8,7 +8,6 @@ OLIS = 'Olís'
 OB = 'ÓB'
 SKELJUNGUR = 'Skeljungur'
 ORKAN = 'Orkan'
-ORKAN_X = 'Orkan X'
 
 
 class PRICETYPE:
@@ -215,11 +214,10 @@ ORKAN_LOCATION_RELATION = {
     'Spöngin': 'or_059',
     'Egilsstaðir, Miðvangi': 'or_060',
     'Akureyri, Kjarnagata': 'or_061',
+    'Kjarnagata, Akureyri': 'or_061',
     'Akranes, Smiðjuvöllum': 'or_062',
-    'Hveragerði, Sunnumörk': 'or_063'
-}
-ORKAN_X_LOCATION_RELATION = {
-    'Hraunbær (Orkan X)': 'ox_000'
+    'Hveragerði, Sunnumörk': 'or_063',
+    'Hraunbær': 'or_064'
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006']
 # Orkan has a 3-step discount system controlled by your spendings on gas from

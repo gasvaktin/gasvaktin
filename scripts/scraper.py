@@ -324,7 +324,6 @@ def get_individual_ob_prices():
 
 
 def get_individual_orkan_prices():
-    # Read prices for Orkan and Orkan X stations because they're both on the same webpage.
     url = 'https://www.orkan.is/orkan/orkustodvar/'
     res = requests.get(url, headers=utils.headers())
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
@@ -337,23 +336,13 @@ def get_individual_orkan_prices():
             station_name = station[0][0].text.strip()
             bensin95 = float(station[1].text.replace(',', '.'))
             diesel = float(station[2].text.replace(',', '.'))
-            if station_name in globs.ORKAN_LOCATION_RELATION:
-                key = globs.ORKAN_LOCATION_RELATION[station_name]
-            elif station_name in globs.ORKAN_X_LOCATION_RELATION:
-                key = globs.ORKAN_X_LOCATION_RELATION[station_name]
-            else:
-                continue
-            # Orkan X stations have key starting with "ox", while ordinary
-            # Orkan statins have keys starting with "or"
-            bensin95_discount = None
-            diesel_discount = None
-            if key.startswith('or'):
-                # Orkan has a 3-step discount system controlled by your
-                # spendings on gas from them the month before
-                # See more info here: https://www.orkan.is/Afslattarthrep
-                # For consistency we just use the minimum default discount
-                bensin95_discount = bensin95 - globs.ORKAN_MINIMUM_DISCOUNT
-                diesel_discount = diesel - globs.ORKAN_MINIMUM_DISCOUNT
+            key = globs.ORKAN_LOCATION_RELATION[station_name]
+            # Orkan has a 3-step discount system controlled by your
+            # spendings on gas from them the month before
+            # See more info here: https://www.orkan.is/Afslattarthrep
+            # For consistency we just use the minimum default discount
+            bensin95_discount = bensin95 - globs.ORKAN_MINIMUM_DISCOUNT
+            diesel_discount = diesel - globs.ORKAN_MINIMUM_DISCOUNT
             if key in globs.ORKAN_DISCOUNTLESS_STATIONS:
                 bensin95_discount = None
                 diesel_discount = None

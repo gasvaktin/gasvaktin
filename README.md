@@ -99,13 +99,13 @@ List of stations can be seen [here](http://www.olis.is/solustadir/thjonustustodv
 
 Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/) and prices for ÓB can be seen [here](http://www.ob.is/eldsneytisverd/), you can find information on special fuel key ring discount [here](https://www.olis.is/vidskiptakort/olis-lykill).
 
-### Skeljungur (and Orkan (and Orkan X))
+### Skeljungur (and Orkan)
 
 #### Stations
 
-In the beginning of 2018 Skeljungur rebranded its remaining stations to Orkan, there are no fuel stations operating under the Skeljungur brand anymore.
+In the beginning of 2018 Skeljungur rebranded its remaining stations to Orkan, there are no fuel stations operating under the Skeljungur brand anymore. Also, it seems the Orkan X brand is no more too, with the last Orkan X station being rebranded to Orkan in either late 2019 or beginning of 2020.
 
-List of stations for Orkan and Orkan X can be seen [here](https://www.orkan.is/orkan/orkustodvar/).
+List of stations for Orkan can be seen [here](https://www.orkan.is/orkan/orkustodvar/).
 
 #### Prices
 
