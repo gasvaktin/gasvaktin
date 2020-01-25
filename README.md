@@ -26,15 +26,15 @@ Gasvaktin watches the following Icelandic oil companies:
 
 ## Setup and usage
 
-You need to install [Python3 (3.6.8 or newer) and pip](https://docs.python-guide.org/starting/install3/win/) and install the following python modules:
+You need to install [Python (3.6.8 or newer) and pip](https://docs.python-guide.org/starting/install3/win/) and install the following python modules:
 
 	pip install -r pip_requirements.txt
 
-Note: Either make sure Python3 is set to default over Python2, or use `python3` and `pip3` instead of `python` and `pip`. Python2 lifecycle ends in 2019, so hopefully we can stop worrying about default Python in 2020.
+**Note:** Either make sure Python3 is set to default over Python2 in your environment, or use `python3` and `pip3` instead of `python` and `pip`. Python2 lifecycle ended in 2019, so hopefully we can stop worrying about default Python sometime in 2020.
 
 Open a terminal in this repository and
 
-	python3 gasvaktin.py --collect-and-write-data
+	python gasvaktin.py --collect-and-write-data
 
 This updates the pretty `vaktin/gas.json` and the minified `vaktin/gas.min.json` with newest price data from the oil companies webpages. This is run every 15 minutes and in case of price changes they are automatically commited to the repository.
 
