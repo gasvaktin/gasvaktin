@@ -1,6 +1,8 @@
 
 # Gasvaktin
 
+![Gasvaktin](https://gasvaktin.is/images/gasvaktin.png)
+
 Gasvaktin aims to be an open and automated price lookup project for petrol stations in Iceland (95 octan bensin and diesel).
 
 Check out [gasvaktin.is](https://gasvaktin.is/) if you're travelling Iceland and want to find your preferred petrol station in your near vicinity.
