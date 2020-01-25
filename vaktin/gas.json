@@ -378,10 +378,10 @@
             "name": "Hæðarsmári"
         },
         {
-            "bensin95": 219.8,
+            "bensin95": 208.0,
             "bensin95_discount": null,
             "company": "Dælan",
-            "diesel": 209.2,
+            "diesel": 204.0,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.09370915,
@@ -3200,15 +3200,15 @@
         },
         {
             "bensin95": 230.3,
-            "bensin95_discount": null,
-            "company": "Orkan X",
+            "bensin95_discount": 225.3,
+            "company": "Orkan",
             "diesel": 225.5,
-            "diesel_discount": null,
+            "diesel_discount": 220.5,
             "geo": {
                 "lat": 64.117737,
                 "lon": -21.797643
             },
-            "key": "ox_000",
+            "key": "or_064",
             "name": "Hraunbær"
         }
     ]
