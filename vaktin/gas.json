@@ -2367,10 +2367,10 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 203.3,
+            "bensin95": 202.1,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 201.7,
+            "diesel": 200.1,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2445,10 +2445,10 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 203.3,
+            "bensin95": 202.1,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 201.7,
+            "diesel": 200.1,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2614,8 +2614,8 @@
             "name": "Furuvellir"
         },
         {
-            "bensin95": 236.8,
-            "bensin95_discount": 231.8,
+            "bensin95": 236.1,
+            "bensin95_discount": 231.1,
             "company": "Orkan",
             "diesel": 228.9,
             "diesel_discount": 223.9,
