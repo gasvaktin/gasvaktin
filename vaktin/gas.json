@@ -2432,11 +2432,11 @@
             "name": "Laugavegur"
         },
         {
-            "bensin95": 238.8,
-            "bensin95_discount": 233.8,
+            "bensin95": 236.1,
+            "bensin95_discount": 231.1,
             "company": "Orkan",
-            "diesel": 233.9,
-            "diesel_discount": 228.9,
+            "diesel": 230.9,
+            "diesel_discount": 225.9,
             "geo": {
                 "lat": 64.13266,
                 "lon": -21.893096
@@ -3043,11 +3043,11 @@
             "name": "Suðurfell"
         },
         {
-            "bensin95": 238.8,
-            "bensin95_discount": 233.8,
+            "bensin95": 236.1,
+            "bensin95_discount": 231.1,
             "company": "Orkan",
-            "diesel": 233.9,
-            "diesel_discount": 228.9,
+            "diesel": 230.9,
+            "diesel_discount": 225.9,
             "geo": {
                 "lat": 64.123847,
                 "lon": -21.804124
