@@ -560,11 +560,11 @@
             "name": "Reykjavíkurvegur"
         },
         {
-            "bensin95": 228.9,
-            "bensin95_discount": 223.9,
+            "bensin95": 232.9,
+            "bensin95_discount": 227.9,
             "company": "N1",
-            "diesel": 221.9,
-            "diesel_discount": 216.9,
+            "diesel": 225.9,
+            "diesel_discount": 220.9,
             "geo": {
                 "lat": 64.32195016,
                 "lon": -22.06546502
