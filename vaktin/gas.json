@@ -378,10 +378,10 @@
             "name": "Hæðarsmári"
         },
         {
-            "bensin95": 208.0,
+            "bensin95": 206.0,
             "bensin95_discount": null,
             "company": "Dælan",
-            "diesel": 204.0,
+            "diesel": 203.0,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.09370915,
