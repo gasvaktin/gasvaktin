@@ -2731,11 +2731,11 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 228.0,
-            "bensin95_discount": 223.0,
+            "bensin95": 230.0,
+            "bensin95_discount": 225.0,
             "company": "Orkan",
-            "diesel": 221.0,
-            "diesel_discount": 216.0,
+            "diesel": 223.5,
+            "diesel_discount": 218.5,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
@@ -2744,11 +2744,11 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 228.0,
-            "bensin95_discount": 223.0,
+            "bensin95": 230.0,
+            "bensin95_discount": 225.0,
             "company": "Orkan",
-            "diesel": 221.0,
-            "diesel_discount": 216.0,
+            "diesel": 223.5,
+            "diesel_discount": 218.5,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
