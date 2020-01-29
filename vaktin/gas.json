@@ -2601,11 +2601,11 @@
             "name": "Árskógssandur"
         },
         {
-            "bensin95": 236.1,
-            "bensin95_discount": 231.1,
+            "bensin95": 235.1,
+            "bensin95_discount": 230.1,
             "company": "Orkan",
-            "diesel": 230.7,
-            "diesel_discount": 225.7,
+            "diesel": 229.7,
+            "diesel_discount": 224.7,
             "geo": {
                 "lat": 65.690517,
                 "lon": -18.088675
