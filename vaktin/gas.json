@@ -2617,8 +2617,8 @@
             "bensin95": 235.1,
             "bensin95_discount": 230.1,
             "company": "Orkan",
-            "diesel": 229.7,
-            "diesel_discount": 224.7,
+            "diesel": 225.9,
+            "diesel_discount": 220.9,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
@@ -2705,11 +2705,11 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 230.1,
-            "bensin95_discount": 225.1,
+            "bensin95": 231.1,
+            "bensin95_discount": 226.1,
             "company": "Orkan",
-            "diesel": 224.7,
-            "diesel_discount": 219.7,
+            "diesel": 225.8,
+            "diesel_discount": 220.8,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
@@ -3199,11 +3199,11 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 228.1,
-            "bensin95_discount": 223.1,
+            "bensin95": 230.1,
+            "bensin95_discount": 225.1,
             "company": "Orkan",
-            "diesel": 222.7,
-            "diesel_discount": 217.7,
+            "diesel": 221.7,
+            "diesel_discount": 216.7,
             "geo": {
                 "lat": 64.117737,
                 "lon": -21.797643
