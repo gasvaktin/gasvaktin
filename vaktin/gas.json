@@ -2370,7 +2370,7 @@
             "bensin95": 202.1,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 199.9,
+            "diesel": 199.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2448,7 +2448,7 @@
             "bensin95": 202.1,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 199.9,
+            "diesel": 199.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2484,11 +2484,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 230.1,
-            "bensin95_discount": 225.1,
+            "bensin95": 228.8,
+            "bensin95_discount": 223.8,
             "company": "Orkan",
-            "diesel": 224.7,
-            "diesel_discount": 219.7,
+            "diesel": 221.1,
+            "diesel_discount": 216.1,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2705,11 +2705,11 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 230.1,
-            "bensin95_discount": 225.1,
+            "bensin95": 228.8,
+            "bensin95_discount": 223.8,
             "company": "Orkan",
-            "diesel": 223.9,
-            "diesel_discount": 218.9,
+            "diesel": 221.1,
+            "diesel_discount": 216.1,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
@@ -2744,11 +2744,11 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 230.1,
-            "bensin95_discount": 225.1,
+            "bensin95": 228.8,
+            "bensin95_discount": 223.8,
             "company": "Orkan",
-            "diesel": 221.2,
-            "diesel_discount": 216.2,
+            "diesel": 221.1,
+            "diesel_discount": 216.1,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
