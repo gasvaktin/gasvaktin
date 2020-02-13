@@ -1681,8 +1681,8 @@
             "bensin95": 233.9,
             "bensin95_discount": 228.9,
             "company": "ÓB",
-            "diesel": 226.2,
-            "diesel_discount": 221.2,
+            "diesel": 224.5,
+            "diesel_discount": 219.5,
             "geo": {
                 "lat": 66.039173,
                 "lon": -17.343145
@@ -1915,8 +1915,8 @@
             "bensin95": 233.1,
             "bensin95_discount": 228.1,
             "company": "ÓB",
-            "diesel": 224.3,
-            "diesel_discount": 219.3,
+            "diesel": 223.4,
+            "diesel_discount": 218.4,
             "geo": {
                 "lat": 63.417937,
                 "lon": -19.002232
