@@ -2640,11 +2640,11 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 233.8,
-            "bensin95_discount": 228.8,
+            "bensin95": 228.8,
+            "bensin95_discount": 223.8,
             "company": "Orkan",
-            "diesel": 226.1,
-            "diesel_discount": 221.1,
+            "diesel": 221.1,
+            "diesel_discount": 216.1,
             "geo": {
                 "lat": 65.679649,
                 "lon": -18.108221
@@ -3160,11 +3160,11 @@
             "name": "Egilsstaðir"
         },
         {
-            "bensin95": 228.8,
-            "bensin95_discount": 223.8,
+            "bensin95": 233.8,
+            "bensin95_discount": 228.8,
             "company": "Orkan",
-            "diesel": 221.1,
-            "diesel_discount": 216.1,
+            "diesel": 226.1,
+            "diesel_discount": 221.1,
             "geo": {
                 "lat": 65.665889,
                 "lon": -18.103367
