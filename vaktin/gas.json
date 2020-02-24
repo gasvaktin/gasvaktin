@@ -2718,11 +2718,11 @@
             "name": "Ísafjörður"
         },
         {
-            "bensin95": 236.8,
-            "bensin95_discount": 231.8,
+            "bensin95": 235.8,
+            "bensin95_discount": 230.8,
             "company": "Orkan",
-            "diesel": 228.1,
-            "diesel_discount": 223.1,
+            "diesel": 227.1,
+            "diesel_discount": 222.1,
             "geo": {
                 "lat": 66.025744,
                 "lon": -22.990537
