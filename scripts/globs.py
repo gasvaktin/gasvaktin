@@ -93,6 +93,7 @@ OB_LOCATION_RELATION = {
     'Akranes, Esjubraut': 'ob_000',
     'Aðalgötu': 'ob_035',
     'Akureyri': 'ob_001',
+    'Akureyri Hlíðarbraut': 'ob_001',
     'Akureyri BSÓ': 'ob_002',
     'Barðastaðir': 'ob_004',
     'Baula': 'ob_005',
@@ -123,6 +124,7 @@ OB_LOCATION_RELATION = {
     'Þorlákshöfn': 'ob_033',
     'Vík': 'ob_037',
     'Vík í Mýrdal': 'ob_037',
+    'Akureyri Sjafnargötu': 'ob_038',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
@@ -341,6 +343,7 @@ N1_LOCATION_RELATION = {
     'Norðlingaholt': 'n1_079',
     'Víðihlíð': 'n1_080',
     'Lindir': 'n1_081',
+    'Skógarlind': 'n1_081',
 }
 N1_DISCOUNTLESS_STATIONS = ['n1_081']
 

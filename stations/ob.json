@@ -243,5 +243,12 @@
             "lon": -19.002232
         },
         "name": "Vík í Mýrdal"
+    },
+    "ob_038": {
+        "geo": {
+            "lat": 65.699748,
+            "lon": -18.143686
+        },
+        "name": "Akureyri Sjafnargata"
     }
 }
