@@ -365,10 +365,10 @@
             "name": "Mjódd"
         },
         {
-            "bensin95": 219.8,
+            "bensin95": 203.0,
             "bensin95_discount": null,
             "company": "Dælan",
-            "diesel": 209.2,
+            "diesel": 198.0,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.09886543,
