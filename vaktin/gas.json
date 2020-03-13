@@ -2757,11 +2757,11 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 222.9,
-            "bensin95_discount": 217.9,
+            "bensin95": 222.8,
+            "bensin95_discount": 217.8,
             "company": "Orkan",
-            "diesel": 216.1,
-            "diesel_discount": 211.1,
+            "diesel": 214.2,
+            "diesel_discount": 209.2,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
@@ -2978,11 +2978,11 @@
             "name": "Vík í Mýrdal"
         },
         {
-            "bensin95": 226.7,
-            "bensin95_discount": 221.7,
+            "bensin95": 225.7,
+            "bensin95_discount": 220.7,
             "company": "Orkan",
-            "diesel": 217.3,
-            "diesel_discount": 212.3,
+            "diesel": 216.3,
+            "diesel_discount": 211.3,
             "geo": {
                 "lat": 63.85891,
                 "lon": -21.378168
