@@ -17593,6 +17593,18 @@
             "median_diesel_discount": null,
             "stations_count": 1,
             "timestamp": "2020-01-24T12:00"
+        },
+        {
+            "mean_bensin95": null,
+            "mean_bensin95_discount": null,
+            "mean_diesel": null,
+            "mean_diesel_discount": null,
+            "median_bensin95": null,
+            "median_bensin95_discount": null,
+            "median_diesel": null,
+            "median_diesel_discount": null,
+            "stations_count": 0,
+            "timestamp": "2020-01-25T09:00"
         }
     ],
     "sk": [
