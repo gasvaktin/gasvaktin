@@ -2653,11 +2653,11 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 219.8,
-            "bensin95_discount": 214.8,
+            "bensin95": 218.8,
+            "bensin95_discount": 213.8,
             "company": "Orkan",
-            "diesel": 213.3,
-            "diesel_discount": 208.3,
+            "diesel": 212.8,
+            "diesel_discount": 207.8,
             "geo": {
                 "lat": 65.679649,
                 "lon": -18.108221
@@ -2721,8 +2721,8 @@
             "bensin95": 218.8,
             "bensin95_discount": 213.8,
             "company": "Orkan",
-            "diesel": 214.1,
-            "diesel_discount": 209.1,
+            "diesel": 212.8,
+            "diesel_discount": 207.8,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
@@ -2861,11 +2861,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 219.8,
-            "bensin95_discount": 214.8,
+            "bensin95": 218.8,
+            "bensin95_discount": 213.8,
             "company": "Orkan",
-            "diesel": 213.3,
-            "diesel_discount": 208.3,
+            "diesel": 212.8,
+            "diesel_discount": 207.8,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
