@@ -3212,11 +3212,11 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 218.8,
-            "bensin95_discount": 213.8,
+            "bensin95": 219.8,
+            "bensin95_discount": 214.8,
             "company": "Orkan",
-            "diesel": 212.8,
-            "diesel_discount": 207.8,
+            "diesel": 213.3,
+            "diesel_discount": 208.3,
             "geo": {
                 "lat": 64.117737,
                 "lon": -21.797643
