@@ -2497,11 +2497,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 219.8,
-            "bensin95_discount": 214.8,
+            "bensin95": 218.8,
+            "bensin95_discount": 213.8,
             "company": "Orkan",
-            "diesel": 213.3,
-            "diesel_discount": 208.3,
+            "diesel": 212.8,
+            "diesel_discount": 207.8,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2822,11 +2822,11 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 219.8,
-            "bensin95_discount": 214.8,
+            "bensin95": 218.8,
+            "bensin95_discount": 213.8,
             "company": "Orkan",
-            "diesel": 213.3,
-            "diesel_discount": 208.3,
+            "diesel": 212.8,
+            "diesel_discount": 207.8,
             "geo": {
                 "lat": 65.072872,
                 "lon": -22.732583
@@ -2978,11 +2978,11 @@
             "name": "Vík í Mýrdal"
         },
         {
-            "bensin95": 219.8,
-            "bensin95_discount": 214.8,
+            "bensin95": 218.8,
+            "bensin95_discount": 213.8,
             "company": "Orkan",
-            "diesel": 213.3,
-            "diesel_discount": 208.3,
+            "diesel": 212.8,
+            "diesel_discount": 207.8,
             "geo": {
                 "lat": 63.85891,
                 "lon": -21.378168
@@ -3212,11 +3212,11 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 219.8,
-            "bensin95_discount": 214.8,
+            "bensin95": 218.8,
+            "bensin95_discount": 213.8,
             "company": "Orkan",
-            "diesel": 213.3,
-            "diesel_discount": 208.3,
+            "diesel": 212.8,
+            "diesel_discount": 207.8,
             "geo": {
                 "lat": 64.117737,
                 "lon": -21.797643
