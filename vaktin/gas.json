@@ -2380,10 +2380,10 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 193.8,
+            "bensin95": 188.8,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 193.3,
+            "diesel": 188.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2458,10 +2458,10 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 193.8,
+            "bensin95": 188.8,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 193.3,
+            "diesel": 188.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2497,11 +2497,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 216.8,
-            "bensin95_discount": 211.8,
+            "bensin95": 211.8,
+            "bensin95_discount": 206.8,
             "company": "Orkan",
-            "diesel": 211.8,
-            "diesel_discount": 206.8,
+            "diesel": 206.8,
+            "diesel_discount": 201.8,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2653,11 +2653,11 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 216.8,
-            "bensin95_discount": 211.8,
+            "bensin95": 211.8,
+            "bensin95_discount": 206.8,
             "company": "Orkan",
-            "diesel": 211.8,
-            "diesel_discount": 206.8,
+            "diesel": 206.8,
+            "diesel_discount": 201.8,
             "geo": {
                 "lat": 65.679649,
                 "lon": -18.108221
@@ -2757,11 +2757,11 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 215.8,
-            "bensin95_discount": 210.8,
+            "bensin95": 211.8,
+            "bensin95_discount": 206.8,
             "company": "Orkan",
-            "diesel": 211.2,
-            "diesel_discount": 206.2,
+            "diesel": 206.8,
+            "diesel_discount": 201.8,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
@@ -2822,11 +2822,11 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 216.8,
-            "bensin95_discount": 211.8,
+            "bensin95": 211.8,
+            "bensin95_discount": 206.8,
             "company": "Orkan",
-            "diesel": 211.8,
-            "diesel_discount": 206.8,
+            "diesel": 206.8,
+            "diesel_discount": 201.8,
             "geo": {
                 "lat": 65.072872,
                 "lon": -22.732583
@@ -2861,11 +2861,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 216.8,
-            "bensin95_discount": 211.8,
+            "bensin95": 211.8,
+            "bensin95_discount": 206.8,
             "company": "Orkan",
-            "diesel": 211.8,
-            "diesel_discount": 206.8,
+            "diesel": 206.8,
+            "diesel_discount": 201.8,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
@@ -2978,11 +2978,11 @@
             "name": "Vík í Mýrdal"
         },
         {
-            "bensin95": 216.8,
-            "bensin95_discount": 211.8,
+            "bensin95": 211.8,
+            "bensin95_discount": 206.8,
             "company": "Orkan",
-            "diesel": 211.8,
-            "diesel_discount": 206.8,
+            "diesel": 206.8,
+            "diesel_discount": 201.8,
             "geo": {
                 "lat": 63.85891,
                 "lon": -21.378168
@@ -3212,11 +3212,11 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 219.8,
-            "bensin95_discount": 214.8,
+            "bensin95": 211.8,
+            "bensin95_discount": 206.8,
             "company": "Orkan",
-            "diesel": 213.3,
-            "diesel_discount": 208.3,
+            "diesel": 206.8,
+            "diesel_discount": 201.8,
             "geo": {
                 "lat": 64.117737,
                 "lon": -21.797643
