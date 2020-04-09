@@ -2380,10 +2380,10 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 188.8,
+            "bensin95": 186.8,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 188.3,
+            "diesel": 186.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2458,10 +2458,10 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 188.8,
+            "bensin95": 186.8,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 188.3,
+            "diesel": 186.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
