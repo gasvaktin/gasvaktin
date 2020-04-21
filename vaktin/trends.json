@@ -10351,6 +10351,18 @@
             "median_diesel_discount": 206.9,
             "stations_count": 36,
             "timestamp": "2020-04-14T16:30"
+        },
+        {
+            "mean_bensin95": 208.8,
+            "mean_bensin95_discount": 205.9,
+            "mean_diesel": 206.8,
+            "mean_diesel_discount": 203.8,
+            "median_bensin95": 211.9,
+            "median_bensin95_discount": 206.9,
+            "median_diesel": 209.9,
+            "median_diesel_discount": 204.9,
+            "stations_count": 36,
+            "timestamp": "2020-04-21T11:45"
         }
     ],
     "ol": [
@@ -12225,6 +12237,18 @@
             "median_diesel_discount": 209.3,
             "stations_count": 34,
             "timestamp": "2020-04-14T16:45"
+        },
+        {
+            "mean_bensin95": 213.5,
+            "mean_bensin95_discount": 208.5,
+            "mean_diesel": 211.9,
+            "mean_diesel_discount": 206.9,
+            "median_bensin95": 213.8,
+            "median_bensin95_discount": 208.8,
+            "median_diesel": 212.3,
+            "median_diesel_discount": 207.3,
+            "stations_count": 34,
+            "timestamp": "2020-04-21T11:45"
         }
     ],
     "or": [
