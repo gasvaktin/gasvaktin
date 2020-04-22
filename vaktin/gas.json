@@ -2744,11 +2744,11 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 205.3,
-            "bensin95_discount": 200.3,
+            "bensin95": 205.7,
+            "bensin95_discount": 200.7,
             "company": "Orkan",
-            "diesel": 203.8,
-            "diesel_discount": 198.8,
+            "diesel": 204.2,
+            "diesel_discount": 199.2,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
