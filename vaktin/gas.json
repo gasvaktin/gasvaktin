@@ -342,7 +342,7 @@
             "bensin95": 189.9,
             "bensin95_discount": null,
             "company": "Dælan",
-            "diesel": 199.9,
+            "diesel": 195.0,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.131015,
@@ -352,10 +352,10 @@
             "name": "Fellsmúli"
         },
         {
-            "bensin95": 208.9,
+            "bensin95": 205.0,
             "bensin95_discount": null,
             "company": "Dælan",
-            "diesel": 205.5,
+            "diesel": 202.5,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.112573,
@@ -365,10 +365,10 @@
             "name": "Mjódd"
         },
         {
-            "bensin95": 189.9,
+            "bensin95": 185.0,
             "bensin95_discount": null,
             "company": "Dælan",
-            "diesel": 188.9,
+            "diesel": 185.0,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.09886543,
@@ -378,10 +378,10 @@
             "name": "Hæðarsmári"
         },
         {
-            "bensin95": 208.9,
+            "bensin95": 205.0,
             "bensin95_discount": null,
             "company": "Dælan",
-            "diesel": 205.5,
+            "diesel": 202.5,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.09370915,
@@ -391,10 +391,10 @@
             "name": "Salavegur"
         },
         {
-            "bensin95": 208.9,
+            "bensin95": 205.0,
             "bensin95_discount": null,
             "company": "Dælan",
-            "diesel": 205.5,
+            "diesel": 202.5,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.14123192,
