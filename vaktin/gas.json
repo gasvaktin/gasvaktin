@@ -1678,11 +1678,11 @@
             "name": "Hólmavík"
         },
         {
-            "bensin95": 209.5,
-            "bensin95_discount": 204.5,
+            "bensin95": 206.5,
+            "bensin95_discount": 201.5,
             "company": "ÓB",
-            "diesel": 203.9,
-            "diesel_discount": 198.9,
+            "diesel": 202.6,
+            "diesel_discount": 197.6,
             "geo": {
                 "lat": 66.039173,
                 "lon": -17.343145
@@ -1821,8 +1821,8 @@
             "name": "Snorrabraut"
         },
         {
-            "bensin95": 204.6,
-            "bensin95_discount": 199.6,
+            "bensin95": 204.5,
+            "bensin95_discount": 199.5,
             "company": "ÓB",
             "diesel": 200.6,
             "diesel_discount": 195.6,
@@ -1912,11 +1912,11 @@
             "name": "Laugarbakki"
         },
         {
-            "bensin95": 208.6,
-            "bensin95_discount": 203.6,
+            "bensin95": 206.5,
+            "bensin95_discount": 201.5,
             "company": "ÓB",
-            "diesel": 202.8,
-            "diesel_discount": 197.8,
+            "diesel": 202.6,
+            "diesel_discount": 197.6,
             "geo": {
                 "lat": 63.417937,
                 "lon": -19.002232
