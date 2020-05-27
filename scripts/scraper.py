@@ -334,8 +334,8 @@ def get_individual_orkan_prices():
     for territory in territories:
         for station in territory:
             station_name = station[0][0].text.strip()
-            bensin95 = float(station[1].text.replace(',', '.'))
-            diesel = float(station[2].text.replace(',', '.'))
+            bensin95 = float(station[1].text.replace(',', '.').replace(' jamm', ''))
+            diesel = float(station[2].text.replace(',', '.').replace(' jamm', ''))
             key = globs.ORKAN_LOCATION_RELATION[station_name]
             # Orkan has a 3-step discount system controlled by your
             # spendings on gas from them the month before
@@ -378,7 +378,7 @@ def testrun(selection):
         logman.info('ÓB')
         logman.info(get_individual_ob_prices())
     if run_all or 'or' in selection or 'ox' in selection:
-        logman.info('Orkan (including Orkan X)')
+        logman.info('Orkan')
         logman.info(get_individual_orkan_prices())
 
 
