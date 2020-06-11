@@ -1912,11 +1912,11 @@
             "name": "Laugarbakki"
         },
         {
-            "bensin95": 208.3,
-            "bensin95_discount": 203.3,
+            "bensin95": 210.4,
+            "bensin95_discount": 205.4,
             "company": "ÓB",
-            "diesel": 203.8,
-            "diesel_discount": 198.8,
+            "diesel": 204.0,
+            "diesel_discount": 199.0,
             "geo": {
                 "lat": 63.417937,
                 "lon": -19.002232
