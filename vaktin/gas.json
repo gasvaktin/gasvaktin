@@ -2653,11 +2653,11 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 204.4,
-            "bensin95_discount": 199.4,
+            "bensin95": 206.2,
+            "bensin95_discount": 201.2,
             "company": "Orkan",
-            "diesel": 200.5,
-            "diesel_discount": 195.5,
+            "diesel": 201.7,
+            "diesel_discount": 196.7,
             "geo": {
                 "lat": 65.679649,
                 "lon": -18.108221
@@ -2965,11 +2965,11 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 208.2,
-            "bensin95_discount": 203.2,
+            "bensin95": 210.3,
+            "bensin95_discount": 205.3,
             "company": "Orkan",
-            "diesel": 203.7,
-            "diesel_discount": 198.7,
+            "diesel": 203.9,
+            "diesel_discount": 198.9,
             "geo": {
                 "lat": 63.417474,
                 "lon": -18.993665
