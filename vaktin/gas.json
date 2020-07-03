@@ -329,7 +329,7 @@
             "bensin95": 178.9,
             "bensin95_discount": null,
             "company": "Costco Iceland",
-            "diesel": 174.9,
+            "diesel": 175.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.075267,
@@ -1457,10 +1457,10 @@
             "name": "Víðihlíð"
         },
         {
-            "bensin95": 188.0,
+            "bensin95": 183.0,
             "bensin95_discount": null,
             "company": "N1",
-            "diesel": 183.0,
+            "diesel": 181.0,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.102003,
@@ -1509,7 +1509,7 @@
             "name": "Akureyri BSO"
         },
         {
-            "bensin95": 185.5,
+            "bensin95": 183.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 180.9,
@@ -1600,7 +1600,7 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 185.5,
+            "bensin95": 183.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 180.9,
@@ -1626,7 +1626,7 @@
             "name": "Eyrarbakki"
         },
         {
-            "bensin95": 185.5,
+            "bensin95": 183.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 180.9,
@@ -1936,6 +1936,19 @@
             },
             "key": "ob_038",
             "name": "Akureyri Sjafnargata"
+        },
+        {
+            "bensin95": 218.9,
+            "bensin95_discount": 213.9,
+            "company": "ÓB",
+            "diesel": 208.8,
+            "diesel_discount": 203.8,
+            "geo": {
+                "lat": 65.744034,
+                "lon": -19.626869
+            },
+            "key": "ob_039",
+            "name": "Sauðárkrókur Borgarflöt"
         },
         {
             "bensin95": 220.8,
