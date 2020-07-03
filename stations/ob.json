@@ -250,5 +250,12 @@
             "lon": -18.143686
         },
         "name": "Akureyri Sjafnargata"
+    },
+    "ob_039": {
+        "geo": {
+            "lat": 65.744034,
+            "lon": -19.626869
+        },
+        "name": "Sauðárkrókur Borgarflöt"
     }
 }

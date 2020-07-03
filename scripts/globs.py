@@ -125,6 +125,7 @@ OB_LOCATION_RELATION = {
     'Vík': 'ob_037',
     'Vík í Mýrdal': 'ob_037',
     'Akureyri Sjafnargötu': 'ob_038',
+    'ÓB Sauðárkókur': 'ob_039',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
