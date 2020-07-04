@@ -716,11 +716,11 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 220.9,
-            "bensin95_discount": 215.9,
+            "bensin95": 210.9,
+            "bensin95_discount": 205.9,
             "company": "N1",
-            "diesel": 210.4,
-            "diesel_discount": 205.4,
+            "diesel": 200.4,
+            "diesel_discount": 195.4,
             "geo": {
                 "lat": 63.93684501,
                 "lon": -20.98792437
