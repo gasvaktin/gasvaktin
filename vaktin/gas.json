@@ -3095,11 +3095,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 215.6,
-            "bensin95_discount": 210.6,
+            "bensin95": 217.6,
+            "bensin95_discount": 212.6,
             "company": "Orkan",
-            "diesel": 208.3,
-            "diesel_discount": 203.3,
+            "diesel": 209.3,
+            "diesel_discount": 204.3,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
@@ -3225,11 +3225,11 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 215.6,
-            "bensin95_discount": 210.6,
+            "bensin95": 215.8,
+            "bensin95_discount": 210.8,
             "company": "Orkan",
-            "diesel": 206.3,
-            "diesel_discount": 201.3,
+            "diesel": 209.3,
+            "diesel_discount": 204.3,
             "geo": {
                 "lat": 64.117737,
                 "lon": -21.797643
