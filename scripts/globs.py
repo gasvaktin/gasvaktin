@@ -17,6 +17,7 @@ class PRICETYPE:
 
 ATLANTSOLIA_LOCATION_RELATION = {
     'Akureyri Baldursnes': 'ao_000',
+    'Akureyri Baldursnes *': 'ao_000',
     'Akureyri Glerártorg': 'ao_001',
     'Bíldshöfði': 'ao_002',
     'Borgarnes': 'ao_003',
@@ -45,10 +46,10 @@ ATLANTSOLIA_LOCATION_RELATION = {
     'Háaleitisbraut': 'ao_023',
     'Stapabraut': 'ao_024',
 }
-# Atlantsolia declared one (and now two) of its stations to be without discount,
+# Atlantsolia declared one (then two, and now three) of its stations to be without discount,
 # on their site that station is marked with a star (*) and the following comment at the bottom:
 # "* Engir afslaettir gilda"
-ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_008', 'ao_017']
+ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_000', 'ao_008', 'ao_017']
 
 OLIS_MINIMUM_DISCOUNT = 5
 OLIS_LOCATION_RELATION = {
