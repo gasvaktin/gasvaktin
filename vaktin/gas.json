@@ -2666,11 +2666,11 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 215.6,
-            "bensin95_discount": 210.6,
+            "bensin95": 185.4,
+            "bensin95_discount": 180.4,
             "company": "Orkan",
-            "diesel": 205.3,
-            "diesel_discount": 200.3,
+            "diesel": 181.4,
+            "diesel_discount": 176.4,
             "geo": {
                 "lat": 65.679649,
                 "lon": -18.108221
