@@ -1,11 +1,11 @@
 {
     "stations": [
         {
-            "bensin95": 222.7,
-            "bensin95_discount": 217.7,
+            "bensin95": 185.5,
+            "bensin95_discount": 180.5,
             "company": "Atlantsolía",
-            "diesel": 210.8,
-            "diesel_discount": 205.8,
+            "diesel": 181.5,
+            "diesel_discount": 176.5,
             "geo": {
                 "lat": 65.69913,
                 "lon": -18.135231
