@@ -153,7 +153,7 @@ OB_EXTRA_DISCOUNT_UNTIL = '2020-02-29T23:59'
 # Afslattur med lyklum og kortum gildir ekki a thessum stodvum. Allir lykil-og korthafar Olis og
 # OB njota eftir sem adur afslattar af eldsneyti og odrum vorum a Olis og OB stodvum um land allt.
 # ------------------------------------------------------------------------------------------------
-OB_DISCOUNTLESS_STATIONS = ['ob_012', 'ob_003', 'ob_010']
+OB_DISCOUNTLESS_STATIONS = ['ob_001', 'ob_003', 'ob_012', 'ob_010']
 
 ORKAN_LOCATION_RELATION = {
     'Dalvegur': 'or_000',
@@ -223,7 +223,7 @@ ORKAN_LOCATION_RELATION = {
     'Hveragerði, Sunnumörk': 'or_063',
     'Hraunbær': 'or_064'
 }
-ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006']
+ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021']
 # Orkan has a 3-step discount system controlled by your spendings on gas from
 # them in the previous motnth
 # See more info here: https://www.orkan.is/Afslattarthrep
