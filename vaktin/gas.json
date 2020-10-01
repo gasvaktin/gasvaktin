@@ -547,11 +547,11 @@
             "name": "Skógarsel"
         },
         {
-            "bensin95": 208.0,
-            "bensin95_discount": 203.0,
+            "bensin95": 187.0,
+            "bensin95_discount": null,
             "company": "N1",
-            "diesel": 199.1,
-            "diesel_discount": 194.1,
+            "diesel": 183.0,
+            "diesel_discount": null,
             "geo": {
                 "lat": 64.07683807,
                 "lon": -21.95016999
@@ -1366,11 +1366,11 @@
             "name": "Reyðarfjörður"
         },
         {
-            "bensin95": 224.9,
-            "bensin95_discount": 219.9,
+            "bensin95": 187.0,
+            "bensin95_discount": null,
             "company": "N1",
-            "diesel": 212.4,
-            "diesel_discount": 207.4,
+            "diesel": 183.0,
+            "diesel_discount": null,
             "geo": {
                 "lat": 65.689793,
                 "lon": -18.097404
@@ -1468,6 +1468,19 @@
             },
             "key": "n1_081",
             "name": "Skógarlind"
+        },
+        {
+            "bensin95": 187.0,
+            "bensin95_discount": null,
+            "company": "N1",
+            "diesel": 183.0,
+            "diesel_discount": null,
+            "geo": {
+                "lat": 64.044265,
+                "lon": -21.983224
+            },
+            "key": "n1_082",
+            "name": "Norðurhella"
         },
         {
             "bensin95": 217.7,
