@@ -2991,11 +2991,11 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 221.7,
-            "bensin95_discount": 216.7,
+            "bensin95": 221.3,
+            "bensin95_discount": 216.3,
             "company": "Orkan",
-            "diesel": 207.9,
-            "diesel_discount": 202.9,
+            "diesel": 207.3,
+            "diesel_discount": 202.3,
             "geo": {
                 "lat": 63.417474,
                 "lon": -18.993665
@@ -3238,11 +3238,11 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 222.6,
-            "bensin95_discount": 217.6,
+            "bensin95": 212.8,
+            "bensin95_discount": 207.8,
             "company": "Orkan",
-            "diesel": 210.7,
-            "diesel_discount": 205.7,
+            "diesel": 208.7,
+            "diesel_discount": 203.7,
             "geo": {
                 "lat": 64.117737,
                 "lon": -21.797643
