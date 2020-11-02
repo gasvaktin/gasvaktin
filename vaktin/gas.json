@@ -3212,11 +3212,11 @@
             "name": "Akureyri"
         },
         {
-            "bensin95": 222.6,
-            "bensin95_discount": 217.6,
+            "bensin95": 215.6,
+            "bensin95_discount": 210.6,
             "company": "Orkan",
-            "diesel": 209.7,
-            "diesel_discount": 204.7,
+            "diesel": 205.4,
+            "diesel_discount": 200.4,
             "geo": {
                 "lat": 64.32685,
                 "lon": -22.055915
