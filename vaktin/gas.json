@@ -2770,11 +2770,11 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 217.6,
-            "bensin95_discount": 212.6,
+            "bensin95": 216.6,
+            "bensin95_discount": 211.6,
             "company": "Orkan",
-            "diesel": 205.7,
-            "diesel_discount": 200.7,
+            "diesel": 203.7,
+            "diesel_discount": 198.7,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
@@ -3212,11 +3212,11 @@
             "name": "Akureyri"
         },
         {
-            "bensin95": 216.6,
-            "bensin95_discount": 211.6,
+            "bensin95": 222.6,
+            "bensin95_discount": 217.6,
             "company": "Orkan",
-            "diesel": 203.7,
-            "diesel_discount": 198.7,
+            "diesel": 209.7,
+            "diesel_discount": 204.7,
             "geo": {
                 "lat": 64.32685,
                 "lon": -22.055915
