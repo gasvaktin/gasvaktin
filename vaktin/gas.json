@@ -66,11 +66,11 @@
             "name": "Búðarkór"
         },
         {
-            "bensin95": 215.5,
-            "bensin95_discount": 210.5,
+            "bensin95": 213.5,
+            "bensin95_discount": 208.5,
             "company": "Atlantsolía",
-            "diesel": 207.0,
-            "diesel_discount": 202.0,
+            "diesel": 204.6,
+            "diesel_discount": 199.6,
             "geo": {
                 "lat": 65.259896,
                 "lon": -14.39789
@@ -144,11 +144,11 @@
             "name": "Mosfellsbær"
         },
         {
-            "bensin95": 216.7,
-            "bensin95_discount": 211.7,
+            "bensin95": 215.7,
+            "bensin95_discount": 210.7,
             "company": "Atlantsolía",
-            "diesel": 207.8,
-            "diesel_discount": 202.8,
+            "diesel": 205.4,
+            "diesel_discount": 200.4,
             "geo": {
                 "lat": 63.987463,
                 "lon": -22.549396
@@ -235,11 +235,11 @@
             "name": "Sprengisandur"
         },
         {
-            "bensin95": 216.7,
-            "bensin95_discount": 211.7,
+            "bensin95": 215.7,
+            "bensin95_discount": 210.7,
             "company": "Atlantsolía",
-            "diesel": 207.8,
-            "diesel_discount": 202.8,
+            "diesel": 205.4,
+            "diesel_discount": 200.4,
             "geo": {
                 "lat": 65.07071,
                 "lon": -22.733996
