@@ -83,7 +83,8 @@ OLIS_LOCATION_RELATION = {
     'Selfoss': 'ol_032',
     'Siglufjörður bensínstöð': 'ol_033',
     'Skagaströnd bensínst.': 'ol_034',
-    'Sæbraut': 'ol_011'
+    'Sæbraut': 'ol_011',
+    'Hrauneyjar': 'ol_022',
 }
 OB_MINIMUM_DISCOUNT = 5
 OB_LOCATION_RELATION = {
