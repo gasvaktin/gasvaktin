@@ -2523,11 +2523,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 214.4,
-            "bensin95_discount": 209.4,
+            "bensin95": 213.4,
+            "bensin95_discount": 208.4,
             "company": "Orkan",
-            "diesel": 206.5,
-            "diesel_discount": 201.5,
+            "diesel": 204.5,
+            "diesel_discount": 199.5,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2848,11 +2848,11 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 216.3,
-            "bensin95_discount": 211.3,
+            "bensin95": 215.6,
+            "bensin95_discount": 210.6,
             "company": "Orkan",
-            "diesel": 207.3,
-            "diesel_discount": 202.3,
+            "diesel": 205.3,
+            "diesel_discount": 200.3,
             "geo": {
                 "lat": 65.072872,
                 "lon": -22.732583
@@ -2887,11 +2887,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 216.6,
-            "bensin95_discount": 211.6,
+            "bensin95": 215.6,
+            "bensin95_discount": 210.6,
             "company": "Orkan",
-            "diesel": 207.3,
-            "diesel_discount": 202.3,
+            "diesel": 205.3,
+            "diesel_discount": 200.3,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
@@ -3111,8 +3111,8 @@
             "bensin95": 218.6,
             "bensin95_discount": 213.6,
             "company": "Orkan",
-            "diesel": 209.7,
-            "diesel_discount": 204.7,
+            "diesel": 207.7,
+            "diesel_discount": 202.7,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
