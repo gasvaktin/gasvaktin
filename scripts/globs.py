@@ -67,7 +67,6 @@ OLIS_LOCATION_RELATION = {
     'Ferstikla Veitingaskáli': 'ol_020',
     'Garðabær': 'ol_004',
     'Gullinbrú': 'ol_005',
-    'Hamraborg': 'ol_006',
     'Hella - bensínstöð': 'ol_021',
     'Hornafjörður bensínst.': 'ol_024',
     'Húsavík': 'ol_023',
@@ -128,6 +127,7 @@ OB_LOCATION_RELATION = {
     'Vík í Mýrdal': 'ob_037',
     'Akureyri Sjafnargötu': 'ob_038',
     'ÓB Sauðárkókur': 'ob_039',
+    'Hamraborg': 'ob_040',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.

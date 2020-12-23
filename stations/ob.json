@@ -257,5 +257,12 @@
             "lon": -19.626869
         },
         "name": "Sauðárkrókur Borgarflöt"
+    },
+    "ol_040": {
+        "geo": {
+            "lat": 64.112100,
+            "lon": -21.905693
+        },
+        "name": "Hamraborg"
     }
 }
