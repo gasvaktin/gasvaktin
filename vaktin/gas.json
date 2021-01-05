@@ -2744,11 +2744,11 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 223.2,
-            "bensin95_discount": 218.2,
+            "bensin95": 222.6,
+            "bensin95_discount": 217.6,
             "company": "Orkan",
-            "diesel": 213.1,
-            "diesel_discount": 208.1,
+            "diesel": 212.2,
+            "diesel_discount": 207.2,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
@@ -3225,11 +3225,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 221.6,
-            "bensin95_discount": 216.6,
+            "bensin95": 226.9,
+            "bensin95_discount": 221.9,
             "company": "Orkan",
-            "diesel": 212.7,
-            "diesel_discount": 207.7,
+            "diesel": 216.9,
+            "diesel_discount": 211.9,
             "geo": {
                 "lat": 63.995433,
                 "lon": -21.191837
