@@ -3160,11 +3160,11 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 227.6,
-            "bensin95_discount": 222.6,
+            "bensin95": 221.6,
+            "bensin95_discount": 216.6,
             "company": "Orkan",
-            "diesel": 217.2,
-            "diesel_discount": 212.2,
+            "diesel": 212.7,
+            "diesel_discount": 207.7,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
@@ -3238,11 +3238,11 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 218.6,
-            "bensin95_discount": 213.6,
+            "bensin95": 221.6,
+            "bensin95_discount": 216.6,
             "company": "Orkan",
-            "diesel": 208.8,
-            "diesel_discount": 203.8,
+            "diesel": 212.7,
+            "diesel_discount": 207.7,
             "geo": {
                 "lat": 64.117737,
                 "lon": -21.797643
