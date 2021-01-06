@@ -495,11 +495,11 @@
             "name": "Stórihjalli"
         },
         {
-            "bensin95": 224.0,
-            "bensin95_discount": 219.0,
+            "bensin95": 227.0,
+            "bensin95_discount": 222.0,
             "company": "N1",
-            "diesel": 214.5,
-            "diesel_discount": 209.5,
+            "diesel": 217.0,
+            "diesel_discount": 212.0,
             "geo": {
                 "lat": 64.06679725,
                 "lon": -21.93884434
