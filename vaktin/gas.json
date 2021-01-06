@@ -469,11 +469,11 @@
             "name": "Borgartún"
         },
         {
-            "bensin95": 221.0,
-            "bensin95_discount": 216.0,
+            "bensin95": 223.0,
+            "bensin95_discount": 218.0,
             "company": "N1",
-            "diesel": 211.5,
-            "diesel_discount": 206.5,
+            "diesel": 214.5,
+            "diesel_discount": 209.5,
             "geo": {
                 "lat": 64.11732426,
                 "lon": -21.89915966
