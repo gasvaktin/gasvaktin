@@ -3225,11 +3225,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 226.9,
-            "bensin95_discount": 221.9,
+            "bensin95": 230.5,
+            "bensin95_discount": 225.5,
             "company": "Orkan",
-            "diesel": 216.9,
-            "diesel_discount": 211.9,
+            "diesel": 218.6,
+            "diesel_discount": 213.6,
             "geo": {
                 "lat": 63.995433,
                 "lon": -21.191837
