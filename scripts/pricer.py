@@ -97,6 +97,9 @@ def main():
     price_keys = ['bensin95', 'bensin95_discount', 'diesel', 'diesel_discount']
 
     for key, station in sorted(all_stations.items()):
+        if key == 'or_043' and key not in prices_map[station['company']]['data']:
+            # Orkan Úthlíð near Bláskógabyggð temporarily closed?
+            continue
         station['key'] = key
         if prices_map[station['company']]['type'] == globs.PRICETYPE.INDIVIDUAL:
             for price_key in price_keys:
