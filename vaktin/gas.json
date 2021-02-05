@@ -14,11 +14,11 @@
             "name": "Baldursnes Akureyri"
         },
         {
-            "bensin95": 224.3,
-            "bensin95_discount": 219.3,
+            "bensin95": 225.6,
+            "bensin95_discount": 220.6,
             "company": "Atlantsolía",
-            "diesel": 215.7,
-            "diesel_discount": 210.7,
+            "diesel": 213.7,
+            "diesel_discount": 208.7,
             "geo": {
                 "lat": 65.687807,
                 "lon": -18.100104
@@ -40,11 +40,11 @@
             "name": "Bíldshöfði"
         },
         {
-            "bensin95": 224.3,
-            "bensin95_discount": 219.3,
+            "bensin95": 225.6,
+            "bensin95_discount": 220.6,
             "company": "Atlantsolía",
-            "diesel": 215.7,
-            "diesel_discount": 210.7,
+            "diesel": 213.7,
+            "diesel_discount": 208.7,
             "geo": {
                 "lat": 64.5675445,
                 "lon": -21.8934511
@@ -144,11 +144,11 @@
             "name": "Mosfellsbær"
         },
         {
-            "bensin95": 223.6,
-            "bensin95_discount": 218.6,
+            "bensin95": 225.6,
+            "bensin95_discount": 220.6,
             "company": "Atlantsolía",
-            "diesel": 213.3,
-            "diesel_discount": 208.3,
+            "diesel": 213.7,
+            "diesel_discount": 208.7,
             "geo": {
                 "lat": 63.987463,
                 "lon": -22.549396
@@ -235,11 +235,11 @@
             "name": "Sprengisandur"
         },
         {
-            "bensin95": 223.6,
-            "bensin95_discount": 218.6,
+            "bensin95": 225.6,
+            "bensin95_discount": 220.6,
             "company": "Atlantsolía",
-            "diesel": 213.3,
-            "diesel_discount": 208.3,
+            "diesel": 213.7,
+            "diesel_discount": 208.7,
             "geo": {
                 "lat": 65.07071,
                 "lon": -22.733996
