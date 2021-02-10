@@ -2406,10 +2406,10 @@
             "name": "Hamraborg"
         },
         {
-            "bensin95": 195.4,
+            "bensin95": 195.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 193.8,
+            "diesel": 192.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2484,10 +2484,10 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 195.4,
+            "bensin95": 195.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 193.8,
+            "diesel": 192.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2679,10 +2679,10 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 195.4,
+            "bensin95": 195.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 193.8,
+            "diesel": 192.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 65.679649,
@@ -3095,11 +3095,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 230.7,
-            "bensin95_discount": 225.7,
+            "bensin95": 230.5,
+            "bensin95_discount": 225.5,
             "company": "Orkan",
-            "diesel": 219.7,
-            "diesel_discount": 214.7,
+            "diesel": 219.6,
+            "diesel_discount": 214.6,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
