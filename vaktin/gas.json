@@ -2409,7 +2409,7 @@
             "bensin95": 195.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 192.9,
+            "diesel": 193.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2487,7 +2487,7 @@
             "bensin95": 195.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 192.9,
+            "diesel": 193.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2682,7 +2682,7 @@
             "bensin95": 195.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 192.9,
+            "diesel": 193.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 65.679649,
@@ -2978,8 +2978,8 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 235.3,
-            "bensin95_discount": 230.3,
+            "bensin95": 235.6,
+            "bensin95_discount": 230.6,
             "company": "Orkan",
             "diesel": 219.8,
             "diesel_discount": 214.8,
@@ -3017,11 +3017,11 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 228.5,
-            "bensin95_discount": 223.5,
+            "bensin95": 230.5,
+            "bensin95_discount": 225.5,
             "company": "Orkan",
-            "diesel": 217.6,
-            "diesel_discount": 212.6,
+            "diesel": 219.4,
+            "diesel_discount": 214.4,
             "geo": {
                 "lat": 64.131308,
                 "lon": -21.918266
@@ -3085,8 +3085,8 @@
             "bensin95": 228.2,
             "bensin95_discount": 223.2,
             "company": "Orkan",
-            "diesel": 218.2,
-            "diesel_discount": 213.2,
+            "diesel": 218.1,
+            "diesel_discount": 213.1,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
@@ -3147,11 +3147,11 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 228.5,
-            "bensin95_discount": 223.5,
+            "bensin95": 230.5,
+            "bensin95_discount": 225.5,
             "company": "Orkan",
-            "diesel": 217.6,
-            "diesel_discount": 212.6,
+            "diesel": 219.4,
+            "diesel_discount": 214.4,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
