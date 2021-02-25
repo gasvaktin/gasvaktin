@@ -2406,10 +2406,10 @@
             "name": "Hamraborg"
         },
         {
-            "bensin95": 199.1,
+            "bensin95": 201.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 197.5,
+            "diesel": 197.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2484,10 +2484,10 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 199.1,
+            "bensin95": 201.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 197.5,
+            "diesel": 197.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2523,8 +2523,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 231.5,
-            "bensin95_discount": 226.5,
+            "bensin95": 233.5,
+            "bensin95_discount": 228.5,
             "company": "Orkan",
             "diesel": 219.6,
             "diesel_discount": 214.6,
@@ -2679,10 +2679,10 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 199.1,
+            "bensin95": 201.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 197.5,
+            "diesel": 197.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 65.679649,
@@ -3082,11 +3082,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 229.8,
-            "bensin95_discount": 224.8,
+            "bensin95": 231.3,
+            "bensin95_discount": 226.3,
             "company": "Orkan",
-            "diesel": 220.1,
-            "diesel_discount": 215.1,
+            "diesel": 221.6,
+            "diesel_discount": 216.6,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
