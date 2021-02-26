@@ -2887,11 +2887,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 232.6,
-            "bensin95_discount": 227.6,
+            "bensin95": 234.6,
+            "bensin95_discount": 229.6,
             "company": "Orkan",
-            "diesel": 220.7,
-            "diesel_discount": 215.7,
+            "diesel": 222.3,
+            "diesel_discount": 217.3,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
@@ -2939,11 +2939,11 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 239.6,
-            "bensin95_discount": 234.6,
+            "bensin95": 241.6,
+            "bensin95_discount": 236.6,
             "company": "Orkan",
-            "diesel": 226.1,
-            "diesel_discount": 221.1,
+            "diesel": 227.6,
+            "diesel_discount": 222.6,
             "geo": {
                 "lat": 63.944998,
                 "lon": -21.01074
