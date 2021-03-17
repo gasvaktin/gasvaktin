@@ -40,11 +40,11 @@
             "name": "Bíldshöfði"
         },
         {
-            "bensin95": 240.7,
-            "bensin95_discount": 235.7,
+            "bensin95": 236.7,
+            "bensin95_discount": 231.7,
             "company": "Atlantsolía",
-            "diesel": 225.7,
-            "diesel_discount": 220.7,
+            "diesel": 223.7,
+            "diesel_discount": 218.7,
             "geo": {
                 "lat": 64.5675445,
                 "lon": -21.8934511
@@ -144,8 +144,8 @@
             "name": "Mosfellsbær"
         },
         {
-            "bensin95": 240.7,
-            "bensin95_discount": 235.7,
+            "bensin95": 238.7,
+            "bensin95_discount": 233.7,
             "company": "Atlantsolía",
             "diesel": 225.7,
             "diesel_discount": 220.7,
@@ -235,11 +235,11 @@
             "name": "Sprengisandur"
         },
         {
-            "bensin95": 240.7,
-            "bensin95_discount": 235.7,
+            "bensin95": 236.7,
+            "bensin95_discount": 231.7,
             "company": "Atlantsolía",
-            "diesel": 225.7,
-            "diesel_discount": 220.7,
+            "diesel": 223.7,
+            "diesel_discount": 218.7,
             "geo": {
                 "lat": 65.07071,
                 "lon": -22.733996
