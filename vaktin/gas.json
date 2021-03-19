@@ -2409,7 +2409,7 @@
             "bensin95": 205.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 200.4,
+            "diesel": 200.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2487,7 +2487,7 @@
             "bensin95": 205.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 200.4,
+            "diesel": 200.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2679,10 +2679,10 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 207.4,
+            "bensin95": 205.3,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 201.4,
+            "diesel": 200.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 65.679649,
