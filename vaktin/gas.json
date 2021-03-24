@@ -2172,11 +2172,11 @@
             "name": "Dalvík"
         },
         {
-            "bensin95": 241.7,
-            "bensin95_discount": 236.7,
+            "bensin95": 242.6,
+            "bensin95_discount": 237.6,
             "company": "Olís",
-            "diesel": 226.7,
-            "diesel_discount": 221.7,
+            "diesel": 226.6,
+            "diesel_discount": 221.6,
             "geo": {
                 "lat": 65.282451,
                 "lon": -14.425195
