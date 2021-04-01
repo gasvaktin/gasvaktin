@@ -4,6 +4,7 @@ import datetime
 import lxml.etree
 import os
 import requests
+from simplejson.errors import JSONDecodeError
 import sys
 
 try:
@@ -119,8 +120,29 @@ def get_individual_n1_prices():
     }
     res = session.post(url_eldsneyti_api, data='', headers=headers_eldsneyti_api)
     res.raise_for_status()
-    stations = res.json()
     prices = {}
+    # <n1_endpoint_down_fallback>
+    try:
+        stations = res.json()
+    except JSONDecodeError:
+        # 2021-04-01: N1 price endpoint seems to be down, adding fallback to current prices to
+        # continue monitoring the other companies while N1 endpoint is down.
+        logman.warning('Failed querying N1 endpoint, using current N1 price data as fallback.')
+        current_price_data_file = os.path.abspath(os.path.join(
+            os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
+        ))
+        current_price_data = utils.load_json(current_price_data_file)
+        for station in current_price_data['stations']:
+            if not station['key'].startswith('n1_'):
+                continue
+            prices[station['key']] = {
+                'bensin95': station['bensin95'],
+                'diesel': station['diesel'],
+                'bensin95_discount': station['bensin95_discount'],
+                'diesel_discount': station['diesel_discount']
+            }
+        return prices
+    # </n1_endpoint_down_fallback>
     names_ignore_words = ['Þjónustustöð', 'Sjálfsafgreiðslustöð', 'Sjálfsafgreiðsla']
     for station in stations:
         # <get-name>

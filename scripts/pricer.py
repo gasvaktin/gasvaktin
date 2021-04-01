@@ -1,7 +1,14 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import os
+import sys
 
+try:
+    import logman
+except ModuleNotFoundError:
+    sys.path.append('.')
+    sys.path.append('..')
+    import logman
 try:
     from scripts import globs
     from scripts import scraper
@@ -119,4 +126,6 @@ def main():
 
 
 if __name__ == '__main__':
+    if logman.Logger is None:
+        logman.init(role='cli', log_to_file=False)
     main()
