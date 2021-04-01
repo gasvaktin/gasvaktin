@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import datetime
+import json
 import lxml.etree
 import os
 import requests
-from simplejson.errors import JSONDecodeError
 import sys
+
+from simplejson.errors import JSONDecodeError as SimpleJSONDecodeError
 
 try:
     import logman
@@ -124,7 +126,7 @@ def get_individual_n1_prices():
     # <n1_endpoint_down_fallback>
     try:
         stations = res.json()
-    except JSONDecodeError:
+    except (json.JSONDecodeError, SimpleJSONDecodeError):
         # 2021-04-01: N1 price endpoint seems to be down, adding fallback to current prices to
         # continue monitoring the other companies while N1 endpoint is down.
         logman.warning('Failed querying N1 endpoint, using current N1 price data as fallback.')
