@@ -2029,11 +2029,11 @@
             "name": "Gullinbrú"
         },
         {
-            "bensin95": 243.2,
-            "bensin95_discount": 238.2,
+            "bensin95": 251.8,
+            "bensin95_discount": 246.8,
             "company": "Olís",
-            "diesel": 225.3,
-            "diesel_discount": 220.3,
+            "diesel": 233.8,
+            "diesel_discount": 228.8,
             "geo": {
                 "lat": 64.14767,
                 "lon": -21.924996
