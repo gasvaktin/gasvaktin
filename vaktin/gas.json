@@ -1554,19 +1554,6 @@
             "diesel": 226.6,
             "diesel_discount": 221.6,
             "geo": {
-                "lat": 64.675027,
-                "lon": -21.664718
-            },
-            "key": "ob_005",
-            "name": "Baulan"
-        },
-        {
-            "bensin95": 242.6,
-            "bensin95_discount": 237.6,
-            "company": "ÓB",
-            "diesel": 226.6,
-            "diesel_discount": 221.6,
-            "geo": {
                 "lat": 64.124787,
                 "lon": -21.832257
             },
@@ -1964,6 +1951,45 @@
             "name": "Sauðárkrókur Borgarflöt"
         },
         {
+            "bensin95": 242.6,
+            "bensin95_discount": 237.6,
+            "company": "ÓB",
+            "diesel": 226.6,
+            "diesel_discount": 221.6,
+            "geo": {
+                "lat": 64.1121,
+                "lon": -21.905693
+            },
+            "key": "ob_040",
+            "name": "Hamraborg"
+        },
+        {
+            "bensin95": 242.6,
+            "bensin95_discount": 237.6,
+            "company": "ÓB",
+            "diesel": 226.6,
+            "diesel_discount": 221.6,
+            "geo": {
+                "lat": 64.410148,
+                "lon": -21.597597
+            },
+            "key": "ob_041",
+            "name": "Ferstikla"
+        },
+        {
+            "bensin95": 242.6,
+            "bensin95_discount": 237.6,
+            "company": "ÓB",
+            "diesel": 226.6,
+            "diesel_discount": 221.6,
+            "geo": {
+                "lat": 64.14767,
+                "lon": -21.924996
+            },
+            "key": "ob_042",
+            "name": "Klöpp"
+        },
+        {
             "bensin95": 246.8,
             "bensin95_discount": 241.8,
             "company": "Olís",
@@ -2027,19 +2053,6 @@
             },
             "key": "ol_005",
             "name": "Gullinbrú"
-        },
-        {
-            "bensin95": 251.8,
-            "bensin95_discount": 246.8,
-            "company": "Olís",
-            "diesel": 233.8,
-            "diesel_discount": 228.8,
-            "geo": {
-                "lat": 64.14767,
-                "lon": -21.924996
-            },
-            "key": "ol_008",
-            "name": "Klöpp"
         },
         {
             "bensin95": 246.8,
@@ -2133,19 +2146,6 @@
             "name": "Arnarstapi"
         },
         {
-            "bensin95": 251.8,
-            "bensin95_discount": 246.8,
-            "company": "Olís",
-            "diesel": 233.8,
-            "diesel_discount": 228.8,
-            "geo": {
-                "lat": 64.675027,
-                "lon": -21.664718
-            },
-            "key": "ol_016",
-            "name": "Baulan"
-        },
-        {
             "bensin95": 241.8,
             "bensin95_discount": 236.8,
             "company": "Olís",
@@ -2183,19 +2183,6 @@
             },
             "key": "ol_019",
             "name": "Fellabær"
-        },
-        {
-            "bensin95": 246.8,
-            "bensin95_discount": 241.8,
-            "company": "Olís",
-            "diesel": 228.8,
-            "diesel_discount": 223.8,
-            "geo": {
-                "lat": 64.410148,
-                "lon": -21.597597
-            },
-            "key": "ol_020",
-            "name": "Ferstikla"
         },
         {
             "bensin95": 246.8,
@@ -2315,19 +2302,6 @@
             "name": "Reyðarfjörður"
         },
         {
-            "bensin95": 251.8,
-            "bensin95_discount": 246.8,
-            "company": "Olís",
-            "diesel": 233.8,
-            "diesel_discount": 228.8,
-            "geo": {
-                "lat": 65.751848,
-                "lon": -19.65089
-            },
-            "key": "ol_031",
-            "name": "Sauðárkrókur"
-        },
-        {
             "bensin95": 246.8,
             "bensin95_discount": 241.8,
             "company": "Olís",
@@ -2391,19 +2365,6 @@
             },
             "key": "ol_036",
             "name": "Vestmannaeyjar"
-        },
-        {
-            "bensin95": 242.6,
-            "bensin95_discount": 237.6,
-            "company": "ÓB",
-            "diesel": 226.6,
-            "diesel_discount": 221.6,
-            "geo": {
-                "lat": 64.1121,
-                "lon": -21.905693
-            },
-            "key": "ol_040",
-            "name": "Hamraborg"
         },
         {
             "bensin95": 205.3,
