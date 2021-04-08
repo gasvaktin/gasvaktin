@@ -34,13 +34,6 @@
         },
         "name": "Barðastaðir"
     },
-    "ob_005": {
-        "geo": {
-            "lat": 64.675027,
-            "lon": -21.664718
-        },
-        "name": "Baulan"
-    },
     "ob_006": {
         "geo": {
             "lat": 64.124787,
@@ -258,11 +251,25 @@
         },
         "name": "Sauðárkrókur Borgarflöt"
     },
-    "ol_040": {
+    "ob_040": {
         "geo": {
             "lat": 64.112100,
             "lon": -21.905693
         },
         "name": "Hamraborg"
+    },
+    "ob_041": {
+        "geo": {
+            "lat": 64.410148,
+            "lon": -21.597597
+        },
+        "name": "Ferstikla"
+    },
+    "ob_042": {
+        "geo": {
+            "lat": 64.147670,
+            "lon": -21.924996
+        },
+        "name": "Klöpp"
     }
 }

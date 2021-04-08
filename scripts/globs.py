@@ -53,7 +53,6 @@ ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_000', 'ao_008', 'ao_017']
 
 OLIS_MINIMUM_DISCOUNT = 5
 OLIS_LOCATION_RELATION = {
-    'Baula': 'ol_016',
     'Borgarnes': 'ol_017',
     'Akranes, Esjubraut': 'ol_012',
     'Akranes, Umboð': 'ol_013',
@@ -64,13 +63,11 @@ OLIS_LOCATION_RELATION = {
     'Básinn': 'ol_025',
     'Dalvík Bensínstöð': 'ol_018',
     'Fellabær': 'ol_019',
-    'Ferstikla Veitingaskáli': 'ol_020',
     'Garðabær': 'ol_004',
     'Gullinbrú': 'ol_005',
     'Hella - bensínstöð': 'ol_021',
     'Hornafjörður bensínst.': 'ol_024',
     'Húsavík': 'ol_023',
-    'Klöpp': 'ol_008',
     'Langitangi': 'ol_009',
     'Litla-Kaffistofan': 'ol_027',
     'Mjódd': 'ol_000',
@@ -78,7 +75,6 @@ OLIS_LOCATION_RELATION = {
     'Norðlingaholt': 'ol_010',
     'Ólafsfjörður, bensínstöð': 'ol_029',
     'Reyðarfjörður': 'ol_030',
-    'Sauðárkrókur - þjónustust.': 'ol_031',
     'Selfoss': 'ol_032',
     'Siglufjörður bensínstöð': 'ol_033',
     'Skagaströnd bensínst.': 'ol_034',
@@ -97,7 +93,6 @@ OB_LOCATION_RELATION = {
     'Akureyri Hlíðarbraut': 'ob_001',
     'Akureyri BSÓ': 'ob_002',
     'Barðastaðir': 'ob_004',
-    'Baula': 'ob_005',
     'Bíldshöfða': 'ob_006',
     'Blönduós': 'ob_007',
     'Bolungarvík': 'ob_008',
@@ -127,7 +122,12 @@ OB_LOCATION_RELATION = {
     'Vík í Mýrdal': 'ob_037',
     'Akureyri Sjafnargötu': 'ob_038',
     'ÓB Sauðárkókur': 'ob_039',
+    'ÓB Sauðárkrókur': 'ob_039',
+    'Sauðárkókur': 'ob_039',
+    'Sauðárkrókur': 'ob_039',
     'Hamraborg': 'ob_040',
+    'Ferstikla': 'ob_041',
+    'Klöpp': 'ob_042',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
