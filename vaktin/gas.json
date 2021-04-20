@@ -2484,8 +2484,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 240.6,
-            "bensin95_discount": 235.6,
+            "bensin95": 241.6,
+            "bensin95_discount": 236.6,
             "company": "Orkan",
             "diesel": 225.6,
             "diesel_discount": 220.6,
@@ -3043,11 +3043,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 234.2,
-            "bensin95_discount": 229.2,
+            "bensin95": 235.2,
+            "bensin95_discount": 230.2,
             "company": "Orkan",
-            "diesel": 219.6,
-            "diesel_discount": 214.6,
+            "diesel": 221.6,
+            "diesel_discount": 216.6,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
