@@ -224,7 +224,7 @@ ORKAN_LOCATION_RELATION = {
     'Hveragerði, Sunnumörk': 'or_063',
     'Hraunbær': 'or_064'
 }
-ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021']
+ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048']
 # Orkan has a 3-step discount system controlled by your spendings on gas from
 # them in the previous motnth
 # See more info here: https://www.orkan.is/Afslattarthrep
