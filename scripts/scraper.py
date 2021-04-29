@@ -306,6 +306,8 @@ def get_individual_ob_prices():
             continue  # throw this one for now, only diesel, needs investigation
         if name == 'Keflavíkurflugvöllur':
             continue  # tempfix
+        if name == 'Akranes, Umboð':
+            continue  # tempfix
         station_key = globs.OB_LOCATION_RELATION[name]
         bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
         diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
