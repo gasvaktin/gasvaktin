@@ -2107,11 +2107,11 @@
             "name": "Esjubraut Akranes"
         },
         {
-            "bensin95": 246.8,
-            "bensin95_discount": 241.8,
+            "bensin95": 252.8,
+            "bensin95_discount": 247.8,
             "company": "Olís",
-            "diesel": 225.9,
-            "diesel_discount": 220.9,
+            "diesel": 233.8,
+            "diesel_discount": 228.8,
             "geo": {
                 "lat": 64.313949,
                 "lon": -22.087598
