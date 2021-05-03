@@ -2461,8 +2461,8 @@
             "bensin95": 229.6,
             "bensin95_discount": 224.6,
             "company": "Orkan",
-            "diesel": 219.6,
-            "diesel_discount": 214.6,
+            "diesel": 221.7,
+            "diesel_discount": 216.7,
             "geo": {
                 "lat": 64.131896,
                 "lon": -21.917131
@@ -2484,8 +2484,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 240.6,
-            "bensin95_discount": 235.6,
+            "bensin95": 234.5,
+            "bensin95_discount": 229.5,
             "company": "Orkan",
             "diesel": 225.6,
             "diesel_discount": 220.6,
@@ -3056,8 +3056,8 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 241.6,
-            "bensin95_discount": 236.6,
+            "bensin95": 234.5,
+            "bensin95_discount": 229.5,
             "company": "Orkan",
             "diesel": 226.5,
             "diesel_discount": 221.5,
@@ -3108,8 +3108,8 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 239.6,
-            "bensin95_discount": 234.6,
+            "bensin95": 236.6,
+            "bensin95_discount": 231.6,
             "company": "Orkan",
             "diesel": 223.8,
             "diesel_discount": 218.8,
