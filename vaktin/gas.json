@@ -404,11 +404,11 @@
             "name": "Holtagarðar"
         },
         {
-            "bensin95": 247.9,
-            "bensin95_discount": 242.9,
+            "bensin95": 232.9,
+            "bensin95_discount": 227.9,
             "company": "N1",
-            "diesel": 229.9,
-            "diesel_discount": 224.9,
+            "diesel": 214.9,
+            "diesel_discount": 209.9,
             "geo": {
                 "lat": 64.12358487,
                 "lon": -21.82642221
