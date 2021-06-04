@@ -154,7 +154,7 @@ OB_EXTRA_DISCOUNT_UNTIL = '2020-02-29T23:59'
 # Afslattur med lyklum og kortum gildir ekki a thessum stodvum. Allir lykil-og korthafar Olis og
 # OB njota eftir sem adur afslattar af eldsneyti og odrum vorum a Olis og OB stodvum um land allt.
 # ------------------------------------------------------------------------------------------------
-OB_DISCOUNTLESS_STATIONS = ['ob_001', 'ob_003', 'ob_012', 'ob_010']
+OB_DISCOUNTLESS_STATIONS = ['ob_001', 'ob_003', 'ob_012', 'ob_010', 'ob_040']
 
 ORKAN_LOCATION_RELATION = {
     'Dalvegur': 'or_000',
@@ -343,6 +343,7 @@ N1_LOCATION_RELATION = {
     'Flókalundur': 'n1_076',
     'Ægisíða': 'n1_077',
     'Knútstöð Keflavíkurflugvelli': 'n1_078',
+    'Vallarheiði': 'n1_078',
     'Norðlingaholt': 'n1_079',
     'Víðihlíð': 'n1_080',
     'Lindir': 'n1_081',
