@@ -131,16 +131,16 @@ OB_LOCATION_RELATION = {
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
-# In 2020-02 the stations are the following:
-# https://www.facebook.com/ob.bensin/photos/a.208957995809394/2789036497801518/
-# * ÓB Varmahlíð (ob_034)
+# In 2021-06 the stations are the following:
+# https://www.facebook.com/ob.bensin/posts/4082211708483984
+# * ÓB Minni-Borg (ob_022)
+# * ÓB Neskaupstað (ob_023)
+# * ÓB Reyðarfirði (ob_026)
 # * ÓB Vestmannaeyjum (ob_032)
-# * ÓB Blönduósi (ob_007)
-# * ÓB Neskaupsstað (ob_023)
-# * ÓB Ísafirði (ob_018)
-OB_EXTRA_DISCOUNT_STATIONS = ['ob_034', 'ob_032', 'ob_007', 'ob_023', 'ob_018']
+# * ÓB Þorlákshöfn (ob_033)
+OB_EXTRA_DISCOUNT_STATIONS = ['ob_022', 'ob_023', 'ob_026', 'ob_032', 'ob_033']
 OB_EXTRA_DISCOUNT_AMOUNT = 15
-OB_EXTRA_DISCOUNT_UNTIL = '2020-02-29T23:59'
+OB_EXTRA_DISCOUNT_UNTIL = '2021-06-30T23:59'
 # ------------------------------------------------------------------------------------------------
 # OB joins the discountless madness
 # https://www.facebook.com/ob.bensin/photos/a.208957995809394/2301004636604709/
