@@ -20315,6 +20315,18 @@
             "median_diesel_discount": 224.0,
             "stations_count": 64,
             "timestamp": "2021-06-18T08:15"
+        },
+        {
+            "mean_bensin95": 242.8,
+            "mean_bensin95_discount": 240.2,
+            "mean_diesel": 227.0,
+            "mean_diesel_discount": 223.8,
+            "median_bensin95": 247.5,
+            "median_bensin95_discount": 242.5,
+            "median_diesel": 230.0,
+            "median_diesel_discount": 225.0,
+            "stations_count": 64,
+            "timestamp": "2021-06-21T12:15"
         }
     ],
     "ox": [
