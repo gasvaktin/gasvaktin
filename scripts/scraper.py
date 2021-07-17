@@ -189,12 +189,22 @@ def get_individual_n1_prices():
     most_frequent_diesel_price = float(max(price_frequency['diesel']))
     for key in prices:
         if prices[key]['bensin95'] == 0.0:
+            logman.warning('N1 bensin zero price for key "%s", using fallback.' % (key, ))
             prices[key]['bensin95'] = most_frequent_bensin_price
             prices[key]['bensin95_discount'] = most_frequent_bensin_price - globs.N1_DISCOUNT
         if prices[key]['diesel'] == 0.0:
+            logman.warning('N1 diesel zero price for key "%s", using fallback.' % (key, ))
             prices[key]['diesel'] = most_frequent_diesel_price
             prices[key]['diesel_discount'] = most_frequent_diesel_price - globs.N1_DISCOUNT
     # </zero-price-problem>
+    # <stórihjalli-station-missing>
+    # dunno why, but propably not closed down and known minor price deviant, anchoring price to
+    # another known minor price deviant N1 station (N1 Fossvogur, Kringlumýrarbraut) in the near
+    # vicinity
+    if 'n1_006' not in prices:
+        logman.warning('N1 Stórihjalli station missing, using Fossvogur tether fallback.')
+        prices['n1_006'] = prices['n1_005']
+    # </stórihjalli-station-missing>
     return prices
 
 

@@ -271,5 +271,12 @@
             "lon": -21.924996
         },
         "name": "Klöpp"
+    },
+    "ob_043": {
+        "geo": {
+            "lat": 64.057639,
+            "lon": -21.501537
+        },
+        "name": "Litla Kaffistofan"
     }
 }
