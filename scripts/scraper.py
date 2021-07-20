@@ -35,12 +35,8 @@ def get_individual_atlantsolia_prices():
         key = relation[div_price[0][0].text]
         bensin95 = float(div_price[1][0].text.replace(',', '.'))
         diesel = float(div_price[2][0].text.replace(',', '.'))
-        bensin95_discount = int(
-            (bensin95 - globs.ATLANTSOLIA_MINIMUM_DISCOUNT) * 10
-        ) / 10.0
-        diesel_discount = int(
-            (diesel - globs.ATLANTSOLIA_MINIMUM_DISCOUNT) * 10
-        ) / 10.0
+        bensin95_discount = round((bensin95 - globs.ATLANTSOLIA_MINIMUM_DISCOUNT), 1)
+        diesel_discount = round((diesel - globs.ATLANTSOLIA_MINIMUM_DISCOUNT), 1)
         if key in globs.ATLANTSOLIA_DISCOUNTLESS_STATIONS:
             bensin95_discount = None
             diesel_discount = None
@@ -161,8 +157,8 @@ def get_individual_n1_prices():
             bensin95_discount = None
             diesel_discount = None
         else:
-            bensin95_discount = bensin95 - globs.N1_DISCOUNT
-            diesel_discount = diesel - globs.N1_DISCOUNT
+            bensin95_discount = round((bensin95 - globs.N1_DISCOUNT), 1)
+            diesel_discount = round((diesel - globs.N1_DISCOUNT), 1)
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
@@ -191,11 +187,15 @@ def get_individual_n1_prices():
         if prices[key]['bensin95'] == 0.0:
             logman.warning('N1 bensin zero price for key "%s", using fallback.' % (key, ))
             prices[key]['bensin95'] = most_frequent_bensin_price
-            prices[key]['bensin95_discount'] = most_frequent_bensin_price - globs.N1_DISCOUNT
+            prices[key]['bensin95_discount'] = round(
+                (most_frequent_bensin_price - globs.N1_DISCOUNT), 1
+            )
         if prices[key]['diesel'] == 0.0:
             logman.warning('N1 diesel zero price for key "%s", using fallback.' % (key, ))
             prices[key]['diesel'] = most_frequent_diesel_price
-            prices[key]['diesel_discount'] = most_frequent_diesel_price - globs.N1_DISCOUNT
+            prices[key]['diesel_discount'] = round(
+                (most_frequent_diesel_price - globs.N1_DISCOUNT), 1
+            )
     # </zero-price-problem>
     # <stórihjalli-station-missing>
     # dunno why, but propably not closed down and known minor price deviant, anchoring price to
@@ -286,8 +286,8 @@ def get_individual_olis_prices():
         else:
             bensin95 = data['highest']['bensin95']
             diesel = data['highest']['diesel']
-        bensin95_discount = int((bensin95 - globs.OLIS_MINIMUM_DISCOUNT) * 10) / 10.0
-        diesel_discount = int((diesel - globs.OLIS_MINIMUM_DISCOUNT) * 10) / 10.0
+        bensin95_discount = round((bensin95 - globs.OLIS_MINIMUM_DISCOUNT), 1)
+        diesel_discount = round((diesel - globs.OLIS_MINIMUM_DISCOUNT), 1)
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
@@ -349,9 +349,9 @@ def get_individual_ob_prices():
             diesel_discount = None
         if key in globs.OB_EXTRA_DISCOUNT_STATIONS and now < end:
             if bensin95_discount is not None:
-                bensin95_discount = int((bensin95 - globs.OB_EXTRA_DISCOUNT_AMOUNT) * 10) / 10.0
+                bensin95_discount = round((bensin95 - globs.OB_EXTRA_DISCOUNT_AMOUNT), 1)
             if diesel_discount is not None:
-                diesel_discount = int((diesel - globs.OB_EXTRA_DISCOUNT_AMOUNT) * 10) / 10.0
+                diesel_discount = round((diesel - globs.OB_EXTRA_DISCOUNT_AMOUNT), 1)
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
