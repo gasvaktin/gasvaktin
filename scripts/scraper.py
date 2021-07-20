@@ -198,12 +198,20 @@ def get_individual_n1_prices():
             )
     # </zero-price-problem>
     # <stórihjalli-station-missing>
-    # dunno why, but propably not closed down and known minor price deviant, anchoring price to
-    # another known minor price deviant N1 station (N1 Fossvogur, Kringlumýrarbraut) in the near
-    # vicinity
+    # dunno why, still open and known minor yet considerable price deviant, anchoring price to a
+    # hardcoded deviance from most frequent price based on real world observations.
     if 'n1_006' not in prices:
-        logman.warning('N1 Stórihjalli station missing, using Fossvogur tether fallback.')
-        prices['n1_006'] = prices['n1_005']
+        bensin95 = round((most_frequent_bensin_price - 13), 1)
+        bensin95_discount = round((bensin95 - globs.N1_DISCOUNT), 1)
+        diesel = round((most_frequent_diesel_price - 5), 1)
+        diesel_discount = round((diesel - globs.N1_DISCOUNT), 1)
+        logman.warning('N1 Stórihjalli station missing, using hardcoded deviance fallback.')
+        prices['n1_006'] = {
+            'bensin95': bensin95,
+            'diesel': diesel,
+            'bensin95_discount': bensin95_discount,
+            'diesel_discount': diesel_discount
+        }
     # </stórihjalli-station-missing>
     return prices
 
