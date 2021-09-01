@@ -216,13 +216,15 @@ ORKAN_LOCATION_RELATION = {
     'Miklabraut v. Kringluna': 'or_056',
     'Eiðistorg': 'or_057',
     'Skemmuvegur': 'or_058',
+    'Smiðjuvegur': 'or_058',  # duplicate name on website? where else could this be?
     'Spöngin': 'or_059',
     'Egilsstaðir, Miðvangi': 'or_060',
     'Akureyri, Kjarnagata': 'or_061',
     'Kjarnagata, Akureyri': 'or_061',
     'Akranes, Smiðjuvöllum': 'or_062',
     'Hveragerði, Sunnumörk': 'or_063',
-    'Hraunbær': 'or_064'
+    'Hraunbær': 'or_064',
+    'Baulan': 'or_065'
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048']
 # Orkan has a 3-step discount system controlled by your spendings on gas from
@@ -271,6 +273,7 @@ N1_LOCATION_RELATION = {
     'Borgartún': 'n1_004',
     'Fossvogur': 'n1_005',
     'Stórihjalli': 'n1_006',
+    'Verslun Stórihjalli': 'n1_006',
     'Lækjargata': 'n1_007',
     'Hringbraut': 'n1_008',
     'Stóragerði': 'n1_009',
