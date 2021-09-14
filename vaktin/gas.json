@@ -40,8 +40,8 @@
             "name": "Bíldshöfði"
         },
         {
-            "bensin95": 249.1,
-            "bensin95_discount": 244.1,
+            "bensin95": 248.1,
+            "bensin95_discount": 243.1,
             "company": "Atlantsolía",
             "diesel": 227.7,
             "diesel_discount": 222.7,
@@ -144,8 +144,8 @@
             "name": "Mosfellsbær"
         },
         {
-            "bensin95": 246.7,
-            "bensin95_discount": 241.7,
+            "bensin95": 245.7,
+            "bensin95_discount": 240.7,
             "company": "Atlantsolía",
             "diesel": 223.7,
             "diesel_discount": 218.7,
@@ -170,8 +170,8 @@
             "name": "Öskjuhlíð"
         },
         {
-            "bensin95": 250.9,
-            "bensin95_discount": 245.9,
+            "bensin95": 249.9,
+            "bensin95_discount": 244.9,
             "company": "Atlantsolía",
             "diesel": 234.9,
             "diesel_discount": 229.9,
@@ -235,8 +235,8 @@
             "name": "Sprengisandur"
         },
         {
-            "bensin95": 249.1,
-            "bensin95_discount": 244.1,
+            "bensin95": 248.1,
+            "bensin95_discount": 243.1,
             "company": "Atlantsolía",
             "diesel": 227.7,
             "diesel_discount": 222.7,
@@ -2432,11 +2432,11 @@
             "name": "Laugavegur"
         },
         {
-            "bensin95": 257.8,
-            "bensin95_discount": 252.8,
+            "bensin95": 258.8,
+            "bensin95_discount": 253.8,
             "company": "Orkan",
-            "diesel": 236.8,
-            "diesel_discount": 231.8,
+            "diesel": 237.8,
+            "diesel_discount": 232.8,
             "geo": {
                 "lat": 64.13266,
                 "lon": -21.893096
@@ -3030,11 +3030,11 @@
             "name": "Suðurfell"
         },
         {
-            "bensin95": 257.8,
-            "bensin95_discount": 252.8,
+            "bensin95": 258.8,
+            "bensin95_discount": 253.8,
             "company": "Orkan",
-            "diesel": 236.8,
-            "diesel_discount": 231.8,
+            "diesel": 237.8,
+            "diesel_discount": 232.8,
             "geo": {
                 "lat": 64.123847,
                 "lon": -21.804124
