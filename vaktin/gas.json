@@ -3030,11 +3030,11 @@
             "name": "Suðurfell"
         },
         {
-            "bensin95": 259.8,
-            "bensin95_discount": 254.8,
+            "bensin95": 260.3,
+            "bensin95_discount": 255.3,
             "company": "Orkan",
-            "diesel": 241.3,
-            "diesel_discount": 236.3,
+            "diesel": 242.3,
+            "diesel_discount": 237.3,
             "geo": {
                 "lat": 64.123847,
                 "lon": -21.804124
