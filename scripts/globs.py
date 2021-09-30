@@ -225,7 +225,8 @@ ORKAN_LOCATION_RELATION = {
     'Akranes, Smiðjuvöllum': 'or_062',
     'Hveragerði, Sunnumörk': 'or_063',
     'Hraunbær': 'or_064',
-    'Baulan': 'or_065'
+    'Baulan': 'or_065',
+    'Baula': 'or_065',
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048']
 # Orkan has a 3-step discount system controlled by your spendings on gas from
