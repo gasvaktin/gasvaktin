@@ -228,6 +228,7 @@ ORKAN_LOCATION_RELATION = {
     'Baulan': 'or_065',
     'Baula': 'or_065',
     'Fellsmúli': 'or_066',
+    'Salavegur': 'or_067',
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048']
 # Orkan has a 3-step discount system controlled by your spendings on gas from

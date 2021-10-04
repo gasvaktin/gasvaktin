@@ -398,6 +398,9 @@ def get_individual_orkan_prices():
                 'bensin95_discount': bensin95_discount,
                 'diesel_discount': diesel_discount
             }
+    if 'or_067' not in prices:
+        # Salavegur missing from webpage, irl observation shows same price as in Fellsmuli
+        prices['or_067'] = prices['or_066'].copy()
     return prices
 
 
