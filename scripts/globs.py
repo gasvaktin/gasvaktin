@@ -227,6 +227,7 @@ ORKAN_LOCATION_RELATION = {
     'Hraunbær': 'or_064',
     'Baulan': 'or_065',
     'Baula': 'or_065',
+    'Fellsmúli': 'or_066',
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048']
 # Orkan has a 3-step discount system controlled by your spendings on gas from
@@ -361,8 +362,7 @@ DAELAN_LOCATION_RELATION = {
     'Hæðasmári': 'dn_002',
     'Salavegur': 'dn_003',
     'Stekkjarbakki, Mjódd': 'dn_001',
-    'Holtagarðar': 'dn_004',
-    'Fellsmúli': 'dn_000'
+    'Holtagarðar': 'dn_004'
 }
 
 BROWSERS_UA = [
