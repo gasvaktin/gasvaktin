@@ -2458,11 +2458,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 259.2,
-            "bensin95_discount": 254.2,
+            "bensin95": 261.2,
+            "bensin95_discount": 256.2,
             "company": "Orkan",
-            "diesel": 244.8,
-            "diesel_discount": 239.8,
+            "diesel": 245.8,
+            "diesel_discount": 240.8,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2874,11 +2874,11 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 257.3,
-            "bensin95_discount": 252.3,
+            "bensin95": 259.3,
+            "bensin95_discount": 254.3,
             "company": "Orkan",
-            "diesel": 245.8,
-            "diesel_discount": 240.8,
+            "diesel": 246.8,
+            "diesel_discount": 241.8,
             "geo": {
                 "lat": 63.944998,
                 "lon": -21.01074
