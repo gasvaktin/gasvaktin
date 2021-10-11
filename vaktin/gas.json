@@ -2822,11 +2822,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 253.1,
-            "bensin95_discount": 248.1,
+            "bensin95": 255.1,
+            "bensin95_discount": 250.1,
             "company": "Orkan",
-            "diesel": 234.6,
-            "diesel_discount": 229.6,
+            "diesel": 235.6,
+            "diesel_discount": 230.6,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
@@ -3030,11 +3030,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 259.3,
-            "bensin95_discount": 254.3,
+            "bensin95": 261.3,
+            "bensin95_discount": 256.3,
             "company": "Orkan",
-            "diesel": 245.8,
-            "diesel_discount": 240.8,
+            "diesel": 246.8,
+            "diesel_discount": 241.8,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
