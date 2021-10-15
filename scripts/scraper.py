@@ -380,6 +380,10 @@ def get_individual_orkan_prices():
     for territory in territories:
         for station in territory:
             station_name = station[0].text.strip()
+            if station_name == 'Vatnagarðar':
+                # apparently Orkan is rebranding the rest of the Daelan stations
+                # I'll take a closer look after the weekend
+                continue
             bensin95 = float(station[1].text.replace(',', '.').replace(' jamm', ''))
             diesel = float(station[2].text.replace(',', '.').replace(' jamm', ''))
             key = globs.ORKAN_LOCATION_RELATION[station_name]
