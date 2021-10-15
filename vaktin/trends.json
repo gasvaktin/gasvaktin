@@ -3695,6 +3695,18 @@
             "median_diesel_discount": 244.9,
             "stations_count": 25,
             "timestamp": "2021-10-11T13:15"
+        },
+        {
+            "mean_bensin95": 262.0,
+            "mean_bensin95_discount": 261.1,
+            "mean_diesel": 245.5,
+            "mean_diesel_discount": 243.5,
+            "median_bensin95": 269.4,
+            "median_bensin95_discount": 264.4,
+            "median_diesel": 250.9,
+            "median_diesel_discount": 245.9,
+            "stations_count": 25,
+            "timestamp": "2021-10-15T22:30"
         }
     ],
     "co": [
@@ -10421,6 +10433,18 @@
             "median_diesel_discount": 247.9,
             "stations_count": 83,
             "timestamp": "2021-10-11T10:00"
+        },
+        {
+            "mean_bensin95": 268.1,
+            "mean_bensin95_discount": 264.9,
+            "mean_diesel": 251.7,
+            "mean_diesel_discount": 248.1,
+            "median_bensin95": 270.9,
+            "median_bensin95_discount": 265.9,
+            "median_diesel": 253.9,
+            "median_diesel_discount": 248.9,
+            "stations_count": 83,
+            "timestamp": "2021-10-15T22:30"
         }
     ],
     "ob": [
@@ -13807,6 +13831,18 @@
             "median_diesel_discount": 245.9,
             "stations_count": 40,
             "timestamp": "2021-10-12T16:30"
+        },
+        {
+            "mean_bensin95": 262.8,
+            "mean_bensin95_discount": 262.4,
+            "mean_diesel": 246.7,
+            "mean_diesel_discount": 245.0,
+            "median_bensin95": 269.4,
+            "median_bensin95_discount": 264.4,
+            "median_diesel": 251.9,
+            "median_diesel_discount": 246.9,
+            "stations_count": 40,
+            "timestamp": "2021-10-15T22:30"
         }
     ],
     "ol": [
@@ -16449,6 +16485,18 @@
             "median_diesel_discount": 247.8,
             "stations_count": 28,
             "timestamp": "2021-10-11T12:00"
+        },
+        {
+            "mean_bensin95": 270.8,
+            "mean_bensin95_discount": 265.8,
+            "mean_diesel": 253.9,
+            "mean_diesel_discount": 248.9,
+            "median_bensin95": 270.8,
+            "median_bensin95_discount": 265.8,
+            "median_diesel": 253.8,
+            "median_diesel_discount": 248.8,
+            "stations_count": 28,
+            "timestamp": "2021-10-15T22:30"
         }
     ],
     "or": [
@@ -22403,6 +22451,18 @@
             "median_diesel_discount": 245.8,
             "stations_count": 67,
             "timestamp": "2021-10-11T14:15"
+        },
+        {
+            "mean_bensin95": 264.9,
+            "mean_bensin95_discount": 262.1,
+            "mean_diesel": 249.2,
+            "mean_diesel_discount": 245.9,
+            "median_bensin95": 269.3,
+            "median_bensin95_discount": 264.3,
+            "median_diesel": 251.8,
+            "median_diesel_discount": 246.8,
+            "stations_count": 67,
+            "timestamp": "2021-10-15T22:30"
         }
     ],
     "ox": [
