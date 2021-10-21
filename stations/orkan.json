@@ -481,5 +481,12 @@
             "lon": -21.84930146
         },
         "name": "Vatnagarðar"
+    },
+    "or_069": {
+        "geo": {
+            "lat": 64.112573,
+            "lon": -21.842023
+        },
+        "name": "Stekkjarbakki"
     }
 }

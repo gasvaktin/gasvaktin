@@ -231,6 +231,8 @@ def get_individual_daelan_prices():
         if column[0].text == 'Bensínstöð':
             continue  # skip header
         station_name = column[0].text
+        if station_name == 'Stekkjarbakki, Mjódd':
+            continue
         bensin_txt = column[1].text
         diesel_txt = column[2].text
         bensin95 = float(bensin_txt.replace(' kr.', '').replace(',', '.'))
