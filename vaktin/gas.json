@@ -2692,8 +2692,8 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 258.7,
-            "bensin95_discount": 253.7,
+            "bensin95": 258.5,
+            "bensin95_discount": 253.5,
             "company": "Orkan",
             "diesel": 241.6,
             "diesel_discount": 236.6,
@@ -2757,8 +2757,8 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 258.7,
-            "bensin95_discount": 253.7,
+            "bensin95": 258.5,
+            "bensin95_discount": 253.5,
             "company": "Orkan",
             "diesel": 241.6,
             "diesel_discount": 236.6,
