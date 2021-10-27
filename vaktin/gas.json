@@ -3199,11 +3199,11 @@
             "name": "Vatnagarðar"
         },
         {
-            "bensin95": 248.9,
-            "bensin95_discount": 243.9,
+            "bensin95": 250.9,
+            "bensin95_discount": 245.9,
             "company": "Orkan",
-            "diesel": 239.9,
-            "diesel_discount": 234.9,
+            "diesel": 240.9,
+            "diesel_discount": 235.9,
             "geo": {
                 "lat": 64.112573,
                 "lon": -21.842023
