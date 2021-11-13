@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 import datetime
 import json
 import lxml.etree
@@ -216,37 +215,6 @@ def get_individual_n1_prices():
     return prices
 
 
-def get_individual_daelan_prices():
-    headers = utils.headers()
-    session = requests.Session()
-    res = session.get('https://daelan.is/', headers=headers)
-    html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
-    price_info_container = html.find('.//div[@id="gas-price-info-container"]')
-    bensin95 = None
-    diesel = None
-    prices = {}
-    for column in price_info_container.findall('.//tr'):
-        if len(column.getchildren()) != 3:
-            continue
-        if column[0].text == 'Bensínstöð':
-            continue  # skip header
-        station_name = column[0].text
-        if station_name == 'Stekkjarbakki, Mjódd':
-            continue
-        bensin_txt = column[1].text
-        diesel_txt = column[2].text
-        bensin95 = float(bensin_txt.replace(' kr.', '').replace(',', '.'))
-        diesel = float(diesel_txt.replace(' kr.', '').replace(',', '.'))
-        key = globs.DAELAN_LOCATION_RELATION[station_name]
-        prices[key] = {
-            'bensin95': bensin95,
-            'diesel': diesel,
-            'bensin95_discount': None,
-            'diesel_discount': None
-        }
-    return prices
-
-
 def get_individual_olis_prices():
     url = 'https://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers())
@@ -352,8 +320,8 @@ def get_individual_ob_prices():
         else:
             bensin95 = data['highest']['bensin95']
             diesel = data['highest']['diesel']
-        bensin95_discount = int((bensin95 - globs.OB_MINIMUM_DISCOUNT) * 10) / 10.0
-        diesel_discount = int((diesel - globs.OB_MINIMUM_DISCOUNT) * 10) / 10.0
+        bensin95_discount = round((bensin95 - globs.OB_MINIMUM_DISCOUNT), 1)
+        diesel_discount = round((diesel - globs.OB_MINIMUM_DISCOUNT), 1)
         if key in globs.OB_DISCOUNTLESS_STATIONS:
             bensin95_discount = None
             diesel_discount = None
@@ -400,9 +368,13 @@ def get_individual_orkan_prices():
                 'bensin95_discount': bensin95_discount,
                 'diesel_discount': diesel_discount
             }
-    if 'or_067' not in prices:
-        # Salavegur missing from webpage, irl observation shows same price as in Fellsmuli
-        prices['or_067'] = prices['or_066'].copy()
+    if 'or_070' not in prices:
+        # Haedarsmari missing from webpage, irl price indicates discountless station, nowever irl
+        # price does not match the other discountless Orkan stations though, so we're hardcoding a
+        # fixed price based on another discountless station for now ..
+        prices['or_070'] = prices['or_048'].copy()
+        prices['or_070']['bensin95'] = round(prices['or_070']['bensin95'] + 3.1, 1)
+        prices['or_070']['diesel'] = round(prices['or_070']['diesel'] + 3.4, 1)
     return prices
 
 
@@ -416,9 +388,6 @@ def testrun(selection):
     if run_all or 'co' in selection:
         logman.info('Costco')
         logman.info(get_global_costco_prices())
-    if run_all or 'dn' in selection:
-        logman.info('Dælan')
-        logman.info(get_individual_daelan_prices())
     if run_all or 'n1' in selection:
         logman.info('N1')
         logman.info(get_individual_n1_prices())

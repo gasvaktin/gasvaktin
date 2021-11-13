@@ -59,7 +59,7 @@ Atlantsolía has a list of its stations [here](https://www.atlantsolia.is/stodva
 
 #### Prices
 
-Gas price for each station can be found [here](http://atlantsolia.is/stodvarverd.aspx), also showing discount prices available if you have Atlantsolía fuel key ring.
+Gas price for each station can be found [here](https://www.atlantsolia.is/stodvaverd/), also showing discount prices available if you have Atlantsolía fuel key ring.
 
 ### Costco Iceland
 
@@ -81,16 +81,6 @@ N1 station locations can be viewed [here](https://www.n1.is/stodvar/).
 
 Prices for N1 can be found [here](https://www.n1.is/thjonusta/eldsneyti/daeluverd/), you can find information on special fuel card discount [here](https://www.n1.is/n1-kortid/saekja-um-kortid/). At the time of this writing the minimum discount amount is 5 ISK and 2 N1 points per liter, both for bensin and diesel.
 
-### Dælan
-
-#### Stations
-
-Station locations for Dælan are shown on a picture of a map on [dælan.is](https://daelan.is/).
-
-#### Prices
-
-Dælan stations don't have any discount prices, prices are shown on [dælan.is](https://daelan.is/).
-
 ### Olís (and ÓB)
 
 #### Stations
@@ -105,7 +95,7 @@ Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodv
 
 #### Stations
 
-In the beginning of 2018 Skeljungur rebranded its remaining stations to Orkan, there are no fuel stations operating under the Skeljungur brand anymore. Also, it seems the Orkan X brand is no more too, with the last Orkan X station being rebranded to Orkan in either late 2019 or beginning of 2020.
+In the beginning of 2018 Skeljungur rebranded its remaining stations to Orkan, there are no fuel stations operating under the Skeljungur brand anymore. Also, it seems the Orkan X brand is no more too, with the last Orkan X station being rebranded to Orkan in either late 2019 or beginning of 2020. Skeljungur bought Dælan in 2020-11 and started rebranding the stations to Orkan stations in 2021-09 and finished rebranding the last station in 2021-11.
 
 List of stations for Orkan can be seen [here](https://www.orkan.is/orkan/orkustodvar/).
 

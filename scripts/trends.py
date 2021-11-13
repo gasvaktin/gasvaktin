@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 import argparse
 import datetime
 import json
@@ -232,6 +231,19 @@ def read_price_changes(repo, fromdate=None, todate=None):
         'median_diesel_discount': None,
         'stations_count': 0,
         'timestamp': "2020-01-25T09:00"
+    })
+    # Same for Daelan
+    price_changes['dn'].append({
+        'mean_bensin95': None,
+        'mean_bensin95_discount': None,
+        'mean_diesel': None,
+        'mean_diesel_discount': None,
+        'median_bensin95': None,
+        'median_bensin95_discount': None,
+        'median_diesel': None,
+        'median_diesel_discount': None,
+        'stations_count': 0,
+        'timestamp': "2021-11-13T23:15"
     })
     return price_changes
 

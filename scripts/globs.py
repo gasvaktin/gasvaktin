@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 ATLANTSOLIA = 'Atlantsolía'
 COSTCO = 'Costco Iceland'
 N1 = 'N1'
-DAELAN = 'Dælan'
 OLIS = 'Olís'
 OB = 'ÓB'
 SKELJUNGUR = 'Skeljungur'
@@ -232,8 +230,9 @@ ORKAN_LOCATION_RELATION = {
     'Vatnagarðar': 'or_068',
     'Stekkjabakki': 'or_069',
     'Stekkjarbakki': 'or_069',
+    'Hæðarsmári': 'or_070',
 }
-ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048']
+ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048', 'or_070']
 # Orkan has a 3-step discount system controlled by your spendings on gas from
 # them in the previous motnth
 # See more info here: https://www.orkan.is/Afslattarthrep
@@ -362,9 +361,7 @@ N1_LOCATION_RELATION = {
 }
 N1_DISCOUNTLESS_STATIONS = ['n1_011', 'n1_074', 'n1_081', 'n1_082']
 
-DAELAN_LOCATION_RELATION = {
-    'Hæðasmári': 'dn_002',
-}
+# Note: Daelan gone after commit 869cf94f90fa4ade010f17185e449e8819715d0e
 
 BROWSERS_UA = [
     ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'
