@@ -339,19 +339,6 @@
             "name": "Kauptún"
         },
         {
-            "bensin95": 235.9,
-            "bensin95_discount": null,
-            "company": "Dælan",
-            "diesel": 227.9,
-            "diesel_discount": null,
-            "geo": {
-                "lat": 64.09886543,
-                "lon": -21.88431501
-            },
-            "key": "dn_002",
-            "name": "Hæðarsmári"
-        },
-        {
             "bensin95": 274.9,
             "bensin95_discount": 269.9,
             "company": "N1",
@@ -3210,6 +3197,19 @@
             },
             "key": "or_069",
             "name": "Stekkjarbakki"
+        },
+        {
+            "bensin95": 238.8,
+            "bensin95_discount": null,
+            "company": "Orkan",
+            "diesel": 229.9,
+            "diesel_discount": null,
+            "geo": {
+                "lat": 64.09886543,
+                "lon": -21.88431501
+            },
+            "key": "or_070",
+            "name": "Hæðarsmári"
         }
     ]
 }
