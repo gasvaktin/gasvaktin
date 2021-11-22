@@ -3186,11 +3186,11 @@
             "name": "Vatnagarðar"
         },
         {
-            "bensin95": 254.9,
-            "bensin95_discount": 249.9,
+            "bensin95": 256.9,
+            "bensin95_discount": 251.89999999999998,
             "company": "Orkan",
-            "diesel": 244.9,
-            "diesel_discount": 239.9,
+            "diesel": 246.9,
+            "diesel_discount": 241.9,
             "geo": {
                 "lat": 64.112573,
                 "lon": -21.842023
@@ -3199,10 +3199,10 @@
             "name": "Stekkjarbakki"
         },
         {
-            "bensin95": 240.8,
+            "bensin95": 242.8,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 231.9,
+            "diesel": 233.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.09886543,
