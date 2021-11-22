@@ -2419,8 +2419,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 266.2,
-            "bensin95_discount": 261.2,
+            "bensin95": 265.4,
+            "bensin95_discount": 260.4,
             "company": "Orkan",
             "diesel": 250.8,
             "diesel_discount": 245.8,
@@ -2640,8 +2640,8 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 267.9,
-            "bensin95_discount": 262.9,
+            "bensin95": 267.3,
+            "bensin95_discount": 262.3,
             "company": "Orkan",
             "diesel": 250.8,
             "diesel_discount": 245.8,
@@ -2835,8 +2835,8 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 264.3,
-            "bensin95_discount": 259.3,
+            "bensin95": 262.3,
+            "bensin95_discount": 257.3,
             "company": "Orkan",
             "diesel": 251.8,
             "diesel_discount": 246.8,
@@ -2978,11 +2978,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 265.0,
-            "bensin95_discount": 260.0,
+            "bensin95": 263.0,
+            "bensin95_discount": 258.0,
             "company": "Orkan",
-            "diesel": 247.8,
-            "diesel_discount": 242.8,
+            "diesel": 247.9,
+            "diesel_discount": 242.9,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
