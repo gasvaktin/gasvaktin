@@ -2549,11 +2549,11 @@
             "name": "Furuvellir"
         },
         {
-            "bensin95": 272.8,
-            "bensin95_discount": 267.8,
+            "bensin95": 269.8,
+            "bensin95_discount": 264.8,
             "company": "Orkan",
-            "diesel": 253.9,
-            "diesel_discount": 248.9,
+            "diesel": 252.8,
+            "diesel_discount": 247.8,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
@@ -3147,11 +3147,11 @@
             "name": "Baulan"
         },
         {
-            "bensin95": 264.8,
-            "bensin95_discount": 259.8,
+            "bensin95": 266.8,
+            "bensin95_discount": 261.8,
             "company": "Orkan",
-            "diesel": 253.5,
-            "diesel_discount": 248.5,
+            "diesel": 252.8,
+            "diesel_discount": 247.8,
             "geo": {
                 "lat": 64.131015,
                 "lon": -21.877297
@@ -3160,11 +3160,11 @@
             "name": "Fellsmúli"
         },
         {
-            "bensin95": 264.8,
-            "bensin95_discount": 259.8,
+            "bensin95": 266.8,
+            "bensin95_discount": 261.8,
             "company": "Orkan",
-            "diesel": 253.5,
-            "diesel_discount": 248.5,
+            "diesel": 252.8,
+            "diesel_discount": 247.8,
             "geo": {
                 "lat": 64.09370915,
                 "lon": -21.85989618
@@ -3173,11 +3173,11 @@
             "name": "Salavegur"
         },
         {
-            "bensin95": 264.8,
-            "bensin95_discount": 259.8,
+            "bensin95": 266.8,
+            "bensin95_discount": 261.8,
             "company": "Orkan",
-            "diesel": 253.5,
-            "diesel_discount": 248.5,
+            "diesel": 252.8,
+            "diesel_discount": 247.8,
             "geo": {
                 "lat": 64.14123192,
                 "lon": -21.84930146
