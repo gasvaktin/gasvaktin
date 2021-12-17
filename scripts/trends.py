@@ -122,7 +122,7 @@ def read_price_changes(repo, fromdate=None, todate=None):
             "median_bensin95_discount": None,
             "median_diesel": 164.9,
             "median_diesel_discount": None,
-            "stations_count": 3,
+            "stations_count": 1,
             "timestamp": "2017-05-19T08:00"
         },
         {
@@ -134,7 +134,7 @@ def read_price_changes(repo, fromdate=None, todate=None):
             "median_bensin95_discount": None,
             "median_diesel": 161.9,
             "median_diesel_discount": None,
-            "stations_count": 3,
+            "stations_count": 1,
             "timestamp": "2017-05-25T10:00"
         }
     ]
