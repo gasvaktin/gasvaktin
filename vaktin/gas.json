@@ -2978,11 +2978,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 260.0,
-            "bensin95_discount": 255.0,
+            "bensin95": 258.8,
+            "bensin95_discount": 253.8,
             "company": "Orkan",
-            "diesel": 247.4,
-            "diesel_discount": 242.4,
+            "diesel": 242.8,
+            "diesel_discount": 237.8,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
@@ -3199,10 +3199,10 @@
             "name": "Stekkjarbakki"
         },
         {
-            "bensin95": 244.8,
+            "bensin95": 246.8,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 234.9,
+            "diesel": 236.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.09886543,
