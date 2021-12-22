@@ -2068,8 +2068,8 @@
             "name": "Suðurgata Akranes"
         },
         {
-            "bensin95": 257.3,
-            "bensin95_discount": 252.3,
+            "bensin95": 258.9,
+            "bensin95_discount": 253.9,
             "company": "Olís",
             "diesel": 245.2,
             "diesel_discount": 240.2,
@@ -2120,11 +2120,11 @@
             "name": "Dalvík"
         },
         {
-            "bensin95": 266.9,
-            "bensin95_discount": 261.9,
+            "bensin95": 264.9,
+            "bensin95_discount": 259.9,
             "company": "Olís",
-            "diesel": 250.9,
-            "diesel_discount": 245.9,
+            "diesel": 250.4,
+            "diesel_discount": 245.4,
             "geo": {
                 "lat": 65.282451,
                 "lon": -14.425195
