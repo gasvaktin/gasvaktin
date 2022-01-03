@@ -2302,7 +2302,7 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 234.8,
+            "bensin95": 236.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 225.8,
@@ -2380,7 +2380,7 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 234.8,
+            "bensin95": 236.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 225.8,
@@ -2419,11 +2419,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 262.6,
-            "bensin95_discount": 257.6,
+            "bensin95": 265.3,
+            "bensin95_discount": 260.3,
             "company": "Orkan",
-            "diesel": 247.7,
-            "diesel_discount": 242.7,
+            "diesel": 250.1,
+            "diesel_discount": 245.1,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2575,7 +2575,7 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 234.8,
+            "bensin95": 236.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 225.8,
@@ -2913,7 +2913,7 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 234.8,
+            "bensin95": 236.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 225.8,
@@ -2978,11 +2978,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 259.8,
-            "bensin95_discount": 254.8,
+            "bensin95": 262.5,
+            "bensin95_discount": 257.5,
             "company": "Orkan",
-            "diesel": 242.8,
-            "diesel_discount": 237.8,
+            "diesel": 245.2,
+            "diesel_discount": 240.2,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
@@ -3199,10 +3199,10 @@
             "name": "Stekkjarbakki"
         },
         {
-            "bensin95": 248.8,
+            "bensin95": 251.8,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 238.9,
+            "diesel": 241.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.09886543,
