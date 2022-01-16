@@ -140,7 +140,12 @@ def get_individual_n1_prices():
             }
         return prices
     # </n1_endpoint_down_fallback>
-    names_ignore_words = ['Þjónustustöð', 'Sjálfsafgreiðslustöð', 'Sjálfsafgreiðsla']
+    names_ignore_words = [
+        'Þjónustustöð/Verslun',
+        'Þjónustustöð',
+        'Sjálfsafgreiðslustöð',
+        'Sjálfsafgreiðsla'
+    ]
     for station in stations:
         # <get-name>
         name = station['Name']  # sometimes a bit dirty, so we attempt to clean it up
@@ -357,8 +362,8 @@ def get_individual_orkan_prices():
             # spendings on gas from them the month before
             # See more info here: https://www.orkan.is/Afslattarthrep
             # For consistency we just use the minimum default discount
-            bensin95_discount = bensin95 - globs.ORKAN_MINIMUM_DISCOUNT
-            diesel_discount = diesel - globs.ORKAN_MINIMUM_DISCOUNT
+            bensin95_discount = round(bensin95 - globs.ORKAN_MINIMUM_DISCOUNT, 1)
+            diesel_discount = round(diesel - globs.ORKAN_MINIMUM_DISCOUNT, 1)
             if key in globs.ORKAN_DISCOUNTLESS_STATIONS:
                 bensin95_discount = None
                 diesel_discount = None

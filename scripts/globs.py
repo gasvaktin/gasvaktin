@@ -232,6 +232,7 @@ ORKAN_LOCATION_RELATION = {
     'Stekkjarbakki': 'or_069',
     'Hæðarsmári': 'or_070',
     'Hæðarsnári': 'or_070',  # lol
+    'Hæðasmári': 'or_070',  # -_-
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048', 'or_070']
 # Orkan has a 3-step discount system controlled by your spendings on gas from
