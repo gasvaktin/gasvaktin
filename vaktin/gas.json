@@ -2679,11 +2679,11 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 264.5,
-            "bensin95_discount": 259.5,
+            "bensin95": 266.5,
+            "bensin95_discount": 261.5,
             "company": "Orkan",
-            "diesel": 253.9,
-            "diesel_discount": 248.9,
+            "diesel": 254.9,
+            "diesel_discount": 249.9,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
@@ -2744,11 +2744,11 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 264.5,
-            "bensin95_discount": 259.5,
+            "bensin95": 266.5,
+            "bensin95_discount": 261.5,
             "company": "Orkan",
-            "diesel": 253.9,
-            "diesel_discount": 248.9,
+            "diesel": 254.9,
+            "diesel_discount": 249.9,
             "geo": {
                 "lat": 65.072872,
                 "lon": -22.732583
