@@ -391,11 +391,11 @@
             "name": "Háholt"
         },
         {
-            "bensin95": 281.9,
-            "bensin95_discount": 276.9,
+            "bensin95": 282.9,
+            "bensin95_discount": 277.9,
             "company": "N1",
-            "diesel": 266.9,
-            "diesel_discount": 261.9,
+            "diesel": 267.9,
+            "diesel_discount": 262.9,
             "geo": {
                 "lat": 64.14657013,
                 "lon": -21.89452573
