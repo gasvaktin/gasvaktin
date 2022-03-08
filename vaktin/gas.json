@@ -2393,11 +2393,11 @@
             "name": "Reykjavíkurvegur"
         },
         {
-            "bensin95": 283.9,
-            "bensin95_discount": 278.9,
+            "bensin95": 286.8,
+            "bensin95_discount": 281.8,
             "company": "Orkan",
-            "diesel": 284.9,
-            "diesel_discount": 279.9,
+            "diesel": 287.7,
+            "diesel_discount": 282.7,
             "geo": {
                 "lat": 64.131896,
                 "lon": -21.917131
@@ -3043,11 +3043,11 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 283.9,
-            "bensin95_discount": 278.9,
+            "bensin95": 286.8,
+            "bensin95_discount": 281.8,
             "company": "Orkan",
-            "diesel": 284.9,
-            "diesel_discount": 279.9,
+            "diesel": 287.7,
+            "diesel_discount": 282.7,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
