@@ -2874,11 +2874,11 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 300.8,
-            "bensin95_discount": 295.8,
+            "bensin95": 300.3,
+            "bensin95_discount": 295.3,
             "company": "Orkan",
-            "diesel": 297.1,
-            "diesel_discount": 292.1,
+            "diesel": 296.8,
+            "diesel_discount": 291.8,
             "geo": {
                 "lat": 63.417474,
                 "lon": -18.993665
@@ -2978,8 +2978,8 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 294.8,
-            "bensin95_discount": 289.8,
+            "bensin95": 292.8,
+            "bensin95_discount": 287.8,
             "company": "Orkan",
             "diesel": 291.2,
             "diesel_discount": 286.2,
