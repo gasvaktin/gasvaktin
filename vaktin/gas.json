@@ -2978,11 +2978,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 292.8,
-            "bensin95_discount": 287.8,
+            "bensin95": 290.8,
+            "bensin95_discount": 285.8,
             "company": "Orkan",
-            "diesel": 291.2,
-            "diesel_discount": 286.2,
+            "diesel": 288.2,
+            "diesel_discount": 283.2,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
