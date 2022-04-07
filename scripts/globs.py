@@ -351,6 +351,7 @@ N1_LOCATION_RELATION = {
     'Reyðarfjörður': 'n1_073',
     'Akureyri Tryggvabraut': 'n1_074',
     'Ólafsvík': 'n1_075',
+    'Verslun Ólafsvík': 'n1_075',
     'Flókalundur': 'n1_076',
     'Ægisíða': 'n1_077',
     'Knútstöð Keflavíkurflugvelli': 'n1_078',
