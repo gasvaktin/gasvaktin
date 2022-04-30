@@ -2393,11 +2393,11 @@
             "name": "Reykjavíkurvegur"
         },
         {
-            "bensin95": 291.9,
-            "bensin95_discount": 286.9,
+            "bensin95": 293.9,
+            "bensin95_discount": 288.9,
             "company": "Orkan",
-            "diesel": 299.5,
-            "diesel_discount": 294.5,
+            "diesel": 301.5,
+            "diesel_discount": 296.5,
             "geo": {
                 "lat": 64.131896,
                 "lon": -21.917131
@@ -2861,11 +2861,11 @@
             "name": "Stokkseyri"
         },
         {
-            "bensin95": 303.8,
-            "bensin95_discount": 298.8,
+            "bensin95": 305.8,
+            "bensin95_discount": 300.8,
             "company": "Orkan",
-            "diesel": 303.7,
-            "diesel_discount": 298.7,
+            "diesel": 305.7,
+            "diesel_discount": 300.7,
             "geo": {
                 "lat": 63.440566,
                 "lon": -20.277227
@@ -3043,11 +3043,11 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 291.9,
-            "bensin95_discount": 286.9,
+            "bensin95": 293.9,
+            "bensin95_discount": 288.9,
             "company": "Orkan",
-            "diesel": 299.5,
-            "diesel_discount": 294.5,
+            "diesel": 301.5,
+            "diesel_discount": 296.5,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
