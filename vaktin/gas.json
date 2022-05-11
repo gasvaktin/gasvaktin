@@ -2302,7 +2302,7 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 276.8,
+            "bensin95": 276.7,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 286.6,
@@ -2380,7 +2380,7 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 276.8,
+            "bensin95": 276.7,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 286.6,
@@ -2575,7 +2575,7 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 276.8,
+            "bensin95": 276.7,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 286.6,
@@ -2835,8 +2835,8 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 303.3,
-            "bensin95_discount": 298.3,
+            "bensin95": 302.6,
+            "bensin95_discount": 297.6,
             "company": "Orkan",
             "diesel": 308.0,
             "diesel_discount": 303.0,
@@ -2913,7 +2913,7 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 276.8,
+            "bensin95": 276.7,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 286.6,
@@ -2991,11 +2991,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 303.6,
-            "bensin95_discount": 298.6,
+            "bensin95": 302.6,
+            "bensin95_discount": 297.6,
             "company": "Orkan",
-            "diesel": 309.0,
-            "diesel_discount": 304.0,
+            "diesel": 308.0,
+            "diesel_discount": 303.0,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
@@ -3108,11 +3108,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 303.6,
-            "bensin95_discount": 298.6,
+            "bensin95": 302.6,
+            "bensin95_discount": 297.6,
             "company": "Orkan",
-            "diesel": 309.0,
-            "diesel_discount": 304.0,
+            "diesel": 308.0,
+            "diesel_discount": 303.0,
             "geo": {
                 "lat": 63.995433,
                 "lon": -21.191837
