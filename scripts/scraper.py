@@ -345,7 +345,7 @@ def get_individual_ob_prices():
 
 
 def get_individual_orkan_prices():
-    url = 'https://www.orkan.is/orkan/orkustodvar/'
+    url = 'https://www.orkan.is/orkustodvar/'
     res = requests.get(url, headers=utils.headers())
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
     div_element = html.find('.//div[@class="accordion__container"]')
