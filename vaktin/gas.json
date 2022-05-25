@@ -2302,7 +2302,7 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 281.4,
+            "bensin95": 281.5,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 286.3,
@@ -2380,7 +2380,7 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 281.4,
+            "bensin95": 281.5,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 286.3,
@@ -2575,7 +2575,7 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 281.4,
+            "bensin95": 281.5,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 286.3,
@@ -2861,8 +2861,8 @@
             "name": "Stokkseyri"
         },
         {
-            "bensin95": 312.6,
-            "bensin95_discount": 307.6,
+            "bensin95": 314.6,
+            "bensin95_discount": 309.6,
             "company": "Orkan",
             "diesel": 309.5,
             "diesel_discount": 304.5,
@@ -2913,7 +2913,7 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 281.4,
+            "bensin95": 281.5,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 286.3,
