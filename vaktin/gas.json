@@ -2757,8 +2757,8 @@
             "name": "Stykkishólmur"
         },
         {
-            "bensin95": 319.4,
-            "bensin95_discount": 314.4,
+            "bensin95": 315.6,
+            "bensin95_discount": 310.6,
             "company": "Orkan",
             "diesel": 312.4,
             "diesel_discount": 307.4,
@@ -2861,11 +2861,11 @@
             "name": "Stokkseyri"
         },
         {
-            "bensin95": 314.6,
-            "bensin95_discount": 309.6,
+            "bensin95": 315.6,
+            "bensin95_discount": 310.6,
             "company": "Orkan",
-            "diesel": 309.5,
-            "diesel_discount": 304.5,
+            "diesel": 312.4,
+            "diesel_discount": 307.4,
             "geo": {
                 "lat": 63.440566,
                 "lon": -20.277227
