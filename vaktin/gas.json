@@ -2419,8 +2419,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 320.8,
-            "bensin95_discount": 315.8,
+            "bensin95": 321.0,
+            "bensin95_discount": 316.0,
             "company": "Orkan",
             "diesel": 311.6,
             "diesel_discount": 306.6,
@@ -2640,8 +2640,8 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 320.3,
-            "bensin95_discount": 315.3,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "Orkan",
             "diesel": 311.4,
             "diesel_discount": 306.4,
@@ -2783,8 +2783,8 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 307.2,
-            "bensin95_discount": 302.2,
+            "bensin95": 309.2,
+            "bensin95_discount": 304.2,
             "company": "Orkan",
             "diesel": 301.4,
             "diesel_discount": 296.4,
@@ -2835,8 +2835,8 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 317.0,
-            "bensin95_discount": 312.0,
+            "bensin95": 319.0,
+            "bensin95_discount": 314.0,
             "company": "Orkan",
             "diesel": 312.5,
             "diesel_discount": 307.5,
@@ -2874,8 +2874,8 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 322.3,
-            "bensin95_discount": 317.3,
+            "bensin95": 324.2,
+            "bensin95_discount": 319.2,
             "company": "Orkan",
             "diesel": 312.8,
             "diesel_discount": 307.8,
@@ -2978,8 +2978,8 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 316.3,
-            "bensin95_discount": 311.3,
+            "bensin95": 318.2,
+            "bensin95_discount": 313.2,
             "company": "Orkan",
             "diesel": 307.8,
             "diesel_discount": 302.8,
