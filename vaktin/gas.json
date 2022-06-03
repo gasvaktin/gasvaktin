@@ -2302,10 +2302,10 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 293.1,
+            "bensin95": 296.1,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 291.1,
+            "diesel": 294.1,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2367,11 +2367,11 @@
             "name": "Laugavegur"
         },
         {
-            "bensin95": 327.3,
-            "bensin95_discount": 322.3,
+            "bensin95": 327.2,
+            "bensin95_discount": 322.2,
             "company": "Orkan",
-            "diesel": 317.3,
-            "diesel_discount": 312.3,
+            "diesel": 317.2,
+            "diesel_discount": 312.2,
             "geo": {
                 "lat": 64.13266,
                 "lon": -21.893096
@@ -2380,10 +2380,10 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 293.1,
+            "bensin95": 296.1,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 291.1,
+            "diesel": 294.1,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2575,10 +2575,10 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 293.1,
+            "bensin95": 296.1,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 291.1,
+            "diesel": 294.1,
             "diesel_discount": null,
             "geo": {
                 "lat": 65.679649,
@@ -2913,10 +2913,10 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 293.1,
+            "bensin95": 296.1,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 291.1,
+            "diesel": 294.1,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.131308,
@@ -2965,11 +2965,11 @@
             "name": "Suðurfell"
         },
         {
-            "bensin95": 327.3,
-            "bensin95_discount": 322.3,
+            "bensin95": 327.2,
+            "bensin95_discount": 322.2,
             "company": "Orkan",
-            "diesel": 317.3,
-            "diesel_discount": 312.3,
+            "diesel": 317.2,
+            "diesel_discount": 312.2,
             "geo": {
                 "lat": 64.123847,
                 "lon": -21.804124
@@ -3199,10 +3199,10 @@
             "name": "Stekkjarbakki"
         },
         {
-            "bensin95": 327.3,
+            "bensin95": 327.2,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 317.3,
+            "diesel": 317.2,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.09886543,
