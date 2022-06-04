@@ -3043,11 +3043,11 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 311.7,
-            "bensin95_discount": 306.7,
+            "bensin95": 314.7,
+            "bensin95_discount": 309.7,
             "company": "Orkan",
-            "diesel": 310.3,
-            "diesel_discount": 305.3,
+            "diesel": 313.3,
+            "diesel_discount": 308.3,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
