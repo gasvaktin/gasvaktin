@@ -196,11 +196,11 @@
             "name": "Skeifan"
         },
         {
-            "bensin95": 322.7,
-            "bensin95_discount": 317.7,
+            "bensin95": 314.8,
+            "bensin95_discount": 309.8,
             "company": "Atlantsolía",
-            "diesel": 318.8,
-            "diesel_discount": 313.8,
+            "diesel": 313.4,
+            "diesel_discount": 308.4,
             "geo": {
                 "lat": 64.110091,
                 "lon": -21.852653
