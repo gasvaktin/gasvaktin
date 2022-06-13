@@ -1421,8 +1421,8 @@
             "bensin95": 339.5,
             "bensin95_discount": 334.5,
             "company": "ÓB",
-            "diesel": 331.5,
-            "diesel_discount": 326.5,
+            "diesel": 329.9,
+            "diesel_discount": 324.9,
             "geo": {
                 "lat": 64.32448,
                 "lon": -22.068174
@@ -1522,11 +1522,11 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 332.2,
-            "bensin95_discount": 327.2,
+            "bensin95": 330.9,
+            "bensin95_discount": 325.9,
             "company": "ÓB",
-            "diesel": 324.6,
-            "diesel_discount": 319.6,
+            "diesel": 323.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 64.544544,
                 "lon": -21.908073
@@ -1626,11 +1626,11 @@
             "name": "Húsavík"
         },
         {
-            "bensin95": 341.5,
-            "bensin95_discount": 336.5,
+            "bensin95": 340.1,
+            "bensin95_discount": 335.1,
             "company": "ÓB",
-            "diesel": 331.5,
-            "diesel_discount": 326.5,
+            "diesel": 330.6,
+            "diesel_discount": 325.6,
             "geo": {
                 "lat": 66.068678,
                 "lon": -23.121961
@@ -1707,8 +1707,8 @@
             "bensin95": 328.5,
             "bensin95_discount": 323.5,
             "company": "ÓB",
-            "diesel": 321.6,
-            "diesel_discount": 316.6,
+            "diesel": 320.7,
+            "diesel_discount": 315.7,
             "geo": {
                 "lat": 63.979938,
                 "lon": -22.546893
@@ -1730,8 +1730,8 @@
             "name": "Reyðarfjörður"
         },
         {
-            "bensin95": 339.0,
-            "bensin95_discount": 334.0,
+            "bensin95": 338.3,
+            "bensin95_discount": 333.3,
             "company": "ÓB",
             "diesel": 331.8,
             "diesel_discount": 326.8,
@@ -1756,11 +1756,11 @@
             "name": "Snorrabraut"
         },
         {
-            "bensin95": 332.2,
-            "bensin95_discount": 327.2,
+            "bensin95": 330.9,
+            "bensin95_discount": 325.9,
             "company": "ÓB",
-            "diesel": 324.6,
-            "diesel_discount": 319.6,
+            "diesel": 323.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 65.071966,
                 "lon": -22.732975
