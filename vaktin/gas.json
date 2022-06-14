@@ -1,7 +1,7 @@
 {
     "stations": [
         {
-            "bensin95": 325.1,
+            "bensin95": 313.7,
             "bensin95_discount": null,
             "company": "Atlantsolía",
             "diesel": 311.7,
@@ -105,7 +105,7 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 325.1,
+            "bensin95": 313.7,
             "bensin95_discount": null,
             "company": "Atlantsolía",
             "diesel": 311.7,
@@ -222,7 +222,7 @@
             "name": "Skúlagata"
         },
         {
-            "bensin95": 325.1,
+            "bensin95": 313.7,
             "bensin95_discount": null,
             "company": "Atlantsolía",
             "diesel": 311.7,
