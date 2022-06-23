@@ -235,14 +235,9 @@ ORKAN_LOCATION_RELATION = {
     'Hæðasmári': 'or_070',  # -_-
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048', 'or_070']
-# Orkan has a 3-step discount system controlled by your spendings on gas from
-# them in the previous motnth
-# See more info here: https://www.orkan.is/Afslattarthrep
-# Discount info:
-# Step 1, 0-50L,   [ 5 ISK ] + [ 2 ISK if your personal station] = [  7 ISK ]
-# Step 2, 50-150L, [ 6 ISK ] + [ 2 ISK if your personal station] = [  8 ISK ]
-# Step 3, 150L+,   [ 8 ISK ] + [ 2 ISK if your personal station] = [ 10 ISK ]
-ORKAN_MINIMUM_DISCOUNT = 5.0
+# Orkan has a default 10 ISK discount with Orkan keychain
+# See: https://www.orkan.is/afslattur/
+ORKAN_MINIMUM_DISCOUNT = 10.0
 
 # Atlantsolía has changed their discount system to mirror Orkan, this discount
 # system is called "MEIRA FYRIR ÞIG".
