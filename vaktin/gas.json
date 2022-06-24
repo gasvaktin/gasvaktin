@@ -2422,8 +2422,8 @@
             "bensin95": 347.1,
             "bensin95_discount": 337.1,
             "company": "Orkan",
-            "diesel": 339.8,
-            "diesel_discount": 329.8,
+            "diesel": 342.8,
+            "diesel_discount": 332.8,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2640,8 +2640,8 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 347.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 346.9,
+            "bensin95_discount": 336.9,
             "company": "Orkan",
             "diesel": 338.5,
             "diesel_discount": 328.5,
@@ -2835,11 +2835,11 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 345.1,
-            "bensin95_discount": 335.1,
+            "bensin95": 344.6,
+            "bensin95_discount": 334.6,
             "company": "Orkan",
-            "diesel": 339.6,
-            "diesel_discount": 329.6,
+            "diesel": 342.9,
+            "diesel_discount": 332.9,
             "geo": {
                 "lat": 63.944998,
                 "lon": -21.01074
@@ -2981,8 +2981,8 @@
             "bensin95": 342.9,
             "bensin95_discount": 332.9,
             "company": "Orkan",
-            "diesel": 334.9,
-            "diesel_discount": 324.9,
+            "diesel": 338.6,
+            "diesel_discount": 328.6,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
