@@ -356,6 +356,7 @@ N1_LOCATION_RELATION = {
     'Lindir': 'n1_081',
     'Skógarlind': 'n1_081',
     'Norðurhella': 'n1_082',
+    "Mývatn": "n1_083",
 }
 N1_DISCOUNTLESS_STATIONS = ['n1_011', 'n1_074', 'n1_081', 'n1_082']
 
