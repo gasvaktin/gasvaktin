@@ -98,11 +98,9 @@ def main():
             # Orkan Úthlíð near Bláskógabyggð temporarily closed?
             continue
         station['key'] = key
-        if key.startswith('dn_'):
+        if key == 'n1_083':
             if key not in prices_map[station['company']]['data']:
-                # Orkan has been rebranding Daelan stations to Orkan
-                # at this point we can assume the remaining two will be rebranded as well
-                # let's not fail when these stations are rebranded
+                # New N1 fuel station at Myvatn listed but with no bensin or diesel price info
                 continue
         if prices_map[station['company']]['type'] == globs.PRICETYPE.INDIVIDUAL:
             for price_key in price_keys:
