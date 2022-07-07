@@ -6373,6 +6373,18 @@
             "median_diesel_discount": null,
             "stations_count": 1,
             "timestamp": "2022-06-28T17:30"
+        },
+        {
+            "mean_bensin95": 315.5,
+            "mean_bensin95_discount": null,
+            "mean_diesel": 318.0,
+            "mean_diesel_discount": null,
+            "median_bensin95": 315.5,
+            "median_bensin95_discount": null,
+            "median_diesel": 318.0,
+            "median_diesel_discount": null,
+            "stations_count": 1,
+            "timestamp": "2022-07-07T17:00"
         }
     ],
     "dn": [
@@ -28763,6 +28775,18 @@
             "median_diesel_discount": 330.2,
             "stations_count": 70,
             "timestamp": "2022-07-07T16:30"
+        },
+        {
+            "mean_bensin95": 342.5,
+            "mean_bensin95_discount": 334.1,
+            "mean_diesel": 338.0,
+            "mean_diesel_discount": 329.2,
+            "median_bensin95": 345.7,
+            "median_bensin95_discount": 335.7,
+            "median_diesel": 340.2,
+            "median_diesel_discount": 330.2,
+            "stations_count": 70,
+            "timestamp": "2022-07-07T17:00"
         }
     ],
     "ox": [
