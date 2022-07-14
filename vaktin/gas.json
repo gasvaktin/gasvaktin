@@ -2419,8 +2419,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 342.2,
-            "bensin95_discount": 332.2,
+            "bensin95": 341.8,
+            "bensin95_discount": 331.8,
             "company": "Orkan",
             "diesel": 336.2,
             "diesel_discount": 326.2,
@@ -2640,8 +2640,8 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 339.9,
-            "bensin95_discount": 329.9,
+            "bensin95": 339.3,
+            "bensin95_discount": 329.3,
             "company": "Orkan",
             "diesel": 336.4,
             "diesel_discount": 326.4,
@@ -2679,8 +2679,8 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 330.8,
-            "bensin95_discount": 320.8,
+            "bensin95": 330.1,
+            "bensin95_discount": 320.1,
             "company": "Orkan",
             "diesel": 328.9,
             "diesel_discount": 318.9,
@@ -2744,8 +2744,8 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 330.8,
-            "bensin95_discount": 320.8,
+            "bensin95": 330.1,
+            "bensin95_discount": 320.1,
             "company": "Orkan",
             "diesel": 328.9,
             "diesel_discount": 318.9,
@@ -2783,11 +2783,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 329.8,
-            "bensin95_discount": 319.8,
+            "bensin95": 327.7,
+            "bensin95_discount": 317.7,
             "company": "Orkan",
-            "diesel": 327.4,
-            "diesel_discount": 317.4,
+            "diesel": 326.4,
+            "diesel_discount": 316.4,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
@@ -2835,8 +2835,8 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 340.4,
-            "bensin95_discount": 330.4,
+            "bensin95": 337.5,
+            "bensin95_discount": 327.5,
             "company": "Orkan",
             "diesel": 336.9,
             "diesel_discount": 326.9,
@@ -2874,8 +2874,8 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 343.3,
-            "bensin95_discount": 333.3,
+            "bensin95": 342.7,
+            "bensin95_discount": 332.7,
             "company": "Orkan",
             "diesel": 337.8,
             "diesel_discount": 327.8,
@@ -2978,11 +2978,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 339.7,
-            "bensin95_discount": 329.7,
+            "bensin95": 336.7,
+            "bensin95_discount": 326.7,
             "company": "Orkan",
-            "diesel": 333.7,
-            "diesel_discount": 323.7,
+            "diesel": 332.7,
+            "diesel_discount": 322.7,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
