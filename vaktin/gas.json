@@ -2419,11 +2419,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 341.8,
-            "bensin95_discount": 331.8,
+            "bensin95": 340.8,
+            "bensin95_discount": 330.8,
             "company": "Orkan",
-            "diesel": 336.2,
-            "diesel_discount": 326.2,
+            "diesel": 335.3,
+            "diesel_discount": 325.3,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -3134,11 +3134,11 @@
             "name": "Hraunbær"
         },
         {
-            "bensin95": 345.6,
-            "bensin95_discount": 335.6,
+            "bensin95": 343.4,
+            "bensin95_discount": 333.4,
             "company": "Orkan",
-            "diesel": 340.1,
-            "diesel_discount": 330.1,
+            "diesel": 339.2,
+            "diesel_discount": 329.2,
             "geo": {
                 "lat": 64.675279,
                 "lon": -21.664649
