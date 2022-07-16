@@ -3134,11 +3134,11 @@
             "name": "Hraunbær"
         },
         {
-            "bensin95": 343.4,
-            "bensin95_discount": 333.4,
+            "bensin95": 333.4,
+            "bensin95_discount": 323.4,
             "company": "Orkan",
-            "diesel": 339.2,
-            "diesel_discount": 329.2,
+            "diesel": 329.2,
+            "diesel_discount": 319.2,
             "geo": {
                 "lat": 64.675279,
                 "lon": -21.664649
