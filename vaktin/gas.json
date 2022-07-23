@@ -40,11 +40,11 @@
             "name": "Bíldshöfði"
         },
         {
-            "bensin95": 331.7,
-            "bensin95_discount": 326.7,
+            "bensin95": 328.4,
+            "bensin95_discount": 323.4,
             "company": "Atlantsolía",
-            "diesel": 327.5,
-            "diesel_discount": 322.5,
+            "diesel": 326.4,
+            "diesel_discount": 321.4,
             "geo": {
                 "lat": 64.5675445,
                 "lon": -21.8934511
@@ -235,11 +235,11 @@
             "name": "Sprengisandur"
         },
         {
-            "bensin95": 330.3,
-            "bensin95_discount": 325.3,
+            "bensin95": 328.4,
+            "bensin95_discount": 323.4,
             "company": "Atlantsolía",
-            "diesel": 326.6,
-            "diesel_discount": 321.6,
+            "diesel": 326.4,
+            "diesel_discount": 321.4,
             "geo": {
                 "lat": 65.07071,
                 "lon": -22.733996
