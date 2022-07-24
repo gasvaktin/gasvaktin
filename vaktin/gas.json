@@ -17,8 +17,8 @@
             "bensin95": 337.4,
             "bensin95_discount": 332.4,
             "company": "Atlantsolía",
-            "diesel": 330.7,
-            "diesel_discount": 325.7,
+            "diesel": 331.2,
+            "diesel_discount": 326.2,
             "geo": {
                 "lat": 65.687807,
                 "lon": -18.100104
@@ -43,8 +43,8 @@
             "bensin95": 328.3,
             "bensin95_discount": 323.3,
             "company": "Atlantsolía",
-            "diesel": 325.0,
-            "diesel_discount": 320.0,
+            "diesel": 326.3,
+            "diesel_discount": 321.3,
             "geo": {
                 "lat": 64.5675445,
                 "lon": -21.8934511
@@ -69,8 +69,8 @@
             "bensin95": 339.4,
             "bensin95_discount": 334.4,
             "company": "Atlantsolía",
-            "diesel": 332.5,
-            "diesel_discount": 327.5,
+            "diesel": 334.9,
+            "diesel_discount": 329.9,
             "geo": {
                 "lat": 65.259896,
                 "lon": -14.39789
@@ -92,11 +92,11 @@
             "name": "Hafnarfjarðarhöfn"
         },
         {
-            "bensin95": 339.0,
-            "bensin95_discount": 334.0,
+            "bensin95": 335.8,
+            "bensin95_discount": 330.8,
             "company": "Atlantsolía",
-            "diesel": 334.1,
-            "diesel_discount": 329.1,
+            "diesel": 334.5,
+            "diesel_discount": 329.5,
             "geo": {
                 "lat": 63.994238,
                 "lon": -21.185975
@@ -170,11 +170,11 @@
             "name": "Öskjuhlíð"
         },
         {
-            "bensin95": 339.0,
-            "bensin95_discount": 334.0,
+            "bensin95": 335.8,
+            "bensin95_discount": 330.8,
             "company": "Atlantsolía",
-            "diesel": 334.1,
-            "diesel_discount": 329.1,
+            "diesel": 334.5,
+            "diesel_discount": 329.5,
             "geo": {
                 "lat": 63.946582,
                 "lon": -21.013048
@@ -238,8 +238,8 @@
             "bensin95": 328.3,
             "bensin95_discount": 323.3,
             "company": "Atlantsolía",
-            "diesel": 325.0,
-            "diesel_discount": 320.0,
+            "diesel": 326.3,
+            "diesel_discount": 321.3,
             "geo": {
                 "lat": 65.07071,
                 "lon": -22.733996
