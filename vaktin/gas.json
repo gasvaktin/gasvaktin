@@ -14,8 +14,8 @@
             "name": "Baldursnes Akureyri"
         },
         {
-            "bensin95": 337.4,
-            "bensin95_discount": 332.4,
+            "bensin95": 334.2,
+            "bensin95_discount": 329.2,
             "company": "Atlantsolía",
             "diesel": 331.2,
             "diesel_discount": 326.2,
@@ -27,11 +27,11 @@
             "name": "Glerártorg Akureyri"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.125397,
                 "lon": -21.813054
@@ -53,11 +53,11 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.087301,
                 "lon": -21.832666
@@ -79,11 +79,11 @@
             "name": "Egilsstaðir"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.064824,
                 "lon": -21.976368
@@ -118,11 +118,11 @@
             "name": "Kaplakriki"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.11123,
                 "lon": -21.935749
@@ -131,11 +131,11 @@
             "name": "Kópavogsbraut"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.16388,
                 "lon": -21.690617
@@ -144,11 +144,11 @@
             "name": "Mosfellsbær"
         },
         {
-            "bensin95": 332.0,
-            "bensin95_discount": 327.0,
+            "bensin95": 331.1,
+            "bensin95_discount": 326.1,
             "company": "Atlantsolía",
-            "diesel": 326.4,
-            "diesel_discount": 321.4,
+            "diesel": 326.2,
+            "diesel_discount": 321.2,
             "geo": {
                 "lat": 63.987463,
                 "lon": -22.549396
@@ -157,11 +157,11 @@
             "name": "Njarðvík"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.131921,
                 "lon": -21.923792
@@ -183,11 +183,11 @@
             "name": "Selfoss"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.132171,
                 "lon": -21.87077
@@ -209,11 +209,11 @@
             "name": "Skemmuvegur"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.1460022,
                 "lon": -21.9184388
@@ -248,11 +248,11 @@
             "name": "Stykkishólmur"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.15102,
                 "lon": -21.773935
@@ -261,11 +261,11 @@
             "name": "Starengi"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.126553,
                 "lon": -21.756855
@@ -274,11 +274,11 @@
             "name": "Kirkjustétt"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.127972,
                 "lon": -21.848568
@@ -287,11 +287,11 @@
             "name": "Knarrarvogur"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.242146,
                 "lon": -21.829835
@@ -300,11 +300,11 @@
             "name": "Kjalarnes"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 64.137569,
                 "lon": -21.890902
@@ -313,11 +313,11 @@
             "name": "Háaleitisbraut"
         },
         {
-            "bensin95": 342.0,
-            "bensin95_discount": 337.0,
+            "bensin95": 341.1,
+            "bensin95_discount": 336.1,
             "company": "Atlantsolía",
-            "diesel": 336.4,
-            "diesel_discount": 331.4,
+            "diesel": 336.2,
+            "diesel_discount": 331.2,
             "geo": {
                 "lat": 63.970958,
                 "lon": -22.510542
