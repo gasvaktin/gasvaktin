@@ -14,11 +14,11 @@
             "name": "Baldursnes Akureyri"
         },
         {
-            "bensin95": 330.3,
-            "bensin95_discount": 325.3,
+            "bensin95": 328.2,
+            "bensin95_discount": 323.2,
             "company": "Atlantsolía",
-            "diesel": 326.9,
-            "diesel_discount": 321.9,
+            "diesel": 325.2,
+            "diesel_discount": 320.2,
             "geo": {
                 "lat": 65.687807,
                 "lon": -18.100104
@@ -2419,11 +2419,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 334.2,
-            "bensin95_discount": 324.2,
+            "bensin95": 334.1,
+            "bensin95_discount": 324.1,
             "company": "Orkan",
-            "diesel": 328.8,
-            "diesel_discount": 318.8,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2669,8 +2669,8 @@
             "bensin95": 332.1,
             "bensin95_discount": 322.1,
             "company": "Orkan",
-            "diesel": 326.8,
-            "diesel_discount": 316.8,
+            "diesel": 327.6,
+            "diesel_discount": 317.6,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
