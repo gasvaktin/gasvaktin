@@ -92,11 +92,11 @@
             "name": "Hafnarfjarðarhöfn"
         },
         {
-            "bensin95": 333.9,
-            "bensin95_discount": 328.9,
+            "bensin95": 334.7,
+            "bensin95_discount": 329.7,
             "company": "Atlantsolía",
-            "diesel": 331.5,
-            "diesel_discount": 326.5,
+            "diesel": 329.8,
+            "diesel_discount": 324.8,
             "geo": {
                 "lat": 63.994238,
                 "lon": -21.185975
@@ -170,11 +170,11 @@
             "name": "Öskjuhlíð"
         },
         {
-            "bensin95": 333.9,
-            "bensin95_discount": 328.9,
+            "bensin95": 334.7,
+            "bensin95_discount": 329.7,
             "company": "Atlantsolía",
-            "diesel": 331.5,
-            "diesel_discount": 326.5,
+            "diesel": 329.8,
+            "diesel_discount": 324.8,
             "geo": {
                 "lat": 63.946582,
                 "lon": -21.013048
@@ -196,11 +196,11 @@
             "name": "Skeifan"
         },
         {
-            "bensin95": 328.2,
-            "bensin95_discount": 323.2,
+            "bensin95": 326.1,
+            "bensin95_discount": 321.1,
             "company": "Atlantsolía",
-            "diesel": 330.5,
-            "diesel_discount": 325.5,
+            "diesel": 328.8,
+            "diesel_discount": 323.8,
             "geo": {
                 "lat": 64.110091,
                 "lon": -21.852653
@@ -2601,11 +2601,11 @@
             "name": "Mývatn"
         },
         {
-            "bensin95": 338.0,
-            "bensin95_discount": 328.0,
+            "bensin95": 337.1,
+            "bensin95_discount": 327.1,
             "company": "Orkan",
-            "diesel": 332.0,
-            "diesel_discount": 322.0,
+            "diesel": 331.8,
+            "diesel_discount": 321.8,
             "geo": {
                 "lat": 65.747084,
                 "lon": -19.645718
