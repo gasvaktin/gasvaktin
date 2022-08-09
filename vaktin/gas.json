@@ -2305,7 +2305,7 @@
             "bensin95": 310.5,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 313.1,
+            "diesel": 312.2,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2383,7 +2383,7 @@
             "bensin95": 310.5,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 313.1,
+            "diesel": 312.2,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2578,7 +2578,7 @@
             "bensin95": 310.5,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 313.1,
+            "diesel": 312.2,
             "diesel_discount": null,
             "geo": {
                 "lat": 65.679649,
@@ -2643,8 +2643,8 @@
             "bensin95": 332.2,
             "bensin95_discount": 322.2,
             "company": "Orkan",
-            "diesel": 327.4,
-            "diesel_discount": 317.4,
+            "diesel": 325.4,
+            "diesel_discount": 315.4,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
@@ -2669,8 +2669,8 @@
             "bensin95": 332.1,
             "bensin95_discount": 322.1,
             "company": "Orkan",
-            "diesel": 327.6,
-            "diesel_discount": 317.6,
+            "diesel": 324.8,
+            "diesel_discount": 314.8,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
@@ -2682,8 +2682,8 @@
             "bensin95": 321.9,
             "bensin95_discount": 311.9,
             "company": "Orkan",
-            "diesel": 321.0,
-            "diesel_discount": 311.0,
+            "diesel": 319.8,
+            "diesel_discount": 309.8,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
@@ -2916,7 +2916,7 @@
             "bensin95": 310.5,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 313.1,
+            "diesel": 312.2,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.131308,
