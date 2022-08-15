@@ -2549,11 +2549,11 @@
             "name": "Furuvellir"
         },
         {
-            "bensin95": 335.8,
-            "bensin95_discount": 325.8,
+            "bensin95": 332.8,
+            "bensin95_discount": 322.8,
             "company": "Orkan",
-            "diesel": 327.9,
-            "diesel_discount": 317.9,
+            "diesel": 327.2,
+            "diesel_discount": 317.2,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
