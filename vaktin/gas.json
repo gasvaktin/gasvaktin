@@ -17,8 +17,8 @@
             "bensin95": 325.2,
             "bensin95_discount": 320.2,
             "company": "Atlantsolía",
-            "diesel": 321.7,
-            "diesel_discount": 316.7,
+            "diesel": 320.2,
+            "diesel_discount": 315.2,
             "geo": {
                 "lat": 65.687807,
                 "lon": -18.100104
@@ -43,8 +43,8 @@
             "bensin95": 319.0,
             "bensin95_discount": 314.0,
             "company": "Atlantsolía",
-            "diesel": 317.0,
-            "diesel_discount": 312.0,
+            "diesel": 315.5,
+            "diesel_discount": 310.5,
             "geo": {
                 "lat": 64.5675445,
                 "lon": -21.8934511
@@ -95,8 +95,8 @@
             "bensin95": 330.5,
             "bensin95_discount": 325.5,
             "company": "Atlantsolía",
-            "diesel": 326.3,
-            "diesel_discount": 321.3,
+            "diesel": 324.8,
+            "diesel_discount": 319.8,
             "geo": {
                 "lat": 63.994238,
                 "lon": -21.185975
@@ -173,8 +173,8 @@
             "bensin95": 330.5,
             "bensin95_discount": 325.5,
             "company": "Atlantsolía",
-            "diesel": 326.3,
-            "diesel_discount": 321.3,
+            "diesel": 324.8,
+            "diesel_discount": 319.8,
             "geo": {
                 "lat": 63.946582,
                 "lon": -21.013048
@@ -199,8 +199,8 @@
             "bensin95": 321.9,
             "bensin95_discount": 316.9,
             "company": "Atlantsolía",
-            "diesel": 325.3,
-            "diesel_discount": 320.3,
+            "diesel": 323.8,
+            "diesel_discount": 318.8,
             "geo": {
                 "lat": 64.110091,
                 "lon": -21.852653
@@ -238,8 +238,8 @@
             "bensin95": 319.0,
             "bensin95_discount": 314.0,
             "company": "Atlantsolía",
-            "diesel": 317.0,
-            "diesel_discount": 312.0,
+            "diesel": 315.5,
+            "diesel_discount": 310.5,
             "geo": {
                 "lat": 65.07071,
                 "lon": -22.733996
