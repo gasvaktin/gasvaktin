@@ -70,7 +70,6 @@ OLIS_LOCATION_RELATION = {
     'Mjódd': 'ol_000',
     'Neskaupstaður': 'ol_028',
     'Norðlingaholt': 'ol_010',
-    'Ólafsfjörður, bensínstöð': 'ol_029',
     'Reyðarfjörður': 'ol_030',
     'Selfoss': 'ol_032',
     'Siglufjörður bensínstöð': 'ol_033',
@@ -126,6 +125,7 @@ OB_LOCATION_RELATION = {
     'Ferstikla': 'ob_041',
     'Klöpp': 'ob_042',
     'Litla-Kaffistofan': 'ob_043',
+    'Ólafsfjörður, bensínstöð': 'ob_044',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
