@@ -231,6 +231,27 @@ def get_individual_olis_prices():
         'highest': {'bensin95': None, 'diesel': None}
     }
     price_table = html.find('.//table')  # theres just one table element, let's use that ofc
+    if price_table is None:
+        error_msg = 'Ekki tókst að sækja eldsneytisverð. Vinsamlega reyndu aftur síðar.'
+        if error_msg in res.content.decode('utf-8'):
+            # 2022-08-19: Olís price page broken
+            # fallback to current prices until this is fixed
+            logman.warning('Olís price page broken, using current Olís price data as fallback.')
+            current_price_data_file = os.path.abspath(os.path.join(
+                os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
+            ))
+            prices = {}
+            current_price_data = utils.load_json(current_price_data_file)
+            for station in current_price_data['stations']:
+                if not station['key'].startswith('ol_'):
+                    continue
+                prices[station['key']] = {
+                    'bensin95': station['bensin95'],
+                    'diesel': station['diesel'],
+                    'bensin95_discount': station['bensin95_discount'],
+                    'diesel_discount': station['diesel_discount']
+                }
+            return prices
     for row in price_table.findall('.//tr'):
         if len(row.findall('.//td')) < 3:
             continue
@@ -291,6 +312,27 @@ def get_individual_ob_prices():
         'highest': {'bensin95': None, 'diesel': None}
     }
     price_table = html.find('.//table[@id="gas-prices"]')
+    if price_table is None:
+        error_msg = 'Ekki tókst að sækja eldsneytisverð. Vinsamlega reyndu aftur síðar.'
+        if error_msg in res.content.decode('utf-8'):
+            # 2022-08-19: ÓB price page broken
+            # fallback to current prices until this is fixed
+            logman.warning('ÓB price page broken, using current ÓB price data as fallback.')
+            current_price_data_file = os.path.abspath(os.path.join(
+                os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
+            ))
+            prices = {}
+            current_price_data = utils.load_json(current_price_data_file)
+            for station in current_price_data['stations']:
+                if not station['key'].startswith('ob_'):
+                    continue
+                prices[station['key']] = {
+                    'bensin95': station['bensin95'],
+                    'diesel': station['diesel'],
+                    'bensin95_discount': station['bensin95_discount'],
+                    'diesel_discount': station['diesel_discount']
+                }
+            return prices
     for row in price_table.findall('.//tr'):
         if len(row.findall('.//td')) == 0:
             continue
