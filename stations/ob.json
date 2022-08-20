@@ -278,5 +278,12 @@
             "lon": -21.501537
         },
         "name": "Litla Kaffistofan"
+    },
+    "ob_044": {
+        "geo": {
+            "lat": 66.069748,
+            "lon": -18.654565
+        },
+        "name": "Ólafsfjörður"
     }
 }
