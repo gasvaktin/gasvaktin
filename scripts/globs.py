@@ -49,7 +49,7 @@ ATLANTSOLIA_LOCATION_RELATION = {
 # "* Engir afslaettir gilda"
 ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_000', 'ao_008', 'ao_017']
 
-OLIS_MINIMUM_DISCOUNT = 5
+OLIS_MINIMUM_DISCOUNT = 7
 OLIS_LOCATION_RELATION = {
     'Borgarnes': 'ol_017',
     'Akranes, Esjubraut': 'ol_012',
@@ -77,7 +77,7 @@ OLIS_LOCATION_RELATION = {
     'Sæbraut': 'ol_011',
     'Hrauneyjar': 'ol_022',
 }
-OB_MINIMUM_DISCOUNT = 5
+OB_MINIMUM_DISCOUNT = 7
 OB_LOCATION_RELATION = {
     'Arnarsmára': 'ob_003',
     'Bæjarlind': 'ob_010',
