@@ -79,7 +79,7 @@ N1 station locations can be viewed [here](https://www.n1.is/stodvar/).
 
 #### Prices
 
-Prices for N1 can be found [here](https://www.n1.is/thjonusta/eldsneyti/daeluverd/), you can find information on special fuel card discount [here](https://www.n1.is/n1-kortid/saekja-um-kortid/). At the time of this writing the minimum discount amount is 5 ISK and 2 N1 points per liter, both for bensin and diesel.
+Prices for N1 can be found [here](https://www.n1.is/thjonusta/eldsneyti/daeluverd/), you can find information on special fuel card discount [here](https://www.n1.is/n1-kortid/saekja-um-kortid/).
 
 ### Olís (and ÓB)
 
@@ -91,7 +91,7 @@ List of stations can be seen [here](http://www.olis.is/solustadir/thjonustustodv
 
 Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/) and prices for ÓB can be seen [here](http://www.ob.is/eldsneytisverd/), you can find information on special fuel key ring discount [here](https://www.olis.is/vidskiptakort/olis-lykill).
 
-### Skeljungur (and Orkan)
+### Skeljungur (Orkan)
 
 #### Stations
 
@@ -101,7 +101,7 @@ List of stations for Orkan can be seen [here](https://www.orkan.is/orkan/orkusto
 
 #### Prices
 
-Prices for Orkan and Orkan X individual stations can be seen [here](https://www.orkan.is/orkan/orkustodvar/). Information on the [discount for Orkan (Afsláttarþrep)](https://www.orkan.is/orkan/serkjor/) is currently missing from the updated Orkan website, before the update there was information available that it's threefold (5/6/8 ISK discount) and is controlled by how much fuel you bought from Orkan the month before (extra +2 discount for user selected station). To simplify we only use the default minimum discount, currently 5 ISK. Orkan X does not maintain a discount program.
+Prices for Orkan individual stations can be seen [here](https://www.orkan.is/orkustodvar/). Information on special fuel key ring discount is shown [here](https://www.orkan.is/afslattur/).
 
 ## Maintainer
 
