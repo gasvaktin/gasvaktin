@@ -2419,11 +2419,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 325.0,
-            "bensin95_discount": 315.0,
+            "bensin95": 324.9,
+            "bensin95_discount": 314.9,
             "company": "Orkan",
-            "diesel": 325.7,
-            "diesel_discount": 315.7,
+            "diesel": 325.6,
+            "diesel_discount": 315.6,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2679,11 +2679,11 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 314.0,
-            "bensin95_discount": 304.0,
+            "bensin95": 313.9,
+            "bensin95_discount": 303.9,
             "company": "Orkan",
-            "diesel": 317.4,
-            "diesel_discount": 307.4,
+            "diesel": 317.3,
+            "diesel_discount": 307.3,
             "geo": {
                 "lat": 64.543622,
                 "lon": -21.908963
@@ -3043,11 +3043,11 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 317.1,
-            "bensin95_discount": 307.1,
+            "bensin95": 317.0,
+            "bensin95_discount": 307.0,
             "company": "Orkan",
-            "diesel": 325.7,
-            "diesel_discount": 315.7,
+            "diesel": 325.6,
+            "diesel_discount": 315.6,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
