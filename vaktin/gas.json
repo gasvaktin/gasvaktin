@@ -2302,7 +2302,7 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 301.6,
+            "bensin95": 299.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 308.9,
@@ -2380,7 +2380,7 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 301.6,
+            "bensin95": 299.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 308.9,
@@ -2575,7 +2575,7 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 301.6,
+            "bensin95": 299.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 308.9,
@@ -2640,8 +2640,8 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 323.1,
-            "bensin95_discount": 313.1,
+            "bensin95": 321.2,
+            "bensin95_discount": 311.2,
             "company": "Orkan",
             "diesel": 323.8,
             "diesel_discount": 313.8,
@@ -2679,8 +2679,8 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 313.9,
-            "bensin95_discount": 303.9,
+            "bensin95": 312.1,
+            "bensin95_discount": 302.1,
             "company": "Orkan",
             "diesel": 317.3,
             "diesel_discount": 307.3,
@@ -2783,8 +2783,8 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 313.0,
-            "bensin95_discount": 303.0,
+            "bensin95": 311.1,
+            "bensin95_discount": 301.1,
             "company": "Orkan",
             "diesel": 316.2,
             "diesel_discount": 306.2,
@@ -2913,7 +2913,7 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 301.6,
+            "bensin95": 299.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 308.9,
@@ -2991,8 +2991,8 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 324.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 324.1,
+            "bensin95_discount": 314.1,
             "company": "Orkan",
             "diesel": 326.6,
             "diesel_discount": 316.6,
@@ -3108,8 +3108,8 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 324.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 324.1,
+            "bensin95_discount": 314.1,
             "company": "Orkan",
             "diesel": 326.6,
             "diesel_discount": 316.6,
