@@ -127,6 +127,7 @@ OB_LOCATION_RELATION = {
     'Litla-Kaffistofan': 'ob_043',
     'Ólafsfjörður, bensínstöð': 'ob_044',
     'Ólafsfjörður': 'ob_044',
+    'Skagaströnd': 'ob_045',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
