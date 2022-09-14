@@ -53,7 +53,6 @@ OLIS_MINIMUM_DISCOUNT = 7
 OLIS_LOCATION_RELATION = {
     'Borgarnes': 'ol_017',
     'Akranes, Esjubraut': 'ol_012',
-    'Akranes, Umboð': 'ol_013',
     'Akureyri, bensínstöð': 'ol_014',
     'Arnarstapi - bensínstöð': 'ol_015',
     'Álfheimar': 'ol_001',
@@ -125,8 +124,9 @@ OB_LOCATION_RELATION = {
     'Ferstikla': 'ob_041',
     'Klöpp': 'ob_042',
     'Litla-Kaffistofan': 'ob_043',
-    'Ólafsfjörður, bensínstöð': 'ob_044',
     'Ólafsfjörður': 'ob_044',
+    'Skagaströnd': 'ob_045',
+    'Akranes, Umboð': 'ob_046',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.

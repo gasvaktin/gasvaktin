@@ -62,13 +62,6 @@
         },
         "name": "Esjubraut Akranes"
     },
-    "ol_013": {
-        "geo": {
-            "lat": 64.313949,
-            "lon": -22.087598
-        },
-        "name": "Suðurgata Akranes"
-    },
     "ol_014": {
         "geo": {
             "lat": 65.689272,
@@ -166,13 +159,6 @@
             "lon": -18.902853
         },
         "name": "Siglufjörður"
-    },
-    "ol_034": {
-        "geo": {
-            "lat": 65.823811,
-            "lon": -20.306295
-        },
-        "name": "Skagaströnd"
     },
     "ol_035": {
         "geo": {
