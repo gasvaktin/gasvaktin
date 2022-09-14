@@ -292,5 +292,12 @@
             "lon": -20.306295
         },
         "name": "Skagaströnd"
+    },
+    "ob_046": {
+        "geo": {
+            "lat": 64.313949,
+            "lon": -22.087598
+        },
+        "name": "Suðurgata Akranes"
     }
 }
