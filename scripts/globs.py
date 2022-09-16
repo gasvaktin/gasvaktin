@@ -59,7 +59,6 @@ OLIS_LOCATION_RELATION = {
     'Ánanaust': 'ol_002',
     'Básinn': 'ol_025',
     'Dalvík Bensínstöð': 'ol_018',
-    'Fellabær': 'ol_019',
     'Garðabær': 'ol_004',
     'Gullinbrú': 'ol_005',
     'Hella - bensínstöð': 'ol_021',
@@ -72,7 +71,6 @@ OLIS_LOCATION_RELATION = {
     'Reyðarfjörður': 'ol_030',
     'Selfoss': 'ol_032',
     'Siglufjörður bensínstöð': 'ol_033',
-    'Skagaströnd bensínst.': 'ol_034',
     'Sæbraut': 'ol_011',
     'Hrauneyjar': 'ol_022',
 }
@@ -100,7 +98,8 @@ OB_LOCATION_RELATION = {
     'Ísafjörður': 'ob_018',
     'Kirkjubæjarklaustur': 'ob_019',
     'Landvegamót': 'ob_020',
-    'Laugabakki': 'ol_036',
+    'Laugabakki': 'ob_036',
+    'Laugarbakki': 'ob_036',
     'Melabraut': 'ob_021',
     'Minni Borg': 'ob_022',
     'Neskaupstaður': 'ob_023',
@@ -127,6 +126,7 @@ OB_LOCATION_RELATION = {
     'Ólafsfjörður': 'ob_044',
     'Skagaströnd': 'ob_045',
     'Akranes, Umboð': 'ob_046',
+    'Fellabær': 'ob_047',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.

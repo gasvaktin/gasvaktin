@@ -90,13 +90,6 @@
         },
         "name": "Dalvík"
     },
-    "ol_019": {
-        "geo": {
-            "lat": 65.282451,
-            "lon": -14.425195
-        },
-        "name": "Fellabær"
-    },
     "ol_021": {
         "geo": {
             "lat": 63.834896,
@@ -159,19 +152,5 @@
             "lon": -18.902853
         },
         "name": "Siglufjörður"
-    },
-    "ol_035": {
-        "geo": {
-            "lat": 65.071966,
-            "lon": -22.732975
-        },
-        "name": "Stykkishólmur"
-    },
-    "ol_036": {
-        "geo": {
-            "lat": 63.442409,
-            "lon": -20.268868
-        },
-        "name": "Vestmannaeyjar"
     }
 }

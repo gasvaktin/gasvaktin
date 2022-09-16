@@ -226,10 +226,7 @@ def get_individual_olis_prices():
     url = 'https://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers())
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
-    data = {
-        'stations': {},
-        'highest': {'bensin95': None, 'diesel': None}
-    }
+    data = {'stations': {}}
     price_table = html.find('.//table')  # theres just one table element, let's use that ofc
     if price_table is None:
         error_msg = 'Ekki tókst að sækja eldsneytisverð. Vinsamlega reyndu aftur síðar.'
@@ -259,25 +256,9 @@ def get_individual_olis_prices():
             continue
         name = row.findall('.//td')[0].text.strip()
         station_key = globs.OLIS_LOCATION_RELATION[name]
-        bensin = None
-        if row.findall('.//td')[1].text.strip() != '':
-            bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
-        diesel = None
-        if row.findall('.//td')[2].text.strip() != '':
-            diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
+        bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
+        diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
         data['stations'][station_key] = {'bensin95': bensin, 'diesel': diesel}
-        if data['highest']['bensin95'] is None or data['highest']['bensin95'] < bensin:
-            data['highest']['bensin95'] = bensin
-        if data['highest']['diesel'] is None or data['highest']['diesel'] < diesel:
-            data['highest']['diesel'] = diesel
-    assert(data['highest']['bensin95'] is not None)
-    assert(data['highest']['diesel'] is not None)
-    for name in data['stations']:
-        # fallback to highest provided price if for some reason it's not provided ._.
-        if data['stations'][name]['bensin95'] is None:
-            data['stations'][name]['bensin95'] = data['highest']['bensin95']
-        if data['stations'][name]['diesel'] is None:
-            data['stations'][name]['diesel'] = data['highest']['diesel']
     prices = {}
     olis_stations = utils.load_json(
         os.path.join(
@@ -286,12 +267,8 @@ def get_individual_olis_prices():
         )
     )
     for key in olis_stations:
-        if key in data['stations']:
-            bensin95 = data['stations'][key]['bensin95']
-            diesel = data['stations'][key]['diesel']
-        else:
-            bensin95 = data['highest']['bensin95']
-            diesel = data['highest']['diesel']
+        bensin95 = data['stations'][key]['bensin95']
+        diesel = data['stations'][key]['diesel']
         bensin95_discount = round((bensin95 - globs.OLIS_MINIMUM_DISCOUNT), 1)
         diesel_discount = round((diesel - globs.OLIS_MINIMUM_DISCOUNT), 1)
         prices[key] = {

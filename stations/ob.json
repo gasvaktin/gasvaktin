@@ -299,5 +299,12 @@
             "lon": -22.087598
         },
         "name": "Suðurgata Akranes"
+    },
+    "ob_047": {
+        "geo": {
+            "lat": 65.282451,
+            "lon": -14.425195
+        },
+        "name": "Fellabær"
     }
 }
