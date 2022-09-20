@@ -2471,11 +2471,11 @@
             "name": "Neskaupstaður"
         },
         {
-            "bensin95": 326.0,
-            "bensin95_discount": 316.0,
+            "bensin95": 322.9,
+            "bensin95_discount": 312.9,
             "company": "Orkan",
-            "diesel": 324.6,
-            "diesel_discount": 314.6,
+            "diesel": 322.6,
+            "diesel_discount": 312.6,
             "geo": {
                 "lat": 65.035079,
                 "lon": -14.228942
@@ -2539,8 +2539,8 @@
             "bensin95": 322.9,
             "bensin95_discount": 312.9,
             "company": "Orkan",
-            "diesel": 322.9,
-            "diesel_discount": 312.9,
+            "diesel": 322.6,
+            "diesel_discount": 312.6,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
