@@ -4,7 +4,7 @@
             "bensin95": 299.7,
             "bensin95_discount": null,
             "company": "Atlantsolía",
-            "diesel": 304.8,
+            "diesel": 304.7,
             "diesel_discount": null,
             "geo": {
                 "lat": 65.69913,
@@ -17,8 +17,8 @@
             "bensin95": 317.1,
             "bensin95_discount": 312.1,
             "company": "Atlantsolía",
-            "diesel": 320.1,
-            "diesel_discount": 315.1,
+            "diesel": 317.2,
+            "diesel_discount": 312.2,
             "geo": {
                 "lat": 65.687807,
                 "lon": -18.100104
@@ -43,8 +43,8 @@
             "bensin95": 312.0,
             "bensin95_discount": 307.0,
             "company": "Atlantsolía",
-            "diesel": 314.8,
-            "diesel_discount": 309.8,
+            "diesel": 313.8,
+            "diesel_discount": 308.8,
             "geo": {
                 "lat": 64.5675445,
                 "lon": -21.8934511
@@ -69,8 +69,8 @@
             "bensin95": 323.0,
             "bensin95_discount": 318.0,
             "company": "Atlantsolía",
-            "diesel": 322.1,
-            "diesel_discount": 317.1,
+            "diesel": 321.1,
+            "diesel_discount": 316.1,
             "geo": {
                 "lat": 65.259896,
                 "lon": -14.39789
@@ -95,8 +95,8 @@
             "bensin95": 322.0,
             "bensin95_discount": 317.0,
             "company": "Atlantsolía",
-            "diesel": 322.7,
-            "diesel_discount": 317.7,
+            "diesel": 321.8,
+            "diesel_discount": 316.8,
             "geo": {
                 "lat": 63.994238,
                 "lon": -21.185975
@@ -108,7 +108,7 @@
             "bensin95": 299.7,
             "bensin95_discount": null,
             "company": "Atlantsolía",
-            "diesel": 304.8,
+            "diesel": 304.7,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.076516,
@@ -173,8 +173,8 @@
             "bensin95": 322.0,
             "bensin95_discount": 317.0,
             "company": "Atlantsolía",
-            "diesel": 322.7,
-            "diesel_discount": 317.7,
+            "diesel": 321.8,
+            "diesel_discount": 316.8,
             "geo": {
                 "lat": 63.946582,
                 "lon": -21.013048
@@ -199,8 +199,8 @@
             "bensin95": 315.1,
             "bensin95_discount": 310.1,
             "company": "Atlantsolía",
-            "diesel": 321.7,
-            "diesel_discount": 316.7,
+            "diesel": 320.8,
+            "diesel_discount": 315.8,
             "geo": {
                 "lat": 64.110091,
                 "lon": -21.852653
@@ -225,7 +225,7 @@
             "bensin95": 299.7,
             "bensin95_discount": null,
             "company": "Atlantsolía",
-            "diesel": 304.8,
+            "diesel": 304.7,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.120944,
@@ -238,8 +238,8 @@
             "bensin95": 312.0,
             "bensin95_discount": 307.0,
             "company": "Atlantsolía",
-            "diesel": 314.8,
-            "diesel_discount": 309.8,
+            "diesel": 313.8,
+            "diesel_discount": 308.8,
             "geo": {
                 "lat": 65.07071,
                 "lon": -22.733996
