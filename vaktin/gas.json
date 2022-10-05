@@ -2822,11 +2822,11 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 320.8,
-            "bensin95_discount": 310.8,
+            "bensin95": 321.1,
+            "bensin95_discount": 311.1,
             "company": "Orkan",
-            "diesel": 318.8,
-            "diesel_discount": 308.8,
+            "diesel": 318.9,
+            "diesel_discount": 308.9,
             "geo": {
                 "lat": 63.944998,
                 "lon": -21.01074
@@ -2861,11 +2861,11 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 322.1,
-            "bensin95_discount": 312.1,
+            "bensin95": 325.1,
+            "bensin95_discount": 315.1,
             "company": "Orkan",
-            "diesel": 318.8,
-            "diesel_discount": 308.8,
+            "diesel": 321.8,
+            "diesel_discount": 311.8,
             "geo": {
                 "lat": 63.417474,
                 "lon": -18.993665
