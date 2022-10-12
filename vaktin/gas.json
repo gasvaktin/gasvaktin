@@ -2432,11 +2432,11 @@
             "name": "Eskifjörður"
         },
         {
-            "bensin95": 331.1,
-            "bensin95_discount": 321.1,
+            "bensin95": 331.0,
+            "bensin95_discount": 321.0,
             "company": "Orkan",
-            "diesel": 328.8,
-            "diesel_discount": 318.8,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 64.9332,
                 "lon": -14.0292
@@ -2445,11 +2445,11 @@
             "name": "Fáskrúðsfjörður"
         },
         {
-            "bensin95": 331.1,
-            "bensin95_discount": 321.1,
+            "bensin95": 331.0,
+            "bensin95_discount": 321.0,
             "company": "Orkan",
-            "diesel": 328.8,
-            "diesel_discount": 318.8,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 65.096709,
                 "lon": -14.742542
@@ -2484,11 +2484,11 @@
             "name": "Reyðarfjörður"
         },
         {
-            "bensin95": 331.1,
-            "bensin95_discount": 321.1,
+            "bensin95": 331.0,
+            "bensin95_discount": 321.0,
             "company": "Orkan",
-            "diesel": 328.8,
-            "diesel_discount": 318.8,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 65.261663,
                 "lon": -13.999621
@@ -2497,11 +2497,11 @@
             "name": "Seyðisfjörður"
         },
         {
-            "bensin95": 331.1,
-            "bensin95_discount": 321.1,
+            "bensin95": 331.0,
+            "bensin95_discount": 321.0,
             "company": "Orkan",
-            "diesel": 328.8,
-            "diesel_discount": 318.8,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 65.317017,
                 "lon": -15.119652
@@ -2627,11 +2627,11 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 326.2,
-            "bensin95_discount": 316.2,
+            "bensin95": 326.1,
+            "bensin95_discount": 316.1,
             "company": "Orkan",
-            "diesel": 324.4,
-            "diesel_discount": 314.4,
+            "diesel": 324.3,
+            "diesel_discount": 314.3,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
@@ -2640,11 +2640,11 @@
             "name": "Ísafjörður"
         },
         {
-            "bensin95": 331.1,
-            "bensin95_discount": 321.1,
+            "bensin95": 331.0,
+            "bensin95_discount": 321.0,
             "company": "Orkan",
-            "diesel": 328.8,
-            "diesel_discount": 318.8,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 66.025744,
                 "lon": -22.990537
@@ -2653,11 +2653,11 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 324.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 324.8,
+            "bensin95_discount": 314.8,
             "company": "Orkan",
-            "diesel": 323.8,
-            "diesel_discount": 313.8,
+            "diesel": 323.7,
+            "diesel_discount": 313.7,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
@@ -2770,8 +2770,8 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 316.1,
-            "bensin95_discount": 306.1,
+            "bensin95": 316.0,
+            "bensin95_discount": 306.0,
             "company": "Orkan",
             "diesel": 316.7,
             "diesel_discount": 306.7,
@@ -2822,11 +2822,11 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 326.8,
-            "bensin95_discount": 316.8,
+            "bensin95": 326.7,
+            "bensin95_discount": 316.7,
             "company": "Orkan",
-            "diesel": 325.8,
-            "diesel_discount": 315.8,
+            "diesel": 325.7,
+            "diesel_discount": 315.7,
             "geo": {
                 "lat": 63.944998,
                 "lon": -21.01074
@@ -2861,8 +2861,8 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 328.1,
-            "bensin95_discount": 318.1,
+            "bensin95": 328.0,
+            "bensin95_discount": 318.0,
             "company": "Orkan",
             "diesel": 325.8,
             "diesel_discount": 315.8,
@@ -2965,11 +2965,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 322.1,
-            "bensin95_discount": 312.1,
+            "bensin95": 322.0,
+            "bensin95_discount": 312.0,
             "company": "Orkan",
-            "diesel": 319.8,
-            "diesel_discount": 309.8,
+            "diesel": 319.7,
+            "diesel_discount": 309.7,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
@@ -3056,11 +3056,11 @@
             "name": "Spöngin"
         },
         {
-            "bensin95": 331.1,
-            "bensin95_discount": 321.1,
+            "bensin95": 331.0,
+            "bensin95_discount": 321.0,
             "company": "Orkan",
-            "diesel": 328.8,
-            "diesel_discount": 318.8,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 65.263121,
                 "lon": -14.406162
