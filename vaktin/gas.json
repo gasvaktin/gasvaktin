@@ -1366,11 +1366,11 @@
             "name": "Vallarheiði"
         },
         {
-            "bensin95": 333.2,
-            "bensin95_discount": 328.2,
+            "bensin95": 306.9,
+            "bensin95_discount": 301.9,
             "company": "N1",
-            "diesel": 336.9,
-            "diesel_discount": 331.9,
+            "diesel": 317.9,
+            "diesel_discount": 312.9,
             "geo": {
                 "lat": 64.100852,
                 "lon": -21.780112
