@@ -359,7 +359,7 @@ N1_LOCATION_RELATION = {
     'Norðurhella': 'n1_082',
     "Mývatn": "n1_083",
 }
-N1_DISCOUNTLESS_STATIONS = ['n1_011', 'n1_074', 'n1_081', 'n1_082']
+N1_DISCOUNTLESS_STATIONS = ['n1_011', 'n1_074', 'n1_081', 'n1_082', 'n1_079']
 
 # Note: Daelan gone after commit 869cf94f90fa4ade010f17185e449e8819715d0e
 
