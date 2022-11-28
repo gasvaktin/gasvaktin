@@ -1,7 +1,7 @@
 {
     "stations": [
         {
-            "bensin95": 306.4,
+            "bensin95": 302.3,
             "bensin95_discount": null,
             "company": "Atlantsolía",
             "diesel": 315.4,
@@ -14,8 +14,8 @@
             "name": "Baldursnes Akureyri"
         },
         {
-            "bensin95": 324.0,
-            "bensin95_discount": 319.0,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "Atlantsolía",
             "diesel": 327.0,
             "diesel_discount": 322.0,
@@ -27,8 +27,8 @@
             "name": "Glerártorg Akureyri"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -40,8 +40,8 @@
             "name": "Bíldshöfði"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 314.8,
+            "bensin95_discount": 309.8,
             "company": "Atlantsolía",
             "diesel": 323.6,
             "diesel_discount": 318.6,
@@ -53,8 +53,8 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -66,8 +66,8 @@
             "name": "Búðarkór"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 330.9,
             "diesel_discount": 325.9,
@@ -79,8 +79,8 @@
             "name": "Egilsstaðir"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -92,8 +92,8 @@
             "name": "Hafnarfjarðarhöfn"
         },
         {
-            "bensin95": 328.9,
-            "bensin95_discount": 323.9,
+            "bensin95": 324.8,
+            "bensin95_discount": 319.8,
             "company": "Atlantsolía",
             "diesel": 331.6,
             "diesel_discount": 326.6,
@@ -105,7 +105,7 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 306.4,
+            "bensin95": 302.3,
             "bensin95_discount": null,
             "company": "Atlantsolía",
             "diesel": 315.4,
@@ -118,8 +118,8 @@
             "name": "Kaplakriki"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -131,8 +131,8 @@
             "name": "Kópavogsbraut"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -144,8 +144,8 @@
             "name": "Mosfellsbær"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 315.8,
+            "bensin95_discount": 310.8,
             "company": "Atlantsolía",
             "diesel": 322.5,
             "diesel_discount": 317.5,
@@ -157,8 +157,8 @@
             "name": "Njarðvík"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -170,8 +170,8 @@
             "name": "Öskjuhlíð"
         },
         {
-            "bensin95": 328.9,
-            "bensin95_discount": 323.9,
+            "bensin95": 324.8,
+            "bensin95_discount": 319.8,
             "company": "Atlantsolía",
             "diesel": 331.6,
             "diesel_discount": 326.6,
@@ -183,8 +183,8 @@
             "name": "Selfoss"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -196,8 +196,8 @@
             "name": "Skeifan"
         },
         {
-            "bensin95": 322.0,
-            "bensin95_discount": 317.0,
+            "bensin95": 317.9,
+            "bensin95_discount": 312.9,
             "company": "Atlantsolía",
             "diesel": 330.6,
             "diesel_discount": 325.6,
@@ -209,8 +209,8 @@
             "name": "Skemmuvegur"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -222,7 +222,7 @@
             "name": "Skúlagata"
         },
         {
-            "bensin95": 306.4,
+            "bensin95": 302.3,
             "bensin95_discount": null,
             "company": "Atlantsolía",
             "diesel": 315.4,
@@ -235,8 +235,8 @@
             "name": "Sprengisandur"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 314.8,
+            "bensin95_discount": 309.8,
             "company": "Atlantsolía",
             "diesel": 323.6,
             "diesel_discount": 318.6,
@@ -248,8 +248,8 @@
             "name": "Stykkishólmur"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -261,8 +261,8 @@
             "name": "Starengi"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -274,8 +274,8 @@
             "name": "Kirkjustétt"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -287,8 +287,8 @@
             "name": "Knarrarvogur"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -300,8 +300,8 @@
             "name": "Kjalarnes"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
@@ -313,8 +313,8 @@
             "name": "Háaleitisbraut"
         },
         {
-            "bensin95": 329.9,
-            "bensin95_discount": 324.9,
+            "bensin95": 325.8,
+            "bensin95_discount": 320.8,
             "company": "Atlantsolía",
             "diesel": 332.5,
             "diesel_discount": 327.5,
