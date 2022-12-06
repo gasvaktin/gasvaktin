@@ -677,11 +677,11 @@
             "name": "Hveragerði"
         },
         {
-            "bensin95": 319.2,
-            "bensin95_discount": 314.2,
+            "bensin95": 329.2,
+            "bensin95_discount": 324.2,
             "company": "N1",
-            "diesel": 323.9,
-            "diesel_discount": 318.9,
+            "diesel": 333.9,
+            "diesel_discount": 328.9,
             "geo": {
                 "lat": 63.99667458,
                 "lon": -22.54890236
