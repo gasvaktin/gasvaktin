@@ -2822,11 +2822,11 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 322.3,
-            "bensin95_discount": 312.3,
+            "bensin95": 322.2,
+            "bensin95_discount": 312.2,
             "company": "Orkan",
-            "diesel": 328.8,
-            "diesel_discount": 318.8,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 63.944998,
                 "lon": -21.01074
@@ -2978,11 +2978,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 322.6,
-            "bensin95_discount": 312.6,
+            "bensin95": 322.2,
+            "bensin95_discount": 312.2,
             "company": "Orkan",
-            "diesel": 328.9,
-            "diesel_discount": 318.9,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
@@ -3095,11 +3095,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 322.6,
-            "bensin95_discount": 312.6,
+            "bensin95": 322.2,
+            "bensin95_discount": 312.2,
             "company": "Orkan",
-            "diesel": 328.9,
-            "diesel_discount": 318.9,
+            "diesel": 328.7,
+            "diesel_discount": 318.7,
             "geo": {
                 "lat": 63.995433,
                 "lon": -21.191837
