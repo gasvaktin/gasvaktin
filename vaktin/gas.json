@@ -92,11 +92,11 @@
             "name": "Hafnarfjarðarhöfn"
         },
         {
-            "bensin95": 322.7,
-            "bensin95_discount": 317.7,
+            "bensin95": 322.3,
+            "bensin95_discount": 317.3,
             "company": "Atlantsolía",
-            "diesel": 329.0,
-            "diesel_discount": 324.0,
+            "diesel": 328.8,
+            "diesel_discount": 323.8,
             "geo": {
                 "lat": 63.994238,
                 "lon": -21.185975
@@ -170,11 +170,11 @@
             "name": "Öskjuhlíð"
         },
         {
-            "bensin95": 322.7,
-            "bensin95_discount": 317.7,
+            "bensin95": 322.3,
+            "bensin95_discount": 317.3,
             "company": "Atlantsolía",
-            "diesel": 329.0,
-            "diesel_discount": 324.0,
+            "diesel": 328.8,
+            "diesel_discount": 323.8,
             "geo": {
                 "lat": 63.946582,
                 "lon": -21.013048
