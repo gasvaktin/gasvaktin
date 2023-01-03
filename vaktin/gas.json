@@ -2461,8 +2461,8 @@
             "bensin95": 327.9,
             "bensin95_discount": 317.9,
             "company": "Orkan",
-            "diesel": 335.0,
-            "diesel_discount": 325.0,
+            "diesel": 336.0,
+            "diesel_discount": 326.0,
             "geo": {
                 "lat": 65.14738,
                 "lon": -13.707358
@@ -2474,8 +2474,8 @@
             "bensin95": 327.9,
             "bensin95_discount": 317.9,
             "company": "Orkan",
-            "diesel": 335.0,
-            "diesel_discount": 325.0,
+            "diesel": 336.0,
+            "diesel_discount": 326.0,
             "geo": {
                 "lat": 65.035079,
                 "lon": -14.228942
@@ -2591,8 +2591,8 @@
             "bensin95": 327.9,
             "bensin95_discount": 317.9,
             "company": "Orkan",
-            "diesel": 335.0,
-            "diesel_discount": 325.0,
+            "diesel": 336.0,
+            "diesel_discount": 326.0,
             "geo": {
                 "lat": 65.747084,
                 "lon": -19.645718
@@ -2617,8 +2617,8 @@
             "bensin95": 327.9,
             "bensin95_discount": 317.9,
             "company": "Orkan",
-            "diesel": 335.0,
-            "diesel_discount": 325.0,
+            "diesel": 336.0,
+            "diesel_discount": 326.0,
             "geo": {
                 "lat": 66.153076,
                 "lon": -23.248703
@@ -2747,8 +2747,8 @@
             "bensin95": 327.9,
             "bensin95_discount": 317.9,
             "company": "Orkan",
-            "diesel": 335.0,
-            "diesel_discount": 325.0,
+            "diesel": 336.0,
+            "diesel_discount": 326.0,
             "geo": {
                 "lat": 63.841234,
                 "lon": -22.424997
@@ -2851,8 +2851,8 @@
             "bensin95": 327.9,
             "bensin95_discount": 317.9,
             "company": "Orkan",
-            "diesel": 335.0,
-            "diesel_discount": 325.0,
+            "diesel": 336.0,
+            "diesel_discount": 326.0,
             "geo": {
                 "lat": 63.440566,
                 "lon": -20.277227
@@ -2861,8 +2861,8 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 327.8,
-            "bensin95_discount": 317.8,
+            "bensin95": 327.9,
+            "bensin95_discount": 317.9,
             "company": "Orkan",
             "diesel": 335.0,
             "diesel_discount": 325.0,
@@ -2877,8 +2877,8 @@
             "bensin95": 327.9,
             "bensin95_discount": 317.9,
             "company": "Orkan",
-            "diesel": 335.0,
-            "diesel_discount": 325.0,
+            "diesel": 336.0,
+            "diesel_discount": 326.0,
             "geo": {
                 "lat": 63.85891,
                 "lon": -21.378168
@@ -3030,8 +3030,8 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 312.1,
-            "bensin95_discount": 302.1,
+            "bensin95": 311.1,
+            "bensin95_discount": 301.1,
             "company": "Orkan",
             "diesel": 325.8,
             "diesel_discount": 315.8,
