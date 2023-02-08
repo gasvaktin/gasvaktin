@@ -417,11 +417,11 @@
             "name": "Fossvogur"
         },
         {
-            "bensin95": 318.7,
-            "bensin95_discount": 313.7,
+            "bensin95": 329.7,
+            "bensin95_discount": 324.7,
             "company": "N1",
-            "diesel": 329.2,
-            "diesel_discount": 324.2,
+            "diesel": 329.3,
+            "diesel_discount": 324.3,
             "geo": {
                 "lat": 64.11004543,
                 "lon": -21.85612188
