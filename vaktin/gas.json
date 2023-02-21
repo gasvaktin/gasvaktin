@@ -378,11 +378,11 @@
             "name": "Gagnvegur"
         },
         {
-            "bensin95": 320.7,
-            "bensin95_discount": 315.7,
+            "bensin95": 330.7,
+            "bensin95_discount": 325.7,
             "company": "N1",
-            "diesel": 274.06,
-            "diesel_discount": 269.1,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.16616751,
                 "lon": -21.69573328
@@ -417,11 +417,11 @@
             "name": "Fossvogur"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 319.7,
+            "bensin95_discount": 314.7,
             "company": "N1",
-            "diesel": 274.06,
-            "diesel_discount": 269.1,
+            "diesel": 321.2,
+            "diesel_discount": 316.2,
             "geo": {
                 "lat": 64.11004543,
                 "lon": -21.85612188
