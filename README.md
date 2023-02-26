@@ -7,8 +7,6 @@ Gasvaktin aims to be an open and automated price lookup project for petrol stati
 
 Check out [gasvaktin.is](https://gasvaktin.is/) if you're travelling Iceland and want to find your preferred petrol station in your near vicinity.
 
-Follow [Gasvaktin on Twitter](https://twitter.com/gasvaktin/status/861277070621638656) if you'd like to be notified on price changes, they're automatically tweeted by [@gasvaktin](https://twitter.com/gasvaktin) when detected.
-
 If you're interested in working with the current petrol price data provided there is a publicly available API endpoint which exposes current price data, the API is hosted by the awesome icelandic [apis.is](http://docs.apis.is/#endpoint-petrol) project, check it out.
 
 If you notice any issues or errors please contact maintainer, or submit a PR to fix the issue.
@@ -30,8 +28,6 @@ You need to install [Python (3.6.8 or newer) and pip](https://docs.python-guide.
 
 	pip install -r pip_requirements.txt
 
-**Note:** Either make sure Python3 is set to default over Python2 in your environment, or use `python3` and `pip3` instead of `python` and `pip`. Python2 lifecycle ended in 2019, so hopefully we can stop worrying about default Python sometime in 2020.
-
 Open a terminal in this repository and
 
 	python gasvaktin.py --collect-and-write-data
@@ -42,7 +38,7 @@ Run `python gasvaktin.py --help` to see available input arguments.
 
 ## Origination of data
 
-Data over petrol stations and locations is currently just static. Price data from the oil companies is fetched regularly. See [here](https://gist.github.com/gasvaktin) for more details on when prices were last checked.
+Data over petrol stations and locations is currently just static. Price data from the oil companies is fetched regularly.
 
 If you're interested in price trends over time, it can be extracted from git history via the following:
 
