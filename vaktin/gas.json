@@ -1717,11 +1717,11 @@
             "name": "Neskaupstaður"
         },
         {
-            "bensin95": 314.5,
-            "bensin95_discount": 307.5,
+            "bensin95": 315.5,
+            "bensin95_discount": 308.5,
             "company": "ÓB",
-            "diesel": 318.2,
-            "diesel_discount": 311.2,
+            "diesel": 317.9,
+            "diesel_discount": 310.9,
             "geo": {
                 "lat": 63.979938,
                 "lon": -22.546893
@@ -1746,8 +1746,8 @@
             "bensin95": 324.1,
             "bensin95_discount": 317.1,
             "company": "ÓB",
-            "diesel": 327.5,
-            "diesel_discount": 320.5,
+            "diesel": 326.8,
+            "diesel_discount": 319.8,
             "geo": {
                 "lat": 63.943678,
                 "lon": -21.008184
@@ -1876,8 +1876,8 @@
             "bensin95": 319.5,
             "bensin95_discount": 312.5,
             "company": "ÓB",
-            "diesel": 320.9,
-            "diesel_discount": 313.9,
+            "diesel": 321.2,
+            "diesel_discount": 314.2,
             "geo": {
                 "lat": 65.699748,
                 "lon": -18.143686
