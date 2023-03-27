@@ -369,7 +369,29 @@ def get_individual_orkan_prices():
     url = 'https://www.orkan.is/orkustodvar/'
     res = requests.get(url, headers=utils.headers())
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
-    div_element = html.find('.//div[@class="accordion__container"]')
+    div_element = html.find('.//div[@class="orkuverd-collapse"]')
+    # <orkan_webpage_parse_failure_fallback>
+    if div_element is None:
+        # 2023-03-27: Orkan has updated its webpage, now uses Blazor and heavily renders page
+        # clientside using Blazor JS lib, might not be parse-able without rendering the DOM, I'll
+        # take a better look later, doing this for now
+        logman.warning('Failure readin Orkan prices, using current Orkan price data as fallback.')
+        current_price_data_file = os.path.abspath(os.path.join(
+            os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
+        ))
+        current_price_data = utils.load_json(current_price_data_file)
+        prices = {}
+        for station in current_price_data['stations']:
+            if not station['key'].startswith('or_'):
+                continue
+            prices[station['key']] = {
+                'bensin95': station['bensin95'],
+                'diesel': station['diesel'],
+                'bensin95_discount': station['bensin95_discount'],
+                'diesel_discount': station['diesel_discount']
+            }
+        return prices
+    # </orkan_webpage_parse_failure_fallback>
     territories = div_element.findall('.//div[@class="accordion__child"]')
     prices = {}
     key = None
