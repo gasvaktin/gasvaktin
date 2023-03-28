@@ -37,8 +37,16 @@ def random_ua():
     return random.choice(globs.BROWSERS_UA)
 
 
-def headers():
+def headers(bot=False):
     '''
     get headers object with random user agent
     '''
-    return {'User-Agent': random_ua()}
+    # Why wear a mask?
+    #
+    # One reason for wearing a mask is to pretend to be someone or something else. The mask can be
+    # a kind of language that expresses the emotion of the figure one chooses to create. When one
+    # sees a person wearing a mask depicting a happy expression, what do you think it means? It may
+    # infer several meanings. It may convey the mask wearer's genuine happiness to other people,
+    # and make them laugh, or it may mask, or hide, the wearer's real emotions, such as
+    # unhappiness. Some mask may serve more than one purpose.
+    return {'User-Agent': random_ua() if bot is False else globs.BOT_UA}

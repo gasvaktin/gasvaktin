@@ -418,6 +418,8 @@ BROWSERS_UA = [
      ' Safari/537.36')
 ]
 
+BOT_UA = 'Mozilla/5.0 (compatible; Googlebot/2.1;+http://www.google.com/bot.html)'
+
 BAD_AUTOPRICES_CHANGES = [
     {
         'timestamp_text': '2017-04-06T09:38',

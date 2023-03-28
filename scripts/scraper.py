@@ -26,6 +26,7 @@ def get_individual_atlantsolia_prices():
     relation = globs.ATLANTSOLIA_LOCATION_RELATION
     url = 'https://www.atlantsolia.is/stodvaverd/'
     res = requests.get(url, headers=utils.headers())
+    res.raise_for_status()
     html_text = res.content
     html = lxml.etree.fromstring(html_text, lxml.etree.HTMLParser())
     div_prices = html.find('.//*[@id="content"]/div/div/div/div[2]/div/div/table/tbody')
@@ -225,6 +226,7 @@ def get_individual_n1_prices():
 def get_individual_olis_prices():
     url = 'https://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers())
+    res.raise_for_status()
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
     data = {'stations': {}}
     price_table = html.find('.//table')  # theres just one table element, let's use that ofc
@@ -283,6 +285,7 @@ def get_individual_olis_prices():
 def get_individual_ob_prices():
     url = 'https://www.ob.is/eldsneytisverd/'
     res = requests.get(url, headers=utils.headers())
+    res.raise_for_status()
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
     data = {
         'stations': {},
@@ -367,62 +370,30 @@ def get_individual_ob_prices():
 
 def get_individual_orkan_prices():
     url = 'https://www.orkan.is/orkustodvar/'
-    res = requests.get(url, headers=utils.headers())
+    res = requests.get(url, headers=utils.headers(bot=True))
+    res.raise_for_status()
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
-    div_element = html.find('.//div[@class="orkuverd-collapse"]')
-    # <orkan_webpage_parse_failure_fallback>
-    if div_element is None:
-        # 2023-03-27: Orkan has updated its webpage, now uses Blazor and heavily renders page
-        # clientside using Blazor JS lib, might not be parse-able without rendering the DOM, I'll
-        # take a better look later, doing this for now
-        logman.warning('Failure readin Orkan prices, using current Orkan price data as fallback.')
-        current_price_data_file = os.path.abspath(os.path.join(
-            os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
-        ))
-        current_price_data = utils.load_json(current_price_data_file)
-        prices = {}
-        for station in current_price_data['stations']:
-            if not station['key'].startswith('or_'):
-                continue
-            prices[station['key']] = {
-                'bensin95': station['bensin95'],
-                'diesel': station['diesel'],
-                'bensin95_discount': station['bensin95_discount'],
-                'diesel_discount': station['diesel_discount']
-            }
-        return prices
-    # </orkan_webpage_parse_failure_fallback>
-    territories = div_element.findall('.//div[@class="accordion__child"]')
+    table_element = html.find('.//table[@class="PriceTable"]')
     prices = {}
-    key = None
-    for territory in territories:
-        for station in territory:
-            station_name = station[0].text.strip()
-            bensin95 = float(station[1].text.replace(',', '.').replace(' jamm', ''))
-            diesel = float(station[2].text.replace(',', '.').replace(' jamm', ''))
-            key = globs.ORKAN_LOCATION_RELATION[station_name]
-            # Orkan has a 3-step discount system controlled by your
-            # spendings on gas from them the month before
-            # See more info here: https://www.orkan.is/Afslattarthrep
-            # For consistency we just use the minimum default discount
+    for row in table_element.findall('.//tr'):
+        station_name = row[0].text.strip()
+        if station_name == 'Orkustöð':
+            continue  # skip header row
+        bensin95 = float(row[1][0].text.replace(',', '.'))
+        diesel = float(row[2][0].text.replace(',', '.'))
+        key = globs.ORKAN_LOCATION_RELATION[station_name]
+        if key not in globs.ORKAN_DISCOUNTLESS_STATIONS:
             bensin95_discount = round(bensin95 - globs.ORKAN_MINIMUM_DISCOUNT, 1)
             diesel_discount = round(diesel - globs.ORKAN_MINIMUM_DISCOUNT, 1)
-            if key in globs.ORKAN_DISCOUNTLESS_STATIONS:
-                bensin95_discount = None
-                diesel_discount = None
-            prices[key] = {
-                'bensin95': bensin95,
-                'diesel': diesel,
-                'bensin95_discount': bensin95_discount,
-                'diesel_discount': diesel_discount
-            }
-    if 'or_070' not in prices:
-        # Haedarsmari missing from webpage, irl price indicates discountless station, nowever irl
-        # price does not match the other discountless Orkan stations though, so we're hardcoding a
-        # fixed price based on another discountless station for now ..
-        prices['or_070'] = prices['or_048'].copy()
-        prices['or_070']['bensin95'] = round(prices['or_070']['bensin95'] + 3.1, 1)
-        prices['or_070']['diesel'] = round(prices['or_070']['diesel'] + 3.4, 1)
+        else:
+            bensin95_discount = None
+            diesel_discount = None
+        prices[key] = {
+            'bensin95': bensin95,
+            'diesel': diesel,
+            'bensin95_discount': bensin95_discount,
+            'diesel_discount': diesel_discount
+        }
     return prices
 
 
