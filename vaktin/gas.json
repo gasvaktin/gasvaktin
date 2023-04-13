@@ -391,8 +391,8 @@
             "name": "Háholt"
         },
         {
-            "bensin95": 329.7,
-            "bensin95_discount": 324.7,
+            "bensin95": 324.7,
+            "bensin95_discount": 319.7,
             "company": "N1",
             "diesel": 328.2,
             "diesel_discount": 323.2,
@@ -430,8 +430,8 @@
             "name": "Stórihjalli"
         },
         {
-            "bensin95": 329.7,
-            "bensin95_discount": 324.7,
+            "bensin95": 324.7,
+            "bensin95_discount": 319.7,
             "company": "N1",
             "diesel": 328.2,
             "diesel_discount": 323.2,
