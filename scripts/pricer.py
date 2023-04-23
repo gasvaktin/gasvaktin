@@ -98,9 +98,9 @@ def main():
             # Orkan Úthlíð near Bláskógabyggð temporarily closed?
             continue
         station['key'] = key
-        if key == 'n1_083':
+        if key == 'n1_084':
             if key not in prices_map[station['company']]['data']:
-                # New N1 fuel station at Myvatn listed but with no bensin or diesel price info
+                # New N1 fuel station listed but with no bensin or diesel price info
                 continue
         if prices_map[station['company']]['type'] == globs.PRICETYPE.INDIVIDUAL:
             for price_key in price_keys:

@@ -156,7 +156,7 @@ def get_individual_n1_prices():
         name = ' '.join(name.split())
         # </get-name>
         key = globs.N1_LOCATION_RELATION[name]
-        if name == 'Mývatn' and station['GasPrice'] is None:
+        if name == 'Skútuvogi' and station['GasPrice'] is None:
             continue
         bensin95 = float(station['GasPrice'].replace(',', '.'))
         diesel = float(station['DiselPrice'].replace(',', '.'))
