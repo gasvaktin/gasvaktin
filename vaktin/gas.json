@@ -2458,11 +2458,11 @@
             "name": "Hallormsstaður"
         },
         {
-            "bensin95": 319.2,
-            "bensin95_discount": 309.2,
+            "bensin95": 319.1,
+            "bensin95_discount": 309.1,
             "company": "Orkan",
-            "diesel": 315.9,
-            "diesel_discount": 305.9,
+            "diesel": 315.8,
+            "diesel_discount": 305.8,
             "geo": {
                 "lat": 65.14738,
                 "lon": -13.707358
@@ -2471,11 +2471,11 @@
             "name": "Neskaupstaður"
         },
         {
-            "bensin95": 319.2,
-            "bensin95_discount": 309.2,
+            "bensin95": 319.1,
+            "bensin95_discount": 309.1,
             "company": "Orkan",
-            "diesel": 315.9,
-            "diesel_discount": 305.9,
+            "diesel": 315.8,
+            "diesel_discount": 305.8,
             "geo": {
                 "lat": 65.035079,
                 "lon": -14.228942
@@ -2588,11 +2588,11 @@
             "name": "Mývatn"
         },
         {
-            "bensin95": 319.2,
-            "bensin95_discount": 309.2,
+            "bensin95": 319.1,
+            "bensin95_discount": 309.1,
             "company": "Orkan",
-            "diesel": 315.9,
-            "diesel_discount": 305.9,
+            "diesel": 315.8,
+            "diesel_discount": 305.8,
             "geo": {
                 "lat": 65.747084,
                 "lon": -19.645718
@@ -2614,11 +2614,11 @@
             "name": "Bíldudalur"
         },
         {
-            "bensin95": 319.2,
-            "bensin95_discount": 309.2,
+            "bensin95": 319.1,
+            "bensin95_discount": 309.1,
             "company": "Orkan",
-            "diesel": 315.9,
-            "diesel_discount": 305.9,
+            "diesel": 315.8,
+            "diesel_discount": 305.8,
             "geo": {
                 "lat": 66.153076,
                 "lon": -23.248703
@@ -2653,11 +2653,11 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 316.0,
-            "bensin95_discount": 306.0,
+            "bensin95": 315.9,
+            "bensin95_discount": 305.9,
             "company": "Orkan",
-            "diesel": 313.0,
-            "diesel_discount": 303.0,
+            "diesel": 312.9,
+            "diesel_discount": 302.9,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
@@ -2744,11 +2744,11 @@
             "name": "Stykkishólmur"
         },
         {
-            "bensin95": 319.2,
-            "bensin95_discount": 309.2,
+            "bensin95": 319.1,
+            "bensin95_discount": 309.1,
             "company": "Orkan",
-            "diesel": 315.9,
-            "diesel_discount": 305.9,
+            "diesel": 315.8,
+            "diesel_discount": 305.8,
             "geo": {
                 "lat": 63.841234,
                 "lon": -22.424997
@@ -2848,11 +2848,11 @@
             "name": "Stokkseyri"
         },
         {
-            "bensin95": 319.2,
-            "bensin95_discount": 309.2,
+            "bensin95": 319.1,
+            "bensin95_discount": 309.1,
             "company": "Orkan",
-            "diesel": 315.9,
-            "diesel_discount": 305.9,
+            "diesel": 315.8,
+            "diesel_discount": 305.8,
             "geo": {
                 "lat": 63.440566,
                 "lon": -20.277227
@@ -2874,11 +2874,11 @@
             "name": "Vík í Mýrdal"
         },
         {
-            "bensin95": 319.2,
-            "bensin95_discount": 309.2,
+            "bensin95": 319.1,
+            "bensin95_discount": 309.1,
             "company": "Orkan",
-            "diesel": 315.9,
-            "diesel_discount": 305.9,
+            "diesel": 315.8,
+            "diesel_discount": 305.8,
             "geo": {
                 "lat": 63.85891,
                 "lon": -21.378168
@@ -2965,11 +2965,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 312.6,
-            "bensin95_discount": 302.6,
+            "bensin95": 312.5,
+            "bensin95_discount": 302.5,
             "company": "Orkan",
-            "diesel": 309.0,
-            "diesel_discount": 299.0,
+            "diesel": 308.9,
+            "diesel_discount": 298.9,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
