@@ -2536,11 +2536,11 @@
             "name": "Furuvellir"
         },
         {
-            "bensin95": 319.3,
-            "bensin95_discount": 309.3,
+            "bensin95": 319.1,
+            "bensin95_discount": 309.1,
             "company": "Orkan",
-            "diesel": 316.0,
-            "diesel_discount": 306.0,
+            "diesel": 315.9,
+            "diesel_discount": 305.9,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
@@ -2861,11 +2861,11 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 319.2,
-            "bensin95_discount": 309.2,
+            "bensin95": 319.1,
+            "bensin95_discount": 309.1,
             "company": "Orkan",
-            "diesel": 315.0,
-            "diesel_discount": 305.0,
+            "diesel": 314.9,
+            "diesel_discount": 304.9,
             "geo": {
                 "lat": 63.417474,
                 "lon": -18.993665
