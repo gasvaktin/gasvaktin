@@ -2292,7 +2292,7 @@
             "bensin95": 292.5,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 296.3,
+            "diesel": 294.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2370,7 +2370,7 @@
             "bensin95": 292.5,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 296.3,
+            "diesel": 294.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2565,7 +2565,7 @@
             "bensin95": 292.5,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 296.3,
+            "diesel": 294.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 65.679649,
@@ -2903,7 +2903,7 @@
             "bensin95": 292.5,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 296.3,
+            "diesel": 294.3,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.131308,
@@ -2942,8 +2942,8 @@
             "bensin95": 292.5,
             "bensin95_discount": 282.5,
             "company": "Orkan",
-            "diesel": 296.3,
-            "diesel_discount": 286.3,
+            "diesel": 294.3,
+            "diesel_discount": 284.3,
             "geo": {
                 "lat": 64.101745,
                 "lon": -21.831087
