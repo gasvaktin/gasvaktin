@@ -1444,7 +1444,7 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 289.9,
+            "bensin95": 289.8,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 292.3,
@@ -1470,7 +1470,7 @@
             "name": "Akureyri BSO"
         },
         {
-            "bensin95": 289.9,
+            "bensin95": 289.8,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 292.3,
@@ -1548,7 +1548,7 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 289.9,
+            "bensin95": 289.8,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 292.3,
@@ -1574,7 +1574,7 @@
             "name": "Eyrarbakki"
         },
         {
-            "bensin95": 289.9,
+            "bensin95": 289.8,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 292.3,
@@ -1642,8 +1642,8 @@
             "bensin95": 314.7,
             "bensin95_discount": 307.7,
             "company": "ÓB",
-            "diesel": 311.2,
-            "diesel_discount": 304.2,
+            "diesel": 308.8,
+            "diesel_discount": 301.8,
             "geo": {
                 "lat": 66.068678,
                 "lon": -23.121961
@@ -1899,7 +1899,7 @@
             "name": "Sauðárkrókur Borgarflöt"
         },
         {
-            "bensin95": 289.9,
+            "bensin95": 289.8,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 292.3,
