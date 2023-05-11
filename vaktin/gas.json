@@ -417,11 +417,11 @@
             "name": "Fossvogur"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 307.9,
+            "bensin95_discount": 302.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 309.2,
+            "diesel_discount": 304.2,
             "geo": {
                 "lat": 64.11004543,
                 "lon": -21.85612188
@@ -482,11 +482,11 @@
             "name": "Skógarsel"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 289.9,
+            "bensin95_discount": null,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 292.9,
+            "diesel_discount": null,
             "geo": {
                 "lat": 64.07683807,
                 "lon": -21.95016999
@@ -495,11 +495,11 @@
             "name": "Reykjavíkurvegur"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 313.9,
+            "bensin95_discount": 308.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 308.2,
+            "diesel_discount": 303.2,
             "geo": {
                 "lat": 64.32195016,
                 "lon": -22.06546502
@@ -508,11 +508,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 306.9,
+            "bensin95_discount": 301.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 303.4,
+            "diesel_discount": 298.4,
             "geo": {
                 "lat": 64.54398584,
                 "lon": -21.91057924
@@ -664,8 +664,8 @@
             "name": "Selfoss"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 316.9,
+            "bensin95_discount": 311.9,
             "company": "N1",
             "diesel": 313.2,
             "diesel_discount": 308.2,
@@ -859,8 +859,8 @@
             "name": "Flateyri"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 323.9,
+            "bensin95_discount": 318.9,
             "company": "N1",
             "diesel": 313.2,
             "diesel_discount": 308.2,
@@ -1301,11 +1301,11 @@
             "name": "Reyðarfjörður"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 289.9,
+            "bensin95_discount": null,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 292.9,
+            "diesel_discount": null,
             "geo": {
                 "lat": 65.689793,
                 "lon": -18.097404
@@ -1366,11 +1366,11 @@
             "name": "Vallarheiði"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 289.9,
+            "bensin95_discount": null,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 292.9,
+            "diesel_discount": null,
             "geo": {
                 "lat": 64.100203,
                 "lon": -21.779527
@@ -1405,11 +1405,11 @@
             "name": "Skógarlind"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 289.9,
+            "bensin95_discount": null,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 292.9,
+            "diesel_discount": null,
             "geo": {
                 "lat": 64.044265,
                 "lon": -21.983224
