@@ -132,6 +132,8 @@ OB_LOCATION_RELATION = {
     'Skagaströnd': 'ob_045',
     'Akranes, Umboð': 'ob_046',
     'Fellabær': 'ob_047',
+    'Arnarstapi': 'ob_048',
+
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
