@@ -391,11 +391,11 @@
             "name": "Háholt"
         },
         {
-            "bensin95": 320.9,
-            "bensin95_discount": 315.9,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.14657013,
                 "lon": -21.89452573
@@ -443,11 +443,11 @@
             "name": "Lækjargata"
         },
         {
-            "bensin95": 320.9,
-            "bensin95_discount": 315.9,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.13881606,
                 "lon": -21.93820059
@@ -560,11 +560,11 @@
             "name": "Sauðárkrókur"
         },
         {
-            "bensin95": 316.5,
-            "bensin95_discount": 311.5,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 327.8,
-            "diesel_discount": 322.8,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 66.07472294,
                 "lon": -23.12308788
@@ -1145,11 +1145,11 @@
             "name": "Kirkjubæjarklaustur"
         },
         {
-            "bensin95": 319.4,
-            "bensin95_discount": 314.4,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 310.2,
-            "diesel_discount": 305.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 63.41794382,
                 "lon": -19.00159478
