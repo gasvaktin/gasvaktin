@@ -729,11 +729,11 @@
             "name": "Reykholt"
         },
         {
-            "bensin95": 325.9,
-            "bensin95_discount": 320.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 332.2,
-            "diesel_discount": 327.2,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 64.843599,
                 "lon": -22.653636
@@ -781,11 +781,11 @@
             "name": "Búðardalur"
         },
         {
-            "bensin95": 325.9,
-            "bensin95_discount": 320.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 332.2,
-            "diesel_discount": 327.2,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 65.55636907,
                 "lon": -22.10358005
@@ -950,11 +950,11 @@
             "name": "Fosshóll"
         },
         {
-            "bensin95": 325.9,
-            "bensin95_discount": 320.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 332.2,
-            "diesel_discount": 327.2,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 65.72085243,
                 "lon": -17.37217426
@@ -1184,11 +1184,11 @@
             "name": "Árnes"
         },
         {
-            "bensin95": 325.9,
-            "bensin95_discount": 320.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 332.2,
-            "diesel_discount": 327.2,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 64.13120911,
                 "lon": -20.32138646
@@ -1236,11 +1236,11 @@
             "name": "Laugarvatn"
         },
         {
-            "bensin95": 325.9,
-            "bensin95_discount": 320.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 332.2,
-            "diesel_discount": 327.2,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 63.84374596,
                 "lon": -22.43631422
@@ -1275,11 +1275,11 @@
             "name": "Garður"
         },
         {
-            "bensin95": 325.9,
-            "bensin95_discount": 320.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 332.2,
-            "diesel_discount": 327.2,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 63.98048775,
                 "lon": -22.38000602
