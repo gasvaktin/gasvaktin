@@ -391,11 +391,11 @@
             "name": "Háholt"
         },
         {
-            "bensin95": 320.9,
-            "bensin95_discount": 315.9,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.14657013,
                 "lon": -21.89452573
@@ -508,11 +508,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 308.9,
-            "bensin95_discount": 303.9,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 303.4,
-            "diesel_discount": 298.4,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.54398584,
                 "lon": -21.91057924
@@ -937,11 +937,11 @@
             "name": "Reykjahlíð"
         },
         {
-            "bensin95": 320.9,
-            "bensin95_discount": 315.9,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.68590606,
                 "lon": -17.53931847
@@ -1015,11 +1015,11 @@
             "name": "Þórshöfn"
         },
         {
-            "bensin95": 320.9,
-            "bensin95_discount": 315.9,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 66.03814697,
                 "lon": -14.80507993
@@ -1210,11 +1210,11 @@
             "name": "Geysir"
         },
         {
-            "bensin95": 320.9,
-            "bensin95_discount": 315.9,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.17734763,
                 "lon": -20.45387149
@@ -1249,11 +1249,11 @@
             "name": "Grindavík"
         },
         {
-            "bensin95": 320.9,
-            "bensin95_discount": 315.9,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.040404,
                 "lon": -22.713547
@@ -1288,8 +1288,8 @@
             "name": "Vogar"
         },
         {
-            "bensin95": 320.9,
-            "bensin95_discount": 315.9,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
             "diesel": 332.2,
             "diesel_discount": 327.2,
@@ -1405,11 +1405,11 @@
             "name": "Skógarlind"
         },
         {
-            "bensin95": 291.9,
-            "bensin95_discount": null,
+            "bensin95": 325.9,
+            "bensin95_discount": 320.9,
             "company": "N1",
-            "diesel": 292.9,
-            "diesel_discount": null,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.044265,
                 "lon": -21.983224
