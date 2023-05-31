@@ -355,8 +355,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.12440427,
                 "lon": -21.83005927
@@ -394,8 +394,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.14657013,
                 "lon": -21.89452573
@@ -446,8 +446,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.13881606,
                 "lon": -21.93820059
@@ -459,8 +459,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.12625609,
                 "lon": -21.88615498
@@ -472,8 +472,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.10412267,
                 "lon": -21.84578776
@@ -482,11 +482,11 @@
             "name": "Skógarsel"
         },
         {
-            "bensin95": 291.9,
-            "bensin95_discount": null,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 292.9,
-            "diesel_discount": null,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.07683807,
                 "lon": -21.95016999
@@ -508,11 +508,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 308.9,
-            "bensin95_discount": 303.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 303.4,
-            "diesel_discount": 298.4,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.54398584,
                 "lon": -21.91057924
@@ -524,8 +524,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.14456357,
                 "lon": -21.08482361
@@ -537,8 +537,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.66026736,
                 "lon": -20.27614486
@@ -550,8 +550,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.74027782,
                 "lon": -19.63628053
@@ -560,11 +560,11 @@
             "name": "Sauðárkrókur"
         },
         {
-            "bensin95": 316.5,
-            "bensin95_discount": 311.5,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 327.8,
-            "diesel_discount": 322.8,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 66.07472294,
                 "lon": -23.12308788
@@ -573,11 +573,11 @@
             "name": "Ísafjörður"
         },
         {
-            "bensin95": 311.9,
-            "bensin95_discount": 306.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 304.2,
-            "diesel_discount": 299.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.69082228,
                 "lon": -18.10851345
@@ -589,8 +589,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.66981387,
                 "lon": -18.08064222
@@ -599,11 +599,11 @@
             "name": "Akureyri Leiruvegur"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 311.3,
-            "diesel_discount": 306.3,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 66.04773333,
                 "lon": -17.34361215
@@ -654,8 +654,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 63.93684501,
                 "lon": -20.98792437
@@ -664,11 +664,11 @@
             "name": "Selfoss"
         },
         {
-            "bensin95": 316.9,
-            "bensin95_discount": 311.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 63.99605943,
                 "lon": -21.19322495
@@ -680,8 +680,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 63.99667458,
                 "lon": -22.54890236
@@ -732,8 +732,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.843599,
                 "lon": -22.653636
@@ -745,8 +745,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.91508494,
                 "lon": -23.88367116
@@ -784,8 +784,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.55636907,
                 "lon": -22.10358005
@@ -859,11 +859,11 @@
             "name": "Flateyri"
         },
         {
-            "bensin95": 325.9,
-            "bensin95_discount": 320.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 66.05132978,
                 "lon": -21.54882431
@@ -914,8 +914,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.94665652,
                 "lon": -18.18165695
@@ -927,8 +927,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.64176123,
                 "lon": -16.91123128
@@ -940,8 +940,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.68590606,
                 "lon": -17.53931847
@@ -966,8 +966,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 66.30042022,
                 "lon": -16.44792795
@@ -979,8 +979,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 66.03060011,
                 "lon": -16.48356915
@@ -992,8 +992,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 66.45361604,
                 "lon": -15.95048547
@@ -1200,8 +1200,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.31017649,
                 "lon": -20.30385017
@@ -1213,8 +1213,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.17734763,
                 "lon": -20.45387149
@@ -1226,8 +1226,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.21750925,
                 "lon": -20.73561072
@@ -1239,8 +1239,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 63.84374596,
                 "lon": -22.43631422
@@ -1252,8 +1252,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.040404,
                 "lon": -22.713547
@@ -1278,8 +1278,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 63.98048775,
                 "lon": -22.38000602
@@ -1317,8 +1317,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.893589,
                 "lon": -23.702756
@@ -1382,8 +1382,8 @@
             "bensin95": 320.9,
             "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 313.2,
-            "diesel_discount": 308.2,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 65.378695,
                 "lon": -20.643388
@@ -1405,11 +1405,11 @@
             "name": "Skógarlind"
         },
         {
-            "bensin95": 291.9,
-            "bensin95_discount": null,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 292.9,
-            "diesel_discount": null,
+            "diesel": 332.2,
+            "diesel_discount": 327.2,
             "geo": {
                 "lat": 64.044265,
                 "lon": -21.983224
