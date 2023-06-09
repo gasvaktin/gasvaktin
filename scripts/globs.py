@@ -57,7 +57,6 @@ OLIS_LOCATION_RELATION = {
     'Arnarstapi - bensínstöð': 'ol_015',
     'Álfheimar': 'ol_001',
     'Ánanaust': 'ol_002',
-    'Básinn': 'ol_025',
     'Dalvík Bensínstöð': 'ol_018',
     'Garðabær': 'ol_004',
     'Gullinbrú': 'ol_005',
@@ -133,7 +132,7 @@ OB_LOCATION_RELATION = {
     'Akranes, Umboð': 'ob_046',
     'Fellabær': 'ob_047',
     'Arnarstapi': 'ob_048',
-
+    'Básinn': 'ob_079',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
