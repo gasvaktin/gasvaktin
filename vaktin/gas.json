@@ -417,11 +417,11 @@
             "name": "Fossvogur"
         },
         {
-            "bensin95": 309.9,
-            "bensin95_discount": 304.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 309.2,
-            "diesel_discount": 304.2,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 64.11004543,
                 "lon": -21.85612188
@@ -560,11 +560,11 @@
             "name": "Sauðárkrókur"
         },
         {
-            "bensin95": 316.5,
-            "bensin95_discount": 311.5,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 308.8,
-            "diesel_discount": 303.8,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 66.07472294,
                 "lon": -23.12308788
@@ -599,11 +599,11 @@
             "name": "Akureyri Leiruvegur"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 311.3,
-            "diesel_discount": 306.3,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 66.04773333,
                 "lon": -17.34361215
@@ -859,8 +859,8 @@
             "name": "Flateyri"
         },
         {
-            "bensin95": 325.9,
-            "bensin95_discount": 320.9,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
             "diesel": 313.2,
             "diesel_discount": 308.2,
@@ -1301,11 +1301,11 @@
             "name": "Reyðarfjörður"
         },
         {
-            "bensin95": 291.9,
-            "bensin95_discount": null,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 292.9,
-            "diesel_discount": null,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 65.689793,
                 "lon": -18.097404
@@ -1353,11 +1353,11 @@
             "name": "Ægisíða"
         },
         {
-            "bensin95": 309.8,
-            "bensin95_discount": 304.8,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 306.1,
-            "diesel_discount": 301.1,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 63.971604,
                 "lon": -22.590831
@@ -1366,11 +1366,11 @@
             "name": "Vallarheiði"
         },
         {
-            "bensin95": 291.9,
-            "bensin95_discount": null,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 292.9,
-            "diesel_discount": null,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 64.100203,
                 "lon": -21.779527
@@ -1392,11 +1392,11 @@
             "name": "Víðihlíð"
         },
         {
-            "bensin95": 291.9,
-            "bensin95_discount": null,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 292.9,
-            "diesel_discount": null,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 64.102003,
                 "lon": -21.873573
@@ -1405,11 +1405,11 @@
             "name": "Skógarlind"
         },
         {
-            "bensin95": 291.9,
-            "bensin95_discount": null,
+            "bensin95": 320.9,
+            "bensin95_discount": 315.9,
             "company": "N1",
-            "diesel": 292.9,
-            "diesel_discount": null,
+            "diesel": 313.2,
+            "diesel_discount": 308.2,
             "geo": {
                 "lat": 64.044265,
                 "lon": -21.983224
