@@ -458,5 +458,15 @@ BAD_AUTOPRICES_CHANGES = [
         'timestamp_text': '2018-01-11T11:00',
         'commit_hash': '5c031c459ada0b95347da63c9e33d83954a8e609',
         'note': 'Orkan bad change (~100 ISK down and back up)'
+    },
+    {
+        'timestamp_text': '2023-06-15T23:00',
+        'commit_hash': 'b1b0a413303de2aef7bf37b711576a116a4b45bd',
+        'note': 'N1 zero prices'
+    },
+    {
+        'timestamp_text': '2023-06-16T04:15',
+        'commit_hash': '0bebbe40af1d3515700064b962a1e3fc218094a7',
+        'note': 'N1 zero prices'
     }
 ]
