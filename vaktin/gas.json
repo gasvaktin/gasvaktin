@@ -365,8 +365,8 @@
             "name": "Bíldshöfði"
         },
         {
-            "bensin95": 323.9,
-            "bensin95_discount": 318.9,
+            "bensin95": 318.9,
+            "bensin95_discount": 313.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -456,8 +456,8 @@
             "name": "Hringbraut"
         },
         {
-            "bensin95": 323.9,
-            "bensin95_discount": 318.9,
+            "bensin95": 318.9,
+            "bensin95_discount": 313.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -885,8 +885,8 @@
             "name": "Drangsnes"
         },
         {
-            "bensin95": 323.9,
-            "bensin95_discount": 318.9,
+            "bensin95": 318.9,
+            "bensin95_discount": 313.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1353,11 +1353,11 @@
             "name": "Ægisíða"
         },
         {
-            "bensin95": 323.9,
-            "bensin95_discount": 318.9,
+            "bensin95": 307.8,
+            "bensin95_discount": 302.8,
             "company": "N1",
-            "diesel": 311.2,
-            "diesel_discount": 306.2,
+            "diesel": 304.1,
+            "diesel_discount": 299.1,
             "geo": {
                 "lat": 63.971604,
                 "lon": -22.590831
