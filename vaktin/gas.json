@@ -859,8 +859,8 @@
             "name": "Flateyri"
         },
         {
-            "bensin95": 321.9,
-            "bensin95_discount": 316.9,
+            "bensin95": 316.9,
+            "bensin95_discount": 311.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
