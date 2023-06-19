@@ -468,5 +468,10 @@ BAD_AUTOPRICES_CHANGES = [
         'timestamp_text': '2023-06-16T04:15',
         'commit_hash': '0bebbe40af1d3515700064b962a1e3fc218094a7',
         'note': 'N1 zero prices'
+    },
+    {
+        'timestamp_text': '2023-06-19T10:45',
+        'commit_hash': 'fc44024f3191112961f30c39d9783865b553b0cb',
+        'note': 'Orkan 10th low price (30.6 instead of 306)'
     }
 ]
