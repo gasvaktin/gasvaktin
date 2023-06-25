@@ -379,6 +379,8 @@ def get_individual_orkan_prices():
         station_name = row[0].text.strip()
         if station_name == 'Orkustöð':
             continue  # skip header row
+        if row[1][0].text == ' fannst ekki!':
+            continue
         bensin95 = float(row[1][0].text.replace(',', '.'))
         diesel = float(row[2][0].text.replace(',', '.'))
         key = globs.ORKAN_LOCATION_RELATION[station_name]
