@@ -430,8 +430,8 @@
             "name": "Stórihjalli"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -495,11 +495,11 @@
             "name": "Reykjavíkurvegur"
         },
         {
-            "bensin95": 311.9,
-            "bensin95_discount": 306.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
-            "diesel": 306.2,
-            "diesel_discount": 301.2,
+            "diesel": 311.2,
+            "diesel_discount": 306.2,
             "geo": {
                 "lat": 64.32195016,
                 "lon": -22.06546502
@@ -547,8 +547,8 @@
             "name": "Blönduós"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -664,8 +664,8 @@
             "name": "Selfoss"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 312.9,
+            "bensin95_discount": 307.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -755,8 +755,8 @@
             "name": "Hellissandur"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -820,8 +820,8 @@
             "name": "Patreksfjörður"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1197,8 +1197,8 @@
             "name": "Flúðir"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1223,8 +1223,8 @@
             "name": "Brautarhóll"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1236,8 +1236,8 @@
             "name": "Laugarvatn"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1262,8 +1262,8 @@
             "name": "Sandgerði"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1340,8 +1340,8 @@
             "name": "Flókalundur"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1379,8 +1379,8 @@
             "name": "Norðlingaholt"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1418,8 +1418,8 @@
             "name": "Norðurhella"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
