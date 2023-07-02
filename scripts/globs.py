@@ -240,6 +240,7 @@ ORKAN_LOCATION_RELATION = {
     'Hæðarsmári': 'or_070',
     'Hæðarsnári': 'or_070',  # lol
     'Hæðasmári': 'or_070',  # -_-
+    'Möðrudalur': 'or_071',
 }
 ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048']
 # Orkan has a default 10 ISK discount with Orkan keychain
