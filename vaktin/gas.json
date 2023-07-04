@@ -417,11 +417,11 @@
             "name": "Fossvogur"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 305.9,
+            "bensin95_discount": 300.9,
             "company": "N1",
-            "diesel": 311.2,
-            "diesel_discount": 306.2,
+            "diesel": 307.2,
+            "diesel_discount": 302.2,
             "geo": {
                 "lat": 64.11004543,
                 "lon": -21.85612188
@@ -508,11 +508,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 302.9,
+            "bensin95_discount": 297.9,
             "company": "N1",
-            "diesel": 311.2,
-            "diesel_discount": 306.2,
+            "diesel": 301.4,
+            "diesel_discount": 296.4,
             "geo": {
                 "lat": 64.54398584,
                 "lon": -21.91057924
@@ -599,11 +599,11 @@
             "name": "Akureyri Leiruvegur"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 313.9,
+            "bensin95_discount": 308.9,
             "company": "N1",
-            "diesel": 311.2,
-            "diesel_discount": 306.2,
+            "diesel": 309.3,
+            "diesel_discount": 304.3,
             "geo": {
                 "lat": 66.04773333,
                 "lon": -17.34361215
@@ -859,8 +859,8 @@
             "name": "Flateyri"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
