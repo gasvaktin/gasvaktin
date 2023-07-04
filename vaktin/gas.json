@@ -482,11 +482,11 @@
             "name": "Skógarsel"
         },
         {
-            "bensin95": 283.9,
-            "bensin95_discount": null,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
-            "diesel": 287.9,
-            "diesel_discount": null,
+            "diesel": 311.2,
+            "diesel_discount": 306.2,
             "geo": {
                 "lat": 64.07683807,
                 "lon": -21.95016999
@@ -547,8 +547,8 @@
             "name": "Blönduós"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -820,8 +820,8 @@
             "name": "Patreksfjörður"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -989,8 +989,8 @@
             "name": "Ásbyrgi"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1158,8 +1158,8 @@
             "name": "Vík í Mýrdal"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1314,8 +1314,8 @@
             "name": "Akureyri Tryggvabraut"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1327,8 +1327,8 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1392,11 +1392,11 @@
             "name": "Víðihlíð"
         },
         {
-            "bensin95": 283.9,
-            "bensin95_discount": null,
+            "bensin95": 319.9,
+            "bensin95_discount": 314.9,
             "company": "N1",
-            "diesel": 287.9,
-            "diesel_discount": null,
+            "diesel": 311.2,
+            "diesel_discount": 306.2,
             "geo": {
                 "lat": 64.102003,
                 "lon": -21.873573
