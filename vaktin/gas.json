@@ -833,8 +833,8 @@
             "name": "Tálknafjörður"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
@@ -1184,8 +1184,8 @@
             "name": "Árnes"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 314.9,
+            "bensin95": 314.9,
+            "bensin95_discount": 309.9,
             "company": "N1",
             "diesel": 311.2,
             "diesel_discount": 306.2,
