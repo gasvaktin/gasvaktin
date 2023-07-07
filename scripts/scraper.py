@@ -119,13 +119,7 @@ def get_individual_n1_prices():
     res = session.post(url_eldsneyti_api, data='', headers=headers_eldsneyti_api)
     res.raise_for_status()
     prices = {}
-    # <n1_endpoint_down_fallback>
-    try:
-        stations = res.json()
-    except (json.JSONDecodeError, SimpleJSONDecodeError):
-        # 2021-04-01: N1 price endpoint seems to be down, adding fallback to current prices to
-        # continue monitoring the other companies while N1 endpoint is down.
-        logman.warning('Failed querying N1 endpoint, using current N1 price data as fallback.')
+    def read_current_n1_prices():
         current_price_data_file = os.path.abspath(os.path.join(
             os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
         ))
@@ -140,13 +134,22 @@ def get_individual_n1_prices():
                 'diesel_discount': station['diesel_discount']
             }
         return prices
-    # </n1_endpoint_down_fallback>
+    # <n1-endpoint-down-fallback>
+    try:
+        stations = res.json()
+    except (json.JSONDecodeError, SimpleJSONDecodeError):
+        # N1 price endpoint seems to be down, adding fallback to current prices to continue
+        # monitoring the other companies while N1 endpoint is down.
+        logman.warning('Failed querying N1 endpoint, using current N1 price data as fallback.')
+        return read_current_n1_prices()
+    # </n1-endpoint-down-fallback>
     names_ignore_words = [
         'Þjónustustöð/Verslun',
         'Þjónustustöð',
         'Sjálfsafgreiðslustöð',
         'Sjálfsafgreiðsla'
     ]
+    current_n1_prices = None
     for station in stations:
         # <get-name>
         name = station['Name']  # sometimes a bit dirty, so we attempt to clean it up
@@ -159,7 +162,23 @@ def get_individual_n1_prices():
         if name == 'Skútuvogi' and station['GasPrice'] is None:
             continue
         bensin95 = float(station['GasPrice'].replace(',', '.'))
+        # <zero-bensin-price-fallback>
+        if bensin95 == 0:
+            if current_n1_prices is None:
+                logman.warning('Loading current N1 price because of zero price!')
+                current_n1_prices = read_current_n1_prices()
+            logman.warning(f'Zero bensin price for N1 station "{key}", fallback to current price.')
+            bensin95 = current_n1_prices[key]['bensin95']
+        # </zero-bensin-price-fallback>
         diesel = float(station['DiselPrice'].replace(',', '.'))
+        # <zero-diesel-price-fallback>
+        if diesel == 0:
+            if current_n1_prices is None:
+                logman.warning('Loading current N1 price because of zero price!')
+                current_n1_prices = read_current_n1_prices()
+            logman.warning(f'Zero diesel price for N1 station "{key}", fallback to current price.')
+            diesel = current_n1_prices[key]['diesel']
+        # </zero-diesel-price-fallback>
         if key in globs.N1_DISCOUNTLESS_STATIONS:
             bensin95_discount = None
             diesel_discount = None
@@ -172,54 +191,6 @@ def get_individual_n1_prices():
             'bensin95_discount': bensin95_discount,
             'diesel_discount': diesel_discount
         }
-    # <zero-price-problem>
-    # problem: a station is listed with 0 ISK price, solution: assume most frequent price instead
-    # find most frequent bensin and diesel price
-    price_frequency = {'bensin': {}, 'diesel': {}}
-    for key in prices:
-        # bensin
-        bensin_price_key = str(prices[key]['bensin95'])
-        if bensin_price_key not in price_frequency['bensin']:
-            price_frequency['bensin'][bensin_price_key] = 0
-        price_frequency['bensin'][bensin_price_key] += 1
-        # diesel
-        diesel_price_key = str(prices[key]['diesel'])
-        if diesel_price_key not in price_frequency['diesel']:
-            price_frequency['diesel'][diesel_price_key] = 0
-        price_frequency['diesel'][diesel_price_key] += 1
-    # most frequent prices
-    most_frequent_bensin_price = float(max(price_frequency['bensin']))
-    most_frequent_diesel_price = float(max(price_frequency['diesel']))
-    for key in prices:
-        if prices[key]['bensin95'] == 0.0:
-            logman.warning('N1 bensin zero price for key "%s", using fallback.' % (key, ))
-            prices[key]['bensin95'] = most_frequent_bensin_price
-            prices[key]['bensin95_discount'] = round(
-                (most_frequent_bensin_price - globs.N1_DISCOUNT), 1
-            )
-        if prices[key]['diesel'] == 0.0:
-            logman.warning('N1 diesel zero price for key "%s", using fallback.' % (key, ))
-            prices[key]['diesel'] = most_frequent_diesel_price
-            prices[key]['diesel_discount'] = round(
-                (most_frequent_diesel_price - globs.N1_DISCOUNT), 1
-            )
-    # </zero-price-problem>
-    # <stórihjalli-station-missing>
-    # dunno why, still open and known minor yet considerable price deviant, anchoring price to a
-    # hardcoded deviance from most frequent price based on real world observations.
-    if 'n1_006' not in prices:
-        bensin95 = round((most_frequent_bensin_price - 13), 1)
-        bensin95_discount = round((bensin95 - globs.N1_DISCOUNT), 1)
-        diesel = round((most_frequent_diesel_price - 5), 1)
-        diesel_discount = round((diesel - globs.N1_DISCOUNT), 1)
-        logman.warning('N1 Stórihjalli station missing, using hardcoded deviance fallback.')
-        prices['n1_006'] = {
-            'bensin95': bensin95,
-            'diesel': diesel,
-            'bensin95_discount': bensin95_discount,
-            'diesel_discount': diesel_discount
-        }
-    # </stórihjalli-station-missing>
     return prices
 
 
