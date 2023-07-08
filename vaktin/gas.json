@@ -495,11 +495,11 @@
             "name": "Reykjavíkurvegur"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 311.9,
+            "bensin95_discount": 306.9,
             "company": "N1",
-            "diesel": 311.2,
-            "diesel_discount": 306.2,
+            "diesel": 306.2,
+            "diesel_discount": 301.2,
             "geo": {
                 "lat": 64.32195016,
                 "lon": -22.06546502
@@ -599,11 +599,11 @@
             "name": "Akureyri Leiruvegur"
         },
         {
-            "bensin95": 314.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 313.9,
+            "bensin95_discount": 308.9,
             "company": "N1",
-            "diesel": 311.2,
-            "diesel_discount": 306.2,
+            "diesel": 309.3,
+            "diesel_discount": 304.3,
             "geo": {
                 "lat": 66.04773333,
                 "lon": -17.34361215
@@ -1366,10 +1366,10 @@
             "name": "Vallarheiði"
         },
         {
-            "bensin95": 314.9,
+            "bensin95": 283.9,
             "bensin95_discount": null,
             "company": "N1",
-            "diesel": 311.2,
+            "diesel": 287.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.100203,
@@ -1392,10 +1392,10 @@
             "name": "Víðihlíð"
         },
         {
-            "bensin95": 314.9,
+            "bensin95": 283.9,
             "bensin95_discount": null,
             "company": "N1",
-            "diesel": 311.2,
+            "diesel": 287.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.102003,
