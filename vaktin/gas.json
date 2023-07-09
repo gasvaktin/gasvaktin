@@ -1405,10 +1405,10 @@
             "name": "Skógarlind"
         },
         {
-            "bensin95": 314.9,
+            "bensin95": 283.9,
             "bensin95_discount": null,
             "company": "N1",
-            "diesel": 311.2,
+            "diesel": 287.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.044265,
