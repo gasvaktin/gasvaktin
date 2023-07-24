@@ -2601,11 +2601,11 @@
             "name": "Sauðárkrókur"
         },
         {
-            "bensin95": 312.4,
-            "bensin95_discount": 302.4,
+            "bensin95": 304.4,
+            "bensin95_discount": 294.4,
             "company": "Orkan",
-            "diesel": 309.1,
-            "diesel_discount": 299.1,
+            "diesel": 299.1,
+            "diesel_discount": 289.1,
             "geo": {
                 "lat": 65.685764,
                 "lon": -23.600899
