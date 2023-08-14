@@ -3210,6 +3210,19 @@
             },
             "key": "or_071",
             "name": "Möðrudalur"
+        },
+        {
+            "bensin95": 312.4,
+            "bensin95_discount": 302.4,
+            "company": "Orkan",
+            "diesel": 309.1,
+            "diesel_discount": 299.1,
+            "geo": {
+                "lat": 63.83087327,
+                "lon": -20.39295748
+            },
+            "key": "or_072",
+            "name": "Hella"
         }
     ]
 }
