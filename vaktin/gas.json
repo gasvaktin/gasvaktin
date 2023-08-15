@@ -2289,7 +2289,7 @@
             "name": "Siglufjörður"
         },
         {
-            "bensin95": 283.6,
+            "bensin95": 285.6,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 287.6,
@@ -2367,7 +2367,7 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 283.6,
+            "bensin95": 285.6,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 287.6,
@@ -2406,8 +2406,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 312.3,
-            "bensin95_discount": 302.3,
+            "bensin95": 314.3,
+            "bensin95_discount": 304.3,
             "company": "Orkan",
             "diesel": 309.1,
             "diesel_discount": 299.1,
@@ -2562,7 +2562,7 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 283.6,
+            "bensin95": 285.6,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 287.6,
@@ -2900,7 +2900,7 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 283.6,
+            "bensin95": 285.6,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 287.6,
@@ -2939,8 +2939,8 @@
             "name": "Smárinn"
         },
         {
-            "bensin95": 283.6,
-            "bensin95_discount": 273.6,
+            "bensin95": 285.6,
+            "bensin95_discount": 275.6,
             "company": "Orkan",
             "diesel": 287.6,
             "diesel_discount": 277.6,
@@ -3030,8 +3030,8 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 303.7,
-            "bensin95_discount": 293.7,
+            "bensin95": 305.7,
+            "bensin95_discount": 295.7,
             "company": "Orkan",
             "diesel": 306.2,
             "diesel_discount": 296.2,
