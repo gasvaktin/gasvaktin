@@ -1432,10 +1432,10 @@
         },
         {
             "bensin95": 316.5,
-            "bensin95_discount": 309.5,
+            "bensin95_discount": 301.5,
             "company": "ÓB",
             "diesel": 308.2,
-            "diesel_discount": 301.2,
+            "diesel_discount": 293.2,
             "geo": {
                 "lat": 64.32448,
                 "lon": -22.068174
@@ -1523,10 +1523,10 @@
         },
         {
             "bensin95": 316.5,
-            "bensin95_discount": 309.5,
+            "bensin95_discount": 301.5,
             "company": "ÓB",
             "diesel": 311.2,
-            "diesel_discount": 304.2,
+            "diesel_discount": 296.2,
             "geo": {
                 "lat": 66.158337,
                 "lon": -23.246431
@@ -1601,10 +1601,10 @@
         },
         {
             "bensin95": 316.5,
-            "bensin95_discount": 309.5,
+            "bensin95_discount": 301.5,
             "company": "ÓB",
             "diesel": 311.2,
-            "diesel_discount": 304.2,
+            "diesel_discount": 296.2,
             "geo": {
                 "lat": 64.358868,
                 "lon": -21.780723
@@ -1835,10 +1835,10 @@
         },
         {
             "bensin95": 316.5,
-            "bensin95_discount": 309.5,
+            "bensin95_discount": 301.5,
             "company": "ÓB",
             "diesel": 311.2,
-            "diesel_discount": 304.2,
+            "diesel_discount": 296.2,
             "geo": {
                 "lat": 63.998111,
                 "lon": -22.588235
@@ -1861,10 +1861,10 @@
         },
         {
             "bensin95": 316.1,
-            "bensin95_discount": 309.1,
+            "bensin95_discount": 301.1,
             "company": "ÓB",
             "diesel": 310.3,
-            "diesel_discount": 303.3,
+            "diesel_discount": 295.3,
             "geo": {
                 "lat": 63.417937,
                 "lon": -19.002232
@@ -1926,10 +1926,10 @@
         },
         {
             "bensin95": 287.7,
-            "bensin95_discount": 280.7,
+            "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 289.7,
-            "diesel_discount": 282.7,
+            "diesel_discount": null,
             "geo": {
                 "lat": 64.14767,
                 "lon": -21.924996
@@ -2940,10 +2940,10 @@
         },
         {
             "bensin95": 285.6,
-            "bensin95_discount": 275.6,
+            "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 287.6,
-            "diesel_discount": 277.6,
+            "diesel_discount": null,
             "geo": {
                 "lat": 64.101745,
                 "lon": -21.831087
