@@ -143,9 +143,9 @@ OB_LOCATION_RELATION = {
 # * ÓB Reyðarfirði (ob_026)
 # * ÓB Vestmannaeyjum (ob_032)
 # * ÓB Þorlákshöfn (ob_033)
-OB_EXTRA_DISCOUNT_STATIONS = ['ob_022', 'ob_023', 'ob_026', 'ob_032', 'ob_033']
+OB_EXTRA_DISCOUNT_STATIONS = ['ob_035', 'ob_000', 'ob_008', 'ob_015', 'ob_037']
 OB_EXTRA_DISCOUNT_AMOUNT = 15
-OB_EXTRA_DISCOUNT_UNTIL = '2021-06-30T23:59'
+OB_EXTRA_DISCOUNT_UNTIL = '2023-08-31T23:59'
 # ------------------------------------------------------------------------------------------------
 # OB joins the discountless madness
 # https://www.facebook.com/ob.bensin/photos/a.208957995809394/2301004636604709/
@@ -159,7 +159,7 @@ OB_EXTRA_DISCOUNT_UNTIL = '2021-06-30T23:59'
 # Afslattur med lyklum og kortum gildir ekki a thessum stodvum. Allir lykil-og korthafar Olis og
 # OB njota eftir sem adur afslattar af eldsneyti og odrum vorum a Olis og OB stodvum um land allt.
 # ------------------------------------------------------------------------------------------------
-OB_DISCOUNTLESS_STATIONS = ['ob_001', 'ob_003', 'ob_012', 'ob_010', 'ob_040']
+OB_DISCOUNTLESS_STATIONS = ['ob_001', 'ob_003', 'ob_012', 'ob_010', 'ob_040', 'ob_042']
 
 ORKAN_LOCATION_RELATION = {
     'Dalvegur': 'or_000',
@@ -243,7 +243,7 @@ ORKAN_LOCATION_RELATION = {
     'Möðrudalur': 'or_071',
     'Hella': 'or_072',
 }
-ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048']
+ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048', 'or_051']
 # Orkan has a default 10 ISK discount with Orkan keychain
 # See: https://www.orkan.is/afslattur/
 ORKAN_MINIMUM_DISCOUNT = 10.0
