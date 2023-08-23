@@ -2406,8 +2406,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 314.3,
-            "bensin95_discount": 304.3,
+            "bensin95": 316.3,
+            "bensin95_discount": 306.3,
             "company": "Orkan",
             "diesel": 309.1,
             "diesel_discount": 299.1,
@@ -2539,8 +2539,8 @@
             "bensin95": 316.4,
             "bensin95_discount": 306.4,
             "company": "Orkan",
-            "diesel": 309.1,
-            "diesel_discount": 299.1,
+            "diesel": 309.2,
+            "diesel_discount": 299.2,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
@@ -2630,8 +2630,8 @@
             "bensin95": 314.4,
             "bensin95_discount": 304.4,
             "company": "Orkan",
-            "diesel": 306.1,
-            "diesel_discount": 296.1,
+            "diesel": 306.7,
+            "diesel_discount": 296.7,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
@@ -2653,8 +2653,8 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 316.4,
-            "bensin95_discount": 306.4,
+            "bensin95": 315.8,
+            "bensin95_discount": 305.8,
             "company": "Orkan",
             "diesel": 306.1,
             "diesel_discount": 296.1,
@@ -3030,11 +3030,11 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 305.7,
-            "bensin95_discount": 295.7,
+            "bensin95": 307.7,
+            "bensin95_discount": 297.7,
             "company": "Orkan",
-            "diesel": 306.2,
-            "diesel_discount": 296.2,
+            "diesel": 307.1,
+            "diesel_discount": 297.1,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
