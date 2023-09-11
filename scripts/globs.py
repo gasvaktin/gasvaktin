@@ -172,6 +172,7 @@ ORKAN_LOCATION_RELATION = {
     'Hafnarfjörður, Reykjavíkurvegi': 'or_006',
     'Skógarhlíð': 'or_007',
     'Suðurströnd': 'or_008',
+    'Austurströnd 7': 'or_008',
     'Egilsstaðir, Fagradalsbraut': 'or_009',
     'Eskifjörður': 'or_010',
     'Fáskrúðsfjörður': 'or_011',
