@@ -1054,8 +1054,8 @@
             "name": "Vopnafjörður"
         },
         {
-            "bensin95": 324.9,
-            "bensin95_discount": 319.9,
+            "bensin95": 326.9,
+            "bensin95_discount": 321.9,
             "company": "N1",
             "diesel": 321.2,
             "diesel_discount": 316.2,
@@ -1262,8 +1262,8 @@
             "name": "Sandgerði"
         },
         {
-            "bensin95": 331.2,
-            "bensin95_discount": 326.2,
+            "bensin95": 326.9,
+            "bensin95_discount": 321.9,
             "company": "N1",
             "diesel": 334.9,
             "diesel_discount": 329.9,
