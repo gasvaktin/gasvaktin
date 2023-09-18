@@ -2536,8 +2536,8 @@
             "name": "Furuvellir"
         },
         {
-            "bensin95": 324.1,
-            "bensin95_discount": 314.1,
+            "bensin95": 324.0,
+            "bensin95_discount": 314.0,
             "company": "Orkan",
             "diesel": 319.1,
             "diesel_discount": 309.1,
@@ -2562,7 +2562,7 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 295.1,
+            "bensin95": 293.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 297.5,
