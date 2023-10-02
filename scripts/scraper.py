@@ -296,6 +296,10 @@ def get_individual_ob_prices():
             continue  # tempfix
         if name == 'Akranes, Umboð':
             continue  # tempfix
+        if name == 'Litla-Kaffistofan':
+            # fuel sale discontinued there, see:
+            # https://www.mbl.is/frettir/innlent/2023/10/02/ekkert_eldsneyti_a_litlu_kaffistofunni/
+            continue
         station_key = globs.OB_LOCATION_RELATION[name]
         bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
         diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))

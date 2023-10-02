@@ -126,7 +126,6 @@ OB_LOCATION_RELATION = {
     'Hamraborg (lægsta verð ÓB, engir afslættir gilda)': 'ob_040',
     'Ferstikla': 'ob_041',
     'Klöpp': 'ob_042',
-    'Litla-Kaffistofan': 'ob_043',
     'Ólafsfjörður': 'ob_044',
     'Skagaströnd': 'ob_045',
     'Akranes, Umboð': 'ob_046',
