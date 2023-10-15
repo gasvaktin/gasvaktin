@@ -201,6 +201,7 @@ ORKAN_LOCATION_RELATION = {
     'Grindavík': 'or_035',
     'Keflavíkurflugvöllur': 'or_036',
     'Reykjanesbær': 'or_037',
+    'Fitjum': 'or_037',
     'Sandgerði': 'or_038',
     'Freysnes': 'or_039',
     'Hvolsvöllur': 'or_040',
@@ -243,7 +244,7 @@ ORKAN_LOCATION_RELATION = {
     'Möðrudalur': 'or_071',
     'Hella': 'or_072',
 }
-ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_048', 'or_051']
+ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_037', 'or_048', 'or_051']
 # Orkan has a default 10 ISK discount with Orkan keychain
 # See: https://www.orkan.is/afslattur/
 ORKAN_MINIMUM_DISCOUNT = 10.0
