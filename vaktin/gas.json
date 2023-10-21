@@ -170,11 +170,11 @@
             "name": "Öskjuhlíð"
         },
         {
-            "bensin95": 321.7,
-            "bensin95_discount": 316.7,
+            "bensin95": 294.7,
+            "bensin95_discount": 289.7,
             "company": "Atlantsolía",
-            "diesel": 321.7,
-            "diesel_discount": 316.7,
+            "diesel": 303.2,
+            "diesel_discount": 298.2,
             "geo": {
                 "lat": 63.946582,
                 "lon": -21.013048
