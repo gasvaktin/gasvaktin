@@ -2809,11 +2809,11 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 321.6,
-            "bensin95_discount": 311.6,
+            "bensin95": 294.6,
+            "bensin95_discount": 284.6,
             "company": "Orkan",
-            "diesel": 321.6,
-            "diesel_discount": 311.6,
+            "diesel": 303.1,
+            "diesel_discount": 293.1,
             "geo": {
                 "lat": 63.944998,
                 "lon": -21.01074
