@@ -110,6 +110,7 @@ OB_LOCATION_RELATION = {
     'Njarðvík': 'ob_024',
     'Reyðarfjörður': 'ob_026',
     'Selfoss': 'ob_027',
+    'Selfoss (lægsta verð ÓB, engir afslættir gilda)': 'ob_027',
     'Snorrabraut': 'ob_028',
     'Stykkishólmur': 'ob_030',
     'Suðurhella': 'ob_031',
@@ -127,6 +128,7 @@ OB_LOCATION_RELATION = {
     'Hamraborg (lægsta verð ÓB, engir afslættir gilda)': 'ob_040',
     'Ferstikla': 'ob_041',
     'Klöpp': 'ob_042',
+    'Klöpp (lægsta verð ÓB, engir afslættir gilda)': 'ob_042',
     'Ólafsfjörður': 'ob_044',
     'Skagaströnd': 'ob_045',
     'Akranes, Umboð': 'ob_046',
@@ -159,7 +161,7 @@ OB_EXTRA_DISCOUNT_UNTIL = '2023-08-31T23:59'
 # Afslattur med lyklum og kortum gildir ekki a thessum stodvum. Allir lykil-og korthafar Olis og
 # OB njota eftir sem adur afslattar af eldsneyti og odrum vorum a Olis og OB stodvum um land allt.
 # ------------------------------------------------------------------------------------------------
-OB_DISCOUNTLESS_STATIONS = ['ob_001', 'ob_003', 'ob_012', 'ob_010', 'ob_040', 'ob_042']
+OB_DISCOUNTLESS_STATIONS = ['ob_001', 'ob_003', 'ob_012', 'ob_010', 'ob_040', 'ob_042', 'ob_027']
 
 ORKAN_LOCATION_RELATION = {
     'Dalvegur': 'or_000',
@@ -219,7 +221,7 @@ ORKAN_LOCATION_RELATION = {
     'Suðurfell': 'or_051',
     'Vesturlandsvegur': 'or_052',
     'Hörgárbraut': 'or_053',
-    'Hveragerði': 'or_054',
+    'Hveragerði, Austurmörk': 'or_054',
     'Garðabær': 'or_055',
     'Miklabraut v. Kringluna': 'or_056',
     'Eiðistorg': 'or_057',
