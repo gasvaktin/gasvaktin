@@ -28,6 +28,7 @@ ATLANTSOLIA_LOCATION_RELATION = {
     'Mosfellsbær': 'ao_010',
     'Njarðvík': 'ao_011',
     'Öskjuhlíð': 'ao_012',
+    'Öskjuhlíð *': 'ao_012',
     'Selfoss': 'ao_013',
     'Selfoss *': 'ao_013',
     'Skeifan': 'ao_014',
