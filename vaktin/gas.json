@@ -2292,7 +2292,7 @@
             "bensin95": 289.7,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 301.7,
+            "diesel": 299.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.105243,
@@ -2370,7 +2370,7 @@
             "bensin95": 289.7,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 301.7,
+            "diesel": 299.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.077153,
@@ -2383,8 +2383,8 @@
             "bensin95": 289.7,
             "bensin95_discount": 279.7,
             "company": "Orkan",
-            "diesel": 301.7,
-            "diesel_discount": 291.7,
+            "diesel": 299.8,
+            "diesel_discount": 289.8,
             "geo": {
                 "lat": 64.131896,
                 "lon": -21.917131
@@ -2565,7 +2565,7 @@
             "bensin95": 289.7,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 301.7,
+            "diesel": 299.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 65.679649,
@@ -2825,7 +2825,7 @@
             "bensin95": 289.7,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 301.7,
+            "diesel": 299.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 63.944998,
@@ -2903,7 +2903,7 @@
             "bensin95": 289.7,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 301.7,
+            "diesel": 299.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.131308,
@@ -2942,7 +2942,7 @@
             "bensin95": 289.7,
             "bensin95_discount": null,
             "company": "Orkan",
-            "diesel": 301.7,
+            "diesel": 299.8,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.101745,
