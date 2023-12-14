@@ -2406,11 +2406,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 321.2,
-            "bensin95_discount": 311.2,
+            "bensin95": 317.5,
+            "bensin95_discount": 307.5,
             "company": "Orkan",
-            "diesel": 324.5,
-            "diesel_discount": 314.5,
+            "diesel": 319.3,
+            "diesel_discount": 309.3,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2536,11 +2536,11 @@
             "name": "Furuvellir"
         },
         {
-            "bensin95": 321.3,
-            "bensin95_discount": 311.3,
+            "bensin95": 317.6,
+            "bensin95_discount": 307.6,
             "company": "Orkan",
-            "diesel": 324.6,
-            "diesel_discount": 314.6,
+            "diesel": 319.3,
+            "diesel_discount": 309.3,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
@@ -2861,8 +2861,8 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 320.9,
-            "bensin95_discount": 310.9,
+            "bensin95": 317.2,
+            "bensin95_discount": 307.2,
             "company": "Orkan",
             "diesel": 318.4,
             "diesel_discount": 308.4,
@@ -2965,11 +2965,11 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 314.5,
-            "bensin95_discount": 304.5,
+            "bensin95": 310.8,
+            "bensin95_discount": 300.8,
             "company": "Orkan",
-            "diesel": 318.1,
-            "diesel_discount": 308.1,
+            "diesel": 314.3,
+            "diesel_discount": 304.3,
             "geo": {
                 "lat": 65.695775,
                 "lon": -18.122012
