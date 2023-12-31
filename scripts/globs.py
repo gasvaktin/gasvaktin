@@ -293,7 +293,6 @@ N1_LOCATION_RELATION = {
     'Verslun Stórihjalli': 'n1_006',
     'Lækjargata': 'n1_007',
     'Hringbraut': 'n1_008',
-    'Stóragerði': 'n1_009',
     'Skógarsel': 'n1_010',
     'Reykjavíkurvegur': 'n1_011',
     'Akranes': 'n1_012',
