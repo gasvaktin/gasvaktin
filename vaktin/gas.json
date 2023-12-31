@@ -462,19 +462,6 @@
             "diesel": 322.2,
             "diesel_discount": 317.2,
             "geo": {
-                "lat": 64.12625609,
-                "lon": -21.88615498
-            },
-            "key": "n1_009",
-            "name": "Stóragerði"
-        },
-        {
-            "bensin95": 320.9,
-            "bensin95_discount": 315.9,
-            "company": "N1",
-            "diesel": 322.2,
-            "diesel_discount": 317.2,
-            "geo": {
                 "lat": 64.10412267,
                 "lon": -21.84578776
             },
