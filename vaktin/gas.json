@@ -2393,8 +2393,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 321.6,
-            "bensin95_discount": 311.6,
+            "bensin95": 320.8,
+            "bensin95_discount": 310.8,
             "company": "Orkan",
             "diesel": 322.8,
             "diesel_discount": 312.8,
@@ -2614,11 +2614,11 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 319.9,
-            "bensin95_discount": 309.9,
+            "bensin95": 319.8,
+            "bensin95_discount": 309.8,
             "company": "Orkan",
-            "diesel": 320.0,
-            "diesel_discount": 310.0,
+            "diesel": 319.8,
+            "diesel_discount": 309.8,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
