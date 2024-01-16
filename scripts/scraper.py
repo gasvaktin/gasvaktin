@@ -292,16 +292,14 @@ def get_individual_ob_prices():
         if row.findall('.//td')[0].get('style') == 'border:0px;':
             continue
         name = row.findall('.//td')[0].text.strip()
-        if name == 'Ketilás í Fljótum':
+        if name.startswith('ÓB '):
+            name = name[3:]
+        if name == 'Keflav.flugv.Arnarvöllum':
+            continue  # not on maps, needs investigating
+        if name == 'Búðardalur':
+            continue  # missing on maps, needs investigating
+        if name == 'Ketilás':
             continue  # throw this one for now, only diesel, needs investigation
-        if name == 'Keflavíkurflugvöllur':
-            continue  # tempfix
-        if name == 'Akranes, Umboð':
-            continue  # tempfix
-        if name == 'Litla-Kaffistofan':
-            # fuel sale discontinued there, see:
-            # https://www.mbl.is/frettir/innlent/2023/10/02/ekkert_eldsneyti_a_litlu_kaffistofunni/
-            continue
         station_key = globs.OB_LOCATION_RELATION[name]
         bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
         diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
