@@ -1411,19 +1411,6 @@
             "diesel": 325.9,
             "diesel_discount": 320.9,
             "geo": {
-                "lat": 65.641711,
-                "lon": -16.911147
-            },
-            "key": "n1_083",
-            "name": "Mývatn"
-        },
-        {
-            "bensin95": 325.1,
-            "bensin95_discount": 320.1,
-            "company": "N1",
-            "diesel": 325.9,
-            "diesel_discount": 320.9,
-            "geo": {
                 "lat": 63.99703,
                 "lon": -22.584204
             },
