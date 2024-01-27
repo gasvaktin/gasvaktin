@@ -364,7 +364,6 @@ N1_LOCATION_RELATION = {
     'Lindir': 'n1_081',
     'Skógarlind': 'n1_081',
     'Norðurhella': 'n1_082',
-    "Mývatn": "n1_083",
     'Skútuvogi': 'n1_084',
     'Skútuvogur': 'n1_084',
     'Flugvellir': 'n1_085',
