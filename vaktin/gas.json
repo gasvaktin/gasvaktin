@@ -326,10 +326,10 @@
             "name": "Stapabraut"
         },
         {
-            "bensin95": 276.7,
+            "bensin95": 280.7,
             "bensin95_discount": null,
             "company": "Costco Iceland",
-            "diesel": 284.7,
+            "diesel": 290.7,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.075267,
@@ -1405,11 +1405,11 @@
             "name": "Norðurhella"
         },
         {
-            "bensin95": 325.1,
-            "bensin95_discount": 320.1,
+            "bensin95": 299.1,
+            "bensin95_discount": 294.1,
             "company": "N1",
-            "diesel": 327.9,
-            "diesel_discount": 322.9,
+            "diesel": 301.9,
+            "diesel_discount": 296.9,
             "geo": {
                 "lat": 63.99703,
                 "lon": -22.584204
@@ -2630,8 +2630,8 @@
             "bensin95": 321.7,
             "bensin95_discount": 311.7,
             "company": "Orkan",
-            "diesel": 322.8,
-            "diesel_discount": 312.8,
+            "diesel": 321.7,
+            "diesel_discount": 311.7,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
@@ -2731,11 +2731,11 @@
             "name": "Grindavík"
         },
         {
-            "bensin95": 321.7,
-            "bensin95_discount": 311.7,
+            "bensin95": 299.0,
+            "bensin95_discount": 289.0,
             "company": "Orkan",
-            "diesel": 324.7,
-            "diesel_discount": 314.7,
+            "diesel": 301.8,
+            "diesel_discount": 291.8,
             "geo": {
                 "lat": 63.999133,
                 "lon": -22.632292
@@ -3197,6 +3197,19 @@
             },
             "key": "or_072",
             "name": "Hella"
+        },
+        {
+            "bensin95": 292.8,
+            "bensin95_discount": 282.8,
+            "company": "Orkan",
+            "diesel": 303.1,
+            "diesel_discount": 293.1,
+            "geo": {
+                "lat": 64.03924405,
+                "lon": -21.99451746
+            },
+            "key": "or_073",
+            "name": "Einhella"
         }
     ]
 }
