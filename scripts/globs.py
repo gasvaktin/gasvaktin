@@ -244,7 +244,7 @@ ORKAN_LOCATION_RELATION = {
     'Hella': 'or_072',
     'Einhella': 'or_073',
 }
-ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_021', 'or_041', 'or_048', 'or_051']
+ORKAN_DISCOUNTLESS_STATIONS = ['or_000', 'or_006', 'or_007', 'or_021', 'or_041', 'or_048', 'or_051']
 # Orkan has a default 10 ISK discount with Orkan keychain
 # See: https://www.orkan.is/afslattur/
 ORKAN_MINIMUM_DISCOUNT = 10.0
