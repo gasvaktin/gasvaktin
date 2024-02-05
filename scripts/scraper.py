@@ -147,7 +147,7 @@ def get_individual_n1_prices():
         'Þjónustustöð/Verslun',
         'Þjónustustöð',
         'Sjálfsafgreiðslustöð',
-        'Sjálfsafgreiðsla'
+        'Sjálfsafgreiðsla',
     ]
     current_n1_prices = None
     for station in stations:
@@ -158,7 +158,7 @@ def get_individual_n1_prices():
         name = name.replace('-', ' ')
         name = ' '.join(name.split())
         # </get-name>
-        if name == 'Stóragerði':
+        if name == 'Flugvellir 27':
             continue
         key = globs.N1_LOCATION_RELATION[name]
         if name == 'Skútuvogi' and station['GasPrice'] is None:
