@@ -1070,8 +1070,8 @@
             "bensin95": 325.1,
             "bensin95_discount": 320.1,
             "company": "N1",
-            "diesel": 327.9,
-            "diesel_discount": 322.9,
+            "diesel": 329.9,
+            "diesel_discount": 324.9,
             "geo": {
                 "lat": 64.79371629,
                 "lon": -14.00772402
@@ -1122,8 +1122,8 @@
             "bensin95": 325.1,
             "bensin95_discount": 320.1,
             "company": "N1",
-            "diesel": 327.9,
-            "diesel_discount": 322.9,
+            "diesel": 329.9,
+            "diesel_discount": 324.9,
             "geo": {
                 "lat": 63.79402505,
                 "lon": -18.04007649
@@ -1135,8 +1135,8 @@
             "bensin95": 323.6,
             "bensin95_discount": 318.6,
             "company": "N1",
-            "diesel": 324.9,
-            "diesel_discount": 319.9,
+            "diesel": 326.9,
+            "diesel_discount": 321.9,
             "geo": {
                 "lat": 63.41794382,
                 "lon": -19.00159478
@@ -1187,8 +1187,8 @@
             "bensin95": 325.1,
             "bensin95_discount": 320.1,
             "company": "N1",
-            "diesel": 327.9,
-            "diesel_discount": 322.9,
+            "diesel": 329.9,
+            "diesel_discount": 324.9,
             "geo": {
                 "lat": 64.31017649,
                 "lon": -20.30385017
@@ -1252,8 +1252,8 @@
             "bensin95": 325.1,
             "bensin95_discount": 320.1,
             "company": "N1",
-            "diesel": 327.9,
-            "diesel_discount": 322.9,
+            "diesel": 329.9,
+            "diesel_discount": 324.9,
             "geo": {
                 "lat": 64.06760561,
                 "lon": -22.64890731
@@ -1265,8 +1265,8 @@
             "bensin95": 325.1,
             "bensin95_discount": 320.1,
             "company": "N1",
-            "diesel": 327.9,
-            "diesel_discount": 322.9,
+            "diesel": 329.9,
+            "diesel_discount": 324.9,
             "geo": {
                 "lat": 63.98048775,
                 "lon": -22.38000602
@@ -1278,8 +1278,8 @@
             "bensin95": 325.1,
             "bensin95_discount": 320.1,
             "company": "N1",
-            "diesel": 327.9,
-            "diesel_discount": 322.9,
+            "diesel": 329.9,
+            "diesel_discount": 324.9,
             "geo": {
                 "lat": 65.03248085,
                 "lon": -14.22305838
@@ -1343,8 +1343,8 @@
             "bensin95": 316.0,
             "bensin95_discount": 311.0,
             "company": "N1",
-            "diesel": 320.8,
-            "diesel_discount": 315.8,
+            "diesel": 322.8,
+            "diesel_discount": 317.8,
             "geo": {
                 "lat": 63.971604,
                 "lon": -22.590831
@@ -2617,8 +2617,8 @@
             "bensin95": 325.0,
             "bensin95_discount": 315.0,
             "company": "Orkan",
-            "diesel": 327.8,
-            "diesel_discount": 317.8,
+            "diesel": 329.8,
+            "diesel_discount": 319.8,
             "geo": {
                 "lat": 66.025744,
                 "lon": -22.990537
