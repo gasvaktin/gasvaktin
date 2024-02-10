@@ -1405,11 +1405,11 @@
             "name": "Norðurhella"
         },
         {
-            "bensin95": 299.1,
-            "bensin95_discount": 294.1,
+            "bensin95": 319.1,
+            "bensin95_discount": 314.1,
             "company": "N1",
-            "diesel": 303.9,
-            "diesel_discount": 298.9,
+            "diesel": 322.8,
+            "diesel_discount": 317.8,
             "geo": {
                 "lat": 63.99703,
                 "lon": -22.584204
