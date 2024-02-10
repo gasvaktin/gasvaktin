@@ -2731,11 +2731,11 @@
             "name": "Grindavík"
         },
         {
-            "bensin95": 299.0,
-            "bensin95_discount": 289.0,
+            "bensin95": 321.7,
+            "bensin95_discount": 311.7,
             "company": "Orkan",
-            "diesel": 301.8,
-            "diesel_discount": 291.8,
+            "diesel": 324.7,
+            "diesel_discount": 314.7,
             "geo": {
                 "lat": 63.999133,
                 "lon": -22.632292
