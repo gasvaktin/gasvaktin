@@ -230,6 +230,8 @@ def get_individual_olis_prices():
         if row.findall('.//td')[0].text.strip() == '':
             continue
         name = row.findall('.//td')[0].text.strip()
+        if name == 'ODR test':
+            continue
         station_key = globs.OLIS_LOCATION_RELATION[name]
         bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
         diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
