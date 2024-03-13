@@ -2263,7 +2263,7 @@
             "name": "Siglufjörður"
         },
         {
-            "bensin95": 290.9,
+            "bensin95": 290.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 305.1,
@@ -2341,7 +2341,7 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 290.9,
+            "bensin95": 290.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 305.1,
@@ -2354,7 +2354,7 @@
             "name": "Reykjavíkurvegur"
         },
         {
-            "bensin95": 290.9,
+            "bensin95": 290.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 305.1,
@@ -2536,7 +2536,7 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 290.9,
+            "bensin95": 290.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 305.1,
@@ -2718,8 +2718,8 @@
             "name": "Stykkishólmur"
         },
         {
-            "bensin95": 320.8,
-            "bensin95_discount": 310.8,
+            "bensin95": 319.7,
+            "bensin95_discount": 309.7,
             "company": "Orkan",
             "diesel": 324.7,
             "diesel_discount": 314.7,
@@ -2796,7 +2796,7 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 290.9,
+            "bensin95": 290.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 305.1,
@@ -2874,7 +2874,7 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 290.9,
+            "bensin95": 290.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 305.1,
@@ -2913,7 +2913,7 @@
             "name": "Smárinn"
         },
         {
-            "bensin95": 290.9,
+            "bensin95": 290.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 305.1,
@@ -3199,7 +3199,7 @@
             "name": "Hella"
         },
         {
-            "bensin95": 290.9,
+            "bensin95": 290.8,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 305.1,
