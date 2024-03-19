@@ -225,8 +225,6 @@ ORKAN_LOCATION_RELATION = {
     'Smiðjuvegur': 'or_058',  # duplicate name on website? where else could this be?
     'Spöngin': 'or_059',
     'Egilsstaðir, Miðvangi': 'or_060',
-    'Akureyri, Kjarnagata': 'or_061',
-    'Kjarnagata, Akureyri': 'or_061',
     'Akranes, Smiðjuvöllum': 'or_062',
     'Hveragerði, Sunnumörk': 'or_063',
     'Hraunbær': 'or_064',
