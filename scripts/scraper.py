@@ -29,12 +29,14 @@ def get_individual_atlantsolia_prices():
     res.raise_for_status()
     html_text = res.content
     html = lxml.etree.fromstring(html_text, lxml.etree.HTMLParser())
-    div_prices = html.find('.//*[@id="content"]/div/div/div/div[2]/div/div/table/tbody')
+    price_table = html.find('.//table[@class="table"]')
+    price_rows = price_table.findall('.//tbody/tr')
     prices = {}
-    for div_price in div_prices:
-        key = relation[div_price[0][0].text]
-        bensin95 = float(div_price[1][0].text.replace(',', '.'))
-        diesel = float(div_price[2][0].text.replace(',', '.'))
+    for price_row in price_rows:
+        station_name = price_row[0][0].text.strip()
+        key = relation[station_name]
+        bensin95 = float(price_row[1][0].text.strip().replace(',', '.'))
+        diesel = float(price_row[2][0].text.strip().replace(',', '.'))
         bensin95_discount = round((bensin95 - globs.ATLANTSOLIA_MINIMUM_DISCOUNT), 1)
         diesel_discount = round((diesel - globs.ATLANTSOLIA_MINIMUM_DISCOUNT), 1)
         if key in globs.ATLANTSOLIA_DISCOUNTLESS_STATIONS:
