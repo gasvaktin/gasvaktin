@@ -352,8 +352,8 @@
             "name": "Ártúnshöfði"
         },
         {
-            "bensin95": 325.1,
-            "bensin95_discount": 320.1,
+            "bensin95": 326.1,
+            "bensin95_discount": 321.1,
             "company": "N1",
             "diesel": 329.9,
             "diesel_discount": 324.9,
@@ -469,7 +469,7 @@
             "name": "Skógarsel"
         },
         {
-            "bensin95": 292.9,
+            "bensin95": 293.9,
             "bensin95_discount": null,
             "company": "N1",
             "diesel": 305.3,
