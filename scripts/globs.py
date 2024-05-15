@@ -47,7 +47,7 @@ ATLANTSOLIA_LOCATION_RELATION = {
 # Atlantsolia declared one (then two, and now three) of its stations to be without discount,
 # on their site that station is marked with a star (*) and the following comment at the bottom:
 # "* Engir afslaettir gilda"
-ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_000', 'ao_008', 'ao_012', 'ao_013', 'ao_017']
+ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_000', 'ao_003', 'ao_008', 'ao_012', 'ao_013', 'ao_017']
 
 OLIS_MINIMUM_DISCOUNT = 7
 OLIS_LOCATION_RELATION = {
@@ -252,7 +252,7 @@ ORKAN_LOCATION_RELATION = {
     'Einhella': 'or_073',
 }
 ORKAN_DISCOUNTLESS_STATIONS = [
-    'or_000', 'or_006', 'or_007', 'or_021', 'or_041', 'or_048', 'or_051', 'or_073'
+    'or_000', 'or_006', 'or_007', 'or_021', 'or_029', 'or_041', 'or_048', 'or_051', 'or_073'
 ]
 # Orkan has a default 10 ISK discount with Orkan keychain
 # See: https://www.orkan.is/afslattur/
