@@ -586,11 +586,11 @@
             "name": "Akureyri Leiruvegur"
         },
         {
-            "bensin95": 325.1,
-            "bensin95_discount": 320.1,
+            "bensin95": 324.1,
+            "bensin95_discount": 319.1,
             "company": "N1",
-            "diesel": 325.0,
-            "diesel_discount": 320.0,
+            "diesel": 323.0,
+            "diesel_discount": 318.0,
             "geo": {
                 "lat": 66.04773333,
                 "lon": -17.34361215
@@ -690,11 +690,11 @@
             "name": "Ásvellir"
         },
         {
-            "bensin95": 326.1,
-            "bensin95_discount": 321.1,
+            "bensin95": 324.9,
+            "bensin95_discount": 319.9,
             "company": "N1",
-            "diesel": 326.9,
-            "diesel_discount": 321.9,
+            "diesel": 325.1,
+            "diesel_discount": 320.1,
             "geo": {
                 "lat": 65.07639949,
                 "lon": -14.03769264
@@ -1002,11 +1002,11 @@
             "name": "Þórshöfn"
         },
         {
-            "bensin95": 326.1,
-            "bensin95_discount": 321.1,
+            "bensin95": 325.1,
+            "bensin95_discount": 320.1,
             "company": "N1",
-            "diesel": 326.9,
-            "diesel_discount": 321.9,
+            "diesel": 324.9,
+            "diesel_discount": 319.9,
             "geo": {
                 "lat": 66.03814697,
                 "lon": -14.80507993
