@@ -51,10 +51,9 @@ ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_000', 'ao_003', 'ao_008', 'ao_012', 'ao
 
 OLIS_MINIMUM_DISCOUNT = 7
 OLIS_LOCATION_RELATION = {
-    'Borgarnes': 'ol_017',
-    'Akranes Esjubraut': 'ol_012',
+    'Borgarnes': 'ol_017',  # Olís possibly temporarily closed fuel sales
     'Akureyri': 'ol_014',
-    'Arnarstapi': 'ol_015',
+    'Akranes Esjubraut': 'ol_012',
     'Álfheimar': 'ol_001',
     'Ánanaust': 'ol_002',
     'Dalvík': 'ol_018',
@@ -83,12 +82,12 @@ OB_LOCATION_RELATION = {
     'Akureyri': 'ob_001',
     'BSÓ Aku': 'ob_002',
     'Akureyri BSÓ': 'ob_002',
-    'Arnarsmári': 'ob_003',  # propably still a discount station despite namechange
+    'Arnarsmári': 'ob_003',
     'Arnarsmára (lægsta verð ÓB, engir afslættir gilda)': 'ob_003',
     'Barðastaðir': 'ob_004',
     'Bæjarlind (lægsta verð ÓB, engir afslættir gilda)': 'ob_010',
     'Fjarðarkaup (lægsta verð ÓB, engir afslættir gilda)': 'ob_012',
-    'Borgarnes': 'ob_009',
+    'Borgarnes (lægsta verð ÓB, engir afslættir gilda)': 'ob_009',
     'Aðalgötu 60': 'ob_035',
     'Keflavíkurflugvöllur': 'ob_035',
     'Bíldshöfða': 'ob_006',
@@ -153,20 +152,10 @@ OB_LOCATION_RELATION = {
 OB_EXTRA_DISCOUNT_STATIONS = ['ob_035', 'ob_000', 'ob_008', 'ob_015', 'ob_037']
 OB_EXTRA_DISCOUNT_AMOUNT = 15
 OB_EXTRA_DISCOUNT_UNTIL = '2023-08-31T23:59'
-# ------------------------------------------------------------------------------------------------
 # OB joins the discountless madness
-# https://www.facebook.com/ob.bensin/photos/a.208957995809394/2301004636604709/
-# Says the following (2019-06-04T11:39):
-# ------------------------------------------------------------------------------------------------
-# OB hefur nu laekkad verð á eldsneytislitranum umtalsvert á thremur stoðvum!
-# * Fjardarkaupum i Hafnarfirdi (ob_012)
-# * Arnarsmara í Kopavogi (ob_003)
-# * Baejarlind í Kopavogi (ob_010)
-# Bensinslitrinn á thessum stodvum er nu a 211.4 ISK og disellitrinn a 202 ISK
-# Afslattur med lyklum og kortum gildir ekki a thessum stodvum. Allir lykil-og korthafar Olis og
-# OB njota eftir sem adur afslattar af eldsneyti og odrum vorum a Olis og OB stodvum um land allt.
-# ------------------------------------------------------------------------------------------------
-OB_DISCOUNTLESS_STATIONS = ['ob_001', 'ob_003', 'ob_012', 'ob_010', 'ob_040', 'ob_042', 'ob_027']
+OB_DISCOUNTLESS_STATIONS = [
+    'ob_001', 'ob_003', 'ob_009', 'ob_010', 'ob_012', 'ob_027', 'ob_040', 'ob_042'
+]
 
 ORKAN_LOCATION_RELATION = {
     'Dalvegur': 'or_000',
