@@ -1522,11 +1522,11 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 312.6,
-            "bensin95_discount": 305.6,
+            "bensin95": 292.8,
+            "bensin95_discount": null,
             "company": "ÓB",
-            "diesel": 315.4,
-            "diesel_discount": 308.4,
+            "diesel": 300.2,
+            "diesel_discount": null,
             "geo": {
                 "lat": 64.544267,
                 "lon": -21.908209
@@ -2131,19 +2131,6 @@
             },
             "key": "ol_014",
             "name": "Akureyri"
-        },
-        {
-            "bensin95": 320.0,
-            "bensin95_discount": 313.0,
-            "company": "Olís",
-            "diesel": 319.8,
-            "diesel_discount": 312.8,
-            "geo": {
-                "lat": 64.544544,
-                "lon": -21.908073
-            },
-            "key": "ol_017",
-            "name": "Borgarnes"
         },
         {
             "bensin95": 325.0,
