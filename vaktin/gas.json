@@ -2133,6 +2133,19 @@
             "name": "Akureyri"
         },
         {
+            "bensin95": 321.7,
+            "bensin95_discount": 314.7,
+            "company": "Olís",
+            "diesel": 321.8,
+            "diesel_discount": 314.8,
+            "geo": {
+                "lat": 64.544544,
+                "lon": -21.908073
+            },
+            "key": "ol_017",
+            "name": "Borgarnes"
+        },
+        {
             "bensin95": 325.0,
             "bensin95_discount": 318.0,
             "company": "Olís",
