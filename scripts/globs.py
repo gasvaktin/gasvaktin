@@ -51,7 +51,7 @@ ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_000', 'ao_003', 'ao_008', 'ao_012', 'ao
 
 OLIS_MINIMUM_DISCOUNT = 7
 OLIS_LOCATION_RELATION = {
-    'Borgarnes': 'ol_017',  # Olís possibly temporarily closed fuel sales
+    'Borgarnes': 'ol_017',
     'Akureyri': 'ol_014',
     'Akranes Esjubraut': 'ol_012',
     'Álfheimar': 'ol_001',
