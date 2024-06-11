@@ -164,6 +164,7 @@ ORKAN_LOCATION_RELATION = {
     'Kænan': 'or_003',
     'Laugavegur': 'or_004',
     'Miklabraut': 'or_005',
+    'Miklabraut Norður': 'or_005',
     'Reykjavíkurvegur': 'or_006',
     'Hafnarfjörður, Reykjavíkurvegi': 'or_006',
     'Skógarhlíð': 'or_007',
