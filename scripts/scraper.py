@@ -74,25 +74,11 @@ def get_global_costco_prices():
     doc_id = '18xuZbhfInW_6Loua3_4LE7KxbGPsh-_3IFfLpf3uwYE'
     res = requests.get(google_doc_url.format(id=doc_id), headers=headers)
     res.raise_for_status()
-    # <shameless-incredibly-naive-html-parsing>
-    bensin = None
-    diesel = None
-    html_text = res.content.decode('utf-8')
-    for line in html_text.split('\n'):
-        if line.lstrip().startswith('Bensin,'):
-            bensin = float(line.lstrip()[7:].replace(' ', ''))
-        if line.lstrip().startswith('Diesel,'):
-            diesel = float(line.lstrip()[7:].replace(' ', ''))
-        if bensin is not None and diesel is not None:
-            break
-    if bensin is None or diesel is None:
-        err_msg = 'Failed to read costco prices (%s, %s)\n%s ...' % (
-            bensin,
-            diesel,
-            html_text[:10000]
-        )
-        raise Exception(err_msg)
-    # </shameless-incredibly-naive-html-parsing>
+    # <somewhat-naive-html-parsing>
+    root = lxml.etree.fromstring(res.content, lxml.etree.HTMLParser())
+    bensin = float(root.xpath('.//td[text()="Bensin"]')[0].getnext().text)
+    diesel = float(root.xpath('.//td[text()="Diesel"]')[0].getnext().text)
+    # </somewhat-naive-html-parsing>
     return {
         'bensin95': bensin,
         'diesel': diesel,
