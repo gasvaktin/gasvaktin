@@ -2435,8 +2435,8 @@
             "bensin95": 318.6,
             "bensin95_discount": 308.6,
             "company": "Orkan",
-            "diesel": 319.7,
-            "diesel_discount": 309.7,
+            "diesel": 317.7,
+            "diesel_discount": 307.7,
             "geo": {
                 "lat": 65.14738,
                 "lon": -13.707358
@@ -2448,8 +2448,8 @@
             "bensin95": 318.6,
             "bensin95_discount": 308.6,
             "company": "Orkan",
-            "diesel": 319.7,
-            "diesel_discount": 309.7,
+            "diesel": 317.7,
+            "diesel_discount": 307.7,
             "geo": {
                 "lat": 65.035079,
                 "lon": -14.228942
@@ -2617,8 +2617,8 @@
             "bensin95": 318.6,
             "bensin95_discount": 308.6,
             "company": "Orkan",
-            "diesel": 319.7,
-            "diesel_discount": 309.7,
+            "diesel": 317.7,
+            "diesel_discount": 307.7,
             "geo": {
                 "lat": 66.025744,
                 "lon": -22.990537
@@ -2744,11 +2744,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 309.6,
-            "bensin95_discount": 299.6,
+            "bensin95": 308.6,
+            "bensin95_discount": 298.6,
             "company": "Orkan",
-            "diesel": 308.7,
-            "diesel_discount": 298.7,
+            "diesel": 307.7,
+            "diesel_discount": 297.7,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
@@ -2952,11 +2952,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 317.8,
-            "bensin95_discount": 307.8,
+            "bensin95": 316.8,
+            "bensin95_discount": 306.8,
             "company": "Orkan",
-            "diesel": 315.7,
-            "diesel_discount": 305.7,
+            "diesel": 314.7,
+            "diesel_discount": 304.7,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
@@ -3004,11 +3004,11 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 310.9,
-            "bensin95_discount": 300.9,
+            "bensin95": 309.9,
+            "bensin95_discount": 299.9,
             "company": "Orkan",
-            "diesel": 315.8,
-            "diesel_discount": 305.8,
+            "diesel": 314.8,
+            "diesel_discount": 304.8,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
@@ -3056,11 +3056,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 317.8,
-            "bensin95_discount": 307.8,
+            "bensin95": 316.8,
+            "bensin95_discount": 306.8,
             "company": "Orkan",
-            "diesel": 315.7,
-            "diesel_discount": 305.7,
+            "diesel": 314.7,
+            "diesel_discount": 304.7,
             "geo": {
                 "lat": 63.995433,
                 "lon": -21.191837
