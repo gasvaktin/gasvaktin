@@ -2744,11 +2744,11 @@
             "name": "Arnarvellir"
         },
         {
-            "bensin95": 308.6,
-            "bensin95_discount": 298.6,
+            "bensin95": 307.6,
+            "bensin95_discount": 297.6,
             "company": "Orkan",
-            "diesel": 307.7,
-            "diesel_discount": 297.7,
+            "diesel": 306.7,
+            "diesel_discount": 296.7,
             "geo": {
                 "lat": 63.97256,
                 "lon": -22.542876
@@ -2939,8 +2939,8 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 311.8,
-            "bensin95_discount": 301.8,
+            "bensin95": 310.8,
+            "bensin95_discount": 300.8,
             "company": "Orkan",
             "diesel": 310.8,
             "diesel_discount": 300.8,
@@ -2952,11 +2952,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 316.8,
-            "bensin95_discount": 306.8,
+            "bensin95": 315.8,
+            "bensin95_discount": 305.8,
             "company": "Orkan",
-            "diesel": 314.7,
-            "diesel_discount": 304.7,
+            "diesel": 313.7,
+            "diesel_discount": 303.7,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
@@ -3004,11 +3004,11 @@
             "name": "Eiðistorg"
         },
         {
-            "bensin95": 309.9,
-            "bensin95_discount": 299.9,
+            "bensin95": 308.9,
+            "bensin95_discount": 298.9,
             "company": "Orkan",
-            "diesel": 314.8,
-            "diesel_discount": 304.8,
+            "diesel": 313.8,
+            "diesel_discount": 303.8,
             "geo": {
                 "lat": 64.11066,
                 "lon": -21.852019
@@ -3056,11 +3056,11 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 316.8,
-            "bensin95_discount": 306.8,
+            "bensin95": 315.8,
+            "bensin95_discount": 305.8,
             "company": "Orkan",
-            "diesel": 314.7,
-            "diesel_discount": 304.7,
+            "diesel": 313.7,
+            "diesel_discount": 303.7,
             "geo": {
                 "lat": 63.995433,
                 "lon": -21.191837
