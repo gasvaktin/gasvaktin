@@ -2513,8 +2513,8 @@
             "bensin95": 318.6,
             "bensin95_discount": 308.6,
             "company": "Orkan",
-            "diesel": 317.7,
-            "diesel_discount": 307.7,
+            "diesel": 316.9,
+            "diesel_discount": 306.9,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
@@ -2601,8 +2601,8 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 316.7,
-            "bensin95_discount": 306.7,
+            "bensin95": 316.6,
+            "bensin95_discount": 306.6,
             "company": "Orkan",
             "diesel": 314.7,
             "diesel_discount": 304.7,
@@ -2627,8 +2627,8 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 318.6,
-            "bensin95_discount": 308.6,
+            "bensin95": 318.0,
+            "bensin95_discount": 308.0,
             "company": "Orkan",
             "diesel": 314.7,
             "diesel_discount": 304.7,
