@@ -690,11 +690,11 @@
             "name": "Ásvellir"
         },
         {
-            "bensin95": 318.9,
-            "bensin95_discount": 313.9,
+            "bensin95": 319.1,
+            "bensin95_discount": 314.1,
             "company": "N1",
-            "diesel": 319.1,
-            "diesel_discount": 314.1,
+            "diesel": 318.9,
+            "diesel_discount": 313.9,
             "geo": {
                 "lat": 65.07639949,
                 "lon": -14.03769264
@@ -1184,8 +1184,8 @@
             "name": "Flúðir"
         },
         {
-            "bensin95": 318.1,
-            "bensin95_discount": 313.1,
+            "bensin95": 319.1,
+            "bensin95_discount": 314.1,
             "company": "N1",
             "diesel": 318.9,
             "diesel_discount": 313.9,
