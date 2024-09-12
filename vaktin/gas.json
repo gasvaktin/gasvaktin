@@ -417,11 +417,11 @@
             "name": "Fossvogur"
         },
         {
-            "bensin95": 308.1,
-            "bensin95_discount": 303.1,
+            "bensin95": 310.1,
+            "bensin95_discount": 305.1,
             "company": "N1",
-            "diesel": 312.9,
-            "diesel_discount": 307.9,
+            "diesel": 314.9,
+            "diesel_discount": 309.9,
             "geo": {
                 "lat": 64.11004543,
                 "lon": -21.85612188
@@ -651,8 +651,8 @@
             "name": "Selfoss"
         },
         {
-            "bensin95": 315.1,
-            "bensin95_discount": 310.1,
+            "bensin95": 317.1,
+            "bensin95_discount": 312.1,
             "company": "N1",
             "diesel": 316.9,
             "diesel_discount": 311.9,
