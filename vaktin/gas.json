@@ -2383,8 +2383,8 @@
             "bensin95": 313.4,
             "bensin95_discount": 303.4,
             "company": "Orkan",
-            "diesel": 313.6,
-            "diesel_discount": 303.6,
+            "diesel": 313.5,
+            "diesel_discount": 303.5,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -2432,11 +2432,11 @@
             "name": "Hallormsstaður"
         },
         {
-            "bensin95": 313.4,
-            "bensin95_discount": 303.4,
+            "bensin95": 313.5,
+            "bensin95_discount": 303.5,
             "company": "Orkan",
-            "diesel": 313.5,
-            "diesel_discount": 303.5,
+            "diesel": 313.6,
+            "diesel_discount": 303.6,
             "geo": {
                 "lat": 65.14738,
                 "lon": -13.707358
@@ -2445,11 +2445,11 @@
             "name": "Neskaupstaður"
         },
         {
-            "bensin95": 313.4,
-            "bensin95_discount": 303.4,
+            "bensin95": 313.5,
+            "bensin95_discount": 303.5,
             "company": "Orkan",
-            "diesel": 313.5,
-            "diesel_discount": 303.5,
+            "diesel": 313.6,
+            "diesel_discount": 303.6,
             "geo": {
                 "lat": 65.035079,
                 "lon": -14.228942
@@ -2614,11 +2614,11 @@
             "name": "Ísafjörður"
         },
         {
-            "bensin95": 313.4,
-            "bensin95_discount": 303.4,
+            "bensin95": 313.5,
+            "bensin95_discount": 303.5,
             "company": "Orkan",
-            "diesel": 313.5,
-            "diesel_discount": 303.5,
+            "diesel": 313.6,
+            "diesel_discount": 303.6,
             "geo": {
                 "lat": 66.025744,
                 "lon": -22.990537
