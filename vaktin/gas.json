@@ -2601,8 +2601,8 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 310.6,
-            "bensin95_discount": 300.6,
+            "bensin95": 310.5,
+            "bensin95_discount": 300.5,
             "company": "Orkan",
             "diesel": 310.6,
             "diesel_discount": 300.6,
@@ -2718,8 +2718,8 @@
             "name": "Stykkishólmur"
         },
         {
-            "bensin95": 312.5,
-            "bensin95_discount": 302.5,
+            "bensin95": 312.4,
+            "bensin95_discount": 302.4,
             "company": "Orkan",
             "diesel": 313.6,
             "diesel_discount": 303.6,
@@ -2835,8 +2835,8 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 312.1,
-            "bensin95_discount": 302.1,
+            "bensin95": 312.0,
+            "bensin95_discount": 302.0,
             "company": "Orkan",
             "diesel": 312.7,
             "diesel_discount": 302.7,
