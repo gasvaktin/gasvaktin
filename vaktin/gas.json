@@ -2835,11 +2835,11 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 310.0,
-            "bensin95_discount": 300.0,
+            "bensin95": 309.9,
+            "bensin95_discount": 299.9,
             "company": "Orkan",
-            "diesel": 312.7,
-            "diesel_discount": 302.7,
+            "diesel": 311.7,
+            "diesel_discount": 301.7,
             "geo": {
                 "lat": 63.417474,
                 "lon": -18.993665
