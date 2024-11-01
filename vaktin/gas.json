@@ -210,10 +210,10 @@
         },
         {
             "bensin95": 281.5,
-            "bensin95_discount": 276.5,
+            "bensin95_discount": null,
             "company": "Atlantsolía",
             "diesel": 291.1,
-            "diesel_discount": 286.1,
+            "diesel_discount": null,
             "geo": {
                 "lat": 64.1460022,
                 "lon": -21.9184388
