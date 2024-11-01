@@ -209,11 +209,11 @@
             "name": "Skemmuvegur"
         },
         {
-            "bensin95": 310.4,
-            "bensin95_discount": 305.4,
+            "bensin95": 281.5,
+            "bensin95_discount": 276.5,
             "company": "Atlantsolía",
-            "diesel": 312.7,
-            "diesel_discount": 307.7,
+            "diesel": 291.1,
+            "diesel_discount": 286.1,
             "geo": {
                 "lat": 64.1460022,
                 "lon": -21.9184388
