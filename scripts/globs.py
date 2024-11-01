@@ -47,7 +47,9 @@ ATLANTSOLIA_LOCATION_RELATION = {
 # Atlantsolia declared one (then two, and now three) of its stations to be without discount,
 # on their site that station is marked with a star (*) and the following comment at the bottom:
 # "* Engir afslaettir gilda"
-ATLANTSOLIA_DISCOUNTLESS_STATIONS = ['ao_000', 'ao_003', 'ao_008', 'ao_012', 'ao_013', 'ao_017']
+ATLANTSOLIA_DISCOUNTLESS_STATIONS = [
+    'ao_000', 'ao_003', 'ao_008', 'ao_012', 'ao_013', 'ao_016', 'ao_017'
+]
 
 OLIS_MINIMUM_DISCOUNT = 7
 OLIS_LOCATION_RELATION = {
