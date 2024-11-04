@@ -2888,10 +2888,10 @@
         },
         {
             "bensin95": 281.4,
-            "bensin95_discount": 271.4,
+            "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 291.0,
-            "diesel_discount": 281.0,
+            "diesel_discount": null,
             "geo": {
                 "lat": 64.145763,
                 "lon": -21.85861
