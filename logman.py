@@ -5,15 +5,21 @@ import collections
 import copy
 import json
 import logging
+import platform
 import os
+import sys
 import time
+import traceback
+
+if platform.system() == 'Windows':
+    import colorama
 
 __author__ = "Sveinn Floki Gudmundsson"
 __email__ = "svefgud@gmail.com"
 __version__ = "0.0.1"
 
-Name = 'gasvaktin'
-Logger = None  # declarative main logger
+Name = 'logman'
+Logger = None
 
 # logger function extention variables
 debug = None
@@ -24,22 +30,30 @@ critical = None
 exception = None
 log = None
 
-# logger configuration
 Log_Config = {
     'filename': '{name}.{role}{format}.log',
-    'loglevel': logging.DEBUG,
+    'loglevel': logging.INFO,
     'format': (
         '[%(asctime)s.%(msecs)03d] '
         '[%(levelname)s] %(message)s '
-        '(%(filename)s:%(lineno)d)'
+        '(%(name)s|%(filename)s:%(lineno)d)'
     ),
     'format_colored': (  # https://misc.flogisoft.com/bash/tip_colors_and_formatting
         '\033[32m[%(asctime)s.%(msecs)03d]\033[0m '
-        '\033[240;1m[\033[0m%(levelname)s\033[240;1m]\033[0m %(message)s '
-        '(%(filename)s:%(lineno)d)'
+        '\033[97;1m[\033[0m%(levelname)s\033[97;1m]\033[0m %(message)s '
+        '\033[90m(%(name)s|%(filename)s:%(lineno)d)\033[0m'
     ),
     'json_format': ['ts', 'level', 'msg', 'pathname', 'lineno'],
     'time_format': '%Y-%m-%dT%H:%M:%S'
+}
+
+Log_Levels = {
+    'notset': logging.NOTSET,
+    'debug': logging.DEBUG,
+    'info': logging.INFO,
+    'warn': logging.WARN,
+    'error': logging.ERROR,
+    'critical': logging.CRITICAL,
 }
 
 
@@ -49,26 +63,30 @@ class JSONFormatter(logging.Formatter):
     def __init__(self, recordfields=None):
         # https://docs.python.org/3/library/logging.html#logrecord-objects
         if recordfields is not None:
-            assert(type(recordfields) is list)
+            if not (isinstance(recordfields, list)):
+                raise Exception('recordfields should be list')
             for recordfield in recordfields:
-                assert(type(recordfield) is str)
+                if not (isinstance(recordfield, str)):
+                    raise Exception('recordfield should be str')
             self.recordfields = recordfields
         else:
             self.recordfields = ['ts', 'level', 'msg', 'pathname', 'lineno']
 
     def format(self, record):
         '''override ancestor class function to generate minified JSON string from log record'''
+        timestamp = '%s.%03d' % (  # isoformatted timestamp with msecs
+            time.strftime('%Y-%m-%dT%H:%M:%S', self.converter(record.created)),
+            record.msecs
+        )
         if (len(self.recordfields) > 0):
             fields = []
-            timestamp = '%s.%03d' % (  # isoformatted timestamp with msecs
-                time.strftime('%Y-%m-%dT%H:%M:%S', self.converter(record.created)),
-                record.msecs
-            )
             if 'ts' not in self.recordfields:
                 fields.append(('ts', timestamp))  # we always want the timestamp right?
             for recordfield in self.recordfields:
                 if recordfield == 'ts':
                     fields.append((recordfield, timestamp))
+                elif recordfield == 'level':
+                    fields.append((recordfield, getattr(record, 'levelname')))
                 elif hasattr(record, recordfield) and getattr(record, recordfield) is not None:
                     fields.append((recordfield, getattr(record, recordfield)))
             if 'msg' not in self.recordfields:
@@ -150,39 +168,46 @@ class ColoredFormatter(logging.Formatter):
         else:
             self.level_styles = {
                 'debug': {'color': 'lightgreen'},
-                'info': {'color': 'default'},
+                'info': {'color': 'white'},
                 'warning': {'color': 'yellow'},
                 'error': {'color': 'red'},
                 'critical': {'color': 'red', 'bold': True}
             }
 
     def assert_valid_styles(self, styles):
-        assert(type(styles) is dict)
+        if not isinstance(styles, dict):
+            raise Exception('styles should be dict')
         for name in styles:
-            assert(type(name) is str)
+            if not isinstance(name, str):
+                raise Exception('name should be str')
             for style in styles[name]:
-                assert(type(style) is dict)
+                if not isinstance(style, dict):
+                    raise Exception('style should be dict')
                 for key in style.keys():
-                    assert(type(key) is str)
+                    if not isinstance(key, str):
+                        raise Exception('key should be str')
                     value = style[key]
                     if key in ('color', 'background'):
-                        assert(type(value) in (str, int))
+                        if not isinstance(value, (str, int)):
+                            raise Exception('value should be str or int')
                     else:
-                        assert(key in self.styling_set_map.keys())
-                        assert(type(value) is bool)
+                        if key not in self.styling_set_map.keys():
+                            raise Exception('key should be in styling_set_map')
+                        if not isinstance(value, bool):
+                            raise Exception('value should be bool')
 
     def get_style_codes(self, style):
         style_codes = []
         for key in style.keys():
             if key == 'color':
-                if type(style[key]) is str:
+                if isinstance(style[key], str):
                     style_codes.append(self.color_map[style[key]])
-                elif type(style[key]) is int:
+                elif isinstance(style[key], int):
                     style_codes.append(style[key])
             elif key == 'background':
-                if type(style[key]) is str:
+                if isinstance(style[key], str):
                     style_codes.append(self.background_map[style[key]])
-                elif type(style[key]) is int:
+                elif isinstance(style[key], int):
                     style_codes.append(style[key])
             elif key in self.styling_set_map.keys() and style[key] is True:
                 style_codes.append(self.styling_set_map[key])
@@ -211,14 +236,28 @@ class ColoredFormatter(logging.Formatter):
         return logging.Formatter.format(self, colored_record)
 
 
-def configure_logger(name, role, config, output_dir='./', log_to_cli=False, log_to_file=True):
+def configure_logger(
+    name, label, role, config, output_dir='./', log_to_cli=False, colored_cli=True,
+    log_to_file=True, log_to_json=True
+):
     logger = logging.getLogger(name)
     log_level = config['loglevel']
     logger.setLevel(log_level)
-    if log_to_cli:
-        # setup streamhandler to terminal
+    if log_to_cli and colored_cli:
+        # setup streamhandler to terminal with colored formatter
+        if platform.system() == 'Windows':
+            # Required for ANSI/VT100 terminal color code sequences to function.
+            # On Windows, calling colorama.init() will filter ANSI escape sequences out of any text
+            # sent to stdout or stderr, and replace them with equivalent Win32 calls.
+            colorama.init()
         streamhandler = logging.StreamHandler()
         formatter_console = ColoredFormatter(config['format_colored'], config['time_format'])
+        streamhandler.setFormatter(formatter_console)
+        logger.addHandler(streamhandler)
+    elif log_to_cli:
+        # setup streamhandler to terminal
+        streamhandler = logging.StreamHandler()
+        formatter_console = logging.Formatter(config['format'], config['time_format'])
         streamhandler.setFormatter(formatter_console)
         logger.addHandler(streamhandler)
     if log_to_file:
@@ -226,12 +265,16 @@ def configure_logger(name, role, config, output_dir='./', log_to_cli=False, log_
             # create log output directory
             logger.info('Creating directory "%s" ..' % (os.path.abspath(output_dir), ))
             os.makedirs(output_dir)
+        log_filename = name
+        if label is not None:
+            log_filename = f'{name}.{label}'
         # setup readable log file handler
         log_file_readable = os.path.join(
-            output_dir, config['filename'].format(name=name, role=role, format='')
+            output_dir, config['filename'].format(name=log_filename, role=role, format='')
         )
+        print(log_file_readable)
         file_handler_readable = logging.FileHandler(
-            log_file_readable, 'a', encoding='utf-8', delay='true'
+            log_file_readable, mode='a', encoding='utf-8', delay=True
         )
         file_handler_readable.setLevel(log_level)
         formatter_readable = logging.Formatter(config['format'], config['time_format'])
@@ -239,39 +282,75 @@ def configure_logger(name, role, config, output_dir='./', log_to_cli=False, log_
         logger.addHandler(file_handler_readable)
         # setup minified-single-line-json log file handler
         log_file_json = os.path.join(
-            output_dir, config['filename'].format(name=name, role=role, format='.json')
+            output_dir, config['filename'].format(name=log_filename, role=role, format='.json')
         )
         file_handler_json = logging.FileHandler(
-            log_file_json, 'a', encoding='utf-8', delay='true'
+            log_file_json, mode='a', encoding='utf-8', delay=True
         )
         file_handler_json.setLevel(log_level)
-        formatter_json = JSONFormatter(config['json_format'])
-        file_handler_json.setFormatter(formatter_json)
-        logger.addHandler(file_handler_json)
+        if log_to_json:
+            formatter_json = JSONFormatter(config['json_format'])
+            file_handler_json.setFormatter(formatter_json)
+            logger.addHandler(file_handler_json)
     return logger
 
 
-def init(role, output_dir='./logs/', log_to_cli=True, log_to_file=True):
-    global Name, Logger, Log_Config
+def handle_unhandled_exception(exc_type, exc_value, exc_traceback):
+    '''Handler for unhandled exceptions to log traceback'''
+    global Logger
+    if Logger is not None:
+        traceback_text = ''
+        for text in traceback.format_exception(exc_type, exc_value, exc_traceback):
+            traceback_text += text
+        Logger.critical('Unhandled exception:\n{0}'.format(traceback_text))
+    # finish by calling the default exception hook
+    sys.__excepthook__(exc_type, exc_value, exc_traceback)
+
+
+def extend_log_functions(logger_to_extend):
     global debug, info, warning, error, critical, exception, log
-    assert(role in ('cli', 'api', 'cron', 'hook'))
+    debug = logger_to_extend.debug
+    info = logger_to_extend.info
+    warning = logger_to_extend.warning
+    error = logger_to_extend.error
+    critical = logger_to_extend.critical
+    exception = logger_to_extend.exception
+    log = logger_to_extend.log
+
+
+def init(
+    name=None, level=None, label=None, role='cli', output_dir='./logs/', log_to_cli=True,
+    colored_cli=True, log_to_file=True, log_to_json=False
+):
+    global Name, Logger, Log_Config, Log_Levels
+    if role not in ('cli', 'api', 'cron', 'hook', 'mod'):
+        raise Exception('unexpected role')
+
+    log_config = copy.deepcopy(Log_Config)
+
+    if name is None:
+        name = Name
+
+    if level in Log_Levels:
+        log_config['loglevel'] = Log_Levels[level]
 
     if Logger is not None:
         Logger.warning('logger already initialized')
 
     output_dir_abs = os.path.abspath(output_dir)
-    if output_dir.startswith('./'):
-        output_dir_abs = os.path.join(os.path.dirname(os.path.realpath(__file__)), output_dir)
+    if isinstance(output_dir, str) and output_dir.startswith('./'):
+        output_dir_abs = os.path.abspath(
+            os.path.join(os.path.dirname(os.path.realpath(__file__)), output_dir)
+        )
 
     # create main logger
-    Logger = configure_logger(Name, role, Log_Config, output_dir_abs, log_to_cli, log_to_file)
-    # extend log functions
-    debug = Logger.debug
-    info = Logger.info
-    warning = Logger.warning
-    error = Logger.error
-    critical = Logger.critical
-    exception = Logger.exception
-    log = Logger.log
+    Logger = configure_logger(
+        name, label, role, log_config, output_dir_abs, log_to_cli, colored_cli, log_to_file,
+        log_to_json
+    )
+    extend_log_functions(Logger)
+
+    # set custom excepthook (to log unhandled exceptions)
+    sys.excepthook = handle_unhandled_exception
 
     return Logger

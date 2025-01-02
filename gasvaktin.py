@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # ----------------------------------------------------------------------------------------------- #
 import argparse
+import datetime
 import sys
 
 import logman
@@ -16,13 +17,13 @@ __version__ = "0.0.1"
 
 
 def main(arguments):
-    logman.init(role=arguments['role'])
     if 'none' not in arguments['scrape']:
         logman.info('Running scraper testrun ..')
         scraper.testrun(arguments['scrape'])
     if arguments['scrape-and-write-data']:
         logman.info('Scraping price data and writing to vaktin ..')
         pricer.main()
+    logman.info('Done.')
 
 
 if __name__ == '__main__':
@@ -46,8 +47,15 @@ if __name__ == '__main__':
         sys.exit(1)
     pargs = parser.parse_args()
     arguments = {
-        'role': 'cli',
         'scrape': pargs.scrape.split(','),
         'scrape-and-write-data': pargs.collect_and_write_data
     }
+    # init logger
+    today = datetime.datetime.now()
+    today_str = today.strftime('%Y-%m-%d')
+    year_str = today.strftime('%Y')
+    log_filename_label = f'{today_str}'
+    log_dir = f'./logs/{year_str}'
+    logman.init(label=log_filename_label, role=pargs.role, output_dir=log_dir)
+    # run main
     main(arguments)
