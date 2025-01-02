@@ -272,7 +272,6 @@ def configure_logger(
         log_file_readable = os.path.join(
             output_dir, config['filename'].format(name=log_filename, role=role, format='')
         )
-        print(log_file_readable)
         file_handler_readable = logging.FileHandler(
             log_file_readable, mode='a', encoding='utf-8', delay=True
         )
