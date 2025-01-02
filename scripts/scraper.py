@@ -338,16 +338,15 @@ def get_individual_orkan_prices():
     res = requests.get(url, headers=utils.headers(bot=True))
     res.raise_for_status()
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
-    table_element = html.find('.//table[@class="PriceTable"]')
+    prices_cards = html.findall('.//div[@class="prices__card"]/div[@class="prices__card-content"]')
     prices = {}
-    for row in table_element.findall('.//tr'):
-        station_name = row[0].text.strip()
+    for card in prices_cards:
+        card_values = card.findall('.//div[@class="prices__price-value"]')
+        station_name = card_values[0].text.strip()
         if station_name == 'Orkustöð':
             continue  # skip header row
-        if row[1][0].text == ' fannst ekki!':
-            continue
-        bensin95 = float(row[1][0].text.replace(',', '.'))
-        diesel = float(row[2][0].text.replace(',', '.'))
+        bensin95 = float(card_values[1].text.strip().replace(',', '.'))
+        diesel = float(card_values[2].text.strip().replace(',', '.'))
         key = globs.ORKAN_LOCATION_RELATION[station_name]
         if key not in globs.ORKAN_DISCOUNTLESS_STATIONS:
             bensin95_discount = round(bensin95 - globs.ORKAN_MINIMUM_DISCOUNT, 1)
