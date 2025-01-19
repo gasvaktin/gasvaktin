@@ -7,7 +7,7 @@ Gasvaktin aims to be an open and automated price lookup project for petrol stati
 
 Check out [gasvaktin.is](https://gasvaktin.is/) if you're travelling Iceland and want to find your preferred petrol station in your near vicinity.
 
-If you're interested in working with the current petrol price data provided there is a publicly available API endpoint which exposes current price data, the API is hosted by the awesome icelandic [apis.is](http://docs.apis.is/#endpoint-petrol) project, check it out.
+If you're interested in working with the current petrol price data and/or historic data feel free to do so, the data is available within this repository, and the historic data is accessible via the git history, just fork and clone it to your local machine and use tools of your own choosing to read the data from the git history. If you're doing data analysis for some audience, public or private, be a good sport and mention origin of data, your audience will appreciate it and think higher of you for providing it.
 
 If you notice any issues or errors please contact maintainer, or submit a PR to fix the issue.
 
@@ -16,7 +16,6 @@ Gasvaktin watches the following Icelandic oil companies:
 * [Atlantsolía](http://atlantsolia.is/)
 * [Costco Iceland](http://costco.is/)
 * [N1](https://www.n1.is/)
-* [Dælan](http://daelan.is/) (low-cost company [previously owned by N1](https://twitter.com/gasvaktin/status/1082985305278464000))
 * [Olís](http://www.olis.is/)
   - [ÓB](http://www.ob.is/) (low-cost company owned by Olís)
 * [Skeljungur](http://www.skeljungur.is/)
@@ -91,7 +90,7 @@ Prices for Olís can be seen [here](http://www.olis.is/solustadir/thjonustustodv
 
 #### Stations
 
-In the beginning of 2018 Skeljungur rebranded its remaining stations to Orkan, there are no fuel stations operating under the Skeljungur brand anymore. Also, it seems the Orkan X brand is no more too, with the last Orkan X station being rebranded to Orkan in either late 2019 or beginning of 2020. Skeljungur bought Dælan in 2020-11 and started rebranding the stations to Orkan stations in 2021-09 and finished rebranding the last station in 2021-11.
+In the beginning of 2018 Skeljungur rebranded its remaining stations to Orkan, there are no fuel stations operating under the Skeljungur brand anymore. Also, it seems the Orkan X brand is no more too, with the last Orkan X station being rebranded to Orkan in either late 2019 or beginning of 2020. Skeljungur bought Dælan in 2020-11 ([previously owned by N1](https://twitter.com/gasvaktin/status/1082985305278464000)) and started rebranding the stations to Orkan stations in 2021-09 and finished rebranding the last station in 2021-11.
 
 List of stations for Orkan can be seen [here](https://www.orkan.is/orkan/orkustodvar/).
 
