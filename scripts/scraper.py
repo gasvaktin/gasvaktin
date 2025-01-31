@@ -185,7 +185,7 @@ def get_individual_n1_prices():
 
 
 def get_individual_olis_prices():
-    url = 'https://www.olis.is/solustadir/thjonustustodvar/eldsneytisverd/'
+    url = 'https://ob.olis.is/solustadir/thjonustustodvar/eldsneytisverd'
     res = requests.get(url, headers=utils.headers())
     res.raise_for_status()
     html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
