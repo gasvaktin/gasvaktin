@@ -329,7 +329,7 @@
             "bensin95": 278.7,
             "bensin95_discount": null,
             "company": "Costco Iceland",
-            "diesel": 288.7,
+            "diesel": 292.7,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.075267,
@@ -3171,6 +3171,19 @@
             },
             "key": "or_073",
             "name": "Einhella"
+        },
+        {
+            "bensin95": 322.3,
+            "bensin95_discount": 312.3,
+            "company": "Orkan",
+            "diesel": 329.4,
+            "diesel_discount": 319.4,
+            "geo": {
+                "lat": 64.1414544,
+                "lon": -21.75889653
+            },
+            "key": "or_074",
+            "name": "Lambhagavegur"
         }
     ]
 }
