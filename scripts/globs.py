@@ -292,6 +292,7 @@ ORKAN_LOCATION_RELATION = {
     'Hella': 'or_072',
     'Hellu': 'or_072',
     'Einhella': 'or_073',
+    'Lambhagavegur': 'or_074',
 }
 ORKAN_DISCOUNTLESS_STATIONS = [
     'or_000', 'or_006', 'or_007', 'or_021', 'or_029', 'or_041', 'or_048', 'or_049', 'or_051',

@@ -509,5 +509,12 @@
             "lon": -21.99451746
         },
         "name": "Einhella"
+    },
+    "or_074": {
+        "geo": {
+            "lat": 64.14145440,
+            "lon": -21.75889653
+        },
+        "name": "Lambhagavegur"
     }
 }
