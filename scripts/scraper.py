@@ -360,6 +360,10 @@ def get_individual_orkan_prices():
             'bensin95_discount': bensin95_discount,
             'diesel_discount': diesel_discount
         }
+    if 'or_074' not in prices:
+        # new station at Lambhagavegur for some reason not shown in list, after appearing last week
+        # for now we link its price to station Orkan Vesturlandsvegur in the near vicinity
+        prices['or_074'] = prices['or_052'].copy()
     return prices
 
 
