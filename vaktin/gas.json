@@ -2575,8 +2575,8 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 320.4,
-            "bensin95_discount": 310.4,
+            "bensin95": 319.8,
+            "bensin95_discount": 309.8,
             "company": "Orkan",
             "diesel": 326.4,
             "diesel_discount": 316.4,
@@ -2601,8 +2601,8 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 322.2,
-            "bensin95_discount": 312.2,
+            "bensin95": 321.2,
+            "bensin95_discount": 311.2,
             "company": "Orkan",
             "diesel": 326.4,
             "diesel_discount": 316.4,
@@ -2695,8 +2695,8 @@
             "bensin95": 320.8,
             "bensin95_discount": 310.8,
             "company": "Orkan",
-            "diesel": 329.5,
-            "diesel_discount": 319.5,
+            "diesel": 329.4,
+            "diesel_discount": 319.4,
             "geo": {
                 "lat": 63.841234,
                 "lon": -22.424997
@@ -2926,8 +2926,8 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 320.5,
-            "bensin95_discount": 310.5,
+            "bensin95": 319.8,
+            "bensin95_discount": 309.8,
             "company": "Orkan",
             "diesel": 326.4,
             "diesel_discount": 316.4,
@@ -3030,8 +3030,8 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 320.5,
-            "bensin95_discount": 310.5,
+            "bensin95": 319.8,
+            "bensin95_discount": 309.8,
             "company": "Orkan",
             "diesel": 326.4,
             "diesel_discount": 316.4,
