@@ -2302,11 +2302,11 @@
             "name": "Laugavegur"
         },
         {
-            "bensin95": 317.6,
-            "bensin95_discount": 307.6,
+            "bensin95": 288.7,
+            "bensin95_discount": 278.7,
             "company": "Orkan",
-            "diesel": 325.3,
-            "diesel_discount": 315.3,
+            "diesel": 303.7,
+            "diesel_discount": 293.7,
             "geo": {
                 "lat": 64.13266,
                 "lon": -21.893096
@@ -2952,11 +2952,11 @@
             "name": "Garðabær"
         },
         {
-            "bensin95": 317.6,
-            "bensin95_discount": 307.6,
+            "bensin95": 288.7,
+            "bensin95_discount": 278.7,
             "company": "Orkan",
-            "diesel": 325.3,
-            "diesel_discount": 315.3,
+            "diesel": 303.7,
+            "diesel_discount": 293.7,
             "geo": {
                 "lat": 64.132046,
                 "lon": -21.893384
