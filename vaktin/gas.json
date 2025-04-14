@@ -14,11 +14,11 @@
             "name": "Baldursnes Akureyri"
         },
         {
-            "bensin95": 310.9,
-            "bensin95_discount": 305.9,
+            "bensin95": 288.8,
+            "bensin95_discount": 283.8,
             "company": "Atlantsolía",
-            "diesel": 319.5,
-            "diesel_discount": 314.5,
+            "diesel": 303.8,
+            "diesel_discount": 298.8,
             "geo": {
                 "lat": 65.687807,
                 "lon": -18.100104
@@ -27,11 +27,11 @@
             "name": "Glerártorg Akureyri"
         },
         {
-            "bensin95": 317.7,
-            "bensin95_discount": 312.7,
+            "bensin95": 288.8,
+            "bensin95_discount": 283.8,
             "company": "Atlantsolía",
-            "diesel": 325.4,
-            "diesel_discount": 320.4,
+            "diesel": 303.8,
+            "diesel_discount": 298.8,
             "geo": {
                 "lat": 64.125397,
                 "lon": -21.813054
