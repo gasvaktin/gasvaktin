@@ -53,11 +53,11 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 315.7,
-            "bensin95_discount": 310.7,
+            "bensin95": 286.8,
+            "bensin95_discount": 281.8,
             "company": "Atlantsolía",
-            "diesel": 321.3,
-            "diesel_discount": 316.3,
+            "diesel": 299.7,
+            "diesel_discount": 294.7,
             "geo": {
                 "lat": 64.087301,
                 "lon": -21.832666
@@ -118,11 +118,11 @@
             "name": "Kaplakriki"
         },
         {
-            "bensin95": 315.7,
-            "bensin95_discount": 310.7,
+            "bensin95": 286.8,
+            "bensin95_discount": 281.8,
             "company": "Atlantsolía",
-            "diesel": 321.3,
-            "diesel_discount": 316.3,
+            "diesel": 299.7,
+            "diesel_discount": 294.7,
             "geo": {
                 "lat": 64.11123,
                 "lon": -21.935749
