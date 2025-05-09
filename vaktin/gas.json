@@ -2796,11 +2796,11 @@
             "name": "Stokkseyri"
         },
         {
-            "bensin95": 315.6,
-            "bensin95_discount": 305.6,
+            "bensin95": 305.6,
+            "bensin95_discount": 295.6,
             "company": "Orkan",
-            "diesel": 321.2,
-            "diesel_discount": 311.2,
+            "diesel": 311.2,
+            "diesel_discount": 301.2,
             "geo": {
                 "lat": 63.440566,
                 "lon": -20.277227
