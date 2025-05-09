@@ -3082,11 +3082,11 @@
             "name": "Fellsmúli"
         },
         {
-            "bensin95": 315.6,
-            "bensin95_discount": 305.6,
+            "bensin95": 286.7,
+            "bensin95_discount": 276.7,
             "company": "Orkan",
-            "diesel": 321.2,
-            "diesel_discount": 311.2,
+            "diesel": 299.6,
+            "diesel_discount": 289.6,
             "geo": {
                 "lat": 64.09370915,
                 "lon": -21.85989618
