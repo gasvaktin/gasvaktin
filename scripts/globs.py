@@ -360,6 +360,7 @@ N1_LOCATION_RELATION = {
     'Bíldshöfði': 'n1_001',
     'Gagnvegur': 'n1_002',
     'Háholt': 'n1_003',
+    'Bjarkarholt': 'n1_003',
     'Borgartún': 'n1_004',
     'Fossvogur': 'n1_005',
     'Stórihjalli': 'n1_006',

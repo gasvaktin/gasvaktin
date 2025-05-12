@@ -185,55 +185,34 @@ def get_individual_n1_prices():
 
 
 def get_individual_olis_prices():
-    url = 'https://ob.olis.is/solustadir/thjonustustodvar/eldsneytisverd'
+    url = 'https://ob.olis.is/_od_api/price/'
     res = requests.get(url, headers=utils.headers())
     res.raise_for_status()
-    html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
-    data = {'stations': {}}
-    price_table = html.find('.//table')  # theres just one table element, let's use that ofc
-    if price_table is None:
-        error_msg = 'Ekki tókst að sækja eldsneytisverð. Vinsamlega reyndu aftur síðar.'
-        if error_msg in res.content.decode('utf-8'):
-            # 2022-08-19: Olís price page broken
-            # fallback to current prices until this is fixed
-            logman.warning('Olís price page broken, using current Olís price data as fallback.')
-            current_price_data_file = os.path.abspath(os.path.join(
-                os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
-            ))
-            prices = {}
-            current_price_data = utils.load_json(current_price_data_file)
-            for station in current_price_data['stations']:
-                if not station['key'].startswith('ol_'):
-                    continue
-                prices[station['key']] = {
-                    'bensin95': station['bensin95'],
-                    'diesel': station['diesel'],
-                    'bensin95_discount': station['bensin95_discount'],
-                    'diesel_discount': station['diesel_discount']
-                }
-            return prices
-    for row in price_table.findall('.//tr'):
-        if len(row.findall('.//td')) < 3:
+    data = res.json()
+    parsed = {'stations': {}}
+    for entry in data['data']:
+        if entry['name'] == 'PIERPUMP':
             continue
-        if row.findall('.//td')[0].text.strip() == '':
+        if entry['OB'] == 1:
             continue
-        name = row.findall('.//td')[0].text.strip()
-        if name == 'ODR test':
+        station_key = globs.OLIS_LOCATION_RELATION[entry['name']]
+        if station_key not in parsed['stations']:
+            parsed['stations'][station_key] = {}
+        if entry['type'] == 'SjalfsafgreidslaBensin95':
+            parsed['stations'][station_key]['bensin95'] = entry['price']
+        elif entry['type'] == 'SjalfsafgreidslaDisel':
+            parsed['stations'][station_key]['diesel'] = entry['price']
+        elif entry['type'] == 'SjalfsafgreidslaLitudDiesel':
             continue
-        station_key = globs.OLIS_LOCATION_RELATION[name]
-        bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
-        diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
-        data['stations'][station_key] = {'bensin95': bensin, 'diesel': diesel}
+        else:
+            raise Exception('Unexpected type "%s"' % (entry['type'], ))
     prices = {}
     olis_stations = utils.load_json(
-        os.path.join(
-            os.path.dirname(os.path.realpath(__file__)),
-            '../stations/olis.json'
-        )
+        os.path.join(os.path.dirname(os.path.realpath(__file__)), '../stations/olis.json')
     )
     for key in olis_stations:
-        bensin95 = data['stations'][key]['bensin95']
-        diesel = data['stations'][key]['diesel']
+        bensin95 = parsed['stations'][key]['bensin95']
+        diesel = parsed['stations'][key]['diesel']
         bensin95_discount = round((bensin95 - globs.OLIS_MINIMUM_DISCOUNT), 1)
         diesel_discount = round((diesel - globs.OLIS_MINIMUM_DISCOUNT), 1)
         prices[key] = {
