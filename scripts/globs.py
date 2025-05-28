@@ -85,10 +85,14 @@ OB_LOCATION_RELATION = {
     'BSÓ Aku': 'ob_002',
     'Akureyri BSÓ': 'ob_002',
     'Arnarsmári': 'ob_003',
+    'Arnarsmára': 'ob_003',
     'Arnarsmára (lægsta verð ÓB, engir afslættir gilda)': 'ob_003',
     'Barðastaðir': 'ob_004',
+    'Bæjarlind': 'ob_010',
     'Bæjarlind (lægsta verð ÓB, engir afslættir gilda)': 'ob_010',
+    'Fjarðarkaup': 'ob_012',
     'Fjarðarkaup (lægsta verð ÓB, engir afslættir gilda)': 'ob_012',
+    'Borgarnes': 'ob_009',
     'Borgarnes (lægsta verð ÓB, engir afslættir gilda)': 'ob_009',
     'Aðalgötu 60': 'ob_035',
     'Keflavíkurflugvöllur': 'ob_035',
@@ -114,7 +118,6 @@ OB_LOCATION_RELATION = {
     'Selfoss': 'ob_027',
     'Selfossi (lægsta verð ÓB, engir afslættir gilda)': 'ob_027',
     'Selfoss (lægsta verð ÓB, engir afslættir gilda)': 'ob_027',
-    'Snorrabraut': 'ob_028',
     'Stykkishólmur': 'ob_030',
     'Suðurhella': 'ob_031',
     'Varmahlíð': 'ob_034',
@@ -137,8 +140,8 @@ OB_LOCATION_RELATION = {
     'Skagaströnd': 'ob_045',
     'Akranes Suðurgötu': 'ob_046',
     'Fellabær': 'ob_047',
-    'Arnarstapa': 'ob_048',
-    'Arnarstapi': 'ob_048',
+    'Arnarstapa': 'ob_078',
+    'Arnarstapi': 'ob_078',
     'Básinn': 'ob_079',
     'Keflavík': 'ob_079',
 }
@@ -154,7 +157,7 @@ OB_LOCATION_RELATION = {
 OB_EXTRA_DISCOUNT_STATIONS = ['ob_035', 'ob_000', 'ob_008', 'ob_015', 'ob_037']
 OB_EXTRA_DISCOUNT_AMOUNT = 15
 OB_EXTRA_DISCOUNT_UNTIL = '2023-08-31T23:59'
-# OB joins the discountless madness
+# OB discountless stations
 OB_DISCOUNTLESS_STATIONS = [
     'ob_001', 'ob_003', 'ob_009', 'ob_010', 'ob_012', 'ob_027', 'ob_040', 'ob_042'
 ]

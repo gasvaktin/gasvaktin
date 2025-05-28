@@ -225,84 +225,42 @@ def get_individual_olis_prices():
 
 
 def get_individual_ob_prices():
-    url = 'https://www.ob.is/eldsneytisverd/'
+    url = 'https://ob.olis.is/_od_api/price/'
     res = requests.get(url, headers=utils.headers())
     res.raise_for_status()
-    html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
-    data = {
-        'stations': {},
-        'highest': {'bensin95': None, 'diesel': None}
-    }
-    price_table = html.find('.//table[@id="gas-prices"]')
-    if price_table is None:
-        error_msg = 'Ekki tókst að sækja eldsneytisverð. Vinsamlega reyndu aftur síðar.'
-        if error_msg in res.content.decode('utf-8'):
-            # 2022-08-19: ÓB price page broken
-            # fallback to current prices until this is fixed
-            logman.warning('ÓB price page broken, using current ÓB price data as fallback.')
-            current_price_data_file = os.path.abspath(os.path.join(
-                os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
-            ))
-            prices = {}
-            current_price_data = utils.load_json(current_price_data_file)
-            for station in current_price_data['stations']:
-                if not station['key'].startswith('ob_'):
-                    continue
-                prices[station['key']] = {
-                    'bensin95': station['bensin95'],
-                    'diesel': station['diesel'],
-                    'bensin95_discount': station['bensin95_discount'],
-                    'diesel_discount': station['diesel_discount']
-                }
-            return prices
-    for row in price_table.findall('.//tr'):
-        if len(row.findall('.//td')) == 0:
+    data = res.json()
+    parsed = {'stations': {}}
+    for entry in data['data']:
+        if entry['name'] == 'PIERPUMP':
             continue
-        if row.findall('.//td')[0].get('style') == 'border:0px;':
+        if entry['OB'] != 1:
             continue
-        name = row.findall('.//td')[0].text.strip()
-        if name.startswith('ÓB '):
-            name = name[3:]
-        if name == 'Keflav.flugv.Arnarvöllum':
-            continue  # not on maps, needs investigating
-        if name == 'Búðardalur':
-            continue  # missing on maps, needs investigating
-        if name == 'Ketilás':
-            continue  # throw this one for now, only diesel, needs investigation
-        station_key = globs.OB_LOCATION_RELATION[name]
-        bensin = float(row.findall('.//td')[1].text.strip().replace(',', '.'))
-        diesel = float(row.findall('.//td')[2].text.strip().replace(',', '.'))
-        data['stations'][station_key] = {'bensin95': bensin, 'diesel': diesel}
-        if data['highest']['bensin95'] is None or data['highest']['bensin95'] < bensin:
-            data['highest']['bensin95'] = bensin
-        if data['highest']['diesel'] is None or data['highest']['diesel'] < diesel:
-            data['highest']['diesel'] = diesel
+        if entry['name'] in ['Búðardalur', 'Ketilás']:
+            continue  # those stations seem to only sell diesel fuel, skip for now
+        station_key = globs.OB_LOCATION_RELATION[entry['name']]
+        if station_key not in parsed['stations']:
+            parsed['stations'][station_key] = {}
+        if entry['type'] == 'SjalfsafgreidslaBensin95':
+            parsed['stations'][station_key]['bensin95'] = entry['price']
+        elif entry['type'] == 'SjalfsafgreidslaDisel':
+            parsed['stations'][station_key]['diesel'] = entry['price']
+        elif entry['type'] == 'SjalfsafgreidslaLitudDiesel':
+            continue
+        else:
+            raise Exception('Unexpected type "%s"' % (entry['type'], ))
     prices = {}
     ob_stations = utils.load_json(
-        os.path.join(
-            os.path.dirname(os.path.realpath(__file__)),
-            '../stations/ob.json'
-        )
+        os.path.join(os.path.dirname(os.path.realpath(__file__)), '../stations/ob.json')
     )
-    now = datetime.datetime.now()
-    end = datetime.datetime.strptime(globs.OB_EXTRA_DISCOUNT_UNTIL, '%Y-%m-%dT%H:%M')
     for key in ob_stations:
-        if key in data['stations']:
-            bensin95 = data['stations'][key]['bensin95']
-            diesel = data['stations'][key]['diesel']
+        bensin95 = parsed['stations'][key]['bensin95']
+        diesel = parsed['stations'][key]['diesel']
+        if key not in globs.OB_DISCOUNTLESS_STATIONS:
+            bensin95_discount = round((bensin95 - globs.OB_MINIMUM_DISCOUNT), 1)
+            diesel_discount = round((diesel - globs.OB_MINIMUM_DISCOUNT), 1)
         else:
-            bensin95 = data['highest']['bensin95']
-            diesel = data['highest']['diesel']
-        bensin95_discount = round((bensin95 - globs.OB_MINIMUM_DISCOUNT), 1)
-        diesel_discount = round((diesel - globs.OB_MINIMUM_DISCOUNT), 1)
-        if key in globs.OB_DISCOUNTLESS_STATIONS:
             bensin95_discount = None
             diesel_discount = None
-        if key in globs.OB_EXTRA_DISCOUNT_STATIONS and now < end:
-            if bensin95_discount is not None:
-                bensin95_discount = round((bensin95 - globs.OB_EXTRA_DISCOUNT_AMOUNT), 1)
-            if diesel_discount is not None:
-                diesel_discount = round((diesel - globs.OB_EXTRA_DISCOUNT_AMOUNT), 1)
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,
@@ -371,4 +329,4 @@ def testrun(selection):
 
 
 if __name__ == '__main__':
-    testrun(['all'])
+    testrun(['ob'])
