@@ -282,6 +282,9 @@ def get_individual_orkan_prices():
         station_name = card_values[0].text.strip()
         if station_name == 'Orkustöð':
             continue  # skip header row
+        if 'rafhleðsla' in station_name:
+            # "Selfoss rafhleðsla"
+            continue  # skip electric charging stations
         bensin95 = float(card_values[1].text.strip().replace(',', '.'))
         diesel = float(card_values[2].text.strip().replace(',', '.'))
         key = globs.ORKAN_LOCATION_RELATION[station_name]
@@ -329,4 +332,4 @@ def testrun(selection):
 
 
 if __name__ == '__main__':
-    testrun(['ob'])
+    testrun(['all'])
