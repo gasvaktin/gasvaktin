@@ -2666,11 +2666,11 @@
             "name": "Ólafsvík"
         },
         {
-            "bensin95": 303.5,
-            "bensin95_discount": 293.5,
+            "bensin95": 302.5,
+            "bensin95_discount": 292.5,
             "company": "Orkan",
-            "diesel": 311.8,
-            "diesel_discount": 301.8,
+            "diesel": 310.9,
+            "diesel_discount": 300.9,
             "geo": {
                 "lat": 65.072872,
                 "lon": -22.732583
