@@ -173,8 +173,8 @@ def get_individual_n1_prices():
             bensin95_discount = None
             diesel_discount = None
         else:
-            bensin95_discount = round((bensin95 - globs.N1_DISCOUNT), 1)
-            diesel_discount = round((diesel - globs.N1_DISCOUNT), 1)
+            bensin95_discount = round((bensin95 - globs.N1_MINIMUM_DISCOUNT), 1)
+            diesel_discount = round((diesel - globs.N1_MINIMUM_DISCOUNT), 1)
         prices[key] = {
             'bensin95': bensin95,
             'diesel': diesel,

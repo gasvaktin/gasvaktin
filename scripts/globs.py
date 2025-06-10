@@ -51,7 +51,8 @@ ATLANTSOLIA_DISCOUNTLESS_STATIONS = [
     'ao_000', 'ao_003', 'ao_008', 'ao_012', 'ao_013', 'ao_016', 'ao_017'
 ]
 
-OLIS_MINIMUM_DISCOUNT = 7
+# https://www.olis.is/vinahopur
+OLIS_MINIMUM_DISCOUNT = 10
 OLIS_LOCATION_RELATION = {
     'Borgarnes': 'ol_017',
     'Akureyri': 'ol_014',
@@ -74,7 +75,7 @@ OLIS_LOCATION_RELATION = {
     'Sæbraut': 'ol_011',
     'Hrauneyjar': 'ol_022',
 }
-OB_MINIMUM_DISCOUNT = 7
+OB_MINIMUM_DISCOUNT = 10
 OB_LOCATION_RELATION = {
     'Akranes Esjubraut': 'ob_000',
     'Esjubraut': 'ob_000',
@@ -323,11 +324,11 @@ ORKAN_LOCATION_RELATION = {
 }
 ORKAN_DISCOUNTLESS_STATIONS = [
     'or_000', 'or_006', 'or_007', 'or_021', 'or_029', 'or_041', 'or_048', 'or_049', 'or_051',
-    'or_073'
+    'or_053', 'or_067', 'or_073'
 ]
 # Orkan has a default 10 ISK discount with Orkan keychain
-# See: https://www.orkan.is/afslattur/
-ORKAN_MINIMUM_DISCOUNT = 10.0
+# See: https://www.orkan.is/afslaettir/
+ORKAN_MINIMUM_DISCOUNT = 12.0
 
 # Atlantsolía has changed their discount system to mirror Orkan, this discount
 # system is called "MEIRA FYRIR ÞIG".
@@ -341,8 +342,8 @@ ORKAN_MINIMUM_DISCOUNT = 10.0
 # Additionally they provide an extra 2 ISK discount on a single station of your
 # personal choice.
 # Source:
-# https://www.atlantsolia.is/daelulykill/afslattur-og-avinningur/
-ATLANTSOLIA_MINIMUM_DISCOUNT = 5.0
+# https://www.atlantsolia.is/daelulykill/afslattur-og-allskonar/
+ATLANTSOLIA_MINIMUM_DISCOUNT = 11.0
 
 # N1 offers discount of 5 ISK and 2 N1 points per liter according to the following page:
 # https://www.n1.is/n1-kortid/saekja-um-kortid/
@@ -357,7 +358,7 @@ ATLANTSOLIA_MINIMUM_DISCOUNT = 5.0
 # (and/or periodic offers they provide) at the rate 1 ISK per point, but as it's a form of earned
 # credits which you can only use doing business with the N1 company and not an actual discount we
 # disregard the N1 points but value the 5 ISK discount.
-N1_DISCOUNT = 5.0
+N1_MINIMUM_DISCOUNT = 5.0
 N1_LOCATION_RELATION = {
     'Ártúnshöfði': 'n1_000',
     'Bíldshöfði': 'n1_001',
