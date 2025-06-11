@@ -48,7 +48,7 @@ ATLANTSOLIA_LOCATION_RELATION = {
 # on their site that station is marked with a star (*) and the following comment at the bottom:
 # "* Engir afslaettir gilda"
 ATLANTSOLIA_DISCOUNTLESS_STATIONS = [
-    'ao_000', 'ao_003', 'ao_008', 'ao_012', 'ao_013', 'ao_016', 'ao_017'
+    'ao_000', 'ao_003', 'ao_004', 'ao_008', 'ao_009', 'ao_012', 'ao_013', 'ao_016', 'ao_017'
 ]
 
 # https://www.olis.is/vinahopur
@@ -148,19 +148,19 @@ OB_LOCATION_RELATION = {
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
-# In 2021-06 the stations are the following:
-# https://www.facebook.com/ob.bensin/posts/4082211708483984
-# * ÓB Minni-Borg (ob_022)
-# * ÓB Neskaupstað (ob_023)
-# * ÓB Reyðarfirði (ob_026)
+# In 2025-06 the stations are the following:
+# https://www.ob.is
+# * ÓB Húsavík (ob_017)
 # * ÓB Vestmannaeyjum (ob_032)
-# * ÓB Þorlákshöfn (ob_033)
-OB_EXTRA_DISCOUNT_STATIONS = ['ob_035', 'ob_000', 'ob_008', 'ob_015', 'ob_037']
+# * ÓB Skagaströnd (ob_045)
+# * ÓB Kirkjubæjarklaustur (ob_019)
+# * ÓB Neskaupstaður (ob_023)
+OB_EXTRA_DISCOUNT_STATIONS = ['ob_017', 'ob_032', 'ob_045', 'ob_019', 'ob_023']
 OB_EXTRA_DISCOUNT_AMOUNT = 15
-OB_EXTRA_DISCOUNT_UNTIL = '2023-08-31T23:59'
+OB_EXTRA_DISCOUNT_UNTIL = '2025-06-30T23:59'
 # OB discountless stations
 OB_DISCOUNTLESS_STATIONS = [
-    'ob_001', 'ob_003', 'ob_009', 'ob_010', 'ob_012', 'ob_027', 'ob_040', 'ob_042'
+    'ob_001', 'ob_003', 'ob_009', 'ob_010', 'ob_012', 'ob_027', 'ob_036', 'ob_040', 'ob_042'
 ]
 
 ORKAN_LOCATION_RELATION = {
@@ -345,20 +345,14 @@ ORKAN_MINIMUM_DISCOUNT = 12.0
 # https://www.atlantsolia.is/daelulykill/afslattur-og-allskonar/
 ATLANTSOLIA_MINIMUM_DISCOUNT = 11.0
 
-# N1 offers discount of 5 ISK and 2 N1 points per liter according to the following page:
-# https://www.n1.is/n1-kortid/saekja-um-kortid/
+# N1 offers discount of minimum 10 ISK and 2 N1 points per liter according to the following page:
+# https://www.n1.is/n1-kortid/
 # -----------------------------------------------------------------------------------------------
-# N1 kortið og N1 lykillinn kosta ekkert en færa þér bæði afslátt og punkta sem gilda sem inneign
-# í öllum viðskiptum við N1
-# - 5 kr + 2 punktar að auki
-# -16 kr + 2 punktar á afmælisdaginn þinn
-# -15 kr + 2 punktar í 10. hvert skipti þegar keyptir eru 25 L eða meira af eldsneyti
+# Discounts vary between individual customers based on various connections, info on minimum
+# discount was unfortunately not stated on the N1 website but was received/confirmed via email
+# communication.
 # -----------------------------------------------------------------------------------------------
-# These N1 points mentioned above are a type of credits at N1 which you can exchange for gasoline
-# (and/or periodic offers they provide) at the rate 1 ISK per point, but as it's a form of earned
-# credits which you can only use doing business with the N1 company and not an actual discount we
-# disregard the N1 points but value the 5 ISK discount.
-N1_MINIMUM_DISCOUNT = 5.0
+N1_MINIMUM_DISCOUNT = 10.0
 N1_LOCATION_RELATION = {
     'Ártúnshöfði': 'n1_000',
     'Bíldshöfði': 'n1_001',
@@ -451,8 +445,6 @@ N1_LOCATION_RELATION = {
     'Flugvellir': 'n1_085',
 }
 N1_DISCOUNTLESS_STATIONS = ['n1_011', 'n1_074', 'n1_081', 'n1_082', 'n1_079']
-
-# Note: Daelan gone after commit 869cf94f90fa4ade010f17185e449e8819715d0e
 
 BROWSERS_UA = [
     ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'
