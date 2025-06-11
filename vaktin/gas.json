@@ -1795,11 +1795,11 @@
             "name": "Reykjanesbær Aðalgata"
         },
         {
-            "bensin95": 313.7,
-            "bensin95_discount": 303.7,
+            "bensin95": 284.8,
+            "bensin95_discount": 274.8,
             "company": "ÓB",
-            "diesel": 319.4,
-            "diesel_discount": 309.4,
+            "diesel": 297.8,
+            "diesel_discount": 287.8,
             "geo": {
                 "lat": 65.326053,
                 "lon": -20.892402
