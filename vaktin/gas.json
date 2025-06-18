@@ -495,11 +495,11 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 317.3,
-            "bensin95_discount": 307.3,
+            "bensin95": 315.9,
+            "bensin95_discount": 305.9,
             "company": "N1",
-            "diesel": 324.1,
-            "diesel_discount": 314.1,
+            "diesel": 322.9,
+            "diesel_discount": 312.9,
             "geo": {
                 "lat": 65.14456357,
                 "lon": -21.08482361
@@ -1340,11 +1340,11 @@
             "name": "Norðlingaholt"
         },
         {
-            "bensin95": 317.3,
-            "bensin95_discount": 307.3,
+            "bensin95": 315.9,
+            "bensin95_discount": 305.9,
             "company": "N1",
-            "diesel": 324.1,
-            "diesel_discount": 314.1,
+            "diesel": 322.9,
+            "diesel_discount": 312.9,
             "geo": {
                 "lat": 65.378695,
                 "lon": -20.643388
@@ -1390,6 +1390,19 @@
             },
             "key": "n1_085",
             "name": "Flugvellir"
+        },
+        {
+            "bensin95": 284.9,
+            "bensin95_discount": null,
+            "company": "N1",
+            "diesel": 297.9,
+            "diesel_discount": null,
+            "geo": {
+                "lat": 64.155238,
+                "lon": -21.951822
+            },
+            "key": "n1_086",
+            "name": "Fiskislóð"
         },
         {
             "bensin95": 313.7,
