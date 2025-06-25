@@ -59,7 +59,6 @@ OLIS_LOCATION_RELATION = {
     'Akranes Esjubraut': 'ol_012',
     'Álfheimar': 'ol_001',
     'Ánanaust': 'ol_002',
-    'Dalvík': 'ol_018',
     'Garðabær': 'ol_004',
     'Gullinbrú': 'ol_005',
     'Hella': 'ol_021',
@@ -145,6 +144,8 @@ OB_LOCATION_RELATION = {
     'Arnarstapi': 'ob_078',
     'Básinn': 'ob_079',
     'Keflavík': 'ob_079',
+    'Dalvík': 'ob_080',
+    'ÓB Dalvík': 'ob_080',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.
