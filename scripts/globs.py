@@ -48,7 +48,8 @@ ATLANTSOLIA_LOCATION_RELATION = {
 # on their site that station is marked with a star (*) and the following comment at the bottom:
 # "* Engir afslaettir gilda"
 ATLANTSOLIA_DISCOUNTLESS_STATIONS = [
-    'ao_000', 'ao_003', 'ao_004', 'ao_008', 'ao_009', 'ao_012', 'ao_013', 'ao_016', 'ao_017'
+    'ao_000', 'ao_001', 'ao_003', 'ao_004', 'ao_008', 'ao_009', 'ao_012', 'ao_013', 'ao_016',
+    'ao_017',
 ]
 
 # https://www.olis.is/vinahopur
@@ -146,6 +147,8 @@ OB_LOCATION_RELATION = {
     'Keflavík': 'ob_079',
     'Dalvík': 'ob_080',
     'ÓB Dalvík': 'ob_080',
+    'Kjarnagata': 'ob_081',
+    'Búðardalur': 'ob_082',
 }
 # OB has been playing the "random five stations of ours have minimum of 15 ISK discount", they
 # shuffle the stations every month.

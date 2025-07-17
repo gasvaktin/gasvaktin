@@ -235,7 +235,7 @@ def get_individual_ob_prices():
             continue
         if entry['OB'] != 1:
             continue
-        if entry['name'] in ['Búðardalur', 'Ketilás']:
+        if entry['name'] in ['Ketilás']:
             continue  # those stations seem to only sell diesel fuel, skip for now
         station_key = globs.OB_LOCATION_RELATION[entry['name']]
         if station_key not in parsed['stations']:
@@ -300,6 +300,27 @@ def get_individual_orkan_prices():
             'bensin95_discount': bensin95_discount,
             'diesel_discount': diesel_discount
         }
+    def read_current_orkan_prices():
+        current_price_data_file = os.path.abspath(os.path.join(
+            os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
+        ))
+        current_price_data = utils.load_json(current_price_data_file)
+        for station in current_price_data['stations']:
+            if not station['key'].startswith('or_'):
+                continue
+            prices[station['key']] = {
+                'bensin95': station['bensin95'],
+                'diesel': station['diesel'],
+                'bensin95_discount': station['bensin95_discount'],
+                'diesel_discount': station['diesel_discount']
+            }
+        return prices
+    if len(prices.keys()) == 0:
+        # blazor server seems to no longer render prices data table in SSR (server side rendering)
+        # for bots and crawlers, which is quite unfortunate as it means you now might need to run a
+        # complete browser instance to interact with Blazor and read data from client rendered site
+        logman.warning('Failed fetching Orkan price data, using current price data as fallback.')
+        return read_current_orkan_prices()
     if 'or_074' not in prices:
         # new station at Lambhagavegur for some reason not shown in list, after appearing last week
         # for now we link its price to station Orkan Vesturlandsvegur in the near vicinity
