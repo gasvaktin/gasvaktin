@@ -14,11 +14,11 @@
             "name": "Baldursnes Akureyri"
         },
         {
-            "bensin95": 306.9,
-            "bensin95_discount": 295.9,
+            "bensin95": 284.8,
+            "bensin95_discount": null,
             "company": "Atlantsolía",
-            "diesel": 313.5,
-            "diesel_discount": 302.5,
+            "diesel": 297.8,
+            "diesel_discount": null,
             "geo": {
                 "lat": 65.687807,
                 "lon": -18.100104
@@ -641,8 +641,8 @@
             "bensin95": 311.9,
             "bensin95_discount": 301.9,
             "company": "N1",
-            "diesel": 316.9,
-            "diesel_discount": 306.9,
+            "diesel": 317.9,
+            "diesel_discount": 307.9,
             "geo": {
                 "lat": 63.99605943,
                 "lon": -21.19322495
@@ -914,8 +914,8 @@
             "bensin95": 315.9,
             "bensin95_discount": 305.9,
             "company": "N1",
-            "diesel": 321.9,
-            "diesel_discount": 311.9,
+            "diesel": 322.9,
+            "diesel_discount": 312.9,
             "geo": {
                 "lat": 65.68590606,
                 "lon": -17.53931847
@@ -1122,8 +1122,8 @@
             "bensin95": 314.9,
             "bensin95_discount": 304.9,
             "company": "N1",
-            "diesel": 318.9,
-            "diesel_discount": 308.9,
+            "diesel": 317.9,
+            "diesel_discount": 307.9,
             "geo": {
                 "lat": 63.41794382,
                 "lon": -19.00159478
@@ -1988,6 +1988,32 @@
             },
             "key": "ob_080",
             "name": "Dalvík"
+        },
+        {
+            "bensin95": 313.7,
+            "bensin95_discount": 303.7,
+            "company": "ÓB",
+            "diesel": 319.4,
+            "diesel_discount": 309.4,
+            "geo": {
+                "lat": 65.668943,
+                "lon": -18.109827
+            },
+            "key": "ob_081",
+            "name": "Kjarnagata"
+        },
+        {
+            "bensin95": 313.7,
+            "bensin95_discount": 303.7,
+            "company": "ÓB",
+            "diesel": 319.4,
+            "diesel_discount": 309.4,
+            "geo": {
+                "lat": 65.107442,
+                "lon": -21.763519
+            },
+            "key": "ob_082",
+            "name": "Búðardalur"
         },
         {
             "bensin95": 315.8,
