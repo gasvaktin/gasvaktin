@@ -17,9 +17,11 @@ except ModuleNotFoundError:
 try:
     from scripts import globs
     from scripts import utils
+    from scripts import webdrivers
 except ModuleNotFoundError:
     import globs
     import utils
+    import webdrivers
 
 
 def get_individual_atlantsolia_prices():
@@ -271,10 +273,28 @@ def get_individual_ob_prices():
 
 
 def get_individual_orkan_prices():
-    url = 'https://www.orkan.is/orkustodvar/'
-    res = requests.get(url, headers=utils.headers(bot=True))
-    res.raise_for_status()
-    html = lxml.etree.fromstring(res.content.decode('utf-8'), lxml.etree.HTMLParser())
+    # Note, page containing price data is: https://www.orkan.is/orkustodvar/
+    # see webdrivers.py for more info
+    res_data = webdrivers.run_orkan_browser_instance()
+    def read_current_orkan_prices():
+        current_price_data_file = os.path.abspath(os.path.join(
+            os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
+        ))
+        current_price_data = utils.load_json(current_price_data_file)
+        for station in current_price_data['stations']:
+            if not station['key'].startswith('or_'):
+                continue
+            prices[station['key']] = {
+                'bensin95': station['bensin95'],
+                'diesel': station['diesel'],
+                'bensin95_discount': station['bensin95_discount'],
+                'diesel_discount': station['diesel_discount']
+            }
+        return prices
+    if res_data['error'] is not None:
+        logman.warning('Selenium Webdriver Orkan failure, using current price data as fallback.')
+        return read_current_orkan_prices()
+    html = lxml.etree.fromstring(res_data['html'], lxml.etree.HTMLParser())
     prices_cards = html.findall('.//div[@class="prices__card"]/div[@class="prices__card-content"]')
     prices = {}
     for card in prices_cards:
@@ -300,31 +320,11 @@ def get_individual_orkan_prices():
             'bensin95_discount': bensin95_discount,
             'diesel_discount': diesel_discount
         }
-    def read_current_orkan_prices():
-        current_price_data_file = os.path.abspath(os.path.join(
-            os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
-        ))
-        current_price_data = utils.load_json(current_price_data_file)
-        for station in current_price_data['stations']:
-            if not station['key'].startswith('or_'):
-                continue
-            prices[station['key']] = {
-                'bensin95': station['bensin95'],
-                'diesel': station['diesel'],
-                'bensin95_discount': station['bensin95_discount'],
-                'diesel_discount': station['diesel_discount']
-            }
-        return prices
+    
     if len(prices.keys()) == 0:
-        # blazor server seems to no longer render prices data table in SSR (server side rendering)
-        # for bots and crawlers, which is quite unfortunate as it means you now might need to run a
-        # complete browser instance to interact with Blazor and read data from client rendered site
-        logman.warning('Failed fetching Orkan price data, using current price data as fallback.')
+        logman.warning(
+            'Failed reading Orkan price data from HTML, using current price data as fallback.')
         return read_current_orkan_prices()
-    if 'or_074' not in prices:
-        # new station at Lambhagavegur for some reason not shown in list, after appearing last week
-        # for now we link its price to station Orkan Vesturlandsvegur in the near vicinity
-        prices['or_074'] = prices['or_052'].copy()
     return prices
 
 

@@ -27,6 +27,8 @@ You need to install [Python (3.6.8 or newer) and pip](https://docs.python-guide.
 
 	pip install -r pip_requirements.txt
 
+You also need Firefox (version 78 or newer) and geckodriver installed for Selenium which is currently used to fetch prices for Orkan.
+
 Open a terminal in this repository and
 
 	python gasvaktin.py --collect-and-write-data
