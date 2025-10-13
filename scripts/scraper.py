@@ -150,9 +150,10 @@ def get_individual_n1_prices():
         # </get-name>
         if name == 'Flugvellir 27':
             continue
-        key = globs.N1_LOCATION_RELATION[name]
-        if name == 'Skútuvogi' and station['GasPrice'] is None:
+        if name == 'Þorlákshöfn' and station['GasPrice'] is None:
+            # note 2025-10-13: looks like a new station, but atm only diesel, skipping it for now
             continue
+        key = globs.N1_LOCATION_RELATION[name]
         bensin95 = float(station['GasPrice'].replace(',', '.'))
         # <zero-bensin-price-fallback>
         if bensin95 == 0:
