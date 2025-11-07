@@ -236,6 +236,8 @@ def get_individual_ob_prices():
     for entry in data['data']:
         if entry['name'] == 'PIERPUMP':
             continue
+        if entry['name'] == '':
+            continue
         if entry['OB'] != 1:
             continue
         if entry['name'] in ['Ketilás']:
