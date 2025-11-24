@@ -448,6 +448,7 @@ N1_LOCATION_RELATION = {
     'Skútuvogur': 'n1_084',
     'Flugvellir': 'n1_085',
     'Fiskislóð': 'n1_086',
+    'Elínarvegur': 'n1_087',
 }
 N1_DISCOUNTLESS_STATIONS = ['n1_011', 'n1_074', 'n1_081', 'n1_082', 'n1_079', 'n1_086']
 
