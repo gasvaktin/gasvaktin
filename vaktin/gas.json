@@ -2315,11 +2315,11 @@
             "name": "Kænan"
         },
         {
-            "bensin95": 308.6,
-            "bensin95_discount": 296.6,
+            "bensin95": 279.7,
+            "bensin95_discount": 267.7,
             "company": "Orkan",
-            "diesel": 314.3,
-            "diesel_discount": 302.3,
+            "diesel": 292.7,
+            "diesel_discount": 280.7,
             "geo": {
                 "lat": 64.140216,
                 "lon": -21.895335
