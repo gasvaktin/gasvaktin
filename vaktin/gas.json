@@ -1964,11 +1964,11 @@
             "name": "Arnarstapi"
         },
         {
-            "bensin95": 308.7,
-            "bensin95_discount": 298.7,
+            "bensin95": 298.7,
+            "bensin95_discount": 288.7,
             "company": "ÓB",
-            "diesel": 314.4,
-            "diesel_discount": 304.4,
+            "diesel": 303.9,
+            "diesel_discount": 293.9,
             "geo": {
                 "lat": 64.000428,
                 "lon": -22.548597
