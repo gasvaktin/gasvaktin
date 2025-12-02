@@ -3043,11 +3043,11 @@
             "name": "Egilsstaðir Miðvangi"
         },
         {
-            "bensin95": 308.6,
-            "bensin95_discount": 296.6,
+            "bensin95": 307.8,
+            "bensin95_discount": 295.8,
             "company": "Orkan",
-            "diesel": 313.8,
-            "diesel_discount": 301.8,
+            "diesel": 309.8,
+            "diesel_discount": 297.8,
             "geo": {
                 "lat": 64.32685,
                 "lon": -22.055915
