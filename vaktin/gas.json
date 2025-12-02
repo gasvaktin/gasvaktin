@@ -2513,8 +2513,8 @@
             "bensin95": 308.6,
             "bensin95_discount": 296.6,
             "company": "Orkan",
-            "diesel": 314.3,
-            "diesel_discount": 302.3,
+            "diesel": 313.8,
+            "diesel_discount": 301.8,
             "geo": {
                 "lat": 66.048819,
                 "lon": -17.344342
@@ -2627,11 +2627,11 @@
             "name": "Súðavík"
         },
         {
-            "bensin95": 308.6,
-            "bensin95_discount": 296.6,
+            "bensin95": 307.8,
+            "bensin95_discount": 295.8,
             "company": "Orkan",
-            "diesel": 311.3,
-            "diesel_discount": 299.3,
+            "diesel": 309.8,
+            "diesel_discount": 297.8,
             "geo": {
                 "lat": 64.320056,
                 "lon": -22.069411
@@ -2838,8 +2838,8 @@
             "bensin95": 308.2,
             "bensin95_discount": 296.2,
             "company": "Orkan",
-            "diesel": 313.4,
-            "diesel_discount": 301.4,
+            "diesel": 312.8,
+            "diesel_discount": 300.8,
             "geo": {
                 "lat": 63.417474,
                 "lon": -18.993665
@@ -3030,8 +3030,8 @@
             "name": "Spöngin"
         },
         {
-            "bensin95": 308.5,
-            "bensin95_discount": 296.5,
+            "bensin95": 308.6,
+            "bensin95_discount": 296.6,
             "company": "Orkan",
             "diesel": 314.3,
             "diesel_discount": 302.3,
