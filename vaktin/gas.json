@@ -2952,11 +2952,11 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 306.8,
-            "bensin95_discount": 294.8,
+            "bensin95": 279.7,
+            "bensin95_discount": 267.7,
             "company": "Orkan",
-            "diesel": 311.3,
-            "diesel_discount": 299.3,
+            "diesel": 292.7,
+            "diesel_discount": 280.7,
             "geo": {
                 "lat": 63.995624,
                 "lon": -21.185094
@@ -3147,11 +3147,11 @@
             "name": "Stekkjarbakki"
         },
         {
-            "bensin95": 279.7,
-            "bensin95_discount": 267.7,
+            "bensin95": 308.6,
+            "bensin95_discount": 296.6,
             "company": "Orkan",
-            "diesel": 292.7,
-            "diesel_discount": 280.7,
+            "diesel": 314.3,
+            "diesel_discount": 302.3,
             "geo": {
                 "lat": 64.09886543,
                 "lon": -21.88431501
