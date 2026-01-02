@@ -573,11 +573,11 @@
             "name": "Húsavík"
         },
         {
-            "bensin95": 218.2,
-            "bensin95_discount": 208.2,
+            "bensin95": 216.7,
+            "bensin95_discount": 206.7,
             "company": "N1",
-            "diesel": 237.1,
-            "diesel_discount": 227.1,
+            "diesel": 237.7,
+            "diesel_discount": 227.7,
             "geo": {
                 "lat": 65.26059958,
                 "lon": -14.40868203
@@ -1054,11 +1054,11 @@
             "name": "Breiðdalsvík"
         },
         {
-            "bensin95": 218.2,
-            "bensin95_discount": 208.2,
+            "bensin95": 216.7,
+            "bensin95_discount": 206.7,
             "company": "N1",
-            "diesel": 237.1,
-            "diesel_discount": 227.1,
+            "diesel": 237.7,
+            "diesel_discount": 227.7,
             "geo": {
                 "lat": 64.65650481,
                 "lon": -14.28687336
@@ -1236,11 +1236,11 @@
             "name": "Vogar"
         },
         {
-            "bensin95": 218.2,
-            "bensin95_discount": 208.2,
+            "bensin95": 216.7,
+            "bensin95_discount": 206.7,
             "company": "N1",
-            "diesel": 237.1,
-            "diesel_discount": 227.1,
+            "diesel": 237.7,
+            "diesel_discount": 227.7,
             "geo": {
                 "lat": 65.03248085,
                 "lon": -14.22305838
