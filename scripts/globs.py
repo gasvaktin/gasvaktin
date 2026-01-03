@@ -327,8 +327,8 @@ ORKAN_LOCATION_RELATION = {
     'Lambhagavegur': 'or_074',
 }
 ORKAN_DISCOUNTLESS_STATIONS = [
-    'or_000', 'or_006', 'or_007', 'or_021', 'or_029', 'or_041', 'or_048', 'or_049', 'or_051',
-    'or_053', 'or_067', 'or_073'
+    'or_000', 'or_006', 'or_007', 'or_018', 'or_021', 'or_029', 'or_041', 'or_048', 'or_049',
+    'or_051', 'or_053', 'or_067', 'or_073'
 ]
 # Orkan has a default 10 ISK discount with Orkan keychain
 # See: https://www.orkan.is/afslaettir/
