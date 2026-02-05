@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 import datetime
 import json
-import lxml.etree
 import os
-import requests
 import sys
 
+import lxml.etree
+import requests
 from simplejson.errors import JSONDecodeError as SimpleJSONDecodeError
 
 try:
@@ -90,25 +90,10 @@ def get_global_costco_prices():
 
 
 def get_individual_n1_prices():
-    url_eldsneyti = 'https://www.n1.is/thjonusta/eldsneyti/daeluverd/'
-    url_eldsneyti_api = 'https://www.n1.is/umbraco/api/fuel/getfuelprices'
-    headers = utils.headers()
-    session = requests.Session()
-    session.get(url_eldsneyti, headers=headers)
-    headers_eldsneyti_api = {
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'en-US,en;q=0.9,is-IS;q=0.8,is;q=0.7',
-        'Connection': 'keep-alive',
-        'Content-Length': '0',
-        'Host': 'www.n1.is',
-        'Origin': 'https://www.n1.is',
-        'Referer': 'https://www.n1.is/thjonusta/eldsneyti/daeluverd/',
-        'User-Agent': headers['User-Agent']
-    }
-    res = session.post(url_eldsneyti_api, data='', headers=headers_eldsneyti_api)
-    res.raise_for_status()
-    prices = {}
+    # Note, page containing price data is: https://www.n1.is/thjonusta/eldsneyti/daeluverd/
+    # additionally check out POST https://www.n1.is/umbraco/api/fuel/getfuelprices
+    # see webdrivers.py for further info
+    res_data = webdrivers.run_n1_browser_instance()
     def read_current_n1_prices():
         current_price_data_file = os.path.abspath(os.path.join(
             os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
@@ -124,66 +109,75 @@ def get_individual_n1_prices():
                 'diesel_discount': station['diesel_discount']
             }
         return prices
-    # <n1-endpoint-down-fallback>
-    try:
-        stations = res.json()
-    except (json.JSONDecodeError, SimpleJSONDecodeError):
-        # N1 price endpoint seems to be down, adding fallback to current prices to continue
-        # monitoring the other companies while N1 endpoint is down.
-        logman.warning('Failed querying N1 endpoint, using current N1 price data as fallback.')
+    if res_data['error'] is not None:
+        logman.warning('Selenium Webdriver N1 failure, using current price data as fallback.')
+        logman.warning(res_data['error'])
         return read_current_n1_prices()
-    # </n1-endpoint-down-fallback>
     names_ignore_words = [
         'Þjónustustöð/Verslun',
         'Þjónustustöð',
         'Sjálfsafgreiðslustöð',
         'Sjálfsafgreiðsla',
     ]
-    current_n1_prices = None
-    for station in stations:
-        # <get-name>
-        name = station['Name']  # sometimes a bit dirty, so we attempt to clean it up
-        for word in names_ignore_words:
-            name = name.replace(word, '')
-        name = name.replace('-', ' ')
-        name = ' '.join(name.split())
-        # </get-name>
-        if name == 'Flugvellir 27':
-            continue
-        if name == 'Þorlákshöfn' and station['GasPrice'] is None:
-            # note 2025-10-13: looks like a new station, but atm only diesel, skipping it for now
-            continue
-        key = globs.N1_LOCATION_RELATION[name]
-        bensin95 = float(station['GasPrice'].replace(',', '.'))
-        # <zero-bensin-price-fallback>
-        if bensin95 == 0:
-            if current_n1_prices is None:
-                logman.warning('Loading current N1 price because of zero price!')
-                current_n1_prices = read_current_n1_prices()
-            logman.warning(f'Zero bensin price for N1 station "{key}", fallback to current price.')
-            bensin95 = current_n1_prices[key]['bensin95']
-        # </zero-bensin-price-fallback>
-        diesel = float(station['DiselPrice'].replace(',', '.'))
-        # <zero-diesel-price-fallback>
-        if diesel == 0:
-            if current_n1_prices is None:
-                logman.warning('Loading current N1 price because of zero price!')
-                current_n1_prices = read_current_n1_prices()
-            logman.warning(f'Zero diesel price for N1 station "{key}", fallback to current price.')
-            diesel = current_n1_prices[key]['diesel']
-        # </zero-diesel-price-fallback>
-        if key in globs.N1_DISCOUNTLESS_STATIONS:
-            bensin95_discount = None
-            diesel_discount = None
-        else:
-            bensin95_discount = round((bensin95 - globs.N1_MINIMUM_DISCOUNT), 1)
-            diesel_discount = round((diesel - globs.N1_MINIMUM_DISCOUNT), 1)
-        prices[key] = {
-            'bensin95': bensin95,
-            'diesel': diesel,
-            'bensin95_discount': bensin95_discount,
-            'diesel_discount': diesel_discount
-        }
+    prices = {}
+    # parse data from html
+    root = lxml.etree.fromstring(res_data['html'], lxml.etree.HTMLParser())
+    el_capital_area = root.xpath("//h3[text()='Höfuðborgarsvæðið']")[0]
+    el_districts_listing = el_capital_area.getparent().getparent().getparent()
+    for el_district in el_districts_listing:
+        el_stations_listing = el_district[1]
+        for el_station in el_stations_listing:
+            # name tends to sometimes be a bit dirty, so we attempt to clean it up
+            name = el_station.find('.//h4').text
+            for word in names_ignore_words:
+                name = name.replace(word, '')
+            name = name.replace('-', ' ')
+            name = ' '.join(name.split())
+            # </get-name>
+            if name == 'Flugvellir 27':
+                continue
+            if name == 'Þorlákshöfn' and len(el_station.xpath(".//span[text()='Bensín']")) == 0:
+                # note 2025-10-13: diesel pump only, skipping it for now
+                continue
+            key = globs.N1_LOCATION_RELATION[name]
+            el_bensin_label = el_station.xpath(".//span[text()='Bensín']")[0]
+            bensin95_txt = el_bensin_label.getparent()[1].text
+            bensin95 = float(bensin95_txt.replace(',', '.'))
+            # <zero-bensin-price-fallback>
+            if bensin95 == 0:
+                if current_n1_prices is None:
+                    logman.warning('Loading current N1 price because of zero price!')
+                    current_n1_prices = read_current_n1_prices()
+                logman.warning(f'Zero bensin price for N1 station "{key}", fallback to current price.')
+                bensin95 = current_n1_prices[key]['bensin95']
+            # </zero-bensin-price-fallback>
+            el_diesel_label = el_station.xpath(".//span[text()='Dísel']")[0]
+            diesel_txt = el_diesel_label.getparent()[1].text
+            diesel = float(diesel_txt.replace(',', '.'))
+            # <zero-diesel-price-fallback>
+            if diesel == 0:
+                if current_n1_prices is None:
+                    logman.warning('Loading current N1 price because of zero price!')
+                    current_n1_prices = read_current_n1_prices()
+                logman.warning(f'Zero diesel price for N1 station "{key}", fallback to current price.')
+                diesel = current_n1_prices[key]['diesel']
+            # </zero-diesel-price-fallback>
+            if key in globs.N1_DISCOUNTLESS_STATIONS:
+                bensin95_discount = None
+                diesel_discount = None
+            else:
+                bensin95_discount = round((bensin95 - globs.N1_MINIMUM_DISCOUNT), 1)
+                diesel_discount = round((diesel - globs.N1_MINIMUM_DISCOUNT), 1)
+            prices[key] = {
+                'bensin95': bensin95,
+                'diesel': diesel,
+                'bensin95_discount': bensin95_discount,
+                'diesel_discount': diesel_discount
+            }
+    if len(prices.keys()) == 0:
+        logman.warning(
+            'Failed reading N1 price data from HTML, using current price data as fallback.')
+        return read_current_n1_prices()
     return prices
 
 
@@ -277,7 +271,7 @@ def get_individual_ob_prices():
 
 def get_individual_orkan_prices():
     # Note, page containing price data is: https://www.orkan.is/orkustodvar/
-    # see webdrivers.py for more info
+    # see webdrivers.py for further info
     res_data = webdrivers.run_orkan_browser_instance()
     def read_current_orkan_prices():
         current_price_data_file = os.path.abspath(os.path.join(
@@ -296,6 +290,7 @@ def get_individual_orkan_prices():
         return prices
     if res_data['error'] is not None:
         logman.warning('Selenium Webdriver Orkan failure, using current price data as fallback.')
+        logman.warning(res_data['error'])
         return read_current_orkan_prices()
     html = lxml.etree.fromstring(res_data['html'], lxml.etree.HTMLParser())
     prices_cards = html.findall('.//div[@class="prices__card"]/div[@class="prices__card-content"]')

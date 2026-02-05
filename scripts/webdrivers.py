@@ -6,6 +6,37 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
+def run_n1_browser_instance(headless=True):
+    """
+    Run Selenium Webdriver browser instance for N1 webpage.
+
+    N1 webserver might be practicing some anti-bot tactics, I am as of now unaware what kind of
+    handshake shenanigans they've possibly implemented, but it results in python requests throwing
+    the following SSL error:
+        SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:2657)'))
+    """
+    res_data = {'error': None, 'html': None}
+    options = Options()
+    if headless is True:
+        options.add_argument('--headless')
+    driver = webdriver.Firefox(options=options)
+    try:
+        driver.get('https://www.n1.is/thjonusta/eldsneyti/daeluverd/')
+        wait = WebDriverWait(driver, 15)
+        el_target = wait.until(
+            EC.visibility_of_element_located((By.CSS_SELECTOR, '#composer-render-target'))
+        )
+        el_render_req = wait.until(
+            EC.visibility_of_element_located((By.XPATH, "//h3[text()='Höfuðborgarsvæðið']"))
+        )
+        res_data['html'] = el_target.get_attribute('innerHTML')
+    except Exception as e:
+        res_data['error'] = f'An error occurred: {e}'
+    finally:
+        driver.quit()
+    return res_data
+
+
 def run_orkan_browser_instance(headless=True):
     """
     Run Selenium Webdriver browser instance for Orkan webpage.
