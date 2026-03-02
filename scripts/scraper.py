@@ -99,6 +99,7 @@ def get_individual_n1_prices():
             os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
         ))
         current_price_data = utils.load_json(current_price_data_file)
+        prices = {}
         for station in current_price_data['stations']:
             if not station['key'].startswith('n1_'):
                 continue
@@ -277,6 +278,7 @@ def get_individual_orkan_prices():
         current_price_data_file = os.path.abspath(os.path.join(
             os.path.dirname(os.path.realpath(__file__)), '../vaktin/gas.min.json'
         ))
+        prices = {}
         current_price_data = utils.load_json(current_price_data_file)
         for station in current_price_data['stations']:
             if not station['key'].startswith('or_'):
