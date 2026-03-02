@@ -19,6 +19,7 @@ def run_n1_browser_instance(headless=True):
     options = Options()
     if headless is True:
         options.add_argument('--headless')
+    options.set_preference('security.ssl.enable_ocsp_stapling', False)
     driver = webdriver.Firefox(options=options)
     try:
         driver.get('https://www.n1.is/thjonusta/eldsneyti/daeluverd/')
