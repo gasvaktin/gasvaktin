@@ -559,5 +559,25 @@ BAD_AUTOPRICES_CHANGES = [
         'timestamp_text': '2023-07-07T18:00',
         'commit_hash': 'fbaca0f17e1b467fe0981f1a9d2d33eca0d40ef6',
         'note': 'N1 zero prices'
+    },
+    {
+        'timestamp_text': '2025-03-07T09:15',
+        'commit_hash': 'e34bfdd51841cf2d0fe25efc7905cc96224ce497',
+        'note': 'Olís bad price change entry (comma off by one)'
+    },
+    {
+        'timestamp_text': '2025-03-07T09:30',
+        'commit_hash': '0a3aea8d538125a44da99321659ceb36fd8eb6ca',
+        'note': 'Olís bad price change entry (comma off by one)'
+    },
+    {
+        'timestamp_text': '2025-03-07T09:45',
+        'commit_hash': '41002492e85fcdbbd98ab7e4c2c208856c045a74',
+        'note': 'Olís bad price change entry (comma off by one)'
+    },
+    {
+        'timestamp_text': '2025-03-07T10:00',
+        'commit_hash': 'a2ee262e2836731293ad45595e870f620a3d3776',
+        'note': 'Olís bad price change entry (comma off by one, comma fixed but price still wrong)'
     }
 ]
