@@ -10,9 +10,9 @@ def run_n1_browser_instance(headless=True):
     """
     Run Selenium Webdriver browser instance for N1 webpage.
 
-    N1 webserver might be practicing some anti-bot tactics, I am as of now unaware what kind of
-    handshake shenanigans they've possibly implemented, but it results in python requests throwing
-    the following SSL error:
+    Reason for going webdriver for N1:
+    Ran into some SSL issue with accessing N1 website via python requests, it kept throwing the
+    following SSL error:
         SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:2657)'))
     """
     res_data = {'error': None, 'html': None}
@@ -22,7 +22,7 @@ def run_n1_browser_instance(headless=True):
     options.set_preference('security.ssl.enable_ocsp_stapling', False)
     driver = webdriver.Firefox(options=options)
     try:
-        driver.get('https://www.n1.is/thjonusta/eldsneyti/daeluverd/')
+        driver.get('https://gamli.n1.is/thjonusta/eldsneyti/daeluverd/')
         wait = WebDriverWait(driver, 15)
         el_target = wait.until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, '#composer-render-target'))
