@@ -313,10 +313,10 @@
             "name": "Stapabraut"
         },
         {
-            "bensin95": 190.5,
+            "bensin95": 204.0,
             "bensin95_discount": null,
             "company": "Costco Iceland",
-            "diesel": 221.5,
+            "diesel": 238.0,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.075267,
