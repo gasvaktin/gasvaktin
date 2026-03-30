@@ -3069,11 +3069,11 @@
             "name": "Hraunbær"
         },
         {
-            "bensin95": 209.0,
-            "bensin95_discount": 197.0,
+            "bensin95": 236.2,
+            "bensin95_discount": 224.2,
             "company": "Orkan",
-            "diesel": 243.0,
-            "diesel_discount": 231.0,
+            "diesel": 264.9,
+            "diesel_discount": 252.9,
             "geo": {
                 "lat": 64.675279,
                 "lon": -21.664649
@@ -3186,11 +3186,11 @@
             "name": "Einhella"
         },
         {
-            "bensin95": 238.0,
-            "bensin95_discount": 226.0,
+            "bensin95": 209.0,
+            "bensin95_discount": 197.0,
             "company": "Orkan",
-            "diesel": 264.9,
-            "diesel_discount": 252.9,
+            "diesel": 243.0,
+            "diesel_discount": 231.0,
             "geo": {
                 "lat": 64.1414544,
                 "lon": -21.75889653
