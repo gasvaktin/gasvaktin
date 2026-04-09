@@ -2159,11 +2159,11 @@
             "name": "Hella"
         },
         {
-            "bensin95": 253.2,
-            "bensin95_discount": 243.2,
+            "bensin95": 248.2,
+            "bensin95_discount": 238.2,
             "company": "Olís",
-            "diesel": 291.4,
-            "diesel_discount": 281.4,
+            "diesel": 286.4,
+            "diesel_discount": 276.4,
             "geo": {
                 "lat": 64.197545,
                 "lon": -19.285694
