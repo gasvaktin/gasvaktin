@@ -2367,8 +2367,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 244.6,
-            "bensin95_discount": 232.6,
+            "bensin95": 244.5,
+            "bensin95_discount": 232.5,
             "company": "Orkan",
             "diesel": 279.5,
             "diesel_discount": 267.5,
@@ -3017,8 +3017,8 @@
             "name": "Spöngin"
         },
         {
-            "bensin95": 244.6,
-            "bensin95_discount": 232.6,
+            "bensin95": 244.5,
+            "bensin95_discount": 232.5,
             "company": "Orkan",
             "diesel": 279.5,
             "diesel_discount": 267.5,
