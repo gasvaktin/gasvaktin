@@ -6,7 +6,6 @@ import sys
 
 import lxml.etree
 import requests
-from simplejson.errors import JSONDecodeError as SimpleJSONDecodeError
 
 try:
     import logman
