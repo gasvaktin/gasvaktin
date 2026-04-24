@@ -2588,11 +2588,11 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 246.1,
-            "bensin95_discount": 234.1,
+            "bensin95": 247.1,
+            "bensin95_discount": 235.1,
             "company": "Orkan",
-            "diesel": 287.9,
-            "diesel_discount": 275.9,
+            "diesel": 288.9,
+            "diesel_discount": 276.9,
             "geo": {
                 "lat": 66.060808,
                 "lon": -23.174836
@@ -2822,11 +2822,11 @@
             "name": "Vestmannaeyjar"
         },
         {
-            "bensin95": 247.6,
-            "bensin95_discount": 235.6,
+            "bensin95": 248.0,
+            "bensin95_discount": 236.0,
             "company": "Orkan",
-            "diesel": 290.0,
-            "diesel_discount": 278.0,
+            "diesel": 290.6,
+            "diesel_discount": 278.6,
             "geo": {
                 "lat": 63.417474,
                 "lon": -18.993665
