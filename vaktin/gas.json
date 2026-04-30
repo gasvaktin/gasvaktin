@@ -1353,11 +1353,11 @@
             "name": "Norðurhella"
         },
         {
-            "bensin95": 248.7,
-            "bensin95_discount": 238.7,
+            "bensin95": 221.9,
+            "bensin95_discount": 211.9,
             "company": "N1",
-            "diesel": 284.7,
-            "diesel_discount": 274.7,
+            "diesel": 253.9,
+            "diesel_discount": 243.9,
             "geo": {
                 "lat": 63.99703,
                 "lon": -22.584204
@@ -1369,7 +1369,7 @@
             "bensin95": 226.7,
             "bensin95_discount": null,
             "company": "N1",
-            "diesel": 273.7,
+            "diesel": 244.9,
             "diesel_discount": null,
             "geo": {
                 "lat": 64.155238,
