@@ -2367,11 +2367,11 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 226.9,
-            "bensin95_discount": 214.9,
+            "bensin95": 226.8,
+            "bensin95_discount": 214.8,
             "company": "Orkan",
-            "diesel": 260.9,
-            "diesel_discount": 248.9,
+            "diesel": 260.6,
+            "diesel_discount": 248.6,
             "geo": {
                 "lat": 65.260787,
                 "lon": -14.397936
@@ -3017,11 +3017,11 @@
             "name": "Spöngin"
         },
         {
-            "bensin95": 226.9,
-            "bensin95_discount": 214.9,
+            "bensin95": 226.8,
+            "bensin95_discount": 214.8,
             "company": "Orkan",
-            "diesel": 260.9,
-            "diesel_discount": 248.9,
+            "diesel": 260.6,
+            "diesel_discount": 248.6,
             "geo": {
                 "lat": 65.263121,
                 "lon": -14.406162
