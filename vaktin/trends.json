@@ -48203,6 +48203,18 @@
             "median_diesel_discount": 252.0,
             "stations_count": 73,
             "timestamp": "2026-04-30T22:30"
+        },
+        {
+            "mean_bensin95": 222.6,
+            "mean_bensin95_discount": 215.6,
+            "mean_diesel": 259.6,
+            "mean_diesel_discount": 251.3,
+            "median_bensin95": 228.3,
+            "median_bensin95_discount": 216.3,
+            "median_diesel": 264.0,
+            "median_diesel_discount": 252.0,
+            "stations_count": 73,
+            "timestamp": "2026-05-01T00:30"
         }
     ],
     "ox": [
