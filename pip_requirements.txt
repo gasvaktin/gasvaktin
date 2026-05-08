@@ -1,5 +1,5 @@
 colorama==0.4.6; platform_system == 'Windows'
-GitPython==3.1.46
-lxml==6.0.4
+GitPython==3.1.50
+lxml==6.1.0
 requests==2.33.1
 selenium==4.43.0
