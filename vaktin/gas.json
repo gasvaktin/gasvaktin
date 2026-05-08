@@ -3134,11 +3134,11 @@
             "name": "Stekkjarbakki"
         },
         {
-            "bensin95": 228.3,
-            "bensin95_discount": 216.3,
+            "bensin95": 198.2,
+            "bensin95_discount": 186.2,
             "company": "Orkan",
-            "diesel": 264.0,
-            "diesel_discount": 252.0,
+            "diesel": 240.5,
+            "diesel_discount": 228.5,
             "geo": {
                 "lat": 64.09886543,
                 "lon": -21.88431501
