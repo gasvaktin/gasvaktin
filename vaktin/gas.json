@@ -1041,11 +1041,11 @@
             "name": "Stöðvarfjörður"
         },
         {
-            "bensin95": 229.9,
-            "bensin95_discount": 219.9,
+            "bensin95": 232.9,
+            "bensin95_discount": 222.9,
             "company": "N1",
-            "diesel": 265.9,
-            "diesel_discount": 255.9,
+            "diesel": 267.9,
+            "diesel_discount": 257.9,
             "geo": {
                 "lat": 64.79371629,
                 "lon": -14.00772402
@@ -1093,11 +1093,11 @@
             "name": "Fagurhólsmýri"
         },
         {
-            "bensin95": 229.9,
-            "bensin95_discount": 219.9,
+            "bensin95": 232.9,
+            "bensin95_discount": 222.9,
             "company": "N1",
-            "diesel": 265.9,
-            "diesel_discount": 255.9,
+            "diesel": 267.9,
+            "diesel_discount": 257.9,
             "geo": {
                 "lat": 63.79402505,
                 "lon": -18.04007649
@@ -1106,11 +1106,11 @@
             "name": "Kirkjubæjarklaustur"
         },
         {
-            "bensin95": 228.9,
-            "bensin95_discount": 218.9,
+            "bensin95": 231.9,
+            "bensin95_discount": 221.9,
             "company": "N1",
-            "diesel": 261.9,
-            "diesel_discount": 251.9,
+            "diesel": 263.9,
+            "diesel_discount": 253.9,
             "geo": {
                 "lat": 63.41794382,
                 "lon": -19.00159478
@@ -1158,11 +1158,11 @@
             "name": "Flúðir"
         },
         {
-            "bensin95": 229.9,
-            "bensin95_discount": 219.9,
+            "bensin95": 232.9,
+            "bensin95_discount": 222.9,
             "company": "N1",
-            "diesel": 265.9,
-            "diesel_discount": 255.9,
+            "diesel": 267.9,
+            "diesel_discount": 257.9,
             "geo": {
                 "lat": 64.31017649,
                 "lon": -20.30385017
@@ -1210,11 +1210,11 @@
             "name": "Sandgerði"
         },
         {
-            "bensin95": 229.9,
-            "bensin95_discount": 219.9,
+            "bensin95": 232.9,
+            "bensin95_discount": 222.9,
             "company": "N1",
-            "diesel": 265.9,
-            "diesel_discount": 255.9,
+            "diesel": 267.9,
+            "diesel_discount": 257.9,
             "geo": {
                 "lat": 64.06760561,
                 "lon": -22.64890731
@@ -1223,11 +1223,11 @@
             "name": "Garður"
         },
         {
-            "bensin95": 229.9,
-            "bensin95_discount": 219.9,
+            "bensin95": 232.9,
+            "bensin95_discount": 222.9,
             "company": "N1",
-            "diesel": 265.9,
-            "diesel_discount": 255.9,
+            "diesel": 267.9,
+            "diesel_discount": 257.9,
             "geo": {
                 "lat": 63.98048775,
                 "lon": -22.38000602
@@ -1288,11 +1288,11 @@
             "name": "Flókalundur"
         },
         {
-            "bensin95": 221.9,
-            "bensin95_discount": 211.9,
+            "bensin95": 224.9,
+            "bensin95_discount": 214.9,
             "company": "N1",
-            "diesel": 260.9,
-            "diesel_discount": 250.9,
+            "diesel": 262.9,
+            "diesel_discount": 252.9,
             "geo": {
                 "lat": 63.971604,
                 "lon": -22.590831
