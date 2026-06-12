@@ -898,11 +898,11 @@
             "name": "Reykjahlíð"
         },
         {
-            "bensin95": 232.9,
-            "bensin95_discount": 222.9,
+            "bensin95": 230.9,
+            "bensin95_discount": 220.9,
             "company": "N1",
-            "diesel": 264.9,
-            "diesel_discount": 254.9,
+            "diesel": 260.9,
+            "diesel_discount": 250.9,
             "geo": {
                 "lat": 65.68590606,
                 "lon": -17.53931847
@@ -950,11 +950,11 @@
             "name": "Ásbyrgi"
         },
         {
-            "bensin95": 232.9,
-            "bensin95_discount": 222.9,
+            "bensin95": 230.9,
+            "bensin95_discount": 220.9,
             "company": "N1",
-            "diesel": 264.9,
-            "diesel_discount": 254.9,
+            "diesel": 260.9,
+            "diesel_discount": 250.9,
             "geo": {
                 "lat": 66.45361604,
                 "lon": -15.95048547
@@ -963,11 +963,11 @@
             "name": "Raufarhöfn"
         },
         {
-            "bensin95": 232.9,
-            "bensin95_discount": 222.9,
+            "bensin95": 230.9,
+            "bensin95_discount": 220.9,
             "company": "N1",
-            "diesel": 264.9,
-            "diesel_discount": 254.9,
+            "diesel": 260.9,
+            "diesel_discount": 250.9,
             "geo": {
                 "lat": 66.19803972,
                 "lon": -15.33636689
