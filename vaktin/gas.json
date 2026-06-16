@@ -326,11 +326,11 @@
             "name": "Kauptún"
         },
         {
-            "bensin95": 230.9,
-            "bensin95_discount": 220.9,
+            "bensin95": 229.9,
+            "bensin95_discount": 219.9,
             "company": "N1",
-            "diesel": 260.9,
-            "diesel_discount": 250.9,
+            "diesel": 257.9,
+            "diesel_discount": 247.9,
             "geo": {
                 "lat": 64.12358487,
                 "lon": -21.82642221
@@ -430,11 +430,11 @@
             "name": "Lækjargata"
         },
         {
-            "bensin95": 230.9,
-            "bensin95_discount": 220.9,
+            "bensin95": 229.9,
+            "bensin95_discount": 219.9,
             "company": "N1",
-            "diesel": 260.9,
-            "diesel_discount": 250.9,
+            "diesel": 257.9,
+            "diesel_discount": 247.9,
             "geo": {
                 "lat": 64.13881606,
                 "lon": -21.93820059
@@ -651,11 +651,11 @@
             "name": "Reykjanesbær"
         },
         {
-            "bensin95": 230.9,
-            "bensin95_discount": 220.9,
+            "bensin95": 229.9,
+            "bensin95_discount": 219.9,
             "company": "N1",
-            "diesel": 260.9,
-            "diesel_discount": 250.9,
+            "diesel": 257.9,
+            "diesel_discount": 247.9,
             "geo": {
                 "lat": 64.05344779,
                 "lon": -21.96901916
