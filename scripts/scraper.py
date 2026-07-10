@@ -301,6 +301,8 @@ def get_individual_orkan_prices():
         station_name = card_values[0].text.strip()
         if station_name == 'Orkustöð':
             continue  # skip header row
+        if station_name == 'Landeyjar':
+            continue  # seems to be charging station only, skipping for now
         if 'rafhleðsla' in station_name:
             # "Selfoss rafhleðsla"
             continue  # skip electric charging stations
