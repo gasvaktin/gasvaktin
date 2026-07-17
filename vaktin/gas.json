@@ -2237,7 +2237,7 @@
             "name": "Siglufjörður"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2315,7 +2315,7 @@
             "name": "Miklabraut"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2328,7 +2328,7 @@
             "name": "Reykjavíkurvegur"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2354,8 +2354,8 @@
             "name": "Suðurströnd"
         },
         {
-            "bensin95": 224.1,
-            "bensin95_discount": 212.1,
+            "bensin95": 222.7,
+            "bensin95_discount": 210.7,
             "company": "Orkan",
             "diesel": 237.5,
             "diesel_discount": 225.5,
@@ -2471,7 +2471,7 @@
             "name": "Árskógssandur"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2510,7 +2510,7 @@
             "name": "Hvammstangi"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2614,7 +2614,7 @@
             "name": "Skagabraut Akranes"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2770,7 +2770,7 @@
             "name": "Hvolsvöllur"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2848,7 +2848,7 @@
             "name": "Birkimelur"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2861,7 +2861,7 @@
             "name": "Bústaðavegur"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2887,7 +2887,7 @@
             "name": "Smárinn"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -2913,7 +2913,7 @@
             "name": "Vesturlandsvegur"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -3004,8 +3004,8 @@
             "name": "Spöngin"
         },
         {
-            "bensin95": 224.1,
-            "bensin95_discount": 212.1,
+            "bensin95": 222.7,
+            "bensin95_discount": 210.7,
             "company": "Orkan",
             "diesel": 237.5,
             "diesel_discount": 225.5,
@@ -3082,7 +3082,7 @@
             "name": "Fellsmúli"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
@@ -3160,7 +3160,7 @@
             "name": "Hella"
         },
         {
-            "bensin95": 198.3,
+            "bensin95": 198.2,
             "bensin95_discount": null,
             "company": "Orkan",
             "diesel": 221.5,
