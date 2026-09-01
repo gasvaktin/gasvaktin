@@ -586,11 +586,11 @@
             "name": "Egilsstaðir"
         },
         {
-            "bensin95": 234.9,
-            "bensin95_discount": 224.9,
+            "bensin95": 262.4,
+            "bensin95_discount": 252.4,
             "company": "N1",
-            "diesel": 261.9,
-            "diesel_discount": 251.9,
+            "diesel": 292.5,
+            "diesel_discount": 282.5,
             "geo": {
                 "lat": 64.25908048,
                 "lon": -15.20630121
