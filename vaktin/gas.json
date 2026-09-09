@@ -2549,11 +2549,11 @@
             "name": "Sauðárkrókur"
         },
         {
-            "bensin95": 258.6,
-            "bensin95_discount": 246.6,
+            "bensin95": 259.5,
+            "bensin95_discount": 247.5,
             "company": "Orkan",
-            "diesel": 290.3,
-            "diesel_discount": 278.3,
+            "diesel": 291.4,
+            "diesel_discount": 279.4,
             "geo": {
                 "lat": 65.685764,
                 "lon": -23.600899
@@ -2562,11 +2562,11 @@
             "name": "Bíldudalur"
         },
         {
-            "bensin95": 258.6,
-            "bensin95_discount": 246.6,
+            "bensin95": 259.5,
+            "bensin95_discount": 247.5,
             "company": "Orkan",
-            "diesel": 290.3,
-            "diesel_discount": 278.3,
+            "diesel": 291.4,
+            "diesel_discount": 279.4,
             "geo": {
                 "lat": 66.153076,
                 "lon": -23.248703
@@ -2588,11 +2588,11 @@
             "name": "Ísafjörður"
         },
         {
-            "bensin95": 258.6,
-            "bensin95_discount": 246.6,
+            "bensin95": 259.5,
+            "bensin95_discount": 247.5,
             "company": "Orkan",
-            "diesel": 290.3,
-            "diesel_discount": 278.3,
+            "diesel": 291.4,
+            "diesel_discount": 279.4,
             "geo": {
                 "lat": 66.025744,
                 "lon": -22.990537
