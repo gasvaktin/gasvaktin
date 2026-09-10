@@ -1392,7 +1392,7 @@
             "name": "Akranes Esjubraut"
         },
         {
-            "bensin95": 229.6,
+            "bensin95": 229.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 268.7,
@@ -1418,7 +1418,7 @@
             "name": "Akureyri BSO"
         },
         {
-            "bensin95": 229.6,
+            "bensin95": 229.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 268.7,
@@ -1483,7 +1483,7 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 229.6,
+            "bensin95": 229.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 268.7,
@@ -1496,7 +1496,7 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 229.6,
+            "bensin95": 229.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 268.7,
@@ -1522,7 +1522,7 @@
             "name": "Eyrarbakki"
         },
         {
-            "bensin95": 229.6,
+            "bensin95": 229.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 268.7,
@@ -1691,7 +1691,7 @@
             "name": "Reyðarfjörður"
         },
         {
-            "bensin95": 229.6,
+            "bensin95": 229.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 268.7,
@@ -1782,7 +1782,7 @@
             "name": "Reykjanesbær Aðalgata"
         },
         {
-            "bensin95": 229.6,
+            "bensin95": 229.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 268.7,
@@ -1795,11 +1795,11 @@
             "name": "Laugarbakki"
         },
         {
-            "bensin95": 258.1,
-            "bensin95_discount": 248.1,
+            "bensin95": 258.5,
+            "bensin95_discount": 248.5,
             "company": "ÓB",
-            "diesel": 289.5,
-            "diesel_discount": 279.5,
+            "diesel": 290.4,
+            "diesel_discount": 280.4,
             "geo": {
                 "lat": 63.417937,
                 "lon": -19.002232
@@ -1834,7 +1834,7 @@
             "name": "Sauðárkrókur Borgarflöt"
         },
         {
-            "bensin95": 229.6,
+            "bensin95": 229.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 268.7,
@@ -1860,7 +1860,7 @@
             "name": "Ferstikla"
         },
         {
-            "bensin95": 229.6,
+            "bensin95": 229.5,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 268.7,
