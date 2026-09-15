@@ -2812,8 +2812,8 @@
             "bensin95": 261.4,
             "bensin95_discount": 249.4,
             "company": "Orkan",
-            "diesel": 295.0,
-            "diesel_discount": 283.0,
+            "diesel": 295.2,
+            "diesel_discount": 283.2,
             "geo": {
                 "lat": 63.417474,
                 "lon": -18.993665
@@ -2926,8 +2926,8 @@
             "name": "Hörgárbraut"
         },
         {
-            "bensin95": 260.8,
-            "bensin95_discount": 248.8,
+            "bensin95": 261.3,
+            "bensin95_discount": 249.3,
             "company": "Orkan",
             "diesel": 293.2,
             "diesel_discount": 281.2,
@@ -3030,8 +3030,8 @@
             "name": "Akranes"
         },
         {
-            "bensin95": 260.8,
-            "bensin95_discount": 248.8,
+            "bensin95": 261.3,
+            "bensin95_discount": 249.3,
             "company": "Orkan",
             "diesel": 293.2,
             "diesel_discount": 281.2,
