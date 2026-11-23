@@ -1392,7 +1392,7 @@
             "name": "Akranes Esjubraut"
         },
         {
-            "bensin95": 248.1,
+            "bensin95": 247.2,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 309.2,
@@ -1418,7 +1418,7 @@
             "name": "Akureyri BSO"
         },
         {
-            "bensin95": 248.1,
+            "bensin95": 247.2,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 309.2,
@@ -1483,7 +1483,7 @@
             "name": "Bolungarvík"
         },
         {
-            "bensin95": 248.1,
+            "bensin95": 247.2,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 309.2,
@@ -1496,7 +1496,7 @@
             "name": "Borgarnes"
         },
         {
-            "bensin95": 248.1,
+            "bensin95": 247.2,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 309.2,
@@ -1522,7 +1522,7 @@
             "name": "Eyrarbakki"
         },
         {
-            "bensin95": 248.1,
+            "bensin95": 247.2,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 309.2,
@@ -1691,7 +1691,7 @@
             "name": "Reyðarfjörður"
         },
         {
-            "bensin95": 248.1,
+            "bensin95": 247.2,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 309.2,
@@ -1782,7 +1782,7 @@
             "name": "Reykjanesbær Aðalgata"
         },
         {
-            "bensin95": 248.1,
+            "bensin95": 247.2,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 309.2,
@@ -1834,7 +1834,7 @@
             "name": "Sauðárkrókur Borgarflöt"
         },
         {
-            "bensin95": 248.1,
+            "bensin95": 247.2,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 309.2,
@@ -1860,7 +1860,7 @@
             "name": "Ferstikla"
         },
         {
-            "bensin95": 248.1,
+            "bensin95": 247.2,
             "bensin95_discount": null,
             "company": "ÓB",
             "diesel": 309.2,
@@ -2094,8 +2094,8 @@
             "name": "Sæbraut"
         },
         {
-            "bensin95": 276.1,
-            "bensin95_discount": 266.1,
+            "bensin95": 277.1,
+            "bensin95_discount": 267.1,
             "company": "Olís",
             "diesel": 331.9,
             "diesel_discount": 321.9,
